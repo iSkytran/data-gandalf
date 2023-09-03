@@ -13,7 +13,7 @@ In order to run the backend locally, Node will need to be installed. The followi
 2. Run the frontend. This will run in development mode.
 
     ```bash
-    npm dev
+    npm run dev
     ```
 
 3. Access the webpage though [127.0.0.1:3000](127.0.0.1:3000).
@@ -26,7 +26,7 @@ In order to run the backend locally, Node will need to be installed. The followi
     docker build . -t frontend
     ```
 
-2. Once built, the container can be run in the background. This will run in production mode.
+2. Once built, the container can be run in the background. This currently runs in development mode.
 
     ```bash
     docker run -dit --name frontend -p 3000:3000 frontend
