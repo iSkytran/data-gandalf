@@ -1,8 +1,14 @@
-from sqlmodel import SQLModel, create_engine
+from sqlmodel import Session, SQLModel, create_engine, select
 
-db_url = "postgresql://postgres:default@localhost:5432"
-connect_args = {"check_same_thread": False}
-engine = create_engine(db_url, connect_args=connect_args)
+from backend.models import Dataset
+
+db_url = "postgresql://postgres:default@database:5432"
+engine = create_engine(db_url)
 
 def init():
     SQLModel.metadata.create_all(engine)
+
+def get_all(limit: int = 100) -> list[Dataset]:
+    with Session(engine) as session:
+        datasets = session.exec(select(Dataset).limit(limit)).all()
+        return datasets

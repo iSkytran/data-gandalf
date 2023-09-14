@@ -1,5 +1,4 @@
-def get_by_search(query: str):
-    return
+from backend.models import Dataset
 
-def get_by_dataset(id: int):
-    return
+def rank(datasets: list[Dataset]) -> list[Dataset]:
+    return datasets

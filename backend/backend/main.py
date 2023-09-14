@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 
-from . import db
-from . import models
-from . import recommender
+from backend import db
+from backend import recommender
+from backend.models import Dataset
 
 app = FastAPI()
 
@@ -14,10 +14,12 @@ def startup() -> None:
 async def health() -> str:
     return "Service is up"
 
-@app.get("/search", response_model=list[models.Dataset])
+@app.get("/search", response_model=list[Dataset])
 def search() -> str:
-    return recommender.get_by_search()
+    datasets = db.get_all()
+    return recommender.rank(datasets)
 
 @app.get("/dataset")
 def dataset() -> str:
-    return recommender.get_by_dataset()
+    datasets = db.get_all()
+    return recommender.rank(datasets)
