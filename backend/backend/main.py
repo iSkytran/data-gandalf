@@ -14,12 +14,12 @@ def startup() -> None:
 async def health() -> str:
     return "Service is up"
 
-@app.get("/search", response_model=list[Dataset])
-def search() -> str:
+@app.get("/datasets", response_model=list[Dataset])
+def allDatasets() -> str:
     datasets = db.get_all()
     return recommender.rank(datasets)
 
-@app.get("/dataset")
-def dataset() -> str:
-    datasets = db.get_all()
-    return recommender.rank(datasets)
+# @app.get("/dataset")
+# def dataset() -> list[str]:
+#     datasets = db.get_all()
+#     return recommender.rank(datasets)
