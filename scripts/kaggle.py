@@ -3,24 +3,30 @@ import os
 from zipfile import ZipFile
 import shutil
 
-#Get the string value of all the returned datasets when the list command is run with a max size of 1MB
-datasets = subprocess.check_output('kaggle datasets list --max-size 1000000').decode()
+# Data Topics: Sports, Academics, Real Estate, Health, Finance
+topics = ['sports', 'academics', 'housing', 'health', 'finance']
 
-#Split the datasets into a list and remove the headers
-datasetList = datasets.split('\r\n')
-datasetList.pop(0)
-datasetList.pop(0)
+for x in range(5):
+    #Get the string value of all the returned datasets when the list command is run with a max size of 1MB
+    datasets = subprocess.check_output(f'kaggle datasets list --max-size 1000000 --file-type csv --search \'{topics[x]}\'').decode()
 
-#Get a list of all the dataset URL suffixes
-urlList = []
-for d in datasetList:
-    urlList.append(d.split(' ', 1)[0])
+    #Split the datasets into a list and remove the headers
+    datasetList = datasets.split('\r\n')
+    datasetList.pop(0)
+    datasetList.pop(0)
 
-#Download all of the dataset files into the dataset folder
+    #Get a list of all the dataset URL suffixes
+    urlList = []
+    for d in datasetList:
+        urlList.append(d.split(' ', 1)[0])
+
+    #Download all of the dataset files into the dataset folder
+    os.chdir('datasets')
+    for u in urlList[:10]:
+        subprocess.run(f'kaggle datasets download -d {u}')
+    os.chdir('..')
+
 os.chdir('datasets')
-for u in urlList:
-    subprocess.run(f'kaggle datasets download -d {u}')
-
 #Unzip all of the dataset folder contents and remove the zip files
 for f in os.listdir(os.getcwd()):
     with ZipFile(f, 'r') as z:
