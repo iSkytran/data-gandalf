@@ -7,8 +7,8 @@ COPY ./requirements.txt /backend/requirements.txt
 RUN pip install --no-cache-dir --upgrade -r /backend/requirements.txt
 
 # Copy over project.
-COPY ./backend /backend
+COPY ./backend /backend/backend
 
 # Default container run.
 EXPOSE 8080
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8080"]
