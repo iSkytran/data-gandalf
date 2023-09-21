@@ -12,3 +12,4 @@ def get_all(limit: int = 100) -> list[Dataset]:
     with Session(engine) as session:
         datasets = session.exec(select(Dataset).limit(limit)).all()
         return datasets
+
