@@ -1,1 +1,10 @@
-{"percent_null": 0.0, "row_count": 5370, "col_count": 8, "title": "NFLX"}
+{
+    "col_count": 8,
+    "description": "",
+    "licenses": [],
+    "percent_null": 0.0,
+    "row_count": 5370,
+    "tags": [],
+    "title": "NFLX",
+    "topic": ""
+}

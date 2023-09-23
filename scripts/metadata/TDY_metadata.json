@@ -1,1 +1,10 @@
-{"percent_null": 0.0, "row_count": 5995, "col_count": 8, "title": "TDY"}
+{
+    "col_count": 8,
+    "description": "",
+    "licenses": [],
+    "percent_null": 0.0,
+    "row_count": 5995,
+    "tags": [],
+    "title": "TDY",
+    "topic": ""
+}

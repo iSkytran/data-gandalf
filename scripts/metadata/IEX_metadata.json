@@ -1,1 +1,10 @@
-{"percent_null": 0.0, "row_count": 8643, "col_count": 8, "title": "IEX"}
+{
+    "col_count": 8,
+    "description": "",
+    "licenses": [],
+    "percent_null": 0.0,
+    "row_count": 8643,
+    "tags": [],
+    "title": "IEX",
+    "topic": ""
+}

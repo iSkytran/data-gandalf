@@ -1,1 +1,10 @@
-{"percent_null": 0.0, "row_count": 6, "col_count": 3, "title": "homeless"}
+{
+    "col_count": 3,
+    "description": "",
+    "licenses": [],
+    "percent_null": 0.0,
+    "row_count": 6,
+    "tags": [],
+    "title": "homeless",
+    "topic": ""
+}

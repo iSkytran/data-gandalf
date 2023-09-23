@@ -1,1 +1,10 @@
-{"percent_null": 1815.3846153846155, "row_count": 52, "col_count": 27, "title": "New Jersey"}
+{
+    "col_count": 27,
+    "description": "",
+    "licenses": [],
+    "percent_null": 1815.3846153846155,
+    "row_count": 52,
+    "tags": [],
+    "title": "New Jersey",
+    "topic": ""
+}

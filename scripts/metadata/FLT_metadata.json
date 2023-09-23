@@ -1,1 +1,10 @@
-{"percent_null": 0.0, "row_count": 3213, "col_count": 8, "title": "FLT"}
+{
+    "col_count": 8,
+    "description": "",
+    "licenses": [],
+    "percent_null": 0.0,
+    "row_count": 3213,
+    "tags": [],
+    "title": "FLT",
+    "topic": ""
+}

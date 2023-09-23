@@ -1,1 +1,10 @@
-{"percent_null": 0.0, "row_count": 1014, "col_count": 7, "title": "Maternal Health Risk Data Set"}
+{
+    "col_count": 7,
+    "description": "",
+    "licenses": [],
+    "percent_null": 0.0,
+    "row_count": 1014,
+    "tags": [],
+    "title": "Maternal Health Risk Data Set",
+    "topic": ""
+}

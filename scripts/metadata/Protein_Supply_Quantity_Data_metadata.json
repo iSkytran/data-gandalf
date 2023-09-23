@@ -1,1 +1,10 @@
-{"percent_null": 21.176470588235293, "row_count": 170, "col_count": 32, "title": "Protein_Supply_Quantity_Data"}
+{
+    "col_count": 32,
+    "description": "",
+    "licenses": [],
+    "percent_null": 21.176470588235293,
+    "row_count": 170,
+    "tags": [],
+    "title": "Protein_Supply_Quantity_Data",
+    "topic": ""
+}

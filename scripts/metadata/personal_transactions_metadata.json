@@ -1,1 +1,10 @@
-{"percent_null": 0.0, "row_count": 806, "col_count": 6, "title": "personal_transactions"}
+{
+    "col_count": 6,
+    "description": "",
+    "licenses": [],
+    "percent_null": 0.0,
+    "row_count": 806,
+    "tags": [],
+    "title": "personal_transactions",
+    "topic": ""
+}

@@ -1,1 +1,10 @@
-{"percent_null": 24.267100977198698, "row_count": 614, "col_count": 13, "title": "train"}
+{
+    "col_count": 13,
+    "description": "",
+    "licenses": [],
+    "percent_null": 24.267100977198698,
+    "row_count": 614,
+    "tags": [],
+    "title": "train",
+    "topic": ""
+}

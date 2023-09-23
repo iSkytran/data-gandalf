@@ -1,1 +1,10 @@
-{"percent_null": 0.0, "row_count": 10105, "col_count": 8, "title": "CTAS"}
+{
+    "col_count": 8,
+    "description": "",
+    "licenses": [],
+    "percent_null": 0.0,
+    "row_count": 10105,
+    "tags": [],
+    "title": "CTAS",
+    "topic": ""
+}

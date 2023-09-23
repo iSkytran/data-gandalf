@@ -1,1 +1,10 @@
-{"percent_null": 5.802249851983422, "row_count": 1689, "col_count": 9, "title": "basketball_coaches"}
+{
+    "col_count": 9,
+    "description": "",
+    "licenses": [],
+    "percent_null": 5.802249851983422,
+    "row_count": 1689,
+    "tags": [],
+    "title": "basketball_coaches",
+    "topic": ""
+}
