@@ -1,1 +1,10 @@
-{"percent_null": 1.002906976744186, "row_count": 20640, "col_count": 10, "title": "housing"}
+{
+    "col_count": 10,
+    "description": "",
+    "licenses": [],
+    "percent_null": 1.002906976744186,
+    "row_count": 20640,
+    "tags": [],
+    "title": "housing",
+    "topic": ""
+}

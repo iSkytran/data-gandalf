@@ -1,1 +1,10 @@
-{"percent_null": 0.0, "row_count": 13932, "col_count": 17, "title": "miami-housing"}
+{
+    "col_count": 17,
+    "description": "",
+    "licenses": [],
+    "percent_null": 0.0,
+    "row_count": 13932,
+    "tags": [],
+    "title": "miami-housing",
+    "topic": ""
+}

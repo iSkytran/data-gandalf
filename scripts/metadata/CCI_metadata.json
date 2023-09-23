@@ -1,1 +1,10 @@
-{"percent_null": 0.0, "row_count": 6315, "col_count": 8, "title": "CCI"}
+{
+    "col_count": 8,
+    "description": "",
+    "licenses": [],
+    "percent_null": 0.0,
+    "row_count": 6315,
+    "tags": [],
+    "title": "CCI",
+    "topic": ""
+}

@@ -1,1 +1,10 @@
-{"percent_null": 0.0, "row_count": 10985, "col_count": 8, "title": "BIO"}
+{
+    "col_count": 8,
+    "description": "",
+    "licenses": [],
+    "percent_null": 0.0,
+    "row_count": 10985,
+    "tags": [],
+    "title": "BIO",
+    "topic": ""
+}

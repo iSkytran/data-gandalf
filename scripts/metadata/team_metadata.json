@@ -1,1 +1,10 @@
-{"percent_null": 0.0, "row_count": 48, "col_count": 2, "title": "team"}
+{
+    "col_count": 2,
+    "description": "",
+    "licenses": [],
+    "percent_null": 0.0,
+    "row_count": 48,
+    "tags": [],
+    "title": "team",
+    "topic": ""
+}

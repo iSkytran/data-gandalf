@@ -1,1 +1,10 @@
-{"percent_null": 0.0, "row_count": 9523, "col_count": 8, "title": "MNST"}
+{
+    "col_count": 8,
+    "description": "",
+    "licenses": [],
+    "percent_null": 0.0,
+    "row_count": 9523,
+    "tags": [],
+    "title": "MNST",
+    "topic": ""
+}

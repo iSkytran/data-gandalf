@@ -1,1 +1,10 @@
-{"percent_null": 4.205607476635514, "row_count": 6420, "col_count": 8, "title": "1- mental-illnesses-prevalence"}
+{
+    "col_count": 8,
+    "description": "This dataset is about mental illness prevalence.",
+    "licenses": [],
+    "percent_null": 4.205607476635514,
+    "row_count": 6420,
+    "tags": [],
+    "title": "1- mental-illnesses-prevalence",
+    "topic": ""
+}

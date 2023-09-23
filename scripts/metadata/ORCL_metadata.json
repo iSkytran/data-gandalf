@@ -1,1 +1,10 @@
-{"percent_null": 0.0, "row_count": 9459, "col_count": 8, "title": "ORCL"}
+{
+    "col_count": 8,
+    "description": "",
+    "licenses": [],
+    "percent_null": 0.0,
+    "row_count": 9459,
+    "tags": [],
+    "title": "ORCL",
+    "topic": ""
+}

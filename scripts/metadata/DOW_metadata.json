@@ -1,1 +1,10 @@
-{"percent_null": 0.0, "row_count": 1136, "col_count": 8, "title": "DOW"}
+{
+    "col_count": 8,
+    "description": "",
+    "licenses": [],
+    "percent_null": 0.0,
+    "row_count": 1136,
+    "tags": [],
+    "title": "DOW",
+    "topic": ""
+}

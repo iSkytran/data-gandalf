@@ -1,1 +1,10 @@
-{"percent_null": 0.0, "row_count": 6289, "col_count": 8, "title": "EBAY"}
+{
+    "col_count": 8,
+    "description": "",
+    "licenses": [],
+    "percent_null": 0.0,
+    "row_count": 6289,
+    "tags": [],
+    "title": "EBAY",
+    "topic": ""
+}
