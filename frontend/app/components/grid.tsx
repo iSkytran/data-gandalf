@@ -11,12 +11,12 @@ async function getAllDatasets() {
 export default async function Grid() {
   const datasets = await getAllDatasets();
   let items = datasets.map((dataset: any) => {
-      return <GridItem key={dataset.id} name={dataset.name} />
+      return <GridItem key={dataset.id} metadata={dataset} />
     }
   );
   return (
-    <>
-      <ul>{items}</ul>
-    </>
+    <div className="grid grid-cols-4 gap-4">
+      {items}
+    </div>
   );
 }

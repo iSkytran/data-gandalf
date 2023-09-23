@@ -14,8 +14,12 @@ def startup() -> None:
 async def health() -> str:
     return "Service is up"
 
+@app.get("/topics", response_model=list[str])
+def topics() -> list[str]:
+    return db.get_topics()
+
 @app.get("/datasets", response_model=list[Dataset])
-def allDatasets() -> str:
+def allDatasets() -> list[Dataset]:
     datasets = db.get_all()
     return recommender.rank(datasets)
 
