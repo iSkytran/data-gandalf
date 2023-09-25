@@ -1,0 +1,43 @@
+{
+  "id": "logandonaldson/sports-stadium-locations",
+  "id_no": 1866452,
+  "datasetSlugNullable": "sports-stadium-locations",
+  "ownerUserNullable": "logandonaldson",
+  "usabilityRatingNullable": 0.9411764705882353,
+  "titleNullable": "Sports Stadium Locations",
+  "subtitleNullable": "Latitude and Longitude coordinates of MLB, NFL, NBA, NHL, and MLS stadiums",
+  "descriptionNullable": "### Content\n\nContains the latitude and longitude coordinates in decimal format of every Major League Baseball (MLB), National Football League (NFL), National Basketball Association (NBA), National Hockey League (NHL), and Major League Soccer (MLS) team's home stadium. Also includes information about each team's division.\n\nNote that as teams change names, new stadiums are built, and sports league realign divisions this information will become out of date.\n\nCredit to Mick Haupt via Unsplash for the banner photo.",
+  "datasetId": 1866452,
+  "datasetSlug": "sports-stadium-locations",
+  "hasDatasetSlug": true,
+  "ownerUser": "logandonaldson",
+  "hasOwnerUser": true,
+  "usabilityRating": 0.9411764705882353,
+  "hasUsabilityRating": true,
+  "totalViews": 2447,
+  "totalVotes": 14,
+  "totalDownloads": 367,
+  "title": "Sports Stadium Locations",
+  "hasTitle": true,
+  "subtitle": "Latitude and Longitude coordinates of MLB, NFL, NBA, NHL, and MLS stadiums",
+  "hasSubtitle": true,
+  "description": "### Content\n\nContains the latitude and longitude coordinates in decimal format of every Major League Baseball (MLB), National Football League (NFL), National Basketball Association (NBA), National Hockey League (NHL), and Major League Soccer (MLS) team's home stadium. Also includes information about each team's division.\n\nNote that as teams change names, new stadiums are built, and sports league realign divisions this information will become out of date.\n\nCredit to Mick Haupt via Unsplash for the banner photo.",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "football",
+    "baseball",
+    "basketball",
+    "sports",
+    "tabular"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "CC0-1.0",
+      "name": "CC0-1.0",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}

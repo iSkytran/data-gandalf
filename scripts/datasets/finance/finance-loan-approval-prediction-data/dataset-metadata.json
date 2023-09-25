@@ -1,0 +1,43 @@
+{
+  "id": "krishnaraj30/finance-loan-approval-prediction-data",
+  "id_no": 3378270,
+  "datasetSlugNullable": "finance-loan-approval-prediction-data",
+  "ownerUserNullable": "krishnaraj30",
+  "usabilityRatingNullable": 1.0,
+  "titleNullable": "Finance Loan approval Prediction Data",
+  "subtitleNullable": "Home Loan Approval Prediction Data",
+  "descriptionNullable": "Finance company deals in all loans. The customer first applies for a home loan after that company validates the customer's eligibility for a loan.\n\nThe company wants to automate the loan eligibility process (real-time) based on customer detail provided while filling out the online application form. These details are Gender, Marital Status, Education, Number of Dependents, Income, Loan Amount, Credit History and others. To automate this process, they have given a problem identifying the customer segments eligible for loan amounts to target these customers specifically. Here they have provided a partial data set.\n\nSteps to Follow:\n\n1) Problem Statement \n2) Understanding the data\n3) EDA\n4) Perform Univariate & Bivariate Analysis\n5) Missing value and outlier treatment\n6) Evaluation Metrics for classification problem\n7) Model building: Apply ML classification algorithms\n",
+  "datasetId": 3378270,
+  "datasetSlug": "finance-loan-approval-prediction-data",
+  "hasDatasetSlug": true,
+  "ownerUser": "krishnaraj30",
+  "hasOwnerUser": true,
+  "usabilityRating": 1.0,
+  "hasUsabilityRating": true,
+  "totalViews": 5607,
+  "totalVotes": 46,
+  "totalDownloads": 931,
+  "title": "Finance Loan approval Prediction Data",
+  "hasTitle": true,
+  "subtitle": "Home Loan Approval Prediction Data",
+  "hasSubtitle": true,
+  "description": "Finance company deals in all loans. The customer first applies for a home loan after that company validates the customer's eligibility for a loan.\n\nThe company wants to automate the loan eligibility process (real-time) based on customer detail provided while filling out the online application form. These details are Gender, Marital Status, Education, Number of Dependents, Income, Loan Amount, Credit History and others. To automate this process, they have given a problem identifying the customer segments eligible for loan amounts to target these customers specifically. Here they have provided a partial data set.\n\nSteps to Follow:\n\n1) Problem Statement \n2) Understanding the data\n3) EDA\n4) Perform Univariate & Bivariate Analysis\n5) Missing value and outlier treatment\n6) Evaluation Metrics for classification problem\n7) Model building: Apply ML classification algorithms\n",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "exploratory data analysis",
+    "data visualization",
+    "data analytics",
+    "classification",
+    "decision tree"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "CC0-1.0",
+      "name": "CC0-1.0",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}

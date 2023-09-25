@@ -1,0 +1,42 @@
+{
+  "id": "harishkumardatalab/housing-price-prediction",
+  "id_no": 3489360,
+  "datasetSlugNullable": "housing-price-prediction",
+  "ownerUserNullable": "harishkumardatalab",
+  "usabilityRatingNullable": 1.0,
+  "titleNullable": "Housing Price Prediction",
+  "subtitleNullable": "A Comprehensive Dataset for Price Forecasting with 13 key Features.",
+  "descriptionNullable": "This dataset provides comprehensive information for house price prediction, with 13 column names:\n\n1. **Price:** The price of the house.\n2. **Area:** The total area of the house in square feet.\n3. **Bedrooms:** The number of bedrooms in the house.\n4. **Bathrooms:** The number of bathrooms in the house.\n5. **Stories:** The number of stories in the house.\n6. **Mainroad:** Whether the house is connected to the main road (Yes/No).\n7. **Guestroom:** Whether the house has a guest room (Yes/No).\n8. **Basement:** Whether the house has a basement (Yes/No).\n9. **Hot water heating:** Whether the house has a hot water heating system (Yes/No).\n10. **Airconditioning:** Whether the house has an air conditioning system (Yes/No).\n11. **Parking:** The number of parking spaces available within the house.\n12. **Prefarea:** Whether the house is located in a preferred area (Yes/No).\n13. **Furnishing status:** The furnishing status of the house (Fully Furnished, Semi-Furnished, Unfurnished).\n\nKindly, upvote if you find the dataset interesting.",
+  "datasetId": 3489360,
+  "datasetSlug": "housing-price-prediction",
+  "hasDatasetSlug": true,
+  "ownerUser": "harishkumardatalab",
+  "hasOwnerUser": true,
+  "usabilityRating": 1.0,
+  "hasUsabilityRating": true,
+  "totalViews": 28012,
+  "totalVotes": 100,
+  "totalDownloads": 6098,
+  "title": "Housing Price Prediction",
+  "hasTitle": true,
+  "subtitle": "A Comprehensive Dataset for Price Forecasting with 13 key Features.",
+  "hasSubtitle": true,
+  "description": "This dataset provides comprehensive information for house price prediction, with 13 column names:\n\n1. **Price:** The price of the house.\n2. **Area:** The total area of the house in square feet.\n3. **Bedrooms:** The number of bedrooms in the house.\n4. **Bathrooms:** The number of bathrooms in the house.\n5. **Stories:** The number of stories in the house.\n6. **Mainroad:** Whether the house is connected to the main road (Yes/No).\n7. **Guestroom:** Whether the house has a guest room (Yes/No).\n8. **Basement:** Whether the house has a basement (Yes/No).\n9. **Hot water heating:** Whether the house has a hot water heating system (Yes/No).\n10. **Airconditioning:** Whether the house has an air conditioning system (Yes/No).\n11. **Parking:** The number of parking spaces available within the house.\n12. **Prefarea:** Whether the house is located in a preferred area (Yes/No).\n13. **Furnishing status:** The furnishing status of the house (Fully Furnished, Semi-Furnished, Unfurnished).\n\nKindly, upvote if you find the dataset interesting.",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "categorical",
+    "real estate",
+    "data visualization",
+    "classification"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "CC0-1.0",
+      "name": "CC0-1.0",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}
