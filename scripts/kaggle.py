@@ -6,9 +6,17 @@ import shutil
 # Data Topics: Sports, Academics, Real Estate, Health, Finance
 topics = ['sports', 'academics', 'housing', 'health', 'finance']
 
+if not os.path.exists('datasets'):
+    os.makedirs('datasets')
+os.chdir('datasets')
+
 for x in range(5):
     #Get the string value of all the returned datasets when the list command is run with a max size of 1MB
     datasets = subprocess.check_output(f'kaggle datasets list --max-size 1000000 --file-type csv --search \'{topics[x]}\'').decode()
+
+    if not os.path.exists(topics[x]):
+        os.makedirs(topics[x])
+    os.chdir(topics[x])
 
     #Split the datasets into a list and remove the headers
     datasetList = datasets.split('\r\n')
@@ -21,20 +29,22 @@ for x in range(5):
         urlList.append(d.split(' ', 1)[0])
 
     #Download all of the dataset files into the dataset folder
-    os.chdir('datasets')
     for u in urlList[:10]:
         subprocess.run(f'kaggle datasets download -d {u}')
     os.chdir('..')
 
-os.chdir('datasets')
 #Unzip all of the dataset folder contents and remove the zip files
-for f in os.listdir(os.getcwd()):
-    with ZipFile(f, 'r') as z:
-        z.extractall(os.getcwd())
-    os.remove(f)
-
-for f in os.listdir(os.getcwd()):
-    if os.path.isfile(f) and f.endswith('.csv') == False:
-        os.remove(f)
-    if os.path.isdir(f):
-        shutil.rmtree(f)
+print(os.getcwd())
+for d in os.listdir(os.getcwd()):
+    if os.path.isdir(d):
+        os.chdir(d)
+        for f in os.listdir(os.getcwd()):
+            with ZipFile(f, 'r') as z:
+                z.extractall(os.getcwd())
+            os.remove(f)
+        for f in os.listdir(os.getcwd()):
+            if os.path.isfile(f) and f.endswith('.csv') == False:
+                os.remove(f)
+            if os.path.isdir(f):
+                shutil.rmtree(f)
+        os.chdir('..')
