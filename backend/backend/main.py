@@ -19,11 +19,10 @@ def topics() -> list[str]:
     return db.get_topics()
 
 @app.get("/datasets", response_model=list[Dataset])
-def allDatasets() -> list[Dataset]:
-    datasets = db.get_all()
-    return recommender.rank(datasets)
-
-# @app.get("/dataset")
-# def dataset() -> list[str]:
-#     datasets = db.get_all()
-#     return recommender.rank(datasets)
+def datasets(topic: str | None = None) -> list[Dataset]:
+    if topic:
+        datasets = db.get_by_topic(topic)
+        return datasets
+    else:
+        datasets = db.get_all()
+        return recommender.rank(datasets)
