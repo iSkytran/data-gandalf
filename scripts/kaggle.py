@@ -30,21 +30,31 @@ for x in range(5):
 
     #Download all of the dataset files into the dataset folder
     for u in urlList[:10]:
+        name = u[u.rindex('/'):]
+        if not os.path.exists(os.getcwd() + name):
+            os.makedirs(os.getcwd() + name)
+        os.chdir(os.getcwd() + name)
         subprocess.run(f'kaggle datasets download -d {u}')
+        subprocess.run(f'kaggle datasets metadata {u}')
+        os.chdir('..')
     os.chdir('..')
 
 #Unzip all of the dataset folder contents and remove the zip files
-print(os.getcwd())
 for d in os.listdir(os.getcwd()):
     if os.path.isdir(d):
         os.chdir(d)
-        for f in os.listdir(os.getcwd()):
-            with ZipFile(f, 'r') as z:
-                z.extractall(os.getcwd())
-            os.remove(f)
-        for f in os.listdir(os.getcwd()):
-            if os.path.isfile(f) and f.endswith('.csv') == False:
-                os.remove(f)
-            if os.path.isdir(f):
-                shutil.rmtree(f)
+        for d in os.listdir(os.getcwd()):
+            if os.path.isdir(d):
+                os.chdir(d)
+                for f in os.listdir(os.getcwd()):
+                    if f.endswith('.zip') == True:
+                        with ZipFile(f, 'r') as z:
+                            z.extractall(os.getcwd())
+                        os.remove(f)
+                for f in os.listdir(os.getcwd()):
+                    if os.path.isfile(f) and f.endswith('.csv') == False and f.endswith('.json') == False:
+                        os.remove(f)
+                    if os.path.isdir(f):
+                        shutil.rmtree(f)
+                os.chdir('..')
         os.chdir('..')
