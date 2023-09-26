@@ -1,0 +1,43 @@
+{
+    "col_count": 45,
+    "col_names": [
+        "Data",
+        "Entrada",
+        "Fun\u00c3\u00a7\u00c3\u00a3o",
+        "Fundamento",
+        "Investimento",
+        "Odd",
+        "Ganho",
+        "Resultado",
+        "Liga",
+        "Odd ",
+        "Piloto",
+        "Tipo",
+        "Jogo",
+        "Minutos",
+        "Jogador",
+        "G\u00c3\u00aanero"
+    ],
+    "description": "### Context\nA dear friend of mine has a sport betting company in Brazil called Game Winner (https://gamewinner.com.br/), and I asked him to provide their data so I could publish and analyze.\n\n### Content\nAll data (dates, bets, criterias results) is from 2022.\n\n### Acknowledgements\nI would like to thank Rodrigo Mota (https://www.linkedin.com/in/rodrigo-mota-358b939a/) for providing the data and some explanations about it.\n\n### Inspiration\nIs the company perfoming really well all the time? Is it possible to predict outcomes?",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "Attribution 4.0 International (CC BY 4.0)",
+            "nameNullable": "Attribution 4.0 International (CC BY 4.0)"
+        }
+    ],
+    "null_count": 91,
+    "num_entries": 27454,
+    "row_count": 3691,
+    "source": "kaggle",
+    "tags": [
+        "games",
+        "brazil",
+        "sports",
+        "gambling",
+        "python"
+    ],
+    "title": "2022 Game Winner Sports Betting Data",
+    "topic": "sports",
+    "usability": 0.9411764705882353
+}

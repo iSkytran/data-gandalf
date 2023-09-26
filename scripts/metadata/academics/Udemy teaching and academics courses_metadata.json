@@ -1,0 +1,35 @@
+{
+    "col_count": 12,
+    "col_names": [
+        "Unnamed: 0",
+        "course_name",
+        "course_link",
+        "course_instr",
+        "course_rating",
+        "coures_reviews",
+        "course_totalHourse",
+        "course_lectures",
+        "course_level",
+        "price",
+        "price_dis",
+        "course_enrollmenters"
+    ],
+    "description": "",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 479,
+    "num_entries": 42000,
+    "row_count": 3500,
+    "source": "kaggle",
+    "tags": [
+        "education"
+    ],
+    "title": "Udemy teaching and academics courses",
+    "topic": "academics",
+    "usability": 0.29411764705882354
+}

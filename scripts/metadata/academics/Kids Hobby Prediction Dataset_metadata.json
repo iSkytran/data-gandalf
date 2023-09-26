@@ -1,0 +1,41 @@
+{
+    "col_count": 14,
+    "col_names": [
+        "Olympiad_Participation",
+        "Scholarship",
+        "School",
+        "Fav_sub",
+        "Projects",
+        "Grasp_pow",
+        "Time_sprt",
+        "Medals",
+        "Career_sprt",
+        "Act_sprt",
+        "Fant_arts",
+        "Won_arts",
+        "Time_art",
+        "Predicted Hobby"
+    ],
+    "description": "### Context\nTeenagers tend to have confusion in deciding which Field/Hobby they fit in or love to do, so we attempted in collecting data from parents as a survey and then converting it into an appropriate tabular form, to prepare a classification model.\n\n\n### Content\n\nThis dataset contains 13 attributes and 3 labels, having Categorical, Boolean, and Numerical data.\n| Features | Meaning |\n| --- | --- |\n| Olympiad_Participation | Has your child participated in any Science/Maths Olympiad? |\n| Scholarship\t | Has he/she received any scholarship?|\n| School | Love's going to school? |\n| Fav_sub | What is his/her favorite subject? |\n| Projects | Has done any projects under academics before? |\n| Grasp_pow | His/Her Grasping power (1-6) |\n| Time_sprt | How much time does he/she spend playing outdoor/indoor games? |\n| Medals | Medals won in Sports? |\n| Career_sprt\t | Want's to pursue his/her career in sports? |\n| Act_sprt | Regular in his/her sports activities? |\n| Fant_arts | Love creating fantasy paintings? |\n| Won_arts | Won art competitions? |\n| Time_art | Time utilized in Arts? |\n\n\n\n### Inspiration\n\nOne can build a recommendation system using this dataset.\n\n### **[If you find it useful, please give an upvote !]**",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "copyright-authors",
+            "nameNullable": "copyright-authors"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 22414,
+    "row_count": 1601,
+    "source": "kaggle",
+    "tags": [
+        "art",
+        "sports",
+        "education",
+        "psychology",
+        "beginner"
+    ],
+    "title": "Kids Hobby Prediction Dataset",
+    "topic": "academics",
+    "usability": 0.7647058823529411
+}

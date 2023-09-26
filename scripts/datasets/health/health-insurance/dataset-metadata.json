@@ -1,0 +1,39 @@
+{
+  "id": "/health-insurance",
+  "id_no": 905,
+  "datasetSlugNullable": "health-insurance",
+  "ownerUserNullable": null,
+  "usabilityRatingNullable": 0.8529411764705882,
+  "titleNullable": "Health Insurance Coverage",
+  "subtitleNullable": "Coverage rates before and after the Affordable Care Act",
+  "descriptionNullable": "# Context \n\nThe Affordable Care Act (ACA) is the name for the comprehensive health care reform law and its amendments which addresses health insurance coverage, health care costs, and preventive care. The law was enacted in two parts: The Patient Protection and Affordable Care Act was signed into law on March 23, 2010 by President Barack Obama and was amended by the Health Care and Education Reconciliation Act on March 30, 2010.\n\n\n# Content\n\nThis dataset provides health insurance coverage data for each state and the nation as a whole, including variables such as the uninsured rates before and after Obamacare, estimates of individuals covered by employer and marketplace healthcare plans, and enrollment in Medicare and Medicaid programs.\n\n\n# Acknowledgements\n\nThe health insurance coverage data was compiled from the US Department of Health and Human Services and US Census Bureau.\n\n\n# Inspiration\n\nHow has the Affordable Care Act changed the rate of citizens with health insurance coverage? Which states observed the greatest decline in their uninsured rate? Did those states expand Medicaid program coverage and/or implement a health insurance marketplace? What do you predict will happen to the nationwide uninsured rate in the next five years?",
+  "datasetId": 905,
+  "datasetSlug": "health-insurance",
+  "hasDatasetSlug": true,
+  "ownerUser": "",
+  "hasOwnerUser": false,
+  "usabilityRating": 0.8529411764705882,
+  "hasUsabilityRating": true,
+  "totalViews": 103895,
+  "totalVotes": 145,
+  "totalDownloads": 9950,
+  "title": "Health Insurance Coverage",
+  "hasTitle": true,
+  "subtitle": "Coverage rates before and after the Affordable Care Act",
+  "hasSubtitle": true,
+  "description": "# Context \n\nThe Affordable Care Act (ACA) is the name for the comprehensive health care reform law and its amendments which addresses health insurance coverage, health care costs, and preventive care. The law was enacted in two parts: The Patient Protection and Affordable Care Act was signed into law on March 23, 2010 by President Barack Obama and was amended by the Health Care and Education Reconciliation Act on March 30, 2010.\n\n\n# Content\n\nThis dataset provides health insurance coverage data for each state and the nation as a whole, including variables such as the uninsured rates before and after Obamacare, estimates of individuals covered by employer and marketplace healthcare plans, and enrollment in Medicare and Medicaid programs.\n\n\n# Acknowledgements\n\nThe health insurance coverage data was compiled from the US Department of Health and Human Services and US Census Bureau.\n\n\n# Inspiration\n\nHow has the Affordable Care Act changed the rate of citizens with health insurance coverage? Which states observed the greatest decline in their uninsured rate? Did those states expand Medicaid program coverage and/or implement a health insurance marketplace? What do you predict will happen to the nationwide uninsured rate in the next five years?",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "health"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "CC0-1.0",
+      "name": "CC0-1.0",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}

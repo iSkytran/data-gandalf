@@ -1,0 +1,44 @@
+{
+  "id": "mariaren/covid19-healthy-diet-dataset",
+  "id_no": 618335,
+  "datasetSlugNullable": "covid19-healthy-diet-dataset",
+  "ownerUserNullable": "mariaren",
+  "usabilityRatingNullable": 1.0,
+  "titleNullable": "COVID-19 Healthy Diet Dataset",
+  "subtitleNullable": "Let's fight COVID-19 by adapting to a healthy diet! ",
+  "descriptionNullable": "&gt; ### \u201cHealth requires healthy food.\"###\nRoger Williams (1603 \u2013 1683)\n\n<br>\nIn the past couple months, we\u2019ve witnessed doctors, nurses, paramedics and thousands of medical workers putting their lives on the frontline to save patients who are infected. And as the battle with COVID-19 continues, we should all ask ourselves \u2013 What should we do to help out? What can we do to protect our loved ones, those who sacrifice for us, and ourselves from this pandemic?<br>\nThese questions all relate back to the CORD-19 Open Research Dataset Challenge Task Question: [\u201cWhat do we know about non-pharmaceutical interventions?\u201d ](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge/tasks?taskId=587)\n<br>\nAnd my simple answer is : **We need to protect our families and our own healths by adapting to a healthy diet.**\n<br>\n\n### Inspiration and Research Objectives\n\nThe USDA Center for Nutrition Policy and Promotion recommends a very simple daily diet intake guideline: 30% grains, 40% vegetables, 10% fruits, and 20% protein, but are we really eating in the healthy eating style recommended by these food divisions and balances?\n<br>\nIn this dataset, I have combined data of different types of food, world population obesity and undernourished rate, and global COVID-19 cases count from around the world in order to learn more about how a healthy eating style could help combat the Corona Virus. And from the dataset, we can gather information regarding diet patterns from countries with lower COVID infection rate, and adjust our own diet accordingly. \n<br>\nIn each of the 4 datasets below, I have calculated fat quantity, energy intake (kcal),  food supply quantity (kg), and protein for different categories of food (all calculated as percentage of total intake amount). I've also added on the obesity and undernourished rate (also in percentage) for comparison. The end of the datasets also included the most up to date confirmed/deaths/recovered/active cases (also in percentage of current population for each country). \n<br>\n\n\n### Acknowledgements\n\n- Data for different food group supply quantities, nutrition values, obesity, and undernourished percentages are obtained from Food and Agriculture Organization of the United Nations [FAO website ](http://www.fao.org/faostat/en/#home) To see the specific types of food included in each category from the FAO data, take a look at the last dataset `Supply_Food_Data_Description.csv`.\n\n- Data for population count for each country comes from Population Reference Bureau [PRB website ](https://www.prb.org/)\n\n- Data for COVID-19 confirmed, deaths, recovered and active cases are obtained from Johns Hopkins Center for Systems Science and Engineering [CSSE website ](https://coronavirus.jhu.edu/map.html)\n\n- The USDA Center for Nutrition Policy and Promotion diet intake guideline information can be found in [ChooseMyPlate.gov](https://www.choosemyplate.gov/)\n\n*Note: I will update and push new versions of the datasets weekly. (Current version include COVID data from the week of 02/06/2021)* [Click here to see my data cleaning/preprocessing code in R ](https://github.com/mariarencode/COVID_19_Dataset_Challenge.git) \n\n*If you like this dataset, please don't forget to give me an upvote!* \ud83d\udc4d \n\n\n\n",
+  "datasetId": 618335,
+  "datasetSlug": "covid19-healthy-diet-dataset",
+  "hasDatasetSlug": true,
+  "ownerUser": "mariaren",
+  "hasOwnerUser": true,
+  "usabilityRating": 1.0,
+  "hasUsabilityRating": true,
+  "totalViews": 229083,
+  "totalVotes": 445,
+  "totalDownloads": 22647,
+  "title": "COVID-19 Healthy Diet Dataset",
+  "hasTitle": true,
+  "subtitle": "Let's fight COVID-19 by adapting to a healthy diet! ",
+  "hasSubtitle": true,
+  "description": "&gt; ### \u201cHealth requires healthy food.\"###\nRoger Williams (1603 \u2013 1683)\n\n<br>\nIn the past couple months, we\u2019ve witnessed doctors, nurses, paramedics and thousands of medical workers putting their lives on the frontline to save patients who are infected. And as the battle with COVID-19 continues, we should all ask ourselves \u2013 What should we do to help out? What can we do to protect our loved ones, those who sacrifice for us, and ourselves from this pandemic?<br>\nThese questions all relate back to the CORD-19 Open Research Dataset Challenge Task Question: [\u201cWhat do we know about non-pharmaceutical interventions?\u201d ](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge/tasks?taskId=587)\n<br>\nAnd my simple answer is : **We need to protect our families and our own healths by adapting to a healthy diet.**\n<br>\n\n### Inspiration and Research Objectives\n\nThe USDA Center for Nutrition Policy and Promotion recommends a very simple daily diet intake guideline: 30% grains, 40% vegetables, 10% fruits, and 20% protein, but are we really eating in the healthy eating style recommended by these food divisions and balances?\n<br>\nIn this dataset, I have combined data of different types of food, world population obesity and undernourished rate, and global COVID-19 cases count from around the world in order to learn more about how a healthy eating style could help combat the Corona Virus. And from the dataset, we can gather information regarding diet patterns from countries with lower COVID infection rate, and adjust our own diet accordingly. \n<br>\nIn each of the 4 datasets below, I have calculated fat quantity, energy intake (kcal),  food supply quantity (kg), and protein for different categories of food (all calculated as percentage of total intake amount). I've also added on the obesity and undernourished rate (also in percentage) for comparison. The end of the datasets also included the most up to date confirmed/deaths/recovered/active cases (also in percentage of current population for each country). \n<br>\n\n\n### Acknowledgements\n\n- Data for different food group supply quantities, nutrition values, obesity, and undernourished percentages are obtained from Food and Agriculture Organization of the United Nations [FAO website ](http://www.fao.org/faostat/en/#home) To see the specific types of food included in each category from the FAO data, take a look at the last dataset `Supply_Food_Data_Description.csv`.\n\n- Data for population count for each country comes from Population Reference Bureau [PRB website ](https://www.prb.org/)\n\n- Data for COVID-19 confirmed, deaths, recovered and active cases are obtained from Johns Hopkins Center for Systems Science and Engineering [CSSE website ](https://coronavirus.jhu.edu/map.html)\n\n- The USDA Center for Nutrition Policy and Promotion diet intake guideline information can be found in [ChooseMyPlate.gov](https://www.choosemyplate.gov/)\n\n*Note: I will update and push new versions of the datasets weekly. (Current version include COVID data from the week of 02/06/2021)* [Click here to see my data cleaning/preprocessing code in R ](https://github.com/mariarencode/COVID_19_Dataset_Challenge.git) \n\n*If you like this dataset, please don't forget to give me an upvote!* \ud83d\udc4d \n\n\n\n",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "nutrition",
+    "public health",
+    "health",
+    "food",
+    "health conditions",
+    "covid19"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "CC-BY-SA-3.0",
+      "name": "CC-BY-SA-3.0",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}
