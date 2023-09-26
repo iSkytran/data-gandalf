@@ -38,7 +38,7 @@ problem_files = []
 for filename in INPUT_FILES:
     try:
         # READ METADATA TO MODEL
-        path = os.path.join(FILE_INPUT_PATH, filename)
+        path:str = os.path.join(FILE_INPUT_PATH, filename)
 
         if path[len(path) - 5:] != '.json':
             continue
