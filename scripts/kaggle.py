@@ -11,14 +11,14 @@ if not os.path.exists('datasets'):
     os.makedirs('datasets')
 os.chdir('datasets')
 
-for x in range(5):
+for topic in topics:
     #Get the string value of all the returned datasets when the list command is run with a max size of 1MB and a given topic search command
-    datasets = subprocess.check_output(f'kaggle datasets list --max-size 1000000 --file-type csv --search \'{topics[x]}\'').decode()
+    datasets = subprocess.check_output(f'kaggle datasets list --max-size 1000000 --file-type csv --search \'{topic}\'').decode()
 
     #Make a subfolder for the topic
-    if not os.path.exists(topics[x]):
-        os.makedirs(topics[x])
-    os.chdir(topics[x])
+    if not os.path.exists(topic):
+        os.makedirs(topic)
+    os.chdir(topic)
 
     #Split the datasets into a list and remove the headers
     datasetList = datasets.split('\r\n')
