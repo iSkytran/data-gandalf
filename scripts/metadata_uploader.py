@@ -18,9 +18,6 @@ if FILE_INPUT_PATH != "":
 
 # Creates a model from a metadata dict
 def create_model_from_dict(metadata:dict):
-    for key, value in metadata.items():
-        if type(value) == dict:
-            print("FOUND DICT")
     dataset = Dataset()
     dataset.row_count = metadata['row_count']
     dataset.col_count = metadata['col_count']
