@@ -1,0 +1,39 @@
+{
+  "id": "rukenmissonnier/final-house",
+  "id_no": 3711894,
+  "datasetSlugNullable": "final-house",
+  "ownerUserNullable": "rukenmissonnier",
+  "usabilityRatingNullable": 1.0,
+  "titleNullable": " Housing Market & Prices",
+  "subtitleNullable": "Exploring Trends, Insights, and Investment Opportunities",
+  "descriptionNullable": "## \ud83c\udfe1\ud83d\udcb0\ud83c\udfe0Housing Market Data Attributes \ud83c\udfe0\ud83d\udcb0\ud83c\udfe1\n\nIn the analysis of the housing market, it's essential to understand the various attributes that characterize each housing unit. These attributes provide valuable information for potential buyers, renters, and investors, helping them make informed decisions about their housing choices. Below, we describe the key data attributes used in our housing market analysis:\n\n- **Bedroom Count:** This attribute represents the number of bedrooms in the housing unit, providing insights into its size and capacity.\n\n- **Net Square Meters (Net Sqm):** Net square meters refer to the total usable interior space within the housing unit, excluding common areas like corridors and stairwells. It quantifies the size of the property.\n\n- **Center Distance:** This attribute measures the distance of the housing unit from the central or downtown area of a city or town. It is a valuable metric for potential buyers or renters to assess proximity to urban amenities and activities.\n\n- **Metro Distance:** Metro distance indicates the distance between the housing unit and the nearest metro or subway station. This information is particularly useful for individuals who rely on public transportation for their daily commute.\n\n- **Floor:** The floor attribute specifies the level or story of the housing unit within the building, offering insights into its placement and accessibility within the structure.\n\n- **Age:** The age of the property represents the number of years since its construction or renovation. It plays a crucial role in assessing the condition of the property and potential maintenance requirements.\n\n- **Price:** Price is the cost associated with purchasing or renting the housing unit. It is a fundamental factor for individuals making housing decisions and can be influenced by various attributes such as bedroom count, size, location, and age.\n",
+  "datasetId": 3711894,
+  "datasetSlug": "final-house",
+  "hasDatasetSlug": true,
+  "ownerUser": "rukenmissonnier",
+  "hasOwnerUser": true,
+  "usabilityRating": 1.0,
+  "hasUsabilityRating": true,
+  "totalViews": 5272,
+  "totalVotes": 29,
+  "totalDownloads": 1128,
+  "title": " Housing Market & Prices",
+  "hasTitle": true,
+  "subtitle": "Exploring Trends, Insights, and Investment Opportunities",
+  "hasSubtitle": true,
+  "description": "## \ud83c\udfe1\ud83d\udcb0\ud83c\udfe0Housing Market Data Attributes \ud83c\udfe0\ud83d\udcb0\ud83c\udfe1\n\nIn the analysis of the housing market, it's essential to understand the various attributes that characterize each housing unit. These attributes provide valuable information for potential buyers, renters, and investors, helping them make informed decisions about their housing choices. Below, we describe the key data attributes used in our housing market analysis:\n\n- **Bedroom Count:** This attribute represents the number of bedrooms in the housing unit, providing insights into its size and capacity.\n\n- **Net Square Meters (Net Sqm):** Net square meters refer to the total usable interior space within the housing unit, excluding common areas like corridors and stairwells. It quantifies the size of the property.\n\n- **Center Distance:** This attribute measures the distance of the housing unit from the central or downtown area of a city or town. It is a valuable metric for potential buyers or renters to assess proximity to urban amenities and activities.\n\n- **Metro Distance:** Metro distance indicates the distance between the housing unit and the nearest metro or subway station. This information is particularly useful for individuals who rely on public transportation for their daily commute.\n\n- **Floor:** The floor attribute specifies the level or story of the housing unit within the building, offering insights into its placement and accessibility within the structure.\n\n- **Age:** The age of the property represents the number of years since its construction or renovation. It plays a crucial role in assessing the condition of the property and potential maintenance requirements.\n\n- **Price:** Price is the cost associated with purchasing or renting the housing unit. It is a fundamental factor for individuals making housing decisions and can be influenced by various attributes such as bedroom count, size, location, and age.\n",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "business"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "other",
+      "name": "other",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}
