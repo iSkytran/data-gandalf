@@ -1,0 +1,50 @@
+{
+    "col_count": 25,
+    "col_names": [
+        "Unnamed: 0",
+        "2.Gender",
+        "3. Year of Study",
+        "4. Branch",
+        "1. Type of Schooling till 10th Grade:",
+        "2. Percentage in Class 10th?",
+        "3. Location of Class 10th School:",
+        "4. Type of Schooling for class 12th:",
+        "5. Percentage in Class 12th?",
+        "6. Location of Class 12th School:",
+        "7. Dropped an year after School?",
+        "8. Are you about to become first generation graduate ?",
+        "9. Involved in additional volunteer groups?(NCC,NSS, Social Welfare Groups  or any other)",
+        "1. How many programming languages do you know? ",
+        "2.  Actively involved in Specific technology?",
+        "3. Exposure to Data structure and algorithms?",
+        "4. Exposure to GitHub ?",
+        "5. Are you associated with any developer Community?",
+        "6. Active in developer Communities",
+        "7. Participating in Hackathons and other competitions?",
+        "8. Have you made any Software based projects?",
+        "9. Have you made any Hardware based project (Arduino, Raspberry Pi, Robots or any other)?",
+        "10. Have you ever pitched any idea?",
+        "11. Do you have any additional skills?",
+        "Achievements:"
+    ],
+    "description": "Data under analysis belongs to undergraduate students, who are pursuing bachelor's in technology. The four-year course produces a major technically sound workforce which boost up the service sector. Being a major contributor to the service sector, the students must have a technically sound skillset which can land them into companies without much struggle.\nThe skillset required as per the jobs are different as per the role, but few factors contribute to each skillset. These factors and their corelation will be studied in the research. Several hypotheses will be considered from observations of the data, which will be tested using statistical tests for rejection/non rejection.\n\nThe Team: @manasrai1406 @hellomishraa @harveernarwar @Khushiarora123 @Shivang2003 @gar414 @VIKAS_GENISYSs",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "other",
+            "nameNullable": "other"
+        }
+    ],
+    "null_count": 241,
+    "num_entries": 6400,
+    "row_count": 256,
+    "source": "kaggle",
+    "tags": [
+        "universities and colleges",
+        "education",
+        "computer science"
+    ],
+    "title": "Student skillset analysis",
+    "topic": "academics",
+    "usability": 1.0
+}

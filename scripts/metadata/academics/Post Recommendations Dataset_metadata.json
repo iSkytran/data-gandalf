@@ -1,0 +1,36 @@
+{
+    "col_count": 13,
+    "col_names": [
+        "title",
+        "category",
+        "post_id",
+        "user_id",
+        "first_name",
+        "last_name",
+        "gender",
+        "avatar",
+        "city",
+        "academics",
+        "time_stamp"
+    ],
+    "description": "build a Recommendation System, recommending the items based on the following.\n1. **Content Based Filtering**\n2. **Collaborative Filtering**\n- End result should be a system that.\n1. Recommend posts for the given user\n2. Recommend similar posts for the given post\n\n\n### Content\n\nThere are 3 files.\n| File | discretion|\n| --- | --- |\n| user_data.csv |Users dataset containing user's details like name, id, gender etc. |\n| post_data.csv | Post dataset containing posts details like title category etc. |\n| view_data.csv | Views dataset contains the mapping which user views which post(s) |\n\n## Users Data\n\n**userid** : unique alphanumeric id of the user (string). firstname: First Name of user (string)\n**last_name** : Last Name of user (string)\n**gender** : Gender of user (male | female)\n**avatar** : user's avatar URL(string)\n**city** : user's city(string)\n**academics** : Education of the use (undergraduate | graduate)\n\n## Posts Data\n\n**post_id**: a unique id of the post (string)\n**title**: Title of the post (string)\n**category**: Category of the post (string)\n\n## View Data\n\n**user_id**: unique alphanumeric id of the user (string)\n**post_id**: unique id of the post (string)\n**time_stamp**: timestamp of when user viewed the post (ISO time format)",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "copyright-authors",
+            "nameNullable": "copyright-authors"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 236900,
+    "row_count": 78300,
+    "source": "kaggle",
+    "tags": [
+        "software",
+        "recommender systems",
+        "online communities"
+    ],
+    "title": "Post Recommendations Dataset",
+    "topic": "academics",
+    "usability": 0.8823529411764706
+}
