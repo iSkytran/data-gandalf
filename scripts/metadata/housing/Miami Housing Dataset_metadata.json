@@ -1,0 +1,43 @@
+{
+    "col_count": 17,
+    "col_names": [
+        "LATITUDE",
+        "LONGITUDE",
+        "PARCELNO",
+        "SALE_PRC",
+        "LND_SQFOOT",
+        "TOT_LVG_AREA",
+        "SPEC_FEAT_VAL",
+        "RAIL_DIST",
+        "OCEAN_DIST",
+        "WATER_DIST",
+        "CNTR_DIST",
+        "SUBCNTR_DI",
+        "HWY_DIST",
+        "age",
+        "avno60plus",
+        "month_sold",
+        "structure_quality"
+    ],
+    "description": "### Content\nThe dataset contains information on 13,932 single-family homes sold in Miami .\n\n### Content\n\nThe dataset contains the following columns:\n\n- PARCELNO: unique identifier for each property. About 1% appear multiple times.\n- SALE_PRC: sale price ($)\n- LND_SQFOOT: land area (square feet)\n- TOT_LVG_AREA: floor area (square feet)\n- SPEC_FEAT_VAL: value of special features (e.g., swimming pools) ($)\n- RAIL_DIST: distance to the nearest rail line (an indicator of noise) (feet)\n- OCEAN_DIST: distance to the ocean (feet)\n- WATER_DIST: distance to the nearest body of water (feet)\n- CNTR_DIST: distance to the Miami central business district (feet)\n- SUBCNTR_DI: distance to the nearest subcenter (feet)\n- HWY_DIST: distance to the nearest highway (an indicator of noise) (feet)\n- age: age of the structure\n- avno60plus: dummy variable for airplane noise exceeding an acceptable level\n- structure_quality: quality of the structure\n- month_sold: sale month in 2016 (1 = jan)\n- LATITUDE\n- LONGITUDE\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 236844,
+    "row_count": 13932,
+    "source": "kaggle",
+    "tags": [
+        "real estate",
+        "beginner",
+        "tabular",
+        "regression"
+    ],
+    "title": "Miami Housing Dataset",
+    "topic": "housing",
+    "usability": 1.0
+}

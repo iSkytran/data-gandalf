@@ -1,0 +1,31 @@
+{
+    "col_count": 8,
+    "col_names": [
+        "S.NO",
+        "Name",
+        "Nationality",
+        "Current Rank",
+        "Previous Year Rank",
+        "Sport",
+        "Year",
+        "earnings ($ million)"
+    ],
+    "description": "### Context\n\nHere is a completel list of the world's highest-paid athletes since the first list published by Forbes in 1990. In 2002, they changed the reporting period from the full calendar year to June-to-June, and consequently, there are no records for 2001. \n\n### Content\nThe data is available from 1990 to 2019.\n\n### Acknowledgments\nThe data has been extracted from topendsports.com website\n\n**Photo by [Austris Augusts](https://unsplash.com/@austris_a?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on Unsplash**",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 24,
+    "num_entries": 2408,
+    "row_count": 301,
+    "source": "kaggle",
+    "tags": [
+        "sports"
+    ],
+    "title": "Forbes Highest Paid Athletes 1990-2020",
+    "topic": "sports",
+    "usability": 0.8235294117647058
+}

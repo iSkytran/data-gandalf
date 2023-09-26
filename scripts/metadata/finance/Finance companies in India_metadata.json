@@ -1,0 +1,35 @@
+{
+    "col_count": 16,
+    "col_names": [
+        "Unnamed: 0",
+        "name",
+        "rating",
+        "reviews",
+        "company_type",
+        "Head_Quarters",
+        "Company_Age",
+        "No_of_Employee"
+    ],
+    "description": "This dataset contains information about companies in India that offer financial services and are currently hiring for various roles. The data is web scraped from a popular career advisory platform called AmbitionBox.\n\nThe csv file lists almost 9000 such companies and describes their attributes such as rating, reviews on the website, type of the company, their operating locations, the age of the company and the number of employees that work for them.\n\nFeel free to go through the data and use it for any projects that you wish to do.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 30800,
+    "num_entries": 143520,
+    "row_count": 17940,
+    "source": "kaggle",
+    "tags": [
+        "business",
+        "finance",
+        "banking",
+        "exploratory data analysis",
+        "data analytics"
+    ],
+    "title": "Finance companies in India",
+    "topic": "finance",
+    "usability": 0.8235294117647058
+}
