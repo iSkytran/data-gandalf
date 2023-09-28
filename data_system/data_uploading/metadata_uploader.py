@@ -1,8 +1,8 @@
 import os, json
 import pandas as pd
 
-from db import init, get_all, create_datasets
-from models import Dataset
+from data_system.database_connection.db import init, get_all, create_datasets
+from data_system.database_connection.models import Dataset
 
 # Initialize Database Connection
 init()
