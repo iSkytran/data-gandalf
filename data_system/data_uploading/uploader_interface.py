@@ -9,5 +9,8 @@ class MetadataUploader:
     def prepare_upload(self):
         pass
 
+    def upload(self):
+        pass
+
     def report_issues(self):
         pass
