@@ -1,6 +1,18 @@
 {
     "col_count": 11,
-    "col_names": [],
+    "col_names": [
+        "Timestamp",
+        "Choose your gender",
+        "Age",
+        "What is your course?",
+        "Your current year of Study",
+        "What is your CGPA?",
+        "Marital status",
+        "Do you have Depression?",
+        "Do you have Anxiety?",
+        "Do you have Panic attack?",
+        "Did you seek any specialist for a treatment?"
+    ],
     "description": "A STATISTICAL RESEARCH ON THE EFFECTS OF MENTAL HEALTH ON STUDENTS\u2019 CGPA dataset\nThis Data set was collected by a survey conducted by Google forms from University student in order to examine their current academic situation and mental health.\n",
     "licenses": [
         {
