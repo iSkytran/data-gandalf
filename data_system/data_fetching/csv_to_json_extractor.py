@@ -3,8 +3,6 @@ import os, json
 import pandas as pd
 from extractor_interface import MetadataExtractor
 
-
-
 class CSVToJsonExtractor(MetadataExtractor):
     def __init__(self, file_input_path, file_output_path, topic, source):
         self.file_output_path = file_output_path

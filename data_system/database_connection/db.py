@@ -1,7 +1,7 @@
 from sqlmodel import Session, SQLModel, create_engine, select
 from typing import List
 
-from data_system.database_connection.models import Dataset
+from database_connection.models import Dataset
 
 
 db_url = "postgresql://postgres:password@localhost:5432"
