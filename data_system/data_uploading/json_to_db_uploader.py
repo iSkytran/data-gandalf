@@ -43,7 +43,6 @@ class JsonToDbUploader(MetadataUploader):
         dataset.row_count = metadata['row_count']
         dataset.col_count = metadata['col_count']
         dataset.description = metadata['description']
-        dataset.licenses = []
         dataset.tags = metadata['tags']
         dataset.title = metadata['title']
         dataset.topic = metadata['topic']
@@ -52,6 +51,11 @@ class JsonToDbUploader(MetadataUploader):
         dataset.usability = metadata['usability']
         dataset.entry_count = metadata['num_entries']
         dataset.null_count = metadata['null_count']
+        dataset.licenses = []
+        try:
+            dataset.licenses = list(map(lambda x: x['name'], metadata['licenses']))
+        except Exception as e:
+            self.problem_files.append(dataset.topic + "(License issue)")
         return dataset
 
     def report_issues(self):
