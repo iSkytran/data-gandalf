@@ -45,11 +45,15 @@ class KaggleExtractor(MetadataExtractor):
         return metadata
     
     # Output metadata to a target file.
-    def output_data(self, metadata, target):
-        if not os.path.exists(self.file_output_path):
-            os.makedirs(self.file_output_path)
+    def output_data(self, metadata, target_folder, filename):
         
-        full_path:str = os.path.join(self.file_output_path, target)
+        full_folder_path:str = os.path.join(self.file_output_path, target_folder)
+
+        if not os.path.exists(full_folder_path):
+            os.makedirs(full_folder_path)
+        
+        full_path = os.path.join(full_folder_path, filename)
+
         meta_json:json = json.dumps(metadata, indent=4, sort_keys=True)
         
         with open(full_path, "w+") as newfile:

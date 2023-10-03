@@ -1,0 +1,24 @@
+{
+    "col_count": 1,
+    "col_names": [
+        "\u00ef\u00bb\u00bf\"ID\";\"EducationSectors\";\"Periods\";\"OperatingIncome_1\";\"GrantsFromTheState_2\";\"OtherGovernmentalGrants_3\";\"TuitionAndExamFees_4\";\"IncomeFromContractsWithThirdParties_5\";\"OtherIncome_6\";\"OperatingCosts_7\";\"PersonnelCosts_8\";\"Depreciation_9\";\"HousingCosts_10\";\"TotalOtherCosts_11\";\"AdministrativeCosts_12\";\"InventoryMaterialAndTeachingAid_13\";\"Other_14\";\"OperatingResult1_15\";\"NetFinancialCosts2_16\";\"SpecialEntries3_17\";\"Result123_18\";\"TotalAssets_19\";\"TotalFixedAssets_20\";\"NonFinancialIntangibleFixedAssets_21\";\"TotalNonFinancialTangibleFixedAs_22\";\"BuildingsAndLand_23\";\"InventoryAndEquipment_24\";\"OtherNonFinancialTangibleFixedAs_25\";\"FinancialFixedAssets_26\";\"TotalCurrentAssets_27\";\"Inventory_28\";\"Receivables_29\";\"ShortTermSecurities_30\";\"LiquidAssets_31\";\"TotalLiabilitiesAndEquity_32\";\"Equity_33\";\"Provisions_34\";\"LongTermDebt_35\";\"ShortTermDebt_36\";\"TotalInvestmentsGross_37\";\"InvestmentsGrossBuildingsAndLand_38\";\"InvestmentsGrossInventoryAndEq_39\";\"SolvencyRatio_40\";\"CurrentRatio_41\";\"ProfitMargin_42\";\"ResilienceRatio_43\";\"CapitalizationFactor_44\""
+    ],
+    "description": "This table contains information on the finances of government-funded institutions in primary, secondary and tertiary education. Primary education comprises of primary general education, primary special education (SBO) and primary special-needs education (SO). Secondary education constitutes secondary general education, secondary vocational education (MBO) and adult education. Tertiary education encompasses higher professional education (HBO) and university education (WO).\nAll educational institutions are funded by the Ministry of Education, Culture and Science as of 2018. Educational institutions that provided agricultural education were funded by the Ministry of Economic Affairs until 2018. Educational institutions are legally obligated to annually submit their financial statements before the 1st of July to the Education Executive Agency (DUO) of the Ministry of Education, Culture and Science. The data from the financial statements is subsequently processed by DUO and transmitted to Statistics Netherlands.\nFinancial information regarding primary educational institutions is available from 2006 onwards, as a result of the introduction of lump sum funding in the same year, which legally obligated these institutions to provide their financial information to the Ministry of Education, Culture and Science. The finances for the educational institutions in the secondary and tertiary education are available since 1998. Financial information related to special-needs educational institutions is available separately and concerns the educational institutions with school boards solely overseeing special-needs education in both primary and secondary education. Please note that the educational institutions of Caribbean Netherlands are included in the table from 2010 onwards, due to the islands of Caribbean Netherlands becoming part of the Netherlands as of October 2010.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "Attribution 4.0 International (CC BY 4.0)",
+            "nameNullable": "Attribution 4.0 International (CC BY 4.0)"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 189,
+    "row_count": 189,
+    "source": "kaggle",
+    "tags": [
+        "education"
+    ],
+    "title": "Educational institutes and Finances",
+    "topic": "finance",
+    "usability": 0.9705882352941176
+}
