@@ -1,5 +1,5 @@
 import os, json
-from uploader_interface import MetadataUploader
+from data_uploading.uploader_interface import MetadataUploader
 from database_connection.models import Dataset
 from database_connection.db import create_datasets, init
 

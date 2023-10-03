@@ -1,7 +1,8 @@
 import os, json
 
 import pandas as pd
-from extractor_interface import MetadataExtractor
+from data_fetching.extractor_interface import MetadataExtractor
+
 
 class KaggleExtractor(MetadataExtractor):
     def __init__(self, file_input_path, file_output_path, source):
