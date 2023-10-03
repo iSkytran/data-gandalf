@@ -3,10 +3,10 @@ SHELL ["/bin/bash", "-c"]
 WORKDIR /backend
 
 # Install dependencies.
-COPY ./requirements_v2.txt /backend/requirements_v2.txt
+COPY ./requirements.txt /backend/requirements.txt
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir numpy
-RUN pip install --no-cache-dir --upgrade -r /backend/requirements_v2.txt
+RUN pip install --no-cache-dir --upgrade -r /backend/requirements.txt
 
 # Copy over project.
 COPY ./backend /backend/backend

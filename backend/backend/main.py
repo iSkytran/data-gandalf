@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
 from backend import db
-from backend import recommender
+from backend.recommender import recommendation_model
 from backend.models import Dataset
 
 app = FastAPI()
@@ -17,7 +17,9 @@ async def health() -> str:
 @app.get("/datasets", response_model=list[Dataset])
 def allDatasets() -> str:
     datasets = db.get_all()
-    return recommender.rank(datasets)
+    return datasets
+
+
 
 # @app.get("/dataset")
 # def dataset() -> list[str]:
