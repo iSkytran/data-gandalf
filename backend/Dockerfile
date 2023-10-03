@@ -1,10 +1,12 @@
-FROM python:3.11
+FROM python:3.9
 SHELL ["/bin/bash", "-c"]
 WORKDIR /backend
 
 # Install dependencies.
-COPY ./requirements.txt /backend/requirements.txt
-RUN pip install --no-cache-dir --upgrade -r /backend/requirements.txt
+COPY ./requirements_v2.txt /backend/requirements_v2.txt
+RUN pip install --upgrade pip
+RUN pip install --no-cache-dir numpy
+RUN pip install --no-cache-dir --upgrade -r /backend/requirements_v2.txt
 
 # Copy over project.
 COPY ./backend /backend/backend
