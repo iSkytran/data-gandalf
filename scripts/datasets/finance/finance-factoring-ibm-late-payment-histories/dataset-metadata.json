@@ -1,0 +1,41 @@
+{
+  "id": "hhenry/finance-factoring-ibm-late-payment-histories",
+  "id_no": 235085,
+  "datasetSlugNullable": "finance-factoring-ibm-late-payment-histories",
+  "ownerUserNullable": "hhenry",
+  "usabilityRatingNullable": 0.5882352941176471,
+  "titleNullable": "Finance Factoring - IBM Late Payment Histories",
+  "subtitleNullable": "Accounts Receivable Data - Predict which customers will pay fastest ",
+  "descriptionNullable": "### Context\n\nThe biggest challenge of Factoring is to predict if and when invoices will be paid. The factor provides funds against this future payment to the business by buying their invoice. The factor then collects the payment and charges their interest rate. If the invoice isn't paid, the factor loses their advanced funds. Try using this data set for predicting when payments will be made. \n\n### Acknowledgements\n\nThis data was provided by IBM for testing out their analytics tools. \n\nhttps://www.ibm.com/communities/analytics/watson-analytics-blog/guide-to-sample-datasets",
+  "datasetId": 235085,
+  "datasetSlug": "finance-factoring-ibm-late-payment-histories",
+  "hasDatasetSlug": true,
+  "ownerUser": "hhenry",
+  "hasOwnerUser": true,
+  "usabilityRating": 0.5882352941176471,
+  "hasUsabilityRating": true,
+  "totalViews": 22024,
+  "totalVotes": 67,
+  "totalDownloads": 2976,
+  "title": "Finance Factoring - IBM Late Payment Histories",
+  "hasTitle": true,
+  "subtitle": "Accounts Receivable Data - Predict which customers will pay fastest ",
+  "hasSubtitle": true,
+  "description": "### Context\n\nThe biggest challenge of Factoring is to predict if and when invoices will be paid. The factor provides funds against this future payment to the business by buying their invoice. The factor then collects the payment and charges their interest rate. If the invoice isn't paid, the factor loses their advanced funds. Try using this data set for predicting when payments will be made. \n\n### Acknowledgements\n\nThis data was provided by IBM for testing out their analytics tools. \n\nhttps://www.ibm.com/communities/analytics/watson-analytics-blog/guide-to-sample-datasets",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "business",
+    "finance",
+    "economics"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "unknown",
+      "name": "unknown",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}

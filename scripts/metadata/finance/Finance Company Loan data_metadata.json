@@ -1,0 +1,36 @@
+{
+    "col_count": 27,
+    "col_names": [
+        "Loan_ID",
+        "Loan_Status",
+        "Gender",
+        "Married",
+        "Dependents",
+        "Education",
+        "Self_Employed",
+        "ApplicantIncome",
+        "CoapplicantIncome",
+        "LoanAmount",
+        "Loan_Amount_Term",
+        "Credit_History",
+        "Property_Area"
+    ],
+    "description": "### The data set has been taken from\nhttps://datahack.analyticsvidhya.com/contest/practice-problem-loan-prediction-iii/#ProblemStatement\n\n### About Company\nDream Housing Finance company deals in all home loans. They have presence across all urban, semi urban and rural areas. Customer first apply for home loan after that company validates the customer eligibility for loan.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 233,
+    "num_entries": 13120,
+    "row_count": 1348,
+    "source": "kaggle",
+    "tags": [
+        "finance"
+    ],
+    "title": "Finance Company Loan data",
+    "topic": "finance",
+    "usability": 0.6470588235294118
+}

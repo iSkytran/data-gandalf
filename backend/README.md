@@ -9,6 +9,9 @@ In order to run the backend locally, Python 3.11 will need to be installed. The 
     ```bash
     python -m venv .venv
     . .venv/bin/activate
+
+    WINDOWS:
+    .venv\Scripts\activate
     ```
 
 2. Install the dependencies.
