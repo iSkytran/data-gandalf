@@ -27,3 +27,9 @@ def datasets(topic: Optional[str] = None) -> list[Dataset]:
     else:
         datasets = db.get_all()
         return datasets
+    
+@app.get("/dataset/{uid}")
+def dataset(uid: str):
+    return recommendation_model.rank(uid)
+
+# TODO: POST ratings

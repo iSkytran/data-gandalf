@@ -18,9 +18,9 @@ class RecomendationModel:
             self.model = pickle.load(file)
         # TODO: catch exceptions if model file doesn't exist
 
-    def rank(self, dataset_of_interest: Dataset) -> list[Dataset]:
+    def rank(self, dataset_id: str) -> list[Dataset]:
         full_rec_list = self.model.recommendations
-        dataset_recs = full_rec_list[dataset_of_interest.ID]
+        dataset_recs = full_rec_list[dataset_id]
         return dataset_recs
 
 recommendation_model = RecomendationModel(Path("models/model.pkl")) # TODO: make this path come frome config or env variable

@@ -2,7 +2,7 @@
 
 ## Running Locally
 
-In order to run the backend locally, Python 3.11 will need to be installed. The following steps can then be run to get the backend running.
+In order to run the backend locally, Python 3.9 will need to be installed. The following steps can then be run to get the backend running.
 
 1. Create a virtual environment and activate it.
 
