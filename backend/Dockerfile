@@ -10,6 +10,7 @@ RUN pip install --no-cache-dir --upgrade -r /backend/requirements.txt
 
 # Copy over project.
 COPY ./backend /backend/backend
+COPY ./models /backend/models
 
 # Default container run.
 EXPOSE 8080
