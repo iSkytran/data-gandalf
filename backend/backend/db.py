@@ -23,3 +23,5 @@ def get_all(limit: int = 100) -> list[Dataset]:
         datasets = session.exec(select(Dataset).limit(limit)).all()
         return datasets
 
+# TODO: add get_dataset(uid) -> Dataset
+
