@@ -1,0 +1,18 @@
+{
+    "description": "The Government's financial year begins on 1 April of the current year and ends on 31 March of the following year.\n\nFigures may not add up due to rounding.\n\nManaged By:\tMinistry of Finance\nLast Updated:June 18, 2021, 09:31 (SGT)\nCreated:\t        March 24, 2016, 16:25 (SGT)\nCoverage:\tJanuary 1, 1997 to March 31, 2022\nFrequency:\tAnnual\nSource(s):\tMinistry of Finance\nSource URL:\thttps://www.singaporebudget.gov.sg/budget_2018/home\nLicense:\t        Singapore Open Data Licence",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "other",
+            "nameNullable": "other"
+        }
+    ],
+    "source": "kaggle",
+    "tags": [
+        "asia",
+        "finance"
+    ],
+    "title": "Finance Datasets Complete (Singapore)",
+    "topic": "finance",
+    "usability": 0.7647058823529411
+}

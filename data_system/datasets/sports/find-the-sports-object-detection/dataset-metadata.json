@@ -1,0 +1,40 @@
+{
+  "id": "programmerrdai/find-the-sports-object-detection",
+  "id_no": 2179661,
+  "datasetSlugNullable": "find-the-sports-object-detection",
+  "ownerUserNullable": "programmerrdai",
+  "usabilityRatingNullable": 0.8823529411764706,
+  "titleNullable": "Find the Sports (Object Detection)",
+  "subtitleNullable": "Bbox the Images using Object detection",
+  "descriptionNullable": "I have used alot of Kaggle Datasets and I want to help the community also. So I hope this helps at least one person.\n:)\n**Please Leave a upvote thanks :)**\nThe data has been taken from Open Images V6\nSubset of Sports.\nThis is a subset of Open Images.\nI will update as frequently as possible.",
+  "datasetId": 2179661,
+  "datasetSlug": "find-the-sports-object-detection",
+  "hasDatasetSlug": true,
+  "ownerUser": "programmerrdai",
+  "hasOwnerUser": true,
+  "usabilityRating": 0.8823529411764706,
+  "hasUsabilityRating": true,
+  "totalViews": 2277,
+  "totalVotes": 47,
+  "totalDownloads": 221,
+  "title": "Find the Sports (Object Detection)",
+  "hasTitle": true,
+  "subtitle": "Bbox the Images using Object detection",
+  "hasSubtitle": true,
+  "description": "I have used alot of Kaggle Datasets and I want to help the community also. So I hope this helps at least one person.\n:)\n**Please Leave a upvote thanks :)**\nThe data has been taken from Open Images V6\nSubset of Sports.\nThis is a subset of Open Images.\nI will update as frequently as possible.",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "sports",
+    "computer science"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "CC-BY-SA-4.0",
+      "name": "CC-BY-SA-4.0",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}

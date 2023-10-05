@@ -1,0 +1,42 @@
+{
+  "id": "mpwolke/cusersmarildownloadscountriescsv",
+  "id_no": 1369496,
+  "datasetSlugNullable": "cusersmarildownloadscountriescsv",
+  "ownerUserNullable": "mpwolke",
+  "usabilityRatingNullable": 1.0,
+  "titleNullable": "Countries Freedom In the  World 1973-2021",
+  "subtitleNullable": "Country Ratings FIW 1973-2021",
+  "descriptionNullable": "### Context\n\n\" Since 1973, Freedom House has assessed the condition of political rights and civil liberties around the world. It is used on a regular basis by policymakers, journalists, academics, activists, and many others.\"\n\nhttps://freedomhouse.org/report/freedom-world\n\n\n### Content\n\n\"The Freedom in the World report is composed of numerical ratings and supporting descriptive texts for 195 countries and 15 territories.\nFor each country and territory, Freedom in the World analyzes the electoral process, political pluralism and participation, the functioning of the government, freedom of expression and of belief, associational and organizational rights, the rule of law, and personal autonomy and individual rights.\"\n\n\n### Acknowledgements\n\nhttps://freedomhouse.org/report/freedom-world\n\nPhoto by John-Paul Henry on Unsplash\n\n### Inspiration\n\n\"Nelson Mandela, a legacy of Freedom: On February 11, 1990, Nelson Mandela left prison a free man. After spending 27 years behind bars, the South African icon had hoped to see his country become a model for Africa. Instead, xenophobia has marred that dream. \"\nhttps://www.dw.com/en/nelson-mandela-a-legacy-of-freedom/g-52327905\n\n\"For Gandhi, Freedom of the Individual Was the First and Last Goal. Gandhi believed that real swaraj would come \u201cnot by the acquisition of authority by a few, but by the acquisition of the capacity by all to resist authority when abused\"\nhttps://thewire.in/books/reading-gandhi-excerpt#:~:text=books-,For%20Gandhi%2C%20Freedom%20of%20the%20Individual%20Was%20the%20First%20and,to%20resist%20authority%20when%20abused%E2%80%9D.\n\nDalai Lama :  \"Let us widen our perspective to include the well being of the whole world and its future generations in our vision of prosperity and freedom.\"\nhttps://www.dalailama.com/messages/world-peace/human-rights-democracy-and-freedom\n",
+  "datasetId": 1369496,
+  "datasetSlug": "cusersmarildownloadscountriescsv",
+  "hasDatasetSlug": true,
+  "ownerUser": "mpwolke",
+  "hasOwnerUser": true,
+  "usabilityRating": 1.0,
+  "hasUsabilityRating": true,
+  "totalViews": 2811,
+  "totalVotes": 21,
+  "totalDownloads": 182,
+  "title": "Countries Freedom In the  World 1973-2021",
+  "hasTitle": true,
+  "subtitle": "Country Ratings FIW 1973-2021",
+  "hasSubtitle": true,
+  "description": "### Context\n\n\" Since 1973, Freedom House has assessed the condition of political rights and civil liberties around the world. It is used on a regular basis by policymakers, journalists, academics, activists, and many others.\"\n\nhttps://freedomhouse.org/report/freedom-world\n\n\n### Content\n\n\"The Freedom in the World report is composed of numerical ratings and supporting descriptive texts for 195 countries and 15 territories.\nFor each country and territory, Freedom in the World analyzes the electoral process, political pluralism and participation, the functioning of the government, freedom of expression and of belief, associational and organizational rights, the rule of law, and personal autonomy and individual rights.\"\n\n\n### Acknowledgements\n\nhttps://freedomhouse.org/report/freedom-world\n\nPhoto by John-Paul Henry on Unsplash\n\n### Inspiration\n\n\"Nelson Mandela, a legacy of Freedom: On February 11, 1990, Nelson Mandela left prison a free man. After spending 27 years behind bars, the South African icon had hoped to see his country become a model for Africa. Instead, xenophobia has marred that dream. \"\nhttps://www.dw.com/en/nelson-mandela-a-legacy-of-freedom/g-52327905\n\n\"For Gandhi, Freedom of the Individual Was the First and Last Goal. Gandhi believed that real swaraj would come \u201cnot by the acquisition of authority by a few, but by the acquisition of the capacity by all to resist authority when abused\"\nhttps://thewire.in/books/reading-gandhi-excerpt#:~:text=books-,For%20Gandhi%2C%20Freedom%20of%20the%20Individual%20Was%20the%20First%20and,to%20resist%20authority%20when%20abused%E2%80%9D.\n\nDalai Lama :  \"Let us widen our perspective to include the well being of the whole world and its future generations in our vision of prosperity and freedom.\"\nhttps://www.dalailama.com/messages/world-peace/human-rights-democracy-and-freedom\n",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "politics",
+    "demographics",
+    "tabular",
+    "social issues and advocacy"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "other",
+      "name": "other",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}

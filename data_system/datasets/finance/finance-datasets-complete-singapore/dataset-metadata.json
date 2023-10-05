@@ -1,0 +1,40 @@
+{
+  "id": "subhamjain/finance-datasets-complete-singapore",
+  "id_no": 1513795,
+  "datasetSlugNullable": "finance-datasets-complete-singapore",
+  "ownerUserNullable": "subhamjain",
+  "usabilityRatingNullable": 0.7647058823529411,
+  "titleNullable": "Finance Datasets Complete (Singapore)",
+  "subtitleNullable": "Complete financial data of Singapore",
+  "descriptionNullable": "The Government's financial year begins on 1 April of the current year and ends on 31 March of the following year.\n\nFigures may not add up due to rounding.\n\nManaged By:\tMinistry of Finance\nLast Updated:June 18, 2021, 09:31 (SGT)\nCreated:\t        March 24, 2016, 16:25 (SGT)\nCoverage:\tJanuary 1, 1997 to March 31, 2022\nFrequency:\tAnnual\nSource(s):\tMinistry of Finance\nSource URL:\thttps://www.singaporebudget.gov.sg/budget_2018/home\nLicense:\t        Singapore Open Data Licence",
+  "datasetId": 1513795,
+  "datasetSlug": "finance-datasets-complete-singapore",
+  "hasDatasetSlug": true,
+  "ownerUser": "subhamjain",
+  "hasOwnerUser": true,
+  "usabilityRating": 0.7647058823529411,
+  "hasUsabilityRating": true,
+  "totalViews": 8584,
+  "totalVotes": 43,
+  "totalDownloads": 790,
+  "title": "Finance Datasets Complete (Singapore)",
+  "hasTitle": true,
+  "subtitle": "Complete financial data of Singapore",
+  "hasSubtitle": true,
+  "description": "The Government's financial year begins on 1 April of the current year and ends on 31 March of the following year.\n\nFigures may not add up due to rounding.\n\nManaged By:\tMinistry of Finance\nLast Updated:June 18, 2021, 09:31 (SGT)\nCreated:\t        March 24, 2016, 16:25 (SGT)\nCoverage:\tJanuary 1, 1997 to March 31, 2022\nFrequency:\tAnnual\nSource(s):\tMinistry of Finance\nSource URL:\thttps://www.singaporebudget.gov.sg/budget_2018/home\nLicense:\t        Singapore Open Data Licence",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "asia",
+    "finance"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "other",
+      "name": "other",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}

@@ -1,0 +1,41 @@
+{
+  "id": "rishidamarla/campaign-finances",
+  "id_no": 1057874,
+  "datasetSlugNullable": "campaign-finances",
+  "ownerUserNullable": "rishidamarla",
+  "usabilityRatingNullable": 0.8823529411764706,
+  "titleNullable": "Campaign Finances",
+  "subtitleNullable": "Report of US Companies Endorsing Political Campaigns",
+  "descriptionNullable": "### Content\n\nIn this dataset you'll find companies in Austin, Texas, US that spent money endorsing political candidates and or parties during major elections.\n\n\n### Acknowledgements\n\nThis dataset comes from https://data.world/cityofaustin/gd3e-xut2.",
+  "datasetId": 1057874,
+  "datasetSlug": "campaign-finances",
+  "hasDatasetSlug": true,
+  "ownerUser": "rishidamarla",
+  "hasOwnerUser": true,
+  "usabilityRating": 0.8823529411764706,
+  "hasUsabilityRating": true,
+  "totalViews": 1758,
+  "totalVotes": 16,
+  "totalDownloads": 138,
+  "title": "Campaign Finances",
+  "hasTitle": true,
+  "subtitle": "Report of US Companies Endorsing Political Campaigns",
+  "hasSubtitle": true,
+  "description": "### Content\n\nIn this dataset you'll find companies in Austin, Texas, US that spent money endorsing political candidates and or parties during major elections.\n\n\n### Acknowledgements\n\nThis dataset comes from https://data.world/cityofaustin/gd3e-xut2.",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "finance",
+    "politics",
+    "investing"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "CC0-1.0",
+      "name": "CC0-1.0",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}
