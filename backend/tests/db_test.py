@@ -4,7 +4,7 @@ from sqlmodel import create_engine, Session, SQLModel
 from backend.models import Dataset
 import backend.db as db
 
-@pytest.fixture(scope="module")
+@pytest.fixture
 def mock_db():
     db_url = "sqlite:///:memory:"
     engine = create_engine(db_url)
