@@ -5,11 +5,14 @@ from data_fetching.extractor_interface import MetadataExtractor
 
 
 class KaggleExtractor(MetadataExtractor):
-    def __init__(self, file_input_path, file_output_path, source):
+    def __init__(self, file_input_path, file_output_path):
         self.file_output_path = file_output_path
-        self.source = source
+        self.source = "kaggle"
 
         super().__init__(file_input_path)
+
+    def extract_topics(self, topics):
+        return super().extract_topics(topics)
 
     def extract_topic(self, topic):
         return super().extract_topic(topic)
@@ -54,6 +57,7 @@ class KaggleExtractor(MetadataExtractor):
             os.makedirs(full_folder_path)
         
         full_path = os.path.join(full_folder_path, filename)
+        print("Output to file:", full_path)
 
         meta_json:json = json.dumps(metadata, indent=4, sort_keys=True)
         

@@ -11,7 +11,7 @@ from data_uploading.json_to_db_uploader import JsonToDbUploader
 # CONFIGURATION
 
 # Whether to save downloaded CSV files from the datasets. 
-SAVE_CSV = False
+SAVE_CSV = True
 DATASET_FOLDER = "datasets"
 
 # Whether to save the metadata JSON objects created. Should be true if you want the ability to edit.
@@ -19,7 +19,8 @@ SAVE_METADATA = False
 METADATA_FOLDER = "metadata"
 
 # The topics to query from. 
-TOPICS = ['sports', 'academics', 'housing', 'health', 'finance']
+# TOPICS = ['sports', 'academics', 'housing', 'health', 'finance']
+TOPICS = ['sports']
 
 # Source to query. 
 SOURCE = "kaggle"
@@ -31,7 +32,7 @@ uploader = MetadataUploader()
 # Override extractor and uploader objects. 
 if SOURCE == "kaggle":
     kaggle.fetch(TOPICS, DATASET_FOLDER)
-    extractor = KaggleExtractor(file_input_path=DATASET_FOLDER, file_output_path=METADATA_FOLDER, source="kaggle")
+    extractor = KaggleExtractor(file_input_path=DATASET_FOLDER, file_output_path=METADATA_FOLDER)
     uploader = JsonToDbUploader(file_input_path=METADATA_FOLDER)
 
 # # Extract Topics. 

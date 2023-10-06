@@ -1,0 +1,22 @@
+{
+    "usabilityRating": 0.298462346364,
+    "title": "Income",
+    "description": "A dataset about income",
+    "keywords": [
+      "finance", "income"
+    ],
+    "licenses": [
+      {
+        "nameNullable": "Test License 3",
+        "name": "Test License 1",
+        "hasName": true
+      }, 
+      {
+        "nameNullable": "Test License 4",
+        "name": "Test License 2",
+        "hasName": true
+      }
+    ],
+    "collaborators": [],
+    "data": []
+  }
