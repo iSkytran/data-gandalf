@@ -3,6 +3,8 @@ from backend.main import app
 
 client = TestClient(app)
 
+# TODO: does this need a mock db?
+
 def test_health():
     response = client.get("/health")
     assert response.status_code == 200
