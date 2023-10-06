@@ -9,15 +9,14 @@ class JsonToDbUploader(MetadataUploader):
         self.datasets_to_upload = []
         super().__init__()
 
-    # Processes files on input path and prepares for uploading.
-    def prepare_upload(self):
-        files_to_upload = os.listdir(self.file_input_path)
-
+    def prepare_upload_for_topic(self, topic):
+        topic_path = os.path.join(self.file_input_path, topic)
+        files_to_upload = os.listdir(topic_path)
         # Add datasets to list
         for filename in files_to_upload:
             try:
                 # READ METADATA TO MODEL
-                path:str = os.path.join(self.file_input_path, filename)
+                path:str = os.path.join(topic_path, filename)
 
                 if path[len(path) - 5:] != '.json':
                     continue
@@ -30,6 +29,10 @@ class JsonToDbUploader(MetadataUploader):
             except Exception as e:
                 self.problem_files.append(filename)
                 print(e)
+    # Processes files on input path and prepares for uploading.
+    def prepare_upload(self, topics):
+        for topic in topics:
+            self.prepare_upload_for_topic(topic)
    
     # Uploads datasets to the database.
     def upload(self):

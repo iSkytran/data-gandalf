@@ -6,7 +6,7 @@ class MetadataUploader:
         self.datasets_uploaded = []
         self.problem_files = []
 
-    def prepare_upload(self):
+    def prepare_upload(self, topics):
         pass
 
     def upload(self):
