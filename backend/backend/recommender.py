@@ -5,12 +5,12 @@ import os
 from backend.models import Dataset
 
 # TODO: add documentation
-class RecomendationModel:
+class RecommendationModel:
     _instance = None
     
     def __new__(cls, model_dir):
         if cls._instance == None:
-            cls._instance = super(RecomendationModel, cls).__new__(cls)
+            cls._instance = super(RecommendationModel, cls).__new__(cls)
             cls._instance._load_model(model_dir)
         return cls._instance
     
@@ -24,6 +24,6 @@ class RecomendationModel:
         dataset_recs = full_rec_list[dataset_id]
         return dataset_recs
 
-recommendation_model = RecomendationModel(Path("models/model.pkl")) 
+recommendation_model = RecommendationModel(Path("models/model.pkl")) 
 # TODO: make this path come frome config or env variable
 # TODO: does path only work with Docker?
