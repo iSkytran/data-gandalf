@@ -1,7 +1,7 @@
 import pytest
 from backend.recommender import RecommendationModel
 
-# Mocking the model directory path for testing
+# Mocking the model path for testing
 TEST_MODEL_DIR = "test_model.pkl"
 
 @pytest.fixture

@@ -5,6 +5,11 @@ from backend.models import Dataset
 db_url = "postgresql://postgres:default@database:5432"
 engine = create_engine(db_url)
 
+def set_engine(new_engine):
+    """Replace engine for testing"""
+    global engine
+    engine = new_engine
+
 def init():
     SQLModel.metadata.create_all(engine)
 
