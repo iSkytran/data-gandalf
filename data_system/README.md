@@ -48,3 +48,20 @@ Extractor objects should inherit from the MetadataExtractor class in ```data_fet
  2. Register. 
  3. Run ```pip install kaggle``` in the virtual environment. 
  4. Follow steps in https://www.kaggle.com/docs/api?rvi=1 to get authentication token. 
+
+ # Data Gandalf
+
+Data Gandalf is a web application for finding related datasets. The setup instructions to get up and running can be found in the [frontend](./frontend/) and [backend](./backend) folders.
+
+## DB Dump and Load Process
+
+### Prerequisites:
+* PostgreSQL and all related CLI are installed (pg_dump, psql) as well as PGAdmin.
+
+### Dump process:
+1. Run ```pg_dump -U <username> <database_to_dump> > <dump_filename>.sql```
+
+### Load process:
+1. Create an empty database with name <db_name>
+2. Run ```psql -U <username> <db_name> < <dump_filename>.sql```
+The database should now be populated with correct tables and records.
