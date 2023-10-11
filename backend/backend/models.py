@@ -15,3 +15,4 @@ class Dataset(SQLModel, table=True):
     entry_count: int
     null_count: int
     usability: float
+
