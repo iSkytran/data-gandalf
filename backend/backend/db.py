@@ -28,5 +28,11 @@ def get_all(limit: int = 100) -> list[Dataset]:
         datasets = session.exec(select(Dataset).limit(limit)).all()
         return datasets
 
-# TODO: add get_dataset(uid) -> Dataset
+def get_by_id(id: str) -> list[Dataset]:
+    with Session(engine) as session:
+        dataset = session.exec(select(Dataset).where(Dataset.id == id)).first()
+        if dataset is None:
+            #TODO: is this an error?
+            pass
+        return dataset
 

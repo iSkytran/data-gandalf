@@ -3,6 +3,7 @@ from pathlib import Path
 import os
 
 from backend.models import Dataset
+import backend.db as db
 
 # TODO: add documentation
 class RecommendationModel:
@@ -22,7 +23,9 @@ class RecommendationModel:
     def rank(self, dataset_id: str) -> list[Dataset]:
         full_rec_list = self.model.recommendations
         dataset_recs = full_rec_list[dataset_id]
-        return dataset_recs
+        # dataset_recs is (score, UID)s, here is list of (Datasets, score)s if needed for frontend:
+        datasets = [(score, db.get_by_id(id)) for score,id in dataset_recs]
+        return dataset_recs # or datasets
 
 recommendation_model = RecommendationModel(Path("models/model.pkl")) 
 # TODO: make this path come frome config or env variable
