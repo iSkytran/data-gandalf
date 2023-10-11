@@ -1,8 +1,9 @@
 from sqlmodel import Session, SQLModel, create_engine, select
-
 from backend.models import Dataset
+import os
 
-db_url = "postgresql://postgres:default@database:5432"
+env_url = os.getenv("DATABASE_ADDRESS", "database:5432")
+db_url = f"postgresql://postgres:default@{env_url}"
 engine = create_engine(db_url)
 
 def init():
