@@ -4,6 +4,9 @@ from zipfile import ZipFile
 import shutil
 
 def fetch(topics, output_folder):
+    # Fix initial working directory
+    fixed_directory = os.getcwd()
+
     #Make a dataset folder to store everything in
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
@@ -30,13 +33,16 @@ def fetch(topics, output_folder):
 
         #Download all of the dataset files and metadata into the topic folder
         for u in urlList[:10]:
-            name = u[u.rindex('/'):]
-            if not os.path.exists(os.getcwd() + name):
-                os.makedirs(os.getcwd() + name)
-            os.chdir(os.getcwd() + name)
-            subprocess.run(f'kaggle datasets download -d {u}')
-            subprocess.run(f'kaggle datasets metadata {u}')
-            os.chdir('..')
+            try:
+                name = u[u.rindex('/'):]
+                if not os.path.exists(os.getcwd() + name):
+                    os.makedirs(os.getcwd() + name)
+                os.chdir(os.getcwd() + name)
+                subprocess.run(f'kaggle datasets download -d {u}')
+                subprocess.run(f'kaggle datasets metadata {u}')
+                os.chdir('..')
+            except Exception as e:
+                print("Unable to parse url:", u)
         os.chdir('..')
 
     #Unzip all of the dataset folder contents and remove the zip files
@@ -58,3 +64,6 @@ def fetch(topics, output_folder):
                             shutil.rmtree(f)
                     os.chdir('..')
             os.chdir('..')
+    
+    # Reset working directory
+    os.chdir(fixed_directory)

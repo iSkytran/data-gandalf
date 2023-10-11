@@ -1,48 +1,57 @@
+import shutil, os
+
 from data_fetching import kaggle
 from data_fetching.extractor_interface import MetadataExtractor
 from data_uploading.uploader_interface import MetadataUploader
 
-from data_fetching import kaggle_extractor
+from data_fetching.kaggle_extractor import KaggleExtractor
 
-from data_uploading import json_to_db_uploader
+from data_uploading.json_to_db_uploader import JsonToDbUploader
 
 # CONFIGURATION
+
+# Whether to save downloaded CSV files from the datasets. 
 SAVE_CSV = True
 DATASET_FOLDER = "datasets"
+
+# Whether to save the metadata JSON objects created. Should be true if you want the ability to edit.
+SAVE_METADATA = False
 METADATA_FOLDER = "metadata"
-TOPICS = ['sports', 'academics', 'housing', 'health', 'finance']
+
+# The topics to query from. 
+# TOPICS = ['sports', 'academics', 'housing', 'health', 'finance']
+TOPICS = ['sports']
+
+# Source to query. 
 SOURCE = "kaggle"
 
-
+# Initialize default objects to be overridden. 
 extractor = MetadataExtractor(DATASET_FOLDER)
 uploader = MetadataUploader()
 
-# Fetch Data
+# Override extractor and uploader objects. 
 if SOURCE == "kaggle":
-    # kaggle.fetch(TOPICS, DATASET_FOLDER)
-    extractor = kaggle_extractor.KaggleExtractor(file_input_path=DATASET_FOLDER, file_output_path=METADATA_FOLDER, source="kaggle")
+    kaggle.fetch(TOPICS, DATASET_FOLDER)
+    extractor = KaggleExtractor(file_input_path=DATASET_FOLDER, file_output_path=METADATA_FOLDER)
+    uploader = JsonToDbUploader(file_input_path=METADATA_FOLDER)
 
+# # Extract Topics. 
 extractor.extract_topics(TOPICS)
 
-# from csv_to_json_extractor import CSVToJsonExtractor
+print("SUCCESSFULLY EXTRACTED TOPICS.")
+
+# Upload Topics. 
+uploader.prepare_upload(topics=TOPICS)
+uploader.upload()
 
 
-# # Script Configuration
-# TOPICS = ["academics", "finance", "health", "housing", "sports"]
-# SOURCE = "kaggle"
-# FILE_INPUT_PATH = "datasets/" + TOPICS[0]
-# FILE_OUTPUT_PATH = "metadata/" + TOPICS[0]
+print("SUCCESSFULLY UPLOADED METADATA.")
 
-# extractor = CSVToJsonExtractor(file_input_path=FILE_INPUT_PATH, 
-#                                file_output_path=FILE_OUTPUT_PATH, 
-#                                 topic=TOPICS[0], source=SOURCE)
+# Delete Unnecessary data. 
+if not SAVE_CSV:
+    for topic in TOPICS:
+        shutil.rmtree(os.path.join(DATASET_FOLDER, topic))
 
-# extractor.extract()
-
-# for topic in TOPICS:
-#     if topic == TOPICS[0]:
-#         continue
-#     extractor.file_input_path = "datasets/" + topic
-#     extractor.file_output_path = "metadata/" + topic
-#     extractor.topic = topic
-#     extractor.extract()
+if not SAVE_METADATA:
+    for topic in TOPICS:
+        shutil.rmtree(os.path.join(METADATA_FOLDER, topic))
