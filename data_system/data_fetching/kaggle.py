@@ -32,7 +32,7 @@ def fetch(topics, output_folder):
             urlList.append(d.split(' ', 1)[0])
 
         #Download all of the dataset files and metadata into the topic folder
-        for u in urlList[:10]:
+        for u in urlList[:50]:
             try:
                 name = u[u.rindex('/'):]
                 if not os.path.exists(os.getcwd() + name):
@@ -55,7 +55,10 @@ def fetch(topics, output_folder):
                     for f in os.listdir(os.getcwd()):
                         if f.endswith('.zip') == True:
                             with ZipFile(f, 'r') as z:
-                                z.extractall(os.getcwd())
+                                try:
+                                    z.extractall(os.getcwd())
+                                except Exception as e:
+                                    print("Erorr extracting:", os.getcwd())
                             os.remove(f)
                     for f in os.listdir(os.getcwd()):
                         if os.path.isfile(f) and f.endswith('.csv') == False and f.endswith('.json') == False:
