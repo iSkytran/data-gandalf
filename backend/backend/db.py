@@ -1,5 +1,5 @@
 from sqlmodel import Session, SQLModel, create_engine, select
-from backend.models import Dataset
+from models import Dataset
 import os
 
 env_url = os.getenv("DATABASE_ADDRESS", "database:5432")

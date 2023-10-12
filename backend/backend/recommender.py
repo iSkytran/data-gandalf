@@ -1,9 +1,7 @@
 import pickle
 from pathlib import Path
-import os
-
-from backend.models import Dataset
-import backend.db as db
+from models import Dataset
+import db
 
 # TODO: add documentation
 class RecommendationModel:
@@ -25,8 +23,9 @@ class RecommendationModel:
         dataset_recs = full_rec_list[dataset_id]
         # dataset_recs is (score, UID)s, here is list of (Datasets, score)s if needed for frontend:
         datasets = [(score, db.get_by_id(id)) for score,id in dataset_recs]
-        return dataset_recs # or datasets
+        # return dataset_recs # or datasets
+        return datasets
 
-recommendation_model = RecommendationModel(Path("models/model.pkl")) 
+recommendation_model = RecommendationModel(Path("../models/model.pkl"))
 # TODO: make this path come frome config or env variable
 # TODO: does path only work with Docker?
