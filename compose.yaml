@@ -1,12 +1,14 @@
 services:
   frontend:
-    image: "frontend"
+    build:
+      context: frontend
     ports:
       - "3000:3000"
     environment:
       BACKEND_ADDRESS: localhost:8080
   backend:
-    image: "backend"
+    build:
+      context: backend
     ports:
       - "8080:8080"
     depends_on:
