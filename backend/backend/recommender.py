@@ -1,6 +1,6 @@
 import pickle
 from pathlib import Path
-from models import Dataset
+from backend.models import Dataset
 import db
 
 # TODO: add documentation

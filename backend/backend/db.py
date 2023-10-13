@@ -1,6 +1,7 @@
 from sqlmodel import Session, SQLModel, create_engine, select
-from models import Dataset
 import os
+
+from backend.models import Dataset
 
 env_url = os.getenv("DATABASE_ADDRESS", "database:5432")
 db_url = f"postgresql://postgres:default@{env_url}"
