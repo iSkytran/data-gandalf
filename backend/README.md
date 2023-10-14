@@ -1,6 +1,6 @@
 # Backend for Data Gandalf
 
-## Running Locally
+## Running Locally - Linux
 
 In order to run the backend locally, Python 3.9 will need to be installed. The following steps can then be run to get the backend running.
 
