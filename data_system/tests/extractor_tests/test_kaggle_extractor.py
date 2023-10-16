@@ -1,8 +1,8 @@
 import os, shutil, json
 from data_fetching.kaggle_extractor import KaggleExtractor
 
-TEST_DATA_PATH = os.path.join('tests', 'test_files', 'test_datasets')
-TEST_OUTPUT_PATH = os.path.join('tests', 'test_files', 'test_metadata')
+TEST_DATA_PATH = os.path.join('tests', 'test_files', 'datasets')
+TEST_OUTPUT_PATH = os.path.join('tests', 'test_files', 'metadata')
 
 # Clear old test output
 if os.path.exists(TEST_OUTPUT_PATH):
@@ -94,3 +94,16 @@ def test_extract_energy():
     assert energy_dict['title'] == "energy"
     assert energy_dict['topic'] == "energy"
     assert energy_dict['usability'] == 0.45
+
+
+# Energy has a broken JSON file (no title) and no csv files.
+def test_extract_healthcare():
+    
+    # Extract metadata 
+    topics = ["healthcare"]
+
+    try:
+        extractor.extract_topics(topics)
+        assert False
+    except Exception as e:
+        assert True

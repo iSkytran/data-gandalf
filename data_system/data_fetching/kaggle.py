@@ -5,11 +5,11 @@ import shutil
 
 fixed_directory = ""
 
+# Unzip ZIP files, then remove Non-JSON and Non-CSV files.
 def clean_dataset(path):
     # for each file
     for f in os.listdir(path):
         file = os.path.join(path, f)
-        print("FILE:", file)
         if file.endswith('.zip') == True:
             with ZipFile(file, 'r') as z:
                 z.extractall(path)
@@ -19,6 +19,7 @@ def clean_dataset(path):
         if os.path.isdir(file):
             shutil.rmtree(file)
 
+# Ensure at least one CSV file exists in the directory.
 def ensure_data_exists(folder_path):
     # Ensure Data is non-empty
     csv = False
@@ -28,8 +29,7 @@ def ensure_data_exists(folder_path):
             csv = True
     return csv
     
-
-# Datasets are output of kaggle datasets list cli call.
+# Given a string represnting datasets (pulled from kaggle), get a topic URL list.
 def get_topic_urlList(datasets, topic):
     #Split the datasets into a list and remove the headers
     datasetList = datasets.split('\r\n')
@@ -43,7 +43,13 @@ def get_topic_urlList(datasets, topic):
 
     return urlList
 
-def pull_dataset(link, topic):
+# Pulls a dataset from kaggle with a given link.
+def pull_dataset(link):
+    subprocess.run(f'kaggle datasets download -d {link}')
+    subprocess.run(f'kaggle datasets metadata {link}')
+
+# Pull a dataset with a given link from kaggle, then validates it.
+def process_dataset(link, topic):
     global fixed_directory
     path = os.path.join(fixed_directory, "datasets", topic)
     os.chdir(path)
@@ -57,8 +63,9 @@ def pull_dataset(link, topic):
             raise Exception("Dataset already pulled.")
         os.makedirs(folder)
         os.chdir(folder)
-        subprocess.run(f'kaggle datasets download -d {link}')
-        subprocess.run(f'kaggle datasets metadata {link}')
+
+        pull_dataset(link)
+  
         os.chdir(path)
 
         # Clean Dataset Folder
@@ -93,7 +100,7 @@ def pull_topic(topic, num_datasets):
     idx = 0
     while idx < len(urlList) and successful_pulls < num_datasets:
         u = urlList[idx]
-        if pull_dataset(u, topic):
+        if process_dataset(u, topic):
             successful_pulls += 1
                 # If doesn't have CSV, delete it
         idx += 1

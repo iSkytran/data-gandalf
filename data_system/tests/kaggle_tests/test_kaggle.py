@@ -4,8 +4,8 @@ from zipfile import ZipFile
 import shutil
 from data_fetching import kaggle
 
-TEST_DATA_PATH = os.path.join('tests', 'test_files', 'test_datasets')
-TEST_OUTPUT_PATH = os.path.join('tests', 'test_files', 'test_metadata')
+TEST_DATA_PATH = os.path.join('tests', 'test_files', 'datasets')
+TEST_OUTPUT_PATH = os.path.join('tests', 'test_files', 'metadata')
 
 # Clear old test output
 if os.path.exists(TEST_OUTPUT_PATH):
@@ -48,17 +48,45 @@ def test_ensure_data_exists():
     test_dataset_path = os.path.join(TEST_DATA_PATH, 'academics', 'grades1')
     assert kaggle.ensure_data_exists(test_dataset_path) == True
     assert kaggle.ensure_data_exists(TEST_DATA_PATH) == False
-    # # Ensure Data is non-empty
-    # csv = False
-    # for f in os.listdir(folder_path):
-    #     file = os.path.join(folder_path, f)
-    #     if file.endswith('.csv'):
-    #         csv = True
-    # return csv
 
+def test_process_dataset():
+    fixed_directory = os.getcwd()
 
+    # Deletes folder if created in past run.
+    test_dataset_path = os.path.join(TEST_DATA_PATH, 'academics', 'grades_process_dataset')
+    if os.path.exists(test_dataset_path):
+        shutil.rmtree(test_dataset_path)
 
-# def pull_dataset(link, topic):
+    # Simulates pulling a dataset, by creating a folder with a csv and json.
+    def pull_dataset_holder(link):
+        print(os.getcwd())
+        with open('test.csv', "w+") as newfile:
+            newfile.write("TEST FILE")
+        with open('test.json', "w+") as newfile:
+            newfile.write("TEST FILE")
+
+    kaggle.pull_dataset = pull_dataset_holder
+    kaggle.fixed_directory = os.path.join(os.getcwd(), "tests", "test_files")
+
+    # Test pulling dataset that already exists.
+    success = kaggle.process_dataset("/grades1", "academics")
+    assert success == False
+
+    os.chdir(fixed_directory)
+
+    # Test pulling new dataset. 
+    success = kaggle.process_dataset("/grades_process_dataset", "academics")
+    assert success == True
+  
+    os.chdir(fixed_directory)
+
+# # Pulls a dataset from kaggle with a given link.
+# def pull_dataset(link):
+#     subprocess.run(f'kaggle datasets download -d {link}')
+#     subprocess.run(f'kaggle datasets metadata {link}')
+
+# # Pull a dataset with a given link from kaggle, then validates it.
+# def process_dataset(link, topic):
 #     global fixed_directory
 #     path = os.path.join(fixed_directory, "datasets", topic)
 #     os.chdir(path)
@@ -72,23 +100,19 @@ def test_ensure_data_exists():
 #             raise Exception("Dataset already pulled.")
 #         os.makedirs(folder)
 #         os.chdir(folder)
-#         subprocess.run(f'kaggle datasets download -d {link}')
-#         subprocess.run(f'kaggle datasets metadata {link}')
+
+#         pull_dataset(link)
+  
 #         os.chdir(path)
 
 #         # Clean Dataset Folder
 #         clean_dataset(folder)  
 
-#         # Ensure Data is non-empty
-#         csv = False
-#         for f in os.listdir(folder):
-#             file = os.path.join(folder, f)
-#             if file.endswith('.csv'):
-#                 csv = True
-#         if not csv:
+#         data_exists = ensure_data_exists(folder)
+#         if not data_exists:
 #             shutil.rmtree(folder)
 #             raise Exception("No CSV files detected in", folder)
-        
+
 #         return True
 #     except Exception as e:
 #         print("Unable to parse url:", link)
