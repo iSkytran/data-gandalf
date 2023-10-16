@@ -30,6 +30,7 @@ def datasets(topic: Optional[str] = None) -> list[Dataset]:
     
 @app.get("/dataset/{uid}")
 def dataset(uid: str):
-    return recommendation_model.rank(uid)
+    dataset = db.get_by_id(uid)
+    return [dataset, recommendation_model.rank(uid)]
 
 # TODO: POST ratings

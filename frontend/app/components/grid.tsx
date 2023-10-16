@@ -5,8 +5,6 @@ export default function Grid({ datasets }: { datasets: Array<object> }) {
     return <div>Loading...</div>;
   }
 
-  console.log(datasets);
-
   const items = datasets.map((dataset: any) => {
     return <GridItem key={dataset.id} metadata={dataset} />;
   });
