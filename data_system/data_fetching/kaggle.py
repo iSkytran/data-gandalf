@@ -9,6 +9,7 @@ def clean_dataset(path):
     # for each file
     for f in os.listdir(path):
         file = os.path.join(path, f)
+        print("FILE:", file)
         if file.endswith('.zip') == True:
             with ZipFile(file, 'r') as z:
                 z.extractall(path)
@@ -105,5 +106,5 @@ def fetch(topics, num_datasets, output_folder):
     for topic in topics:
         pull_topic(topic, num_datasets)
         os.chdir(fixed_directory)
-        
+
     os.chdir(fixed_directory)

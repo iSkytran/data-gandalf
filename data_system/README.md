@@ -71,4 +71,4 @@ Generate Coverage Report:
 ```coverage  run --source=data_fetching,data_uploading --omit=data_fetching/run_extractor.py,data_uploading/run_uploader.py -m pytest```
 
 View Coverage Report:
-```coverage```
+```coverage report -m```
