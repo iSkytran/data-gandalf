@@ -32,6 +32,7 @@ class KaggleExtractor(MetadataExtractor):
                 elif filename == 'dataset-metadata.json':
                     file = open(os.path.join(dataset_folder, filename), 'r')
                     given_metadata = json.load(file)
+                    file.close()
                     metadata['source'] = self.source
                     metadata['topic'] = topic
                     metadata['usability'] = given_metadata['usabilityRating']
@@ -39,6 +40,7 @@ class KaggleExtractor(MetadataExtractor):
                     metadata['description'] = given_metadata['description']
                     metadata['tags'] = given_metadata['keywords']
                     metadata['licenses'] = given_metadata['licenses']
+
                 # Otherwise, ignore
                 else:
                     continue

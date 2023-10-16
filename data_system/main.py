@@ -25,7 +25,7 @@ TOPICS = ['sports', 'agriculture', 'housing', 'health', 'finance', 'education', 
 SOURCE = "kaggle"
 
 # Which Stages to Run- "FETCH", "EXTRACT", "UPLOAD"
-STAGES = ["FETCH", "EXTRACT", "UPLOAD"]
+STAGES = ["EXTRACT"]
 
 # Initialize default objects to be overridden. 
 extractor = MetadataExtractor(DATASET_FOLDER)
