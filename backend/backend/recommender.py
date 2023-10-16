@@ -1,6 +1,9 @@
 import pickle
 from pathlib import Path
+from recommenders.models.tfidf.tfidf_utils import TfidfRecommender
+
 from backend.models import Dataset
+import backend.config as cf
 import backend.db as db
 
 # TODO: add documentation
@@ -19,13 +22,18 @@ class RecommendationModel:
         # TODO: catch exceptions if model file doesn't exist
 
     def rank(self, dataset_id: str) -> list[Dataset]:
-        full_rec_list = self.model.recommendations
-        dataset_recs = full_rec_list[dataset_id]
-        # dataset_recs is (score, UID)s, here is list of (Datasets, score)s if needed for frontend:
-        datasets = [(score, db.get_by_id(id)) for score,id in dataset_recs]
-        # return dataset_recs # or datasets
-        return datasets
+        # Check if model is an instance of TfidfRecommender
+        if isinstance(self.model, TfidfRecommender):
+            full_rec_list = self.model.recommendations
+            dataset_recs = full_rec_list[dataset_id] # (score, UID)s
+            datasets = [(score, db.get_by_id(id)) for score,id in dataset_recs] # (score, Datasets)s
+            return datasets
+        # Check if model is dictionary
+        elif isinstance(self.model, dict):
+            dataset_recs = self.model[dataset_id]
+            datasets = [(score, db.get_by_id(id)) for score,id in dataset_recs]
+            return datasets
+        else:
+            raise Exception("Unexpected model type")
 
-recommendation_model = RecommendationModel(Path("models/model.pkl"))
-# TODO: make this path come frome config or env variable
-# TODO: does path only work with Docker?
+recommendation_model = RecommendationModel(cf.MODEL_PATH)
