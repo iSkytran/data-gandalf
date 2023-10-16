@@ -1,0 +1,35 @@
+{
+    "col_count": 7,
+    "col_names": [
+        "Unnamed: 0",
+        "name",
+        "rating",
+        "review_count",
+        "genre",
+        "location",
+        "best_comment"
+    ],
+    "description": "The Entertainment_KSA.csv dataset contains data on various entertainment spots in Saudi Arabia. With over 500 rows of data, this dataset provides information on the name, rating, review count, genre, location, and best comment for each entertainment spot. This dataset can be used to analyze the entertainment industry in Saudi Arabia and understand the types of entertainment spots available in the country.\n\nThe way of creating datasets like Entertainment_KSA.csv is by web scraping information from public sources such as Google Maps or Yelp. Web scraping is the process of automatically extracting data from websites using software tools. In this case, a web scraper would be programmed to visit the relevant pages on Google Maps or Yelp and extract information on entertainment spots such as name, rating, review count, genre, location, and best comment.\n\nThe scraped data can then be saved in a CSV file, like the Entertainment_KSA.csv dataset. Once the data is collected, it can be cleaned and processed to remove any errors or duplicates and then analyzed to gain insights into the entertainment industry in Saudi Arabia.\n\nAs for inspiration, datasets like Entertainment_KSA.csv can be used for a variety of purposes, including market research, trend analysis, and predictive modeling. Researchers and data analysts can use this dataset to explore the types of entertainment spots available in Saudi Arabia, identify popular spots, and understand the factors that influence customer reviews and ratings.\n\nFor example, this dataset could be used to predict which new entertainment spots are likely to be successful based on their genre, location, and other factors. It could also be used to identify trends in the entertainment industry in Saudi Arabia, such as the increasing popularity of certain genres or the growth of entertainment spots in specific regions.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 277,
+    "num_entries": 3948,
+    "row_count": 564,
+    "source": "kaggle",
+    "tags": [
+        "arts and entertainment",
+        "celebrities",
+        "dance",
+        "games",
+        "travel",
+        "arabic"
+    ],
+    "title": "Entertainment in Saudi Arabia",
+    "topic": "entertainment",
+    "usability": 1.0
+}

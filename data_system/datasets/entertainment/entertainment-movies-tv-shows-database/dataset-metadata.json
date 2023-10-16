@@ -1,0 +1,39 @@
+{
+  "id": "priyanshuganwani09/entertainment-movies-tv-shows-database",
+  "id_no": 3079951,
+  "datasetSlugNullable": "entertainment-movies-tv-shows-database",
+  "ownerUserNullable": "priyanshuganwani09",
+  "usabilityRatingNullable": 1.0,
+  "titleNullable": "Entertainment (movies, tv shows) Dataset",
+  "subtitleNullable": "Exploring the Fascinating World of Movies and TV Shows with Finite Dataset",
+  "descriptionNullable": "### The dataset created to predict Streaming movie and tv shows success rate using Machine Learning models. These datasets consist of information of the users. These datasets can be used to understand the preferences and behavior of audiences towards different types of content. \n",
+  "datasetId": 3079951,
+  "datasetSlug": "entertainment-movies-tv-shows-database",
+  "hasDatasetSlug": true,
+  "ownerUser": "priyanshuganwani09",
+  "hasOwnerUser": true,
+  "usabilityRating": 1.0,
+  "hasUsabilityRating": true,
+  "totalViews": 7920,
+  "totalVotes": 31,
+  "totalDownloads": 1378,
+  "title": "Entertainment (movies, tv shows) Dataset",
+  "hasTitle": true,
+  "subtitle": "Exploring the Fascinating World of Movies and TV Shows with Finite Dataset",
+  "hasSubtitle": true,
+  "description": "### The dataset created to predict Streaming movie and tv shows success rate using Machine Learning models. These datasets consist of information of the users. These datasets can be used to understand the preferences and behavior of audiences towards different types of content. \n",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "movies and tv shows"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "CC0-1.0",
+      "name": "CC0-1.0",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}

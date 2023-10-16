@@ -1,0 +1,17 @@
+{
+    "description": "",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "source": "kaggle",
+    "tags": [
+        "chemistry"
+    ],
+    "title": "Chemistry Models",
+    "topic": "chemistry",
+    "usability": 0.29411764705882354
+}

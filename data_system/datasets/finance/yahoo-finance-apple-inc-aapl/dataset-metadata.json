@@ -1,0 +1,44 @@
+{
+  "id": "achintyatripathi/yahoo-finance-apple-inc-aapl",
+  "id_no": 867535,
+  "datasetSlugNullable": "yahoo-finance-apple-inc-aapl",
+  "ownerUserNullable": "achintyatripathi",
+  "usabilityRatingNullable": 0.9411764705882353,
+  "titleNullable": "Yahoo Finance Apple Inc. (AAPL)",
+  "subtitleNullable": "Try Predicting the market",
+  "descriptionNullable": "### Context\n\nThis is Historical Data which contains data that tells the onening and closing price of the market. The highest and lowest points and also tells about VWAP .\nIt have data of one whole year, which is divided into 3 parts,\n1.Daily updates 2. Weekly updates, 3. Monthly Updates.\n\n### Inspiration\n\nThe idea came from whether we can actually predict what will be the opening or closing price of the market, or what  will be the higgest and lowest price of the market. ",
+  "datasetId": 867535,
+  "datasetSlug": "yahoo-finance-apple-inc-aapl",
+  "hasDatasetSlug": true,
+  "ownerUser": "achintyatripathi",
+  "hasOwnerUser": true,
+  "usabilityRating": 0.9411764705882353,
+  "hasUsabilityRating": true,
+  "totalViews": 16155,
+  "totalVotes": 49,
+  "totalDownloads": 1538,
+  "title": "Yahoo Finance Apple Inc. (AAPL)",
+  "hasTitle": true,
+  "subtitle": "Try Predicting the market",
+  "hasSubtitle": true,
+  "description": "### Context\n\nThis is Historical Data which contains data that tells the onening and closing price of the market. The highest and lowest points and also tells about VWAP .\nIt have data of one whole year, which is divided into 3 parts,\n1.Daily updates 2. Weekly updates, 3. Monthly Updates.\n\n### Inspiration\n\nThe idea came from whether we can actually predict what will be the opening or closing price of the market, or what  will be the higgest and lowest price of the market. ",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "business",
+    "finance",
+    "marketing",
+    "exploratory data analysis",
+    "time series analysis",
+    "investing"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "copyright-authors",
+      "name": "copyright-authors",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}

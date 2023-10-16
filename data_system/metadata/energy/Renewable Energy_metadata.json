@@ -1,0 +1,49 @@
+{
+    "col_count": 74,
+    "col_names": [
+        "Entity",
+        "Code",
+        "Year",
+        "Biofuels Production - TWh - Total",
+        "Wind Capacity",
+        "Hydro (% sub energy)",
+        "Electricity from hydro (TWh)",
+        "Geothermal Capacity",
+        "Solar Capacity",
+        "Wind Generation - TWh",
+        "Solar Generation - TWh",
+        "Geo Biomass Other - TWh",
+        "Hydro Generation - TWh",
+        "Electricity from wind (TWh)",
+        "Electricity from solar (TWh)",
+        "Electricity from other renewables including bioenergy (TWh)",
+        "Renewables (% sub energy)",
+        "Hydro (% electricity)",
+        "Renewables (% electricity)",
+        "Solar (% electricity)",
+        "Wind (% electricity)",
+        "Solar (% sub energy)",
+        "Wind (% sub energy)"
+    ],
+    "description": "Renewable energy is energy that is collected from renewable resources that are naturally replenished on a human timescale. It includes sources such as sunlight, wind, rain, tides, waves, and geothermal heat. Although most renewable energy sources are sustainable, some are not. Wikipedia\n\n&gt; @article{owidenergy,\n    author = {Hannah Ritchie, Max Roser and Pablo Rosado},\n    title = {Energy},\n    journal = {Our World in Data},\n    year = {2020},\n    note = {https://ourworldindata.org/energy}\n}",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 10989,
+    "num_entries": 385390,
+    "row_count": 86599,
+    "source": "kaggle",
+    "tags": [
+        "renewable energy",
+        "beginner",
+        "intermediate",
+        "tabular"
+    ],
+    "title": "Renewable Energy",
+    "topic": "energy",
+    "usability": 0.8235294117647058
+}

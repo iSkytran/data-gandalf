@@ -1,0 +1,33 @@
+{
+    "col_count": 10,
+    "col_names": [
+        "Unnamed: 0",
+        "id",
+        "original_title",
+        "original_language",
+        "release_date",
+        "popularity",
+        "vote_average",
+        "vote_count",
+        "media_type",
+        "adult"
+    ],
+    "description": "### The dataset created to predict Streaming movie and tv shows success rate using Machine Learning models. These datasets consist of information of the users. These datasets can be used to understand the preferences and behavior of audiences towards different types of content. \n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 8040,
+    "num_entries": 160800,
+    "row_count": 16080,
+    "source": "kaggle",
+    "tags": [
+        "movies and tv shows"
+    ],
+    "title": "Entertainment (movies, tv shows) Dataset",
+    "topic": "entertainment",
+    "usability": 1.0
+}

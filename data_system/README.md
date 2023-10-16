@@ -65,3 +65,10 @@ Data Gandalf is a web application for finding related datasets. The setup instru
 1. Create an empty database with name <db_name>
 2. Run ```psql -U <username> <db_name> < <dump_filename>.sql```
 The database should now be populated with correct tables and records.
+
+## Testing
+Generate Coverage Report:
+```coverage  run --source=data_fetching,data_uploading --omit=data_fetching/run_extractor.py,data_uploading/run_uploader.py -m pytest```
+
+View Coverage Report:
+```coverage```

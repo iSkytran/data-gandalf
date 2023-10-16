@@ -1,0 +1,42 @@
+{
+  "id": "schirmerchad/bostonhoustingmlnd",
+  "id_no": 1379,
+  "datasetSlugNullable": "bostonhoustingmlnd",
+  "ownerUserNullable": "schirmerchad",
+  "usabilityRatingNullable": 0.8235294117647058,
+  "titleNullable": "Boston Housing",
+  "subtitleNullable": "Concerns housing values in suburbs of Boston",
+  "descriptionNullable": "### Context\n\nThe dataset for this project originates from the UCI Machine Learning Repository. The Boston housing data was collected in 1978 and each of the 506 entries represent aggregated data about 14 features for homes from various suburbs in Boston, Massachusetts.\n\n### Acknowledgements\n\nhttps://github.com/udacity/machine-learning\n\nhttps://archive.ics.uci.edu/ml/datasets/Housing",
+  "datasetId": 1379,
+  "datasetSlug": "bostonhoustingmlnd",
+  "hasDatasetSlug": true,
+  "ownerUser": "schirmerchad",
+  "hasOwnerUser": true,
+  "usabilityRating": 0.8235294117647058,
+  "hasUsabilityRating": true,
+  "totalViews": 147986,
+  "totalVotes": 236,
+  "totalDownloads": 25973,
+  "title": "Boston Housing",
+  "hasTitle": true,
+  "subtitle": "Concerns housing values in suburbs of Boston",
+  "hasSubtitle": true,
+  "description": "### Context\n\nThe dataset for this project originates from the UCI Machine Learning Repository. The Boston housing data was collected in 1978 and each of the 506 entries represent aggregated data about 14 features for homes from various suburbs in Boston, Massachusetts.\n\n### Acknowledgements\n\nhttps://github.com/udacity/machine-learning\n\nhttps://archive.ics.uci.edu/ml/datasets/Housing",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "earth and nature",
+    "education",
+    "real estate",
+    "social issues and advocacy"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "CC-BY-NC-SA-4.0",
+      "name": "CC-BY-NC-SA-4.0",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}

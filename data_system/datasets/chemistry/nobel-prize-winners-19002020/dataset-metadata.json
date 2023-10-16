@@ -1,0 +1,42 @@
+{
+  "id": "rishidamarla/nobel-prize-winners-19002020",
+  "id_no": 1571441,
+  "datasetSlugNullable": "nobel-prize-winners-19002020",
+  "ownerUserNullable": "rishidamarla",
+  "usabilityRatingNullable": 0.9411764705882353,
+  "titleNullable": "Nobel Prize Winners (1900-2020)",
+  "subtitleNullable": "All Nobel Laureates from Past Century",
+  "descriptionNullable": "### Content\n\nIn this dataset, you will find a list of over 900 individuals who won the most prestigious award possible in the fields of Literature, Physics, Medicine, Economics, Chemistry, and Peace. \n\n### Acknowledgements\n\nThis dataset comes from https://data.world/sya/nobel-prize-winners.",
+  "datasetId": 1571441,
+  "datasetSlug": "nobel-prize-winners-19002020",
+  "hasDatasetSlug": true,
+  "ownerUser": "rishidamarla",
+  "hasOwnerUser": true,
+  "usabilityRating": 0.9411764705882353,
+  "hasUsabilityRating": true,
+  "totalViews": 8045,
+  "totalVotes": 36,
+  "totalDownloads": 885,
+  "title": "Nobel Prize Winners (1900-2020)",
+  "hasTitle": true,
+  "subtitle": "All Nobel Laureates from Past Century",
+  "hasSubtitle": true,
+  "description": "### Content\n\nIn this dataset, you will find a list of over 900 individuals who won the most prestigious award possible in the fields of Literature, Physics, Medicine, Economics, Chemistry, and Peace. \n\n### Acknowledgements\n\nThis dataset comes from https://data.world/sya/nobel-prize-winners.",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "neuroscience",
+    "social science",
+    "science and technology",
+    "computer science"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "CC0-1.0",
+      "name": "CC0-1.0",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}

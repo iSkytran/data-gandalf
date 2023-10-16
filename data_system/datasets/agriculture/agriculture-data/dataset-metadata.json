@@ -1,0 +1,40 @@
+{
+  "id": "dhanushk2105/agriculture-data",
+  "id_no": 554106,
+  "datasetSlugNullable": "agriculture-data",
+  "ownerUserNullable": "dhanushk2105",
+  "usabilityRatingNullable": 0.6470588235294118,
+  "titleNullable": "Agriculture Data",
+  "subtitleNullable": "Data generated in backyard garden, in using sensors from Arduino Uno r3",
+  "descriptionNullable": "The data collected is of a plant-soil in  Visakhapatnam, India \n\n\n#\n\nThe use of temperature sensor DHT-11 and moisture sensor through Arduino to cloud\n",
+  "datasetId": 554106,
+  "datasetSlug": "agriculture-data",
+  "hasDatasetSlug": true,
+  "ownerUser": "dhanushk2105",
+  "hasOwnerUser": true,
+  "usabilityRating": 0.6470588235294118,
+  "hasUsabilityRating": true,
+  "totalViews": 9040,
+  "totalVotes": 17,
+  "totalDownloads": 631,
+  "title": "Agriculture Data",
+  "hasTitle": true,
+  "subtitle": "Data generated in backyard garden, in using sensors from Arduino Uno r3",
+  "hasSubtitle": true,
+  "description": "The data collected is of a plant-soil in  Visakhapatnam, India \n\n\n#\n\nThe use of temperature sensor DHT-11 and moisture sensor through Arduino to cloud\n",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "earth science",
+    "electronics"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "copyright-authors",
+      "name": "copyright-authors",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}

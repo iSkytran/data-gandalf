@@ -1,0 +1,37 @@
+{
+    "col_count": 10,
+    "col_names": [
+        "hotstar_id",
+        "title",
+        "description",
+        "genre",
+        "year",
+        "age_rating",
+        "running_time",
+        "seasons",
+        "episodes",
+        "type"
+    ],
+    "description": "Disney+ Hotstar (also known as Hotstar) is an Indian brand of subscription video on-demand over-the-top streaming service owned by Novi Digital Entertainment of Disney Star and operated by Disney Media and Entertainment Distribution, both divisions of The Walt Disney Company.\n\nThe brand was first introduced as Hotstar for a streaming service carrying content from Disney Star's local networks, including films, television series, live sports, and original programming, as well as featuring content licensed from third-parties such as HBO and Showtime among others. Amid the significant growth of mobile broadband in India, Hotstar quickly became the dominant streaming service in the country.\n\nFollowing the acquisition of Star India's parent company 21st Century Fox by Disney in 2019, Hotstar was integrated with the company's new global streaming brand Disney+ as 'Disney+ Hotstar' in April 2020. The co-branded service added Disney+ original programming, and films and television series from its main content brands of Walt Disney Studios, Pixar, Marvel Studios, Lucasfilm, and National Geographic alongside the domestic and third-party content already carried on the platform.\n\nOutside of India, the Disney+ Hotstar service also operates in Indonesia, Malaysia, and Thailand, which similarly combines entertainment content licensed from local, third-party studios, with the larger Disney+ library. Disney+ Hotstar is also expected to launch in the Philippines and Vietnam in the end of 2022. In Singapore, Canada, and the United Kingdom, Hotstar operates as a streaming service targeting overseas Indians, focusing on Disney Star's domestic entertainment and sports content; Disney+ operates as a standalone service in these markets. In 2021, Disney announced that it would discontinue the U.S. version of Hotstar in November 2021, in favor of adding its content to the domestic Hulu and ESPN+ services instead.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC-BY-SA-3.0",
+            "nameNullable": "CC-BY-SA-3.0"
+        }
+    ],
+    "null_count": 11442,
+    "num_entries": 68740,
+    "row_count": 6874,
+    "source": "kaggle",
+    "tags": [
+        "arts and entertainment",
+        "movies and tv shows",
+        "nlp",
+        "recommender systems",
+        "tabular"
+    ],
+    "title": "Disney+ Hotstar Tv and Movie Catalog",
+    "topic": "entertainment",
+    "usability": 1.0
+}

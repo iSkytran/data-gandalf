@@ -1,0 +1,41 @@
+{
+  "id": "lunatics/global-politcs-and-governance-data-apr-2020",
+  "id_no": 583425,
+  "datasetSlugNullable": "global-politcs-and-governance-data-apr-2020",
+  "ownerUserNullable": "lunatics",
+  "usabilityRatingNullable": 1.0,
+  "titleNullable": "Global politics and governance data for COVID-19",
+  "subtitleNullable": "Political and governance features for COVID-19 Forecasting Challenge",
+  "descriptionNullable": "### Context\n\n- Does a central/fedral government have the power/authority to completely isolate a province/state?\n- How quickly can a government react to the situation?\n- Is the government able to effectively allocate and move the resources to where they are needed the most in a timely manner? \n- What is the risk appetite of the leader?\n- What is the risk appetite of the goverment?\n\nThe spread of COVID-19 is more than just a technical and scientific question. How and how well can a country contain the spread of the virus also depends on its leader and regime characteristics. \n\n### Content\n\nThis dataset contains 5 leader characteristics to profile the leader of a country.\n- whether the leader is elected\n- tenure\n- age\n- gender\n- military experience\n\nThis dataset also contains 1 regime characteristic that outlines the political structure. Notably,\n- presidential democracy: Democracy in which the executive is distinct from the legislative branch and considerable decision-making authority is granted to the executive.\n- parliamentary Democracy: Democracy in which legislatures are more powerful and executives are less autonomous.\n- single-party systems: Power is held by the head of a party. Executive power is effectively checked by the party or ruling committee.\n\nAdditionally, this dataset contains other politial factors that may affect how the leader and government react to the situation, including anticipated election in the near term and whether there were previous civil conflicts.\n\n### Acknowledgements\n\nThe source of the dataset is updated by Bell, Curtis at OEFRESESARCH.ORG (citation below) and is altered for the COVID-19 forcasting challenge.\n\nBell, Curtis. 2016. The Rulers, Elections, and Irregular Governance Dataset (REIGN). Broomfield, CO: OEF Research. Available at oefresearch.org\n\nDetailed variable descriptions can be found at https://oefresearch.org/sites/default/files/REIGN_descriptions.pdf",
+  "datasetId": 583425,
+  "datasetSlug": "global-politcs-and-governance-data-apr-2020",
+  "hasDatasetSlug": true,
+  "ownerUser": "lunatics",
+  "hasOwnerUser": true,
+  "usabilityRating": 1.0,
+  "hasUsabilityRating": true,
+  "totalViews": 4634,
+  "totalVotes": 11,
+  "totalDownloads": 439,
+  "title": "Global politics and governance data for COVID-19",
+  "hasTitle": true,
+  "subtitle": "Political and governance features for COVID-19 Forecasting Challenge",
+  "hasSubtitle": true,
+  "description": "### Context\n\n- Does a central/fedral government have the power/authority to completely isolate a province/state?\n- How quickly can a government react to the situation?\n- Is the government able to effectively allocate and move the resources to where they are needed the most in a timely manner? \n- What is the risk appetite of the leader?\n- What is the risk appetite of the goverment?\n\nThe spread of COVID-19 is more than just a technical and scientific question. How and how well can a country contain the spread of the virus also depends on its leader and regime characteristics. \n\n### Content\n\nThis dataset contains 5 leader characteristics to profile the leader of a country.\n- whether the leader is elected\n- tenure\n- age\n- gender\n- military experience\n\nThis dataset also contains 1 regime characteristic that outlines the political structure. Notably,\n- presidential democracy: Democracy in which the executive is distinct from the legislative branch and considerable decision-making authority is granted to the executive.\n- parliamentary Democracy: Democracy in which legislatures are more powerful and executives are less autonomous.\n- single-party systems: Power is held by the head of a party. Executive power is effectively checked by the party or ruling committee.\n\nAdditionally, this dataset contains other politial factors that may affect how the leader and government react to the situation, including anticipated election in the near term and whether there were previous civil conflicts.\n\n### Acknowledgements\n\nThe source of the dataset is updated by Bell, Curtis at OEFRESESARCH.ORG (citation below) and is altered for the COVID-19 forcasting challenge.\n\nBell, Curtis. 2016. The Rulers, Elections, and Irregular Governance Dataset (REIGN). Broomfield, CO: OEF Research. Available at oefresearch.org\n\nDetailed variable descriptions can be found at https://oefresearch.org/sites/default/files/REIGN_descriptions.pdf",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "government",
+    "politics",
+    "covid19"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "CC0-1.0",
+      "name": "CC0-1.0",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}

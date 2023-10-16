@@ -1,0 +1,30 @@
+{
+    "col_count": 7,
+    "col_names": [
+        "gravity",
+        "ph",
+        "osmo",
+        "cond",
+        "urea",
+        "calc",
+        "target"
+    ],
+    "description": "This dataset can be used to predict the presence of kidney stones based on urine analysis. \n\nThe 79 urine specimens, were analyzed in an effort to\ndetermine if certain physical characteristics of the urine might be related to the\nformation of calcium oxalate crystals.\nThe six physical characteristics of the urine are: (1) specific gravity, the density of the urine relative to water; (2) pH, the negative logarithm of the hydrogen ion; (3) osmolarity (mOsm), a unit used in biology and medicine but not in\nphysical chemistry. Osmolarity is proportional to the concentration of\nmolecules in solution; (4) conductivity (mMho milliMho). One Mho is one\nreciprocal Ohm. Conductivity is proportional to the concentration of charged\nions in solution; (5) urea concentration in millimoles per litre; and (6) calcium\nconcentration (CALC) in millimolesllitre.\n\nThe data is obtained from 'Physical Characteristics of Urines With and Without Crystals',a chapter from Springer Series in Statistics.\n\nhttps://link.springer.com/chapter/10.1007/978-1-4612-5098-2_45",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 553,
+    "row_count": 79,
+    "source": "kaggle",
+    "tags": [
+        "health"
+    ],
+    "title": "Kidney Stone Prediction based on Urine Analysis",
+    "topic": "chemistry",
+    "usability": 0.8823529411764706
+}

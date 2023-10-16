@@ -1,0 +1,37 @@
+{
+    "col_count": 10,
+    "col_names": [
+        "names",
+        "release_year",
+        "maturity_rating",
+        "duration",
+        "description",
+        "genre",
+        "mood",
+        "cast",
+        "subtitles",
+        "audio"
+    ],
+    "description": "The Netflix dataset contains information on movies, including the release year, duration, cast, brief summaries, and ratings . It also includes additional information such as subtitles and audio languages and most importantly the mood experienced by the people while waching the movie. This data can be  used for recommendation systems, data analysis, and research. The dataset includes over 550+ titles.\n\nDownload the dataset now and give it a try!",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "Community Data License Agreement - Permissive - Version 1.0",
+            "nameNullable": "Community Data License Agreement - Permissive - Version 1.0"
+        }
+    ],
+    "null_count": 43,
+    "num_entries": 5600,
+    "row_count": 560,
+    "source": "kaggle",
+    "tags": [
+        "movies and tv shows",
+        "india",
+        "beginner",
+        "intermediate",
+        "data analytics"
+    ],
+    "title": "Netflix Cleaned Dataset",
+    "topic": "entertainment",
+    "usability": 1.0
+}

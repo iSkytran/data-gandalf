@@ -12,7 +12,7 @@ os.makedirs(TEST_OUTPUT_PATH)
 
 extractor = KaggleExtractor(file_input_path=TEST_DATA_PATH, file_output_path=TEST_OUTPUT_PATH)
 
-def test_extract_topics():
+def test_extract_academics():
     # Extract metadata 
     topics = ["academics"]
     extractor.extract_topics(topics)
@@ -37,3 +37,50 @@ def test_extract_topics():
     assert grades_dict['title'] == "Grades"
     assert grades_dict['topic'] == "academics"
     assert grades_dict['usability'] == 0.8235294117647058
+
+def test_extract_finance():
+    # Extract metadata 
+    topics = ["finance"]
+    extractor.extract_topics(topics)
+
+    # Load output
+    grades_output_file = open(os.path.join(TEST_OUTPUT_PATH, 'finance', 'income_metadata.json'))
+    income_dict = json.load(grades_output_file)
+
+# {
+#     "usabilityRating": 0.298462346364,
+#     "title": "Income",
+#     "description": "A dataset about income",
+#     "keywords": [
+#       "finance", "income"
+#     ],
+#     "licenses": [
+#       {
+#         "nameNullable": "Test License 3",
+#         "name": "Test License 1",
+#         "hasName": true
+#       }, 
+#       {
+#         "nameNullable": "Test License 4",
+#         "name": "Test License 2",
+#         "hasName": true
+#       }
+#     ]
+#   }
+    # Assert expectations
+    assert income_dict['col_count'] == 3
+    assert income_dict['col_names'] == ["ID", "Age", "Income"]
+    assert income_dict['description'] == "A dataset about income"
+    assert len(income_dict['licenses']) == 2
+    assert income_dict['licenses'][0]['name'] == "Test License 3"
+    assert income_dict['licenses'][1]['name'] == "Test License 4"
+    assert income_dict['null_count'] == 0
+    assert income_dict['num_entries'] == 27
+    assert income_dict['row_count'] == 9
+    assert income_dict['source'] == "kaggle"
+    assert len(income_dict['tags']) == 2
+    assert income_dict['tags'][0] == "finance"
+    assert income_dict['tags'][1] == "income"
+    assert income_dict['title'] == "Income"
+    assert income_dict['topic'] == "finance"
+    assert income_dict['usability'] == 0.298462346364

@@ -1,0 +1,41 @@
+{
+  "id": "georgeam/european-agriculture-indicatorseurostat-2016",
+  "id_no": 1723372,
+  "datasetSlugNullable": "european-agriculture-indicatorseurostat-2016",
+  "ownerUserNullable": "georgeam",
+  "usabilityRatingNullable": 1.0,
+  "titleNullable": "European Agriculture Indicators",
+  "subtitleNullable": "EU country level data for a selection of Farm Structure Indicators-Eurostat2016",
+  "descriptionNullable": "**### Context**\nThe dataset is used to explore and visualize the differences between the Agricultural Sectors across European countries. While the Common Agricultural Policy is using a set of priorities and financial mechanisms more or less standardized across EU member states, there are huge differences between the West and the East of Europe in terms of their agricultural sectors. Romania is a particular interesting case, having one of the most fragmented and least productive agricultural sector. \n\n**### Content**\nThe database contains a selection of Farm Structure Indicators for EU member states (28 countries, including UK). The selected indicators provide an overview of the European Agricultural sector (for a non-expert public) and allow for relevant comparisons between EU countries.\nData covers the year 2016, the most recent year for which Farm Structure data was provided by Eurostat. Since multiple countries conducted their Agricultural Census in the period 2020-2021, more recent data is expected to be published soon.\n\nThe indicators were selected and downloaded from the Eurostat database. The indicators come from 4 different Eurostat data tables: [ef_m_farmleg], [ef_lf_main], [ef_mp_training], [ef_m_farmang]. Given the different structure of the datasets provided by Eurostat, the indicators were merged into the final database using a series of VLOOKUP functions in Microsoft Excel.\n\n### Inspiration\nI will be using the data to produce a series of maps (in leaflet() or tmap() in R), exploring cross country differences and trying to answer questions about how \"common\" really is the European Agriculture.\n",
+  "datasetId": 1723372,
+  "datasetSlug": "european-agriculture-indicatorseurostat-2016",
+  "hasDatasetSlug": true,
+  "ownerUser": "georgeam",
+  "hasOwnerUser": true,
+  "usabilityRating": 1.0,
+  "hasUsabilityRating": true,
+  "totalViews": 3723,
+  "totalVotes": 11,
+  "totalDownloads": 380,
+  "title": "European Agriculture Indicators",
+  "hasTitle": true,
+  "subtitle": "EU country level data for a selection of Farm Structure Indicators-Eurostat2016",
+  "hasSubtitle": true,
+  "description": "**### Context**\nThe dataset is used to explore and visualize the differences between the Agricultural Sectors across European countries. While the Common Agricultural Policy is using a set of priorities and financial mechanisms more or less standardized across EU member states, there are huge differences between the West and the East of Europe in terms of their agricultural sectors. Romania is a particular interesting case, having one of the most fragmented and least productive agricultural sector. \n\n**### Content**\nThe database contains a selection of Farm Structure Indicators for EU member states (28 countries, including UK). The selected indicators provide an overview of the European Agricultural sector (for a non-expert public) and allow for relevant comparisons between EU countries.\nData covers the year 2016, the most recent year for which Farm Structure data was provided by Eurostat. Since multiple countries conducted their Agricultural Census in the period 2020-2021, more recent data is expected to be published soon.\n\nThe indicators were selected and downloaded from the Eurostat database. The indicators come from 4 different Eurostat data tables: [ef_m_farmleg], [ef_lf_main], [ef_mp_training], [ef_m_farmang]. Given the different structure of the datasets provided by Eurostat, the indicators were merged into the final database using a series of VLOOKUP functions in Microsoft Excel.\n\n### Inspiration\nI will be using the data to produce a series of maps (in leaflet() or tmap() in R), exploring cross country differences and trying to answer questions about how \"common\" really is the European Agriculture.\n",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "europe",
+    "business",
+    "agriculture"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "EU ODP Legal Notice",
+      "name": "EU ODP Legal Notice",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}

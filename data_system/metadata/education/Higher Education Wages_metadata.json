@@ -1,0 +1,31 @@
+{
+    "col_count": 5,
+    "col_names": [
+        "index",
+        "Name",
+        "Base Pay",
+        "University or Office",
+        "Position"
+    ],
+    "description": "_____\n# Higher Education Wages\n### Pennsylvania's Employee Salaries\nBy Education [[source]](https://data.world/education)\n_____\n\n### About this dataset\n&gt; This dataset contains a comprehensive look at the salaries earned by employees within Pennsylvania State System of Higher Education for 2013. Understand the market trends and value of positions held within this system to help students prepare for their future career aspirations as well as empower employers with detailed data. This is an essential piece to have when looking into what fair compensation looks like in higher education and obtaining important insight regarding salary negotiation, wage structure, and workforce optimization\n\n### More Datasets\n&gt; For more datasets, click [here](https://www.kaggle.com/thedevastator/datasets).\n\n### Featured Notebooks\n&gt; - \ud83d\udea8 **Your notebook can be here!** \ud83d\udea8! \n\n### How to use the dataset\n&gt; Welcome to this dataset on wage disparities in Pennsylvania's higher education system! This dataset contains salary information for employees of the Pennsylvania State System of Higher Education (PASSHE) in 2013. You can use this information to uncover trends and differences in pay between different universities, departments, and job positions. \n&gt; \n&gt; Getting Started: \n&gt; - Open the file \u201c2013_Salaries__Pennsylvania_State_System_of_Higher_Education.csv\u201d and explore its contents. This dataset is composed of 8 columns: Name, Base Pay, University or Office, Position, Gender/Race/Ethnicity, Furlough Reduction % Reduction Days Number Total Pay Contract Type Max Probationary Step Payscale Group Admission Type Total Headcount Full-Time Employees Part-time employees and position code. \n&gt; - To begin your analysis you can start by identifying basic statistics about the data such as averages or counts for each column of data you are interested in such as salary range by university or office and job title groups such as deans versus other staff members . \n&gt; - Next identify which universities pay their staff the highest salaries? What kind of differences do you see across schools? Once you have identified key trends look into potential differences within each university using gender/race/ethnicity filters to identify wage disparities across demographic groups since unfortunately wage discrepancy still exists today even when controlling for variables like education experience seniority etc \n&gt; - Finally create graphs tables etc that present your findings effectively so that policy makers HR departments other stakeholders have a better insight into what changes need to be implemented so all personnel are treated equally with fair wages regardless of background! Good luck!\n\n### Research Ideas\n&gt; - Analyze salary gaps between genders and positions to identify possible pay inequality, and to create true diversity in the workplace.\n&gt; - Track changes in base salaries over time for individual jobs or trends throughout a university/office over years.\n&gt; - Compare average annual salaries across different universities/offices within the Pennsylvania State System of Higher Education; this information could be used to help inform decisions about where to work/study for prospective faculty and students alike!\n\n### Acknowledgements\n&gt; If you use this dataset in your research, please credit the original authors.\n&gt; [Data Source](https://data.world/education)\n&gt;  \n\n### License \n&gt; \n&gt; See the dataset description for more information.\n\n### Columns\n\n**File: 2013_Salaries__Pennsylvania_State_System_of_Higher_Education.csv**\n| Column name              | Description                                               |\n|:-------------------------|:----------------------------------------------------------|\n| **Name**                 | The name of the employee. (String)                        |\n| **Base Pay**             | The base salary of the employee. (Numeric)                |\n| **University or Office** | The university or office the employee works for. (String) |\n| **Position**             | The position of the employee. (String)                    |\n\n### Acknowledgements\n&gt; If you use this dataset in your research, please credit the original authors.\n&gt; If you use this dataset in your research, please credit [Education](https://data.world/education).\n\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "other",
+            "nameNullable": "other"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 63160,
+    "row_count": 12632,
+    "source": "kaggle",
+    "tags": [
+        "gender",
+        "income",
+        "education",
+        "data analytics"
+    ],
+    "title": "Higher Education Wages",
+    "topic": "education",
+    "usability": 1.0
+}

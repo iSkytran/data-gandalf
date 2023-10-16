@@ -1,0 +1,48 @@
+{
+    "col_count": 25,
+    "col_names": [
+        "Country_Region",
+        "elected",
+        "age",
+        "male",
+        "militarycareer",
+        "tenure_months",
+        "anticipation",
+        "ref_ant",
+        "leg_ant",
+        "exec_ant",
+        "irreg_lead_ant",
+        "election_now",
+        "election_recent",
+        "leg_recent",
+        "exec_recent",
+        "lead_recent",
+        "ref_recent",
+        "direct_recent",
+        "indirect_recent",
+        "victory_recent",
+        "defeat_recent",
+        "change_recent",
+        "nochange_recent",
+        "delayed",
+        "prev_conflict"
+    ],
+    "description": "",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 4850,
+    "row_count": 194,
+    "source": "kaggle",
+    "tags": [
+        "politics"
+    ],
+    "title": "Politics",
+    "topic": "politics",
+    "usability": 0.29411764705882354
+}

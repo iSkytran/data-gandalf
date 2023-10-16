@@ -1,0 +1,41 @@
+{
+  "id": "usharengaraju/agriseshat-agriculture-dataset",
+  "id_no": 1251188,
+  "datasetSlugNullable": "agriseshat-agriculture-dataset",
+  "ownerUserNullable": "usharengaraju",
+  "usabilityRatingNullable": 0.9411764705882353,
+  "titleNullable": "AgriSeshat: Agriculture Dataset",
+  "subtitleNullable": "AgriSeshat: Agriculture Dataset",
+  "descriptionNullable": "### Context\n\nThe Seshat: Global History Databank is an international scientific research project of the nonprofit Evolution Institute. Founded in 2011, the Seshat: Global History Databank gathers data into a single, large database that can be used to test scientific hypotheses. The Databank consults directly with expert scholars to code what historical societies and their environments were like in the form of accessible datapoints and thus forms a digital storehouse for data on the political and social organization of all human groups from the early modern back to the ancient and neolithic periods.The organizers of this research project contend that the mass of data then can be used to test a variety of competing hypotheses about the rise and fall of large-scale societies around the globe which may help science provide answers to global problems.\n\n### Acknowledgements\n\nhttps://en.wikipedia.org/wiki/Seshat_(project)\n\nTurchin, P., R. Brennan, T. E. Currie, K. Feeney, P. Fran\u00e7ois, [\u2026] H. Whitehouse. 2015. \u201cSeshat: The Global History Databank.\u201d Cliodynamics 6(1): 77\u2013107. https://doi.org/10.21237/C7clio6127917.\n\nTurchin, P., T. Currie [\u2026] H. Whitehouse. Preprint. \u201cA New Approach to Estimating Productivity in Past Societies using Seshat: Global History Databank.\u201d",
+  "datasetId": 1251188,
+  "datasetSlug": "agriseshat-agriculture-dataset",
+  "hasDatasetSlug": true,
+  "ownerUser": "usharengaraju",
+  "hasOwnerUser": true,
+  "usabilityRating": 0.9411764705882353,
+  "hasUsabilityRating": true,
+  "totalViews": 12417,
+  "totalVotes": 105,
+  "totalDownloads": 1278,
+  "title": "AgriSeshat: Agriculture Dataset",
+  "hasTitle": true,
+  "subtitle": "AgriSeshat: Agriculture Dataset",
+  "hasSubtitle": true,
+  "description": "### Context\n\nThe Seshat: Global History Databank is an international scientific research project of the nonprofit Evolution Institute. Founded in 2011, the Seshat: Global History Databank gathers data into a single, large database that can be used to test scientific hypotheses. The Databank consults directly with expert scholars to code what historical societies and their environments were like in the form of accessible datapoints and thus forms a digital storehouse for data on the political and social organization of all human groups from the early modern back to the ancient and neolithic periods.The organizers of this research project contend that the mass of data then can be used to test a variety of competing hypotheses about the rise and fall of large-scale societies around the globe which may help science provide answers to global problems.\n\n### Acknowledgements\n\nhttps://en.wikipedia.org/wiki/Seshat_(project)\n\nTurchin, P., R. Brennan, T. E. Currie, K. Feeney, P. Fran\u00e7ois, [\u2026] H. Whitehouse. 2015. \u201cSeshat: The Global History Databank.\u201d Cliodynamics 6(1): 77\u2013107. https://doi.org/10.21237/C7clio6127917.\n\nTurchin, P., T. Currie [\u2026] H. Whitehouse. Preprint. \u201cA New Approach to Estimating Productivity in Past Societies using Seshat: Global History Databank.\u201d",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "business",
+    "education",
+    "classification"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "CC-BY-NC-SA-4.0",
+      "name": "CC-BY-NC-SA-4.0",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}

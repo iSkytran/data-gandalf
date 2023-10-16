@@ -1,0 +1,31 @@
+{
+    "col_count": 7,
+    "col_names": [
+        "year_film",
+        "year_award",
+        "ceremony",
+        "category",
+        "nominee",
+        "film",
+        "win"
+    ],
+    "description": "[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/unanimad/)\n\n---\n\nPlease, If you enjoyed this dataset, don't forget to upvote it.\n\n---\n\n### About\n\n[Golden Globe Awards](http://goldenglobes.com/), any of the awards presented annually by the Hollywood Foreign Press Association (HFPA) in recognition of outstanding achievement in motion pictures and television during the previous year. Within the entertainment industry, the Golden Globes are considered second in importance both to the Academy Awards (for film) and to the Emmy Awards (for television), and the televised awards ceremony is a comparably lavish affair.\n\n### Method\n\nThe data were extracted from [Awards' list page](http://goldenglobes.com/).\n\n### Inspiration\n\n1. Which nominee has received the most awards overall or in a single year?\n2. Which work has received the most awards in a event?\n3. Which country received the most awards at a ceremony and overall?\n4. Who has received the most awards in a event or overall?\n\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 1800,
+    "num_entries": 55937,
+    "row_count": 7991,
+    "source": "kaggle",
+    "tags": [
+        "arts and entertainment",
+        "movies and tv shows"
+    ],
+    "title": "Golden Globe Awards, 1944 - 2020",
+    "topic": "entertainment",
+    "usability": 1.0
+}

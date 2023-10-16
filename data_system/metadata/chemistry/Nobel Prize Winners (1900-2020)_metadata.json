@@ -1,0 +1,46 @@
+{
+    "col_count": 20,
+    "col_names": [
+        "id",
+        "firstname",
+        "surname",
+        "born",
+        "died",
+        "bornCountry",
+        "bornCountryCode",
+        "bornCity",
+        "diedCountry",
+        "diedCountryCode",
+        "diedCity",
+        "gender",
+        "year",
+        "category",
+        "overallMotivation",
+        "share",
+        "motivation",
+        "name",
+        "city",
+        "country"
+    ],
+    "description": "### Content\n\nIn this dataset, you will find a list of over 900 individuals who won the most prestigious award possible in the fields of Literature, Physics, Medicine, Economics, Chemistry, and Peace. \n\n### Acknowledgements\n\nThis dataset comes from https://data.world/sya/nobel-prize-winners.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 3148,
+    "num_entries": 19440,
+    "row_count": 972,
+    "source": "kaggle",
+    "tags": [
+        "neuroscience",
+        "social science",
+        "science and technology",
+        "computer science"
+    ],
+    "title": "Nobel Prize Winners (1900-2020)",
+    "topic": "chemistry",
+    "usability": 0.9411764705882353
+}

@@ -1,0 +1,40 @@
+{
+  "id": "vivmankar/physics-vs-chemistry-vs-biology",
+  "id_no": 1687228,
+  "datasetSlugNullable": "physics-vs-chemistry-vs-biology",
+  "ownerUserNullable": "vivmankar",
+  "usabilityRatingNullable": 0.9705882352941176,
+  "titleNullable": "Physics vs Chemistry vs Biology",
+  "subtitleNullable": "NLP text classification dataset",
+  "descriptionNullable": "### Context\n\nThis dataset is created to practice various text classification techniques. \n\nThe text data is collected using [praw API](https://praw.readthedocs.io/en/latest/) from [reddit.com](https://www.reddit.com/). \n\n### Dataset details\n- Number of classes: 3 (Physics, Chemistry, and Biology)\n- Total number of data points:  10281 comments \n- The number of words in **train** comments ranges from 1 word to 1274 words\n- The number of words in **test** comments ranges from 26 words to  837 words\n \n### EDA and Baseline approach\n [Physics vs Chemistry vs Biology: EDA & Baseline](https://www.kaggle.com/vivmankar/physics-vs-chemistry-vs-biology-eda-baseline)",
+  "datasetId": 1687228,
+  "datasetSlug": "physics-vs-chemistry-vs-biology",
+  "hasDatasetSlug": true,
+  "ownerUser": "vivmankar",
+  "hasOwnerUser": true,
+  "usabilityRating": 0.9705882352941176,
+  "hasUsabilityRating": true,
+  "totalViews": 15553,
+  "totalVotes": 35,
+  "totalDownloads": 1569,
+  "title": "Physics vs Chemistry vs Biology",
+  "hasTitle": true,
+  "subtitle": "NLP text classification dataset",
+  "hasSubtitle": true,
+  "description": "### Context\n\nThis dataset is created to practice various text classification techniques. \n\nThe text data is collected using [praw API](https://praw.readthedocs.io/en/latest/) from [reddit.com](https://www.reddit.com/). \n\n### Dataset details\n- Number of classes: 3 (Physics, Chemistry, and Biology)\n- Total number of data points:  10281 comments \n- The number of words in **train** comments ranges from 1 word to 1274 words\n- The number of words in **test** comments ranges from 26 words to  837 words\n \n### EDA and Baseline approach\n [Physics vs Chemistry vs Biology: EDA & Baseline](https://www.kaggle.com/vivmankar/physics-vs-chemistry-vs-biology-eda-baseline)",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "earth and nature",
+    "education"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "CC0-1.0",
+      "name": "CC0-1.0",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}

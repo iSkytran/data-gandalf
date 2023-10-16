@@ -1,0 +1,61 @@
+{
+    "col_count": 34,
+    "col_names": [
+        "IndicatorCode",
+        "Indicator",
+        "ValueType",
+        "ParentLocationCode",
+        "ParentLocation",
+        "Location type",
+        "SpatialDimValueCode",
+        "Location",
+        "Period type",
+        "Period",
+        "IsLatestYear",
+        "Dim1 type",
+        "Dim1",
+        "Dim1ValueCode",
+        "Dim2 type",
+        "Dim2",
+        "Dim2ValueCode",
+        "Dim3 type",
+        "Dim3",
+        "Dim3ValueCode",
+        "DataSourceDimValueCode",
+        "DataSource",
+        "FactValueNumericPrefix",
+        "FactValueNumeric",
+        "FactValueUoM",
+        "FactValueNumericLowPrefix",
+        "FactValueNumericLow",
+        "FactValueNumericHighPrefix",
+        "FactValueNumericHigh",
+        "Value",
+        "FactValueTranslationID",
+        "FactComments",
+        "Language",
+        "DateModified"
+    ],
+    "description": "Suicides are preventable.  Suicide prevention efforts require coordination and collaboration among multiple sectors of society, including the health sector and other sectors such as education, labour, agriculture, business, justice, law, defence, politics, and the media. These efforts must be comprehensive and integrated as no single approach alone can make an impact on an issue as complex as suicide. Let us help each other in solving this worldwide problem and address the problem at the broadest stage prossible.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "Attribution-NonCommercial-ShareAlike 3.0 IGO (CC BY-NC-SA 3.0 IGO)",
+            "nameNullable": "Attribution-NonCommercial-ShareAlike 3.0 IGO (CC BY-NC-SA 3.0 IGO)"
+        }
+    ],
+    "null_count": 153720,
+    "num_entries": 373320,
+    "row_count": 10980,
+    "source": "kaggle",
+    "tags": [
+        "mental health",
+        "social science",
+        "demographics",
+        "mortality",
+        "data visualization"
+    ],
+    "title": "World_Suicide_Rates_2000-2019",
+    "topic": "politics",
+    "usability": 0.9411764705882353
+}

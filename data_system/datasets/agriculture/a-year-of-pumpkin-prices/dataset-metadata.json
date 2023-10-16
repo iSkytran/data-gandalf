@@ -1,0 +1,44 @@
+{
+  "id": "/a-year-of-pumpkin-prices",
+  "id_no": 2913,
+  "datasetSlugNullable": "a-year-of-pumpkin-prices",
+  "ownerUserNullable": null,
+  "usabilityRatingNullable": 0.8235294117647058,
+  "titleNullable": "A Year of Pumpkin Prices",
+  "subtitleNullable": "Pumpkin Prices in 13 US Cities: 2016-2017",
+  "descriptionNullable": "### Context: \n\nOver 1.5 billions pounds of pumpkin are grown annually in the United States. Where are they sold, and for how much?\n\nThis dataset contains prices for which pumpkins were sold at selected U.S. cities\u2019 terminal markets. Prices are differentiated by the commodities\u2019 growing origin, variety, size, package and grade.\n\n### Content: \n\nThis dataset contains terminal market prices for different pumpkin crops in 13 cities in the United States from September 24, 2016 to September 30, 2017. In keeping with the structure of the original source data, information on each city has been uploaded as a separate file.\n\n* Atlanta, GA\n* Baltimore, MD\n* Boston, MA\n* Chicago, IL\n* Columbia, SC\n* Dallas, TX\n* Detroit, MI\n* Los Angeles, CA\n* Miami, FL\n* New York, NY\n* Philadelphia, PA\n* San Francisco, CA\n* Saint Louis, MO\n\nData for each city includes the following columns (although not all information is available for every city) \n\n* Commodity Name: Always pumpkin, since this is a pumpkin-only dataset\n* City Name: City where the pumpkin was sold\n* Type\n* Package\n* Variety\n* Sub Variety\n* Grade: In the US, usually only canned pumpkin is graded\n* Date: Date of sale (rounded up to the nearest Saturday)\n* Low Price\n* High Price\n* Mostly Low\n* Mostly High\n* Origin: Where the pumpkins were grown\n* Origin District\n* Item Size\n* Color\n* Environment\n* Unit of Sale\n* Quality\n* Condition\n* Appearance\n* Storage\n* Crop\n* Repack: Whether the pumpkin has been repackaged before sale\n* Trans Mode\n\n### Acknowledgements: \n\nThis dataset is based on Specialty Crops Terminal Markets Standard Reports distributed by the United States Department of Agriculture. Up-to-date reports can be generated [here](https://www.marketnews.usda.gov/mnp/fv-report-config-step1?type=termPrice). This data is in the public domain.\n\n### Inspiration: \n\n* Which states produce the most pumpkin?\n* Where are pumpkin prices highest?\n* How does pumpkin size relate to price?\n* Which pumpkin variety is the most expensive? Least expensive?\n",
+  "datasetId": 2913,
+  "datasetSlug": "a-year-of-pumpkin-prices",
+  "hasDatasetSlug": true,
+  "ownerUser": "",
+  "hasOwnerUser": false,
+  "usabilityRating": 0.8235294117647058,
+  "hasUsabilityRating": true,
+  "totalViews": 30781,
+  "totalVotes": 49,
+  "totalDownloads": 5209,
+  "title": "A Year of Pumpkin Prices",
+  "hasTitle": true,
+  "subtitle": "Pumpkin Prices in 13 US Cities: 2016-2017",
+  "hasSubtitle": true,
+  "description": "### Context: \n\nOver 1.5 billions pounds of pumpkin are grown annually in the United States. Where are they sold, and for how much?\n\nThis dataset contains prices for which pumpkins were sold at selected U.S. cities\u2019 terminal markets. Prices are differentiated by the commodities\u2019 growing origin, variety, size, package and grade.\n\n### Content: \n\nThis dataset contains terminal market prices for different pumpkin crops in 13 cities in the United States from September 24, 2016 to September 30, 2017. In keeping with the structure of the original source data, information on each city has been uploaded as a separate file.\n\n* Atlanta, GA\n* Baltimore, MD\n* Boston, MA\n* Chicago, IL\n* Columbia, SC\n* Dallas, TX\n* Detroit, MI\n* Los Angeles, CA\n* Miami, FL\n* New York, NY\n* Philadelphia, PA\n* San Francisco, CA\n* Saint Louis, MO\n\nData for each city includes the following columns (although not all information is available for every city) \n\n* Commodity Name: Always pumpkin, since this is a pumpkin-only dataset\n* City Name: City where the pumpkin was sold\n* Type\n* Package\n* Variety\n* Sub Variety\n* Grade: In the US, usually only canned pumpkin is graded\n* Date: Date of sale (rounded up to the nearest Saturday)\n* Low Price\n* High Price\n* Mostly Low\n* Mostly High\n* Origin: Where the pumpkins were grown\n* Origin District\n* Item Size\n* Color\n* Environment\n* Unit of Sale\n* Quality\n* Condition\n* Appearance\n* Storage\n* Crop\n* Repack: Whether the pumpkin has been repackaged before sale\n* Trans Mode\n\n### Acknowledgements: \n\nThis dataset is based on Specialty Crops Terminal Markets Standard Reports distributed by the United States Department of Agriculture. Up-to-date reports can be generated [here](https://www.marketnews.usda.gov/mnp/fv-report-config-step1?type=termPrice). This data is in the public domain.\n\n### Inspiration: \n\n* Which states produce the most pumpkin?\n* Where are pumpkin prices highest?\n* How does pumpkin size relate to price?\n* Which pumpkin variety is the most expensive? Least expensive?\n",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "united states",
+    "finance",
+    "agriculture",
+    "cooking and recipes",
+    "food",
+    "holidays and cultural events"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "CC0-1.0",
+      "name": "CC0-1.0",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}

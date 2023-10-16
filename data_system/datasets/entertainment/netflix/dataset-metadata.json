@@ -1,0 +1,43 @@
+{
+  "id": "ashpalsingh1525/netflix",
+  "id_no": 2939316,
+  "datasetSlugNullable": "netflix",
+  "ownerUserNullable": "ashpalsingh1525",
+  "usabilityRatingNullable": 1.0,
+  "titleNullable": "Netflix Cleaned Dataset",
+  "subtitleNullable": "Unwrap the treasure trove of entertainment with the Netflix dataset",
+  "descriptionNullable": "The Netflix dataset contains information on movies, including the release year, duration, cast, brief summaries, and ratings . It also includes additional information such as subtitles and audio languages and most importantly the mood experienced by the people while waching the movie. This data can be  used for recommendation systems, data analysis, and research. The dataset includes over 550+ titles.\n\nDownload the dataset now and give it a try!",
+  "datasetId": 2939316,
+  "datasetSlug": "netflix",
+  "hasDatasetSlug": true,
+  "ownerUser": "ashpalsingh1525",
+  "hasOwnerUser": true,
+  "usabilityRating": 1.0,
+  "hasUsabilityRating": true,
+  "totalViews": 11029,
+  "totalVotes": 44,
+  "totalDownloads": 1796,
+  "title": "Netflix Cleaned Dataset",
+  "hasTitle": true,
+  "subtitle": "Unwrap the treasure trove of entertainment with the Netflix dataset",
+  "hasSubtitle": true,
+  "description": "The Netflix dataset contains information on movies, including the release year, duration, cast, brief summaries, and ratings . It also includes additional information such as subtitles and audio languages and most importantly the mood experienced by the people while waching the movie. This data can be  used for recommendation systems, data analysis, and research. The dataset includes over 550+ titles.\n\nDownload the dataset now and give it a try!",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "movies and tv shows",
+    "india",
+    "beginner",
+    "intermediate",
+    "data analytics"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "Community Data License Agreement - Permissive - Version 1.0",
+      "name": "Community Data License Agreement - Permissive - Version 1.0",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}

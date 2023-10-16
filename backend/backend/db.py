@@ -42,7 +42,6 @@ def get_by_id(id: str) -> list[Dataset]:
 
 def list_conversion_helper(datasets: list[Dataset]) -> list[Dataset]:
     for dataset in datasets:
-        print(type(dataset))
         tags_str = dataset.tags
         licenses_str = dataset.licenses
         col_names_str = dataset.col_names

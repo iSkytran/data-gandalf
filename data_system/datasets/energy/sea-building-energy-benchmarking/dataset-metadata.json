@@ -1,0 +1,41 @@
+{
+  "id": "/sea-building-energy-benchmarking",
+  "id_no": 34249,
+  "datasetSlugNullable": "sea-building-energy-benchmarking",
+  "ownerUserNullable": null,
+  "usabilityRatingNullable": 0.7058823529411765,
+  "titleNullable": "SEA Building Energy Benchmarking",
+  "subtitleNullable": "Explore Open Data from the City of Seattle",
+  "descriptionNullable": "### Content  \n\nMore details about each file are in the individual file descriptions.  \n\n### Context  \n\nThis is a dataset hosted by the City of Seattle. The city has an open data platform found [here](https://data.seattle.gov/) and they update their information according the amount of data that is brought in. Explore the City of Seattle using Kaggle and all of the data sources available through the City of Seattle [organization page](https://www.kaggle.com/city-of-seattle)!  \n\n* Update Frequency: This dataset is updated quarterly.\n\n### Acknowledgements\n\nThis dataset is maintained using Socrata's API and Kaggle's API. [Socrata](https://socrata.com/) has assisted countless organizations with hosting their open data and has been an integral part of the process of bringing more data to the public.  \n\n[Cover photo](https://unsplash.com/photos/OW4Cu-4ZSos) by [Andrew McSparran](https://unsplash.com/@andrewmcsparran) on [Unsplash](https://unsplash.com/)  \n_Unsplash Images are distributed under a unique [Unsplash License](https://unsplash.com/license)._  \n\nThis dataset is distributed under the following licenses: Public Domain",
+  "datasetId": 34249,
+  "datasetSlug": "sea-building-energy-benchmarking",
+  "hasDatasetSlug": true,
+  "ownerUser": "",
+  "hasOwnerUser": false,
+  "usabilityRating": 0.7058823529411765,
+  "hasUsabilityRating": true,
+  "totalViews": 47199,
+  "totalVotes": 80,
+  "totalDownloads": 4755,
+  "title": "SEA Building Energy Benchmarking",
+  "hasTitle": true,
+  "subtitle": "Explore Open Data from the City of Seattle",
+  "hasSubtitle": true,
+  "description": "### Content  \n\nMore details about each file are in the individual file descriptions.  \n\n### Context  \n\nThis is a dataset hosted by the City of Seattle. The city has an open data platform found [here](https://data.seattle.gov/) and they update their information according the amount of data that is brought in. Explore the City of Seattle using Kaggle and all of the data sources available through the City of Seattle [organization page](https://www.kaggle.com/city-of-seattle)!  \n\n* Update Frequency: This dataset is updated quarterly.\n\n### Acknowledgements\n\nThis dataset is maintained using Socrata's API and Kaggle's API. [Socrata](https://socrata.com/) has assisted countless organizations with hosting their open data and has been an integral part of the process of bringing more data to the public.  \n\n[Cover photo](https://unsplash.com/photos/OW4Cu-4ZSos) by [Andrew McSparran](https://unsplash.com/@andrewmcsparran) on [Unsplash](https://unsplash.com/)  \n_Unsplash Images are distributed under a unique [Unsplash License](https://unsplash.com/license)._  \n\nThis dataset is distributed under the following licenses: Public Domain",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "energy",
+    "socrata",
+    "electricity"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "CC0-1.0",
+      "name": "CC0-1.0",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}

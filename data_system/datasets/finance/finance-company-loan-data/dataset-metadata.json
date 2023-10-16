@@ -1,0 +1,39 @@
+{
+  "id": "sethirishabh/finance-company-loan-data",
+  "id_no": 659811,
+  "datasetSlugNullable": "finance-company-loan-data",
+  "ownerUserNullable": "sethirishabh",
+  "usabilityRatingNullable": 0.6470588235294118,
+  "titleNullable": "Finance Company Loan data",
+  "subtitleNullable": "Dream House Finance Company",
+  "descriptionNullable": "### The data set has been taken from\nhttps://datahack.analyticsvidhya.com/contest/practice-problem-loan-prediction-iii/#ProblemStatement\n\n### About Company\nDream Housing Finance company deals in all home loans. They have presence across all urban, semi urban and rural areas. Customer first apply for home loan after that company validates the customer eligibility for loan.",
+  "datasetId": 659811,
+  "datasetSlug": "finance-company-loan-data",
+  "hasDatasetSlug": true,
+  "ownerUser": "sethirishabh",
+  "hasOwnerUser": true,
+  "usabilityRating": 0.6470588235294118,
+  "hasUsabilityRating": true,
+  "totalViews": 14780,
+  "totalVotes": 46,
+  "totalDownloads": 1875,
+  "title": "Finance Company Loan data",
+  "hasTitle": true,
+  "subtitle": "Dream House Finance Company",
+  "hasSubtitle": true,
+  "description": "### The data set has been taken from\nhttps://datahack.analyticsvidhya.com/contest/practice-problem-loan-prediction-iii/#ProblemStatement\n\n### About Company\nDream Housing Finance company deals in all home loans. They have presence across all urban, semi urban and rural areas. Customer first apply for home loan after that company validates the customer eligibility for loan.",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "finance"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "unknown",
+      "name": "unknown",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}

@@ -1,0 +1,43 @@
+{
+  "id": "csafrit2/steel-industry-energy-consumption",
+  "id_no": 1811720,
+  "datasetSlugNullable": "steel-industry-energy-consumption",
+  "ownerUserNullable": "csafrit2",
+  "usabilityRatingNullable": 1.0,
+  "titleNullable": " Steel Industry Energy Consumption",
+  "subtitleNullable": "A Regression Task on energy usage",
+  "descriptionNullable": "### Content\n\nThis company produces several types of coils, steel plates, and iron plates. The information on electricity consumption is held in a cloud-based system. The information on energy consumption of the industry is stored on the website of the Korea Electric Power Corporation (pccs.kepco.go.kr), and the perspectives on daily, monthly, and annual data are calculated and shown.\n\n\n###Attribute Information:\n\n**Date** Continuous-time data taken on the first of the month\n**Usage_kWh** Industry Energy Consumption Continuous kWh\n**Lagging Current** reactive power Continuous kVarh\n**Leading Current** reactive power Continuous kVarh\n**CO2** Continuous ppm\n**NSM** Number of Seconds from midnight Continuous S\n**Week** status Categorical (Weekend (0) or a Weekday(1))\n**Day of week**  Categorical Sunday, Monday : Saturday\n**Load Type** Categorical Light Load, Medium Load, Maximum Load\n\n### Acknowledgements\n\nThis dataset is sourced from the UCI Machine Learning Repository\nRelevant Papers:\n\n1. Sathishkumar V E, Changsun Shin, Youngyun Cho, \u00e2\u20ac\u0153Efficient energy consumption prediction model for a data analytic-enabled industry building in a smart city\u00e2\u20ac\u009d, Building Research & Information, Vol. 49. no. 1, pp. 127-143, 2021.\n2. Sathishkumar V E, Myeongbae Lee, Jonghyun Lim, Yubin Kim, Changsun Shin, Jangwoo Park, Yongyun Cho, \u00e2\u20ac\u0153An Energy Consumption Prediction Model for Smart Factory using Data Mining Algorithms\u00e2\u20ac\u009d KIPS Transactions on Software and Data Engineering, Vol. 9, no. 5, pp. 153-160, 2020.\nTransactions on Software and Data Engineering, Vol. 9, no. 5, pp. 153-160, 2020.\n3. Sathishkumar V E, Jonghyun Lim, Myeongbae Lee, Yongyun Cho, Jangwoo Park, Changsun Shin, and Yongyun Cho, \u00e2\u20ac\u0153Industry Energy Consumption Prediction Using Data Mining Techniques\u00e2\u20ac\u009d, International Journal of Energy Information and Communications, Vol. 11, no. 1, pp. 7-14, 2020.\n\n### Inspiration\n\nWhich times of the year is the most energy consumed?\nWhat patterns can we identify in energy usage?",
+  "datasetId": 1811720,
+  "datasetSlug": "steel-industry-energy-consumption",
+  "hasDatasetSlug": true,
+  "ownerUser": "csafrit2",
+  "hasOwnerUser": true,
+  "usabilityRating": 1.0,
+  "hasUsabilityRating": true,
+  "totalViews": 24257,
+  "totalVotes": 41,
+  "totalDownloads": 2555,
+  "title": " Steel Industry Energy Consumption",
+  "hasTitle": true,
+  "subtitle": "A Regression Task on energy usage",
+  "hasSubtitle": true,
+  "description": "### Content\n\nThis company produces several types of coils, steel plates, and iron plates. The information on electricity consumption is held in a cloud-based system. The information on energy consumption of the industry is stored on the website of the Korea Electric Power Corporation (pccs.kepco.go.kr), and the perspectives on daily, monthly, and annual data are calculated and shown.\n\n\n###Attribute Information:\n\n**Date** Continuous-time data taken on the first of the month\n**Usage_kWh** Industry Energy Consumption Continuous kWh\n**Lagging Current** reactive power Continuous kVarh\n**Leading Current** reactive power Continuous kVarh\n**CO2** Continuous ppm\n**NSM** Number of Seconds from midnight Continuous S\n**Week** status Categorical (Weekend (0) or a Weekday(1))\n**Day of week**  Categorical Sunday, Monday : Saturday\n**Load Type** Categorical Light Load, Medium Load, Maximum Load\n\n### Acknowledgements\n\nThis dataset is sourced from the UCI Machine Learning Repository\nRelevant Papers:\n\n1. Sathishkumar V E, Changsun Shin, Youngyun Cho, \u00e2\u20ac\u0153Efficient energy consumption prediction model for a data analytic-enabled industry building in a smart city\u00e2\u20ac\u009d, Building Research & Information, Vol. 49. no. 1, pp. 127-143, 2021.\n2. Sathishkumar V E, Myeongbae Lee, Jonghyun Lim, Yubin Kim, Changsun Shin, Jangwoo Park, Yongyun Cho, \u00e2\u20ac\u0153An Energy Consumption Prediction Model for Smart Factory using Data Mining Algorithms\u00e2\u20ac\u009d KIPS Transactions on Software and Data Engineering, Vol. 9, no. 5, pp. 153-160, 2020.\nTransactions on Software and Data Engineering, Vol. 9, no. 5, pp. 153-160, 2020.\n3. Sathishkumar V E, Jonghyun Lim, Myeongbae Lee, Yongyun Cho, Jangwoo Park, Changsun Shin, and Yongyun Cho, \u00e2\u20ac\u0153Industry Energy Consumption Prediction Using Data Mining Techniques\u00e2\u20ac\u009d, International Journal of Energy Information and Communications, Vol. 11, no. 1, pp. 7-14, 2020.\n\n### Inspiration\n\nWhich times of the year is the most energy consumed?\nWhat patterns can we identify in energy usage?",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "environment",
+    "pollution",
+    "science and technology",
+    "energy",
+    "regression"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "other",
+      "name": "other",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}

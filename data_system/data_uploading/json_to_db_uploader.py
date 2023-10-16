@@ -63,6 +63,6 @@ class JsonToDbUploader(MetadataUploader):
 
     def report_issues(self):
         # Report issues.
-        with open("problem-files-upload.txt", "w+") as newfile:
+        with open("data_uploading/problem-files-upload.txt", "w+") as newfile:
             newfile.write(json.dumps(self.problem_files))
-        print("Found ", len(self.problem_files), " problem files. Look at problem-files-upload.txt for a list.")
+        print("Found ", len(self.problem_files), " problem files while uploading. Look at data_uploading/problem-files-upload.txt for a list.")

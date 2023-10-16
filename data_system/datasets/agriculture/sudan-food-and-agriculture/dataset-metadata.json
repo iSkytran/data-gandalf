@@ -1,0 +1,42 @@
+{
+  "id": "ahmedeltom/sudan-food-and-agriculture",
+  "id_no": 2644060,
+  "datasetSlugNullable": "sudan-food-and-agriculture",
+  "ownerUserNullable": "ahmedeltom",
+  "usabilityRatingNullable": 0.9705882352941176,
+  "titleNullable": "Sudan food and agriculture",
+  "subtitleNullable": "Prices Stocks and Flow",
+  "descriptionNullable": "The two tables are:\n- Good and product prices.\n- Stocks and market Flow.\nThe data is sourced from Sudan Minister of Agriculture via the FARMERS (Food and Agriculture Realtime Messaging and Reporting System). \n\nThe description reads as follows:\n\nDecision makers need timely and good quality food security information and analysis to help them:\n- Foresee coming food security crises and take appropriate actions;\n- Plan more effective food security polices; and\n- Monitor the success of these polices.\n\nIn this context, the Food and Agriculture Realtime Messaging and Reporting System (FARMERS) works with national institutions in Sudan to strengthen their capacity for:\n- Generating;\n- Analysing and\n- Disseminating of food security information.\n\nIt also promotes the use of this information for policy making, research, and planning. FARMERS hsas been established by the Sudan Institutional capacity program: Food Security information for Action (SIFSIA) in collaboration with the Food Security Technical Secretariat (FSTS) of the Ministry of Agriculture and Irrigation (MoI). The current phase of FARMERS is sponsored by FSTS and the Famine Early Warning Systems Network (FEWS NET).\n",
+  "datasetId": 2644060,
+  "datasetSlug": "sudan-food-and-agriculture",
+  "hasDatasetSlug": true,
+  "ownerUser": "ahmedeltom",
+  "hasOwnerUser": true,
+  "usabilityRating": 0.9705882352941176,
+  "hasUsabilityRating": true,
+  "totalViews": 1230,
+  "totalVotes": 13,
+  "totalDownloads": 147,
+  "title": "Sudan food and agriculture",
+  "hasTitle": true,
+  "subtitle": "Prices Stocks and Flow",
+  "hasSubtitle": true,
+  "description": "The two tables are:\n- Good and product prices.\n- Stocks and market Flow.\nThe data is sourced from Sudan Minister of Agriculture via the FARMERS (Food and Agriculture Realtime Messaging and Reporting System). \n\nThe description reads as follows:\n\nDecision makers need timely and good quality food security information and analysis to help them:\n- Foresee coming food security crises and take appropriate actions;\n- Plan more effective food security polices; and\n- Monitor the success of these polices.\n\nIn this context, the Food and Agriculture Realtime Messaging and Reporting System (FARMERS) works with national institutions in Sudan to strengthen their capacity for:\n- Generating;\n- Analysing and\n- Disseminating of food security information.\n\nIt also promotes the use of this information for policy making, research, and planning. FARMERS hsas been established by the Sudan Institutional capacity program: Food Security information for Action (SIFSIA) in collaboration with the Food Security Technical Secretariat (FSTS) of the Ministry of Agriculture and Irrigation (MoI). The current phase of FARMERS is sponsored by FSTS and the Famine Early Warning Systems Network (FEWS NET).\n",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "africa",
+    "agriculture",
+    "exploratory data analysis",
+    "tabular"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "CC0-1.0",
+      "name": "CC0-1.0",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}

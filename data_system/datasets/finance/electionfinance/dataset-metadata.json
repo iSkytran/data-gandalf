@@ -1,0 +1,41 @@
+{
+  "id": "danerbland/electionfinance",
+  "id_no": 505,
+  "datasetSlugNullable": "electionfinance",
+  "ownerUserNullable": "danerbland",
+  "usabilityRatingNullable": 0.8235294117647058,
+  "titleNullable": "Campaign Finance versus Election Results",
+  "subtitleNullable": "Can an election be predicted from the preceding campaign finance reports?",
+  "descriptionNullable": "# Context \n\nThis dataset was assembled to investigate the possibility of predicting congressional election results by campaign finance reports from the period leading up to the election.\n\n\n# Content\n\nEach row represents a candidate, with information on their campaign including the state, district, office, total contributions, total expenditures, etc.  The content is specific to the year leading up to the 2016 election: (1/1/2015 through 10/19/2016).\n\n\n# Acknowledgements\n\nCampaign finance information came directly from FEC.gov.\nElection results and vote totals for house races were taken from CNN's election results page.\n\n\n# Inspiration\n\nHow much of an impact does campaign spending and fundraising have on an election?  Is the impact greater in certain areas?  Given this dataset, to what degree of accuracy could we have predicted the election results?",
+  "datasetId": 505,
+  "datasetSlug": "electionfinance",
+  "hasDatasetSlug": true,
+  "ownerUser": "danerbland",
+  "hasOwnerUser": true,
+  "usabilityRating": 0.8235294117647058,
+  "hasUsabilityRating": true,
+  "totalViews": 29782,
+  "totalVotes": 76,
+  "totalDownloads": 2513,
+  "title": "Campaign Finance versus Election Results",
+  "hasTitle": true,
+  "subtitle": "Can an election be predicted from the preceding campaign finance reports?",
+  "hasSubtitle": true,
+  "description": "# Context \n\nThis dataset was assembled to investigate the possibility of predicting congressional election results by campaign finance reports from the period leading up to the election.\n\n\n# Content\n\nEach row represents a candidate, with information on their campaign including the state, district, office, total contributions, total expenditures, etc.  The content is specific to the year leading up to the 2016 election: (1/1/2015 through 10/19/2016).\n\n\n# Acknowledgements\n\nCampaign finance information came directly from FEC.gov.\nElection results and vote totals for house races were taken from CNN's election results page.\n\n\n# Inspiration\n\nHow much of an impact does campaign spending and fundraising have on an election?  Is the impact greater in certain areas?  Given this dataset, to what degree of accuracy could we have predicted the election results?",
+  "hasDescription": true,
+  "isPrivate": false,
+  "keywords": [
+    "business",
+    "finance",
+    "politics"
+  ],
+  "licenses": [
+    {
+      "nameNullable": "CC0-1.0",
+      "name": "CC0-1.0",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}

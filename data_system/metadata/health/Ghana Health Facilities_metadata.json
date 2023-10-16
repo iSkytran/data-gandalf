@@ -1,0 +1,37 @@
+{
+    "col_count": 11,
+    "col_names": [
+        "Region",
+        "District",
+        "FacilityName",
+        "Type",
+        "Town",
+        "Ownership",
+        "Latitude",
+        "Longitude",
+        "Facility",
+        "Tier"
+    ],
+    "description": "## Context\nThis dataset is provided as part of Citizen Data Science project, to gather & provide fairly clean data (which is a challenge in these regions) to support the data science practice in Ghana and other regions at the beginning of their data science learning curve. So you support is welcome\n\nThis dataset provides a listing of healthcare facilities in Ghana, by exploring it we gain new understanding of the country's health infrastructure.\n\n## Content\nThis dataset contains information about health facilities in Ghana organised by Region and District. It also includes the type of health facility and the ownership as well as its geo-location.\n\n## Dataset Usecases (are you up to the task? try any of below)    \n**1.  Learning/familiarisation with cleaning data and resolving in challenging context of data acquisition.**  \n\n**2. Understanding Ghana's health infrastructure**  \n\n**3. Complex Joint of health facilities and tier data**  \nThe health facilities data and the tier data are from difference sources but we like to join them because they refer to the same facility however this join may not be a simple join because the health facility name in both dataset are not exact a string match.    \n\n**4. Understanding the level of access to facilities**  \nCombined with population data we want to understand whether some regions or areas are deprived?    \n\n**Any other creative stuff you can do with this data**\n\n## Inspiration\n-  [Exploratory Analysis](https://www.kaggle.com/datanix/starter-ghana-health-facilities) by: [easimadi](https://www.linkedin.com/in/easimadi)\n-  Curating Ghana's Health Facilities Dataset by [hisham](https://www.linkedin.com/in/hisham-osman-48579558/)\n- [Understanding Ghana's Health Infrastructure](https://public.tableau.com/profile/datanix.ds4good#!/vizhome/ghanahealthinfrastructure/Dashboard1?publish=yes) - Tableau visualisation\n\n## Acknowledgements\naccessed: http://data.gov.gh/dataset/health-facilities   \nsource: http://www.moh-ghana.org/  \n\nby: easimadi",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "DbCL-1.0",
+            "nameNullable": "DbCL-1.0"
+        }
+    ],
+    "null_count": 201,
+    "num_entries": 34473,
+    "row_count": 5231,
+    "source": "kaggle",
+    "tags": [
+        "healthcare",
+        "earth and nature",
+        "health",
+        "social science",
+        "hospitals and treatment centers"
+    ],
+    "title": "Ghana Health Facilities",
+    "topic": "health",
+    "usability": 0.8823529411764706
+}
