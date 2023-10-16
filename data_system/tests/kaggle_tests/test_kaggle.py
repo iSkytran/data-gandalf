@@ -44,6 +44,17 @@ def test_get_topic_url_list():
     assert len(url_list) == 2
     assert url_list == ["url_parsed", "owi2.()*"]
 
+def test_ensure_data_exists():
+    test_dataset_path = os.path.join(TEST_DATA_PATH, 'academics', 'grades1')
+    assert kaggle.ensure_data_exists(test_dataset_path) == True
+    assert kaggle.ensure_data_exists(TEST_DATA_PATH) == False
+    # # Ensure Data is non-empty
+    # csv = False
+    # for f in os.listdir(folder_path):
+    #     file = os.path.join(folder_path, f)
+    #     if file.endswith('.csv'):
+    #         csv = True
+    # return csv
 
 
 

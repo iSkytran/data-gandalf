@@ -19,6 +19,15 @@ def clean_dataset(path):
         if os.path.isdir(file):
             shutil.rmtree(file)
 
+def ensure_data_exists(folder_path):
+    # Ensure Data is non-empty
+    csv = False
+    for f in os.listdir(folder_path):
+        file = os.path.join(folder_path, f)
+        if file.endswith('.csv'):
+            csv = True
+    return csv
+    
 
 # Datasets are output of kaggle datasets list cli call.
 def get_topic_urlList(datasets, topic):
@@ -55,16 +64,11 @@ def pull_dataset(link, topic):
         # Clean Dataset Folder
         clean_dataset(folder)  
 
-        # Ensure Data is non-empty
-        csv = False
-        for f in os.listdir(folder):
-            file = os.path.join(folder, f)
-            if file.endswith('.csv'):
-                csv = True
-        if not csv:
+        data_exists = ensure_data_exists(folder)
+        if not data_exists:
             shutil.rmtree(folder)
             raise Exception("No CSV files detected in", folder)
-        
+
         return True
     except Exception as e:
         print("Unable to parse url:", link)

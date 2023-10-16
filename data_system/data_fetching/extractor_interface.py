@@ -25,7 +25,6 @@ class MetadataExtractor:
 
                 filename = str("".join(filter(lambda x: x.isalpha(), metadata['title'])) + self.metadata_suffix)
                 
-                print(filename)
                 self.output_data(metadata, target_folder=topic, filename=filename)
             except Exception as e:
                 self.problem_files.append(dataset_folder)
