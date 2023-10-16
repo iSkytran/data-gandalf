@@ -6,7 +6,7 @@ export default function Dataset({ params }: { params: { dataset: string } }) {
   const [datasets, setDatasets] = useState([]);
 
   useEffect(() => {
-    const url = `/api/datasets/${encodeURIComponent(params.dataset)}`;
+    const url = `/api/dataset/${encodeURIComponent(params.dataset)}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {

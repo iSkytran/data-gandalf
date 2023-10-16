@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 export default function GridItem({ metadata }: { metadata: any }) {
-  console.log(metadata);
   return (
     <Link href={`/dataset/${metadata.id}`}>
       <div className="w-64 h-80 shadow-lg rounded-lg p-6 border overflow-x-hidden overflow-y-scroll bg-white">
