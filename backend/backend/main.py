@@ -26,7 +26,6 @@ def datasets(topic: Optional[str] = None) -> list[Dataset]:
         return datasets
     else:
         datasets = db.get_all()
-        print(datasets[0])
         return datasets
     
 @app.get("/dataset/{uid}")

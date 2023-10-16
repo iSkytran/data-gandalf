@@ -3,8 +3,8 @@ import os
 
 from backend.models import Dataset
 
-env_url = os.getenv("DATABASE_ADDRESS", "postgres:5432")
-db_url = f"postgresql://postgres:default@{env_url}"
+env_url = os.getenv("DATABASE_ADDRESS", "localhost:5432")
+db_url = f"postgresql://postgres:password@{env_url}"
 engine = create_engine(db_url)
 
 def set_engine(new_engine):
@@ -35,6 +35,7 @@ def get_all(limit: int = 100) -> list[Dataset]:
 def get_by_id(id: str) -> list[Dataset]:
     with Session(engine) as session:
         dataset = session.exec(select(Dataset).where(Dataset.id == id)).first()
+        dataset = list_conversion_helper([dataset])
         if dataset is None:
             #TODO: is this an error?
             pass

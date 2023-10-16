@@ -10,7 +10,13 @@ export default function Dataset({ params }: { params: { dataset: string } }) {
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
-        setDatasets(data);
+        let data_with_similarity = data.map((data) => {
+          let similarity = data[0];
+          let dataset = data[1][0];
+          dataset.similarity = similarity;
+          return dataset;
+        })
+        setDatasets(data_with_similarity);
       });
   }, [params.dataset]);
 
