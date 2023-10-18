@@ -1,17 +1,18 @@
 from sqlmodel import Session, SQLModel, create_engine, select
-from models import Dataset
+from models import Dataset, Rating
+from uuid import UUID
 import os
 
 env_url = os.getenv("DATABASE_ADDRESS", "database:5432")
 db_url = f"postgresql://postgres:default@{env_url}"
 engine = create_engine(db_url)
 
-def set_engine(new_engine):
+def set_engine(new_engine) -> None:
     """Replace engine for testing"""
     global engine
     engine = new_engine
 
-def init():
+def init() -> None:
     SQLModel.metadata.create_all(engine)
 
 def get_topics() -> list[str]:
@@ -36,4 +37,20 @@ def get_by_id(id: str) -> list[Dataset]:
             #TODO: is this an error?
             pass
         return dataset
+
+def add_rating(rating: Rating) -> None:
+    with Session(engine) as session:
+        session.add(rating)
+        session.commit()
+
+def delete_rating(id: int) -> None:
+    with Session(engine) as session:
+        rating = session.exec(select(Rating).where(Rating.id == id))
+        session.delete(rating.one())
+        session.commit()
+
+def get_ratings(user_session: UUID, source_dataset: int) -> list[Rating]:
+    with Session(engine) as session:
+        ratings = session.exec(select(Rating).where(Dataset.user_session == user_session).where(Rating.source_dataset == source_dataset))
+        return ratings
 

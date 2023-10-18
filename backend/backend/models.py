@@ -1,7 +1,13 @@
 from typing import Optional, List
 from sqlmodel import Field, SQLModel, JSON
+from uuid import UUID
 
 class Dataset(SQLModel, table=True):
+    """Schema for a dataset.
+
+    Contains a unique identifier and relevant metadata
+    for a dataset.
+    """
     id: Optional[int] = Field(default=None, primary_key=True)
     topic: str
     title: str 
@@ -16,3 +22,21 @@ class Dataset(SQLModel, table=True):
     null_count: int
     usability: float
 
+class Rating(SQLModel, table=True):
+    """Schema for a user rating a recommendation.
+
+    Attributes:
+        id: Primary key for the entry.
+        recommend: A boolean where true is the user likes the recommendation.
+            The recommendation while false means it's not a good recommendation.
+        user_session: UUID of a tracked user session.
+        source_dataset: The dataset that a user has selected.
+        destination_dataset: The dataset that was recommended for
+            the source dataset.
+    """
+    id: Optional[int] = Field(default=None, primary_key=True)
+    user_session: UUID
+    recommend: bool
+    source_dataset: int = Field(foreign_key="dataset.id")
+    destination_dataset: int = Field(foreign_key="dataset.id")
+    
