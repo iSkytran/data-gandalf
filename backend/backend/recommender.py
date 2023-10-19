@@ -37,4 +37,4 @@ class RecommendationModel:
         else:
             raise Exception("Unexpected model type")
 
-recommendation_model = RecommendationModel(cf.MODEL_PATH)
+recommendation_model = RecommendationModel(Path(cf.MODEL_PATH))

@@ -1,3 +1,2 @@
-from pathlib import Path
 
-MODEL_PATH = Path("models/recommendations.pkl")
+MODEL_PATH = "models/recommendations.pkl"
