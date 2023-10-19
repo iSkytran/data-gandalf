@@ -1,10 +1,9 @@
 from sqlmodel import Session, SQLModel, create_engine, select
-import os
 
 from backend.models import Dataset
+import backend.config as cf
 
-env_url = os.getenv("DATABASE_ADDRESS", "localhost:5432")
-db_url = f"postgresql://postgres:password@{env_url}"
+db_url = cf.DB_URL
 engine = create_engine(db_url)
 
 def set_engine(new_engine):
