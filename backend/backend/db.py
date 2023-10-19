@@ -3,7 +3,7 @@ import os
 
 from backend.models import Dataset
 
-env_url = os.getenv("DATABASE_ADDRESS", "localhost:5432")
+env_url = os.getenv("DATABASE_ADDRESS", "http://localhost:5432")
 db_url = f"postgresql://postgres:password@{env_url}"
 engine = create_engine(db_url)
 
