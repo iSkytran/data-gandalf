@@ -4,10 +4,11 @@ import Grid from "../../components/grid";
 
 export default function Dataset({ params }: { params: { dataset: string } }) {
   const [datasets, setDatasets] = useState([]);
+  const [ratings, setRatings] = useState([]);
 
   useEffect(() => {
-    const url = `/api/datasets/${encodeURIComponent(params.dataset)}`;
-    fetch(url)
+    const datasetUrl = `/api/datasets/${encodeURIComponent(params.dataset)}`;
+    fetch(datasetUrl)
       .then((res) => res.json())
       .then((data) => {
         setDatasets(data);
@@ -16,7 +17,7 @@ export default function Dataset({ params }: { params: { dataset: string } }) {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Grid datasets={datasets} />
+      <Grid datasets={datasets} ratings={ratings}/>
     </main>
   );
 }
