@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import FilterBar from "./components/filterBar";
 import Grid from "./components/grid";
+import GridItem from "./components/gridItem";
 
 export default function Home() {
   const [datasets, setDatasets] = useState([]);
@@ -15,6 +16,16 @@ export default function Home() {
         setDatasets(data);
       });
   }, [selectedTopic]);
+
+  const items = datasets.map((dataset: any) => {
+    return (
+      <GridItem key={dataset.id} metadata={dataset}/>
+    );
+  });
+
+  if (!datasets) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <>
@@ -32,7 +43,9 @@ export default function Home() {
           Find relevant datasets by filtering with a topic or through selecting
           a dataset.
         </h2>
-        <Grid datasets={datasets} />
+        <Grid>
+          { items }
+        </Grid>
       </main>
     </>
   );
