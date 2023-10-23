@@ -1,0 +1,30 @@
+services:
+  frontend:
+    build:
+      context: frontend
+    ports:
+      - "3000:3000"
+    environment:
+      BACKEND_ADDRESS: localhost:8080
+  backend:
+    build:
+      context: backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      database:
+        condition: service_healthy
+    environment:
+      DATABASE_ADDRESS: database
+  database:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: default
+    volumes:
+      - ./database/example.sql:/docker-entrypoint-initdb.d/example.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+

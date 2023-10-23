@@ -1,0 +1,22 @@
+{
+    "usabilityRating": 0.8235294117647058,
+    "title": "Grades",
+    "description": "A dataset about grades",
+    "keywords": [
+      "academics"
+    ],
+    "licenses": [
+      {
+        "nameNullable": "Test License 1",
+        "name": "Test License 1",
+        "hasName": true
+      }, 
+      {
+        "nameNullable": "Test License 2",
+        "name": "Test License 2",
+        "hasName": true
+      }
+    ],
+    "collaborators": [],
+    "data": []
+  }
