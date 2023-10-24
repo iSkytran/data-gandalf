@@ -11,7 +11,7 @@ from data_uploading.json_to_db_uploader import JsonToDbUploader
 # CONFIGURATION
 
 # Whether to save downloaded CSV files from the datasets. 
-SAVE_CSV = True
+SAVE_CSV = False
 DATASET_FOLDER = "datasets"
 
 # Whether to save the metadata JSON objects created. Should be true if you want the ability to edit.
@@ -19,7 +19,8 @@ SAVE_METADATA = True
 METADATA_FOLDER = "metadata"
 
 # The topics to query from. 
-TOPICS = ['sports', 'agriculture', 'housing', 'health', 'finance', 'education', 'energy', 'politics', 'chemistry', 'entertainment']
+TOPICS = ['sports', 'education', 'housing', 'health', 'finance', 'energy', 'politics', 'agriculture', 'chemistry', 'entertainment']
+
 
 # Source to query. 
 SOURCE = "kaggle"
