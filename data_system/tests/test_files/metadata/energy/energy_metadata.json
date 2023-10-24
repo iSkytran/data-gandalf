@@ -1,0 +1,28 @@
+{
+    "col_count": 2,
+    "col_names": [
+        "installation",
+        "watts"
+    ],
+    "description": "A dataset about energy",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "Test License 5",
+            "nameNullable": "Test License 5"
+        },
+        {
+            "hasName": true,
+            "name": "Test License 6",
+            "nameNullable": "Test License 6"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 4,
+    "row_count": 2,
+    "source": "kaggle",
+    "tags": [],
+    "title": "energy",
+    "topic": "energy",
+    "usability": 0.45
+}

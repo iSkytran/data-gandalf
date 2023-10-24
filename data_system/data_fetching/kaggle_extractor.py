@@ -29,9 +29,10 @@ class KaggleExtractor(MetadataExtractor):
                     metadata = self.update_metadata_from_df(df, metadata)
                 
                 # If JSON, take relevant metadata
-                elif filename[len(filename) - 5:] == '.json':
+                elif filename == 'dataset-metadata.json':
                     file = open(os.path.join(dataset_folder, filename), 'r')
                     given_metadata = json.load(file)
+                    file.close()
                     metadata['source'] = self.source
                     metadata['topic'] = topic
                     metadata['usability'] = given_metadata['usabilityRating']
@@ -39,6 +40,7 @@ class KaggleExtractor(MetadataExtractor):
                     metadata['description'] = given_metadata['description']
                     metadata['tags'] = given_metadata['keywords']
                     metadata['licenses'] = given_metadata['licenses']
+
                 # Otherwise, ignore
                 else:
                     continue
@@ -57,7 +59,6 @@ class KaggleExtractor(MetadataExtractor):
             os.makedirs(full_folder_path)
         
         full_path = os.path.join(full_folder_path, filename)
-        print("Output to file:", full_path)
 
         meta_json:json = json.dumps(metadata, indent=4, sort_keys=True)
         
@@ -92,10 +93,10 @@ class KaggleExtractor(MetadataExtractor):
     # Reports any issues. 
     def report_issues(self):  
         # Report issues
-        with open("problem-files.txt", "w+") as newfile:
+        with open("data_fetching/problem-files.txt", "w+") as newfile:
             newfile.write(json.dumps(self.problem_files))
         print("Processed", len(self.datasets_processed), "datasets.")
-        print("Found", len(self.problem_files), "problem files. Look at problem-files.txt for a list.")
-
+        print("Found", len(self.problem_files), "problem files while extracting. Look at data_fetching/problem-files.txt for a list.")
+        return len(self.problem_files)
 
 

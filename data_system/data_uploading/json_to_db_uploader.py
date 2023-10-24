@@ -59,10 +59,12 @@ class JsonToDbUploader(MetadataUploader):
             dataset.licenses = list(map(lambda x: x['name'], metadata['licenses']))
         except Exception as e:
             self.problem_files.append(dataset.topic + "(License issue)")
+
         return dataset
 
     def report_issues(self):
         # Report issues.
-        with open("problem-files-upload.txt", "w+") as newfile:
+        with open("data_uploading/problem-files-upload.txt", "w+") as newfile:
             newfile.write(json.dumps(self.problem_files))
-        print("Found ", len(self.problem_files), " problem files. Look at problem-files-upload.txt for a list.")
+        print("Found ", len(self.problem_files), " problem files while uploading. Look at data_uploading/problem-files-upload.txt for a list.")
+        return len(self.problem_files)

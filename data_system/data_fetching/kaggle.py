@@ -3,70 +3,119 @@ import os
 from zipfile import ZipFile
 import shutil
 
-def fetch(topics, output_folder):
+fixed_directory = ""
+
+# Unzip ZIP files, then remove Non-JSON and Non-CSV files.
+def clean_dataset(path):
+    # for each file
+    for f in os.listdir(path):
+        file = os.path.join(path, f)
+        if file.endswith('.zip') == True:
+            with ZipFile(file, 'r') as z:
+                z.extractall(path)
+            os.remove(file)
+        if os.path.isfile(file) and file.endswith('.csv') == False and file.endswith('.json') == False:
+            os.remove(file)
+        if os.path.isdir(file):
+            shutil.rmtree(file)
+
+# Ensure at least one CSV file exists in the directory.
+def ensure_data_exists(folder_path):
+    # Ensure Data is non-empty
+    csv = False
+    for f in os.listdir(folder_path):
+        file = os.path.join(folder_path, f)
+        if file.endswith('.csv'):
+            csv = True
+    return csv
+    
+# Given a string represnting datasets (pulled from kaggle), get a topic URL list.
+def get_topic_urlList(datasets, topic):
+    #Split the datasets into a list and remove the headers
+    datasetList = datasets.split('\r\n')
+    datasetList.pop(0)
+    datasetList.pop(0)
+
+    #Get a list of all the dataset URL suffixes
+    urlList = []
+    for d in datasetList:
+        urlList.append(d.split(' ', 1)[0])
+
+    return urlList
+
+# Pulls a dataset from kaggle with a given link.
+def pull_dataset(link):
+    subprocess.run(f'kaggle datasets download -d {link}')
+    subprocess.run(f'kaggle datasets metadata {link}')
+
+# Pull a dataset with a given link from kaggle, then validates it.
+def process_dataset(link, topic):
+    global fixed_directory
+    path = os.path.join(fixed_directory, "datasets", topic)
+    os.chdir(path)
+
+    # NOTE: URL is kaggle.com/datasets/{link}
+    try:
+        # Pull Dataset
+        name = link[link.rindex('/') + 1:]
+        folder = os.path.join(os.getcwd(), name)
+        if os.path.exists(folder):
+            raise Exception("Dataset already pulled.")
+        os.makedirs(folder)
+        os.chdir(folder)
+
+        pull_dataset(link)
+  
+        os.chdir(path)
+
+        # Clean Dataset Folder
+        clean_dataset(folder)  
+
+        data_exists = ensure_data_exists(folder)
+        if not data_exists:
+            shutil.rmtree(folder)
+            raise Exception("No CSV files detected in", folder)
+
+        return True
+    except Exception as e:
+        print("Unable to parse url:", link)
+        print(e)
+        return False
+
+def pull_topic(topic, num_datasets):
+
+    #Get the string value of all the returned datasets when the list command is run with a max size of 1MB and a given topic search command
+    datasets = subprocess.check_output(f'kaggle datasets list --max-size 1000000 --file-type csv --search \'{topic}\'').decode()
+
+
+    path = os.path.join("datasets", topic)
+    if not os.path.exists(path):
+        os.makedirs(path)
+
+    # Get list of all dataset URL suffixes.
+    urlList = get_topic_urlList(datasets, topic)
+
+    #Download all of the dataset files and metadata into the topic folder
+    successful_pulls = 0
+    idx = 0
+    while idx < len(urlList) and successful_pulls < num_datasets:
+        u = urlList[idx]
+        if process_dataset(u, topic):
+            successful_pulls += 1
+                # If doesn't have CSV, delete it
+        idx += 1
+
+def fetch(topics, num_datasets, output_folder):
+    global fixed_directory
     # Fix initial working directory
     fixed_directory = os.getcwd()
 
     #Make a dataset folder to store everything in
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
-    os.chdir(output_folder)
 
     for topic in topics:
-        #Get the string value of all the returned datasets when the list command is run with a max size of 1MB and a given topic search command
-        datasets = subprocess.check_output(f'kaggle datasets list --max-size 1000000 --file-type csv --search \'{topic}\'').decode()
+        pull_topic(topic, num_datasets)
+        os.chdir(fixed_directory)
 
-        #Make a subfolder for the topic
-        if not os.path.exists(topic):
-            os.makedirs(topic)
-        os.chdir(topic)
-
-        #Split the datasets into a list and remove the headers
-        datasetList = datasets.split('\r\n')
-        datasetList.pop(0)
-        datasetList.pop(0)
-
-        #Get a list of all the dataset URL suffixes
-        urlList = []
-        for d in datasetList:
-            urlList.append(d.split(' ', 1)[0])
-
-        #Download all of the dataset files and metadata into the topic folder
-        for u in urlList[:50]:
-            try:
-                name = u[u.rindex('/'):]
-                if not os.path.exists(os.getcwd() + name):
-                    os.makedirs(os.getcwd() + name)
-                os.chdir(os.getcwd() + name)
-                subprocess.run(f'kaggle datasets download -d {u}')
-                subprocess.run(f'kaggle datasets metadata {u}')
-                os.chdir('..')
-            except Exception as e:
-                print("Unable to parse url:", u)
-        os.chdir('..')
-
-    #Unzip all of the dataset folder contents and remove the zip files
-    for d in os.listdir(os.getcwd()):
-        if os.path.isdir(d):
-            os.chdir(d)
-            for d in os.listdir(os.getcwd()):
-                if os.path.isdir(d):
-                    os.chdir(d)
-                    for f in os.listdir(os.getcwd()):
-                        if f.endswith('.zip') == True:
-                            with ZipFile(f, 'r') as z:
-                                try:
-                                    z.extractall(os.getcwd())
-                                except Exception as e:
-                                    print("Erorr extracting:", os.getcwd())
-                            os.remove(f)
-                    for f in os.listdir(os.getcwd()):
-                        if os.path.isfile(f) and f.endswith('.csv') == False and f.endswith('.json') == False:
-                            os.remove(f)
-                        if os.path.isdir(f):
-                            shutil.rmtree(f)
-                    os.chdir('..')
-            os.chdir('..')
-    
-    # Reset working directory
     os.chdir(fixed_directory)
