@@ -4,6 +4,8 @@ from recommenders.models.tfidf.tfidf_utils import TfidfRecommender
 import pickle
 import psycopg2
 
+# import model_system.config as cf # configurations
+
 # Connect to database with metadata
 conn = psycopg2.connect(
     dbname="training_database",
@@ -42,7 +44,13 @@ tf, vectors_tokenized = recommender.tokenize_text(df_clean, text_col=clean_col)
 # Fit the TF-IDF vectorizer
 recommender.fit(tf, vectors_tokenized)
 
+# Run a function to run the private function that generates full recommendation list
+top_k_recommendations = recommender.recommend_top_k_items(df_clean, k=10)
+
+# Get recommendations
+full_rec_list = recommender.recommendations
+
 # Dump the model into our model pickle file
-model_path = Path("../backend/models/model.pkl") 
+model_path = Path("../backend/models/new_recommendations.pkl") # Path(cf.MODEL_PATH) 
 with open(model_path, 'wb') as file:
-    pickle.dump(recommender, file)
+    pickle.dump(full_rec_list, file)
