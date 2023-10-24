@@ -19,7 +19,8 @@ SAVE_METADATA = True
 METADATA_FOLDER = "metadata"
 
 # The topics to query from. 
-TOPICS = ['sports', 'agriculture', 'housing', 'health', 'finance', 'education', 'energy', 'politics', 'chemistry', 'entertainment']
+TOPICS = ['sports', 'education', 'housing', 'health', 'finance', 'energy', 'politics', 'agriculture', 'chemistry', 'entertainment']
+
 
 # Source to query. 
 SOURCE = "kaggle"
