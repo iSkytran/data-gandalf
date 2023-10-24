@@ -15,4 +15,4 @@ def test_singleton_behavior(recommendation_model):
 
 def test_ranking(recommendation_model):
     # TODO: how to not hard code this every retrain if want to compare ranking results
-    assert recommendation_model.rank("1") is not None
+    assert recommendation_model.rank("245") is not None

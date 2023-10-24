@@ -8,12 +8,12 @@
     "licenses": [
       {
         "nameNullable": "Test License 3",
-        "name": "Test License 1",
+        "name": "Test License 3",
         "hasName": true
       }, 
       {
         "nameNullable": "Test License 4",
-        "name": "Test License 2",
+        "name": "Test License 4",
         "hasName": true
       }
     ],

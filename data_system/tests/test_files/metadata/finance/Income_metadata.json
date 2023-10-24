@@ -1,0 +1,32 @@
+{
+    "col_count": 3,
+    "col_names": [
+        "ID",
+        "Age",
+        "Income"
+    ],
+    "description": "A dataset about income",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "Test License 3",
+            "nameNullable": "Test License 3"
+        },
+        {
+            "hasName": true,
+            "name": "Test License 4",
+            "nameNullable": "Test License 4"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 27,
+    "row_count": 9,
+    "source": "kaggle",
+    "tags": [
+        "finance",
+        "income"
+    ],
+    "title": "Income",
+    "topic": "finance",
+    "usability": 0.298462346364
+}

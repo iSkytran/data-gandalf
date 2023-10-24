@@ -1,0 +1,20 @@
+{
+    "usabilityRating": 0.45,
+    "description": "A dataset about health",
+    "keywords": [
+    ],
+    "licenses": [
+      {
+        "nameNullable": "Test License 5",
+        "name": "Test License 5",
+        "hasName": true
+      }, 
+      {
+        "nameNullable": "Test License 6",
+        "name": "Test License 6",
+        "hasName": true
+      }
+    ],
+    "collaborators": [],
+    "data": []
+  }
