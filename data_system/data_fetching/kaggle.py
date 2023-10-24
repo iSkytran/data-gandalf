@@ -94,6 +94,7 @@ def pull_topic(topic, num_datasets):
 
     # Get list of all dataset URL suffixes.
     urlList = get_topic_urlList(datasets, topic)
+    print(len(urlList))
 
     #Download all of the dataset files and metadata into the topic folder
     successful_pulls = 0

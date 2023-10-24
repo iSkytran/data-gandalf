@@ -15,7 +15,7 @@ SAVE_CSV = False
 DATASET_FOLDER = "datasets"
 
 # Whether to save the metadata JSON objects created. Should be true if you want the ability to edit.
-SAVE_METADATA = True
+SAVE_METADATA = False
 METADATA_FOLDER = "metadata"
 
 # The topics to query from. 
@@ -26,7 +26,7 @@ TOPICS = ['sports', 'education', 'housing', 'health', 'finance', 'energy', 'poli
 SOURCE = "kaggle"
 
 # Which Stages to Run- "FETCH", "EXTRACT", "UPLOAD"
-STAGES = ["EXTRACT"]
+STAGES = ["FETCH", "EXTRACT", "UPLOAD"]
 
 # Initialize default objects to be overridden. 
 extractor = MetadataExtractor(DATASET_FOLDER)
@@ -35,7 +35,7 @@ uploader = MetadataUploader()
 # Override extractor and uploader objects. 
 if SOURCE == "kaggle":
     if "FETCH" in STAGES:
-        kaggle.fetch(topics=TOPICS, num_datasets=3, output_folder=DATASET_FOLDER)
+        kaggle.fetch(topics=TOPICS, num_datasets=1000, output_folder=DATASET_FOLDER)
     extractor = KaggleExtractor(file_input_path=DATASET_FOLDER, file_output_path=METADATA_FOLDER)
     uploader = JsonToDbUploader(file_input_path=METADATA_FOLDER)
 
