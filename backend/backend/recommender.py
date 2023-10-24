@@ -1,7 +1,9 @@
 import pickle
 from pathlib import Path
-from models import Dataset
-import db
+from typing import Any
+
+from backend.models import Dataset
+import backend.db as db
 
 # TODO: add documentation
 class RecommendationModel:
@@ -18,7 +20,7 @@ class RecommendationModel:
             self.model = pickle.load(file)
         # TODO: catch exceptions if model file doesn't exist
 
-    def rank(self, dataset_id: str) -> list[Dataset]:
+    def rank(self, dataset_id: str) -> list[tuple[Any, list[Dataset]]]:
         full_rec_list = self.model.recommendations
         dataset_recs = full_rec_list[dataset_id]
         # dataset_recs is (score, UID)s, here is list of (Datasets, score)s if needed for frontend:
@@ -26,6 +28,6 @@ class RecommendationModel:
         # return dataset_recs # or datasets
         return datasets
 
-recommendation_model = RecommendationModel(Path("../models/model.pkl"))
+recommendation_model = RecommendationModel(Path("models/model.pkl"))
 # TODO: make this path come frome config or env variable
 # TODO: does path only work with Docker?

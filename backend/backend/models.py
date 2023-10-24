@@ -16,8 +16,8 @@ class Dataset(SQLModel, table=True):
     tags: List[str] = Field(sa_column=JSON)
     licenses: List[str] = Field(sa_column=JSON)
     col_names: List[str] = Field(sa_column=JSON)
-    row_count: int
     col_count: int
+    row_count: int
     entry_count: int
     null_count: int
     usability: float
@@ -35,7 +35,7 @@ class Rating(SQLModel, table=True):
             the source dataset.
     """
     id: Optional[int] = Field(default=None, primary_key=True)
-    user_session: UUID
+    user_session: str
     recommend: bool
     source_dataset: int = Field(foreign_key="dataset.id")
     destination_dataset: int = Field(foreign_key="dataset.id")

@@ -1,6 +1,5 @@
 from fastapi import FastAPI
 from typing import Optional
-from uuid import UUID
 
 from backend import db
 from backend.recommender import recommendation_model
@@ -36,7 +35,7 @@ def get_dataset(uid: str):
 
 # TODO: POST ratings
 @app.get("/ratings")
-def get_ratings(user_session: UUID, source_dataset: int) -> list[Rating]:
+def get_ratings(user_session: str, source_dataset: int) -> list[Rating]:
     return db.get_ratings(user_session, source_dataset)
 
 @app.post("/ratings")
