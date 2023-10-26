@@ -1,4 +1,5 @@
 import subprocess
+import json
 import os
 from zipfile import ZipFile
 import shutil
@@ -64,8 +65,16 @@ def process_dataset(link, topic):
         os.makedirs(folder)
         os.chdir(folder)
 
+        # Add link to metadata
         pull_dataset(link)
-  
+        metadata = dict()
+        with open('dataset-metadata.json', 'r') as file:
+            metadata = json.load(file)
+            metadata['url'] = "kaggle.com/datasets/" + link
+        
+        with open('dataset-metadata.json', 'w') as file:
+            file.write(json.dumps(metadata))
+
         os.chdir(path)
 
         # Clean Dataset Folder
@@ -94,7 +103,6 @@ def pull_topic(topic, num_datasets):
 
     # Get list of all dataset URL suffixes.
     urlList = get_topic_urlList(datasets, topic)
-    print(len(urlList))
 
     #Download all of the dataset files and metadata into the topic folder
     successful_pulls = 0

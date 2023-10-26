@@ -6,6 +6,7 @@ class Dataset(SQLModel, table=True):
     topic: str
     title: str 
     description: str
+    url: str
     source: str
     tags: List[str] = Field(sa_column=JSON)
     licenses: List[str] = Field(sa_column=JSON)

@@ -46,6 +46,7 @@ class JsonToDbUploader(MetadataUploader):
         dataset.row_count = metadata['row_count']
         dataset.col_count = metadata['col_count']
         dataset.description = metadata['description']
+        dataset.url = metadata['url']
         dataset.tags = metadata['tags']
         dataset.title = metadata['title']
         dataset.topic = metadata['topic']
