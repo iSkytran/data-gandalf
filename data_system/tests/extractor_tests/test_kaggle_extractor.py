@@ -14,6 +14,7 @@ extractor = KaggleExtractor(file_input_path=TEST_DATA_PATH, file_output_path=TES
 
 # Academics has no invalid files but has some null values.
 def test_extract_academics():
+
     # Extract metadata 
     topics = ["academics"]
     extractor.extract_topics(topics)

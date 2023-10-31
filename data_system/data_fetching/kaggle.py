@@ -1,4 +1,5 @@
 import subprocess
+import json
 import os
 from zipfile import ZipFile
 import shutil
@@ -64,8 +65,16 @@ def process_dataset(link, topic):
         os.makedirs(folder)
         os.chdir(folder)
 
+        # Add link to metadata
         pull_dataset(link)
-  
+        metadata = dict()
+        with open('dataset-metadata.json', 'r') as file:
+            metadata = json.load(file)
+            metadata['url'] = "kaggle.com/datasets/" + link
+        
+        with open('dataset-metadata.json', 'w') as file:
+            file.write(json.dumps(metadata))
+
         os.chdir(path)
 
         # Clean Dataset Folder
@@ -84,26 +93,30 @@ def process_dataset(link, topic):
 
 def pull_topic(topic, num_datasets):
 
-    #Get the string value of all the returned datasets when the list command is run with a max size of 1MB and a given topic search command
-    datasets = subprocess.check_output(f'kaggle datasets list --max-size 1000000 --file-type csv --search \'{topic}\'').decode()
-
+    # Pessimistically, assume only 15/20 datasets pulled are usable
+    pessimistic_pages = round((num_datasets + 14) / 15)
 
     path = os.path.join("datasets", topic)
     if not os.path.exists(path):
         os.makedirs(path)
 
-    # Get list of all dataset URL suffixes.
-    urlList = get_topic_urlList(datasets, topic)
-
-    #Download all of the dataset files and metadata into the topic folder
     successful_pulls = 0
-    idx = 0
-    while idx < len(urlList) and successful_pulls < num_datasets:
-        u = urlList[idx]
-        if process_dataset(u, topic):
-            successful_pulls += 1
-                # If doesn't have CSV, delete it
-        idx += 1
+    for page in range(1, pessimistic_pages):
+        #Get the string value of all the returned datasets when the list command is run with a max size of 1MB and a given topic search command
+        datasets = subprocess.check_output(f'kaggle datasets list --max-size 1000000 --file-type csv --page {page} --search \'{topic}\'').decode()
+
+
+        # Get list of all dataset URL suffixes.
+        urlList = get_topic_urlList(datasets, topic)
+
+        #Download all of the dataset files and metadata into the topic folder
+        idx = 0
+        while idx < len(urlList) and successful_pulls < num_datasets:
+            u = urlList[idx]
+            if process_dataset(u, topic):
+                successful_pulls += 1
+                    # If doesn't have CSV, delete it
+            idx += 1
 
 def fetch(topics, num_datasets, output_folder):
     global fixed_directory

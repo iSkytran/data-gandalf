@@ -39,6 +39,7 @@ class KaggleExtractor(MetadataExtractor):
                     metadata['title'] = given_metadata['title']
                     metadata['description'] = given_metadata['description']
                     metadata['tags'] = given_metadata['keywords']
+                    metadata['url'] = given_metadata['url']
                     metadata['licenses'] = given_metadata['licenses']
 
                 # Otherwise, ignore
