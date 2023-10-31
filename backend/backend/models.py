@@ -48,12 +48,6 @@ class Rating(RatingBase, table=True):
     """
     id: Optional[int] = Field(default=None, primary_key=True)
 
-class RatingCreate(RatingBase):
-    """Alias for RatingBase for creation.
-    Inherits from RatingBase.
-    """
-    pass
-
 class RatingRead(RatingBase):
     """Rating model that includes the primary key id.
     Inherits from RatingBase.

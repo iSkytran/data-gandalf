@@ -44,6 +44,15 @@ def add_rating(rating: Rating) -> RatingRead:
         session.refresh(rating)
         return rating
 
+def update_rating(rating: Rating) -> RatingRead:
+    with Session(engine) as session:
+        updated = session.exec(select(Rating).where(Rating.id == rating.id)).one()
+        updated.recommend = rating.recommend
+        session.add(updated)
+        session.commit()
+        session.refresh(updated)
+        return updated
+
 def delete_rating(id: int) -> None:
     with Session(engine) as session:
         rating = session.exec(select(Rating).where(Rating.id == id))

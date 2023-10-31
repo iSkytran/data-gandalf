@@ -10,11 +10,10 @@ export default function Rating({ ratingIdx, ratings, setRatings }: { ratingIdx: 
     fetch(`/api/ratings/${encodeURIComponent(rating.id)}`, { method: "DELETE" });
     const newRatings = ratings.map((e: any) => {
       if (e.id === rating.id) {
-        rating.recommend = null;
-        return rating;
-      } else {
-        return e;
+        delete e.id;
+        e.recommend = null;
       }
+      return e;
     });
     setRatings(newRatings);
   };
