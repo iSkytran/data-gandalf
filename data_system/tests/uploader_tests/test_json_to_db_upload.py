@@ -19,6 +19,8 @@ json_to_db_uploader.create_datasets = create_datasets_mock
 json_to_db_uploader.init = init_mock
 
 def test_upload():
+    fixed_directory = os.getcwd()
+
     global datasets
     uploader.prepare_upload(topics=["academics","energy","finance"])
     uploader.upload()
@@ -28,3 +30,5 @@ def test_upload():
     assert datasets[0].title == "Grades"
     assert datasets[1].title == "energy"
     assert datasets[2].title == "Income"
+
+    os.chdir(fixed_directory)
