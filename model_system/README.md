@@ -7,7 +7,7 @@ Add this directory to your `PYTHONPATH`
 export PYTHONPATH=$PYTHONPATH:$(pwd)
 ```
 
-Ensure that you have an active PostgreSQL database running. Change the `psycopg2.connect` setting to match your database settings. Modify the `MODEL_PATH` in `config.py` to change where the model gets saved to.
+Ensure that you have an active PostgreSQL database running. Change the DB configurations in `config.py` setting to match your database settings. Modify the `MODEL_PATH` to change where the model gets saved to.
 
 TO run, execute
 ```

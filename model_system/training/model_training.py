@@ -8,11 +8,11 @@ import training.config as cf # configurations
 
 # Connect to database with metadata
 conn = psycopg2.connect(
-    dbname="training_database",
-    user="postgres",
-    password="default",
-    host="localhost",
-    port="5432"
+    dbname=cf.DBNAME,
+    user=cf.USER,
+    password=cf.PASSWORD,
+    host=cf.HOST,
+    port=cf.PORT
 )
 cursor = conn.cursor()
 cursor.execute('SELECT * from dataset')
