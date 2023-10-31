@@ -1,75 +1,65 @@
-import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp as solidThumbsUp, faThumbsDown as solidThumbsDown } from "@fortawesome/free-solid-svg-icons";
 import { faThumbsUp as regThumbsUp, faThumbsDown as regThumbsDown } from "@fortawesome/free-regular-svg-icons";
 
-export default function Rating({ ratingData, userSession }: { ratingData: any, userSession: string }) {
-  // 0 represents no selection, 1 is positive, -1 is negative.
-  const [rating, setRating] = useState(0);
-  const postUrl = `/api/ratings`;
-  let deleteUrl: string;
-  if (ratingData !== undefined) {
-    deleteUrl = `/api/ratings/${encodeURIComponent(ratingData.id)}`;
-  }
+export default function Rating({ ratingIdx, ratings, setRatings }: { ratingIdx: number, ratings: any, setRatings: any }) {
+  // For rating.recommend, 0 represents no selection, 1 is positive, -1 is negative.
+  const rating = ratings[ratingIdx];
 
-  useEffect(() => {
-    if (ratingData !== undefined) {
-      if (ratingData.recommend === true) {
-        setRating(1);
-      } else if (ratingData.recommend === false) {
-        setRating(-1);
+  const deleteRequest = () => {
+    fetch(`/api/ratings/${encodeURIComponent(rating.id)}`, { method: "DELETE" });
+    const newRatings = ratings.map((e: any) => {
+      if (e.id === rating.id) {
+        rating.recommend = null;
+        return rating;
+      } else {
+        return e;
       }
-    }
-    }, [ratingData]
-  );
-
-  const thumbsUp = () => {
-    if (rating === 1) {
-      setRating(0);
-      fetch(deleteUrl, { method: "DELETE" });
-    } else {
-      setRating(1);
-      fetch(postUrl, {
-        method: "POST",
-        body: JSON.stringify({
-            recommend: true,
-            user_session: userSession,
-            source_dataset: ratingData.source_dataset,
-            destination_dataset: ratingData.destination_dataset,
-        }),
-      });
-    }
+    });
+    setRatings(newRatings);
   };
 
-  const thumbsDown = () => {
-    if (rating === -1) {
-      setRating(0);
-      fetch(deleteUrl, { method: "DELETE" });
-    } else {
-      setRating(-1);
-      fetch(postUrl, {
+  const postRequest = (recommend: boolean) => {
+      rating.recommend = recommend;
+      fetch("/api/ratings", {
         method: "POST",
-        body: JSON.stringify({
-            recommend: true,
-            user_session: userSession,
-            source_dataset: ratingData.source_dataset,
-            destination_dataset: ratingData.destination_dataset,
-        }),
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(rating),
+      }).then((res) => res.json())
+      .then((data) => {
+        const newRatings = ratings.map((e: any, i: number) => {
+          if (i === ratingIdx) {
+            return data;
+          } else {
+            return e;
+          }
+        });
+        setRatings(newRatings);
       });
+  };
+
+  const changeRating = (event: any, recommend: boolean | null) => {
+    event.stopPropagation();
+    if (rating.recommend != null || recommend == null) {
+      deleteRequest();
+    } else {
+      postRequest(recommend);
     }
   };
 
   return (
     <>
-        {rating === 1 ? (
-          <FontAwesomeIcon icon={solidThumbsUp} onClick={thumbsUp}/>
+        {rating.recommend === true ? (
+          <FontAwesomeIcon icon={solidThumbsUp} onClick={e => {changeRating(e, null);}}/>
         ) : (
-          <FontAwesomeIcon icon={regThumbsUp} onClick={thumbsUp}/>
+          <FontAwesomeIcon icon={regThumbsUp} onClick={e => {changeRating(e, true);}}/>
         )}
-        {rating === -1 ? (
-          <FontAwesomeIcon icon={solidThumbsDown} onClick={thumbsDown}/>
+        {rating.recommend === false ? (
+          <FontAwesomeIcon icon={solidThumbsDown} onClick={e => {changeRating(e, null);}}/>
         ) : (
-          <FontAwesomeIcon icon={regThumbsDown} onClick={thumbsDown}/>
+          <FontAwesomeIcon icon={regThumbsDown} onClick={e => {changeRating(e, false);}}/>
         )}
     </>
   );

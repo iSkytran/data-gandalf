@@ -3,7 +3,7 @@ from typing import Optional
 
 from backend import db
 from backend.recommender import recommendation_model
-from backend.models import Dataset, Rating
+from backend.models import Dataset, Rating, RatingRead, RatingCreate
 
 app = FastAPI()
 
@@ -29,18 +29,19 @@ def get_datasets(topic: Optional[str] = None) -> list[Dataset]:
         return datasets
     
 @app.get("/datasets/{uid}")
-def get_dataset(uid: str):
+def get_dataset(uid: str) -> list[Dataset]:
     # TODO: get list of Dataset objects (get_dataset in db.py)
-    return recommendation_model.rank(uid)
+    #return recommendation_model.rank(uid)
+    return db.get_all()
 
-# TODO: POST ratings
-@app.get("/ratings")
-def get_ratings(user_session: str, source_dataset: int) -> list[Rating]:
+@app.get("/ratings", response_model=list[RatingRead])
+def get_ratings(user_session: str, source_dataset: int) -> list[RatingRead]:
     return db.get_ratings(user_session, source_dataset)
 
-@app.post("/ratings")
-def add_rating(rating: Rating) -> None:
-    db.add_rating(rating)
+@app.post("/ratings", response_model=RatingRead)
+def add_rating(rating: RatingCreate) -> RatingRead:
+    rating = Rating.from_orm(rating)
+    return db.add_rating(rating)
 
 @app.delete("/ratings/{uid}")
 def delete_rating(uid: int) -> None:

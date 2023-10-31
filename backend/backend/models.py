@@ -22,8 +22,8 @@ class Dataset(SQLModel, table=True):
     null_count: int
     usability: float
 
-class Rating(SQLModel, table=True):
-    """Schema for a user rating a recommendation.
+class RatingBase(SQLModel):
+    """Model for a user rating a recommendation.
 
     Attributes:
         id: Primary key for the entry.
@@ -34,9 +34,32 @@ class Rating(SQLModel, table=True):
         destination_dataset: The dataset that was recommended for
             the source dataset.
     """
-    id: Optional[int] = Field(default=None, primary_key=True)
     user_session: str
     recommend: bool
     source_dataset: int = Field(foreign_key="dataset.id")
     destination_dataset: int = Field(foreign_key="dataset.id")
-    
+
+class Rating(RatingBase, table=True):
+    """Table schema for a recommendation including the primary key.
+    Inherits from RatingBase.
+
+    Attributes:
+        id: Primary key for the entry.
+    """
+    id: Optional[int] = Field(default=None, primary_key=True)
+
+class RatingCreate(RatingBase):
+    """Alias for RatingBase for creation.
+    Inherits from RatingBase.
+    """
+    pass
+
+class RatingRead(RatingBase):
+    """Rating model that includes the primary key id.
+    Inherits from RatingBase.
+
+    Attributes:
+        id: Primary key for the entry.
+    """
+    id: int
+

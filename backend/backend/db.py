@@ -1,5 +1,5 @@
 from sqlmodel import Session, SQLModel, create_engine, select
-from backend.models import Dataset, Rating
+from backend.models import Dataset, Rating, RatingRead
 import os
 
 env_url = os.getenv("DATABASE_ADDRESS", "database:5432")
@@ -37,10 +37,12 @@ def get_by_id(id: str) -> list[Dataset]:
             pass
         return dataset
 
-def add_rating(rating: Rating) -> None:
+def add_rating(rating: Rating) -> RatingRead:
     with Session(engine) as session:
         session.add(rating)
         session.commit()
+        session.refresh(rating)
+        return rating
 
 def delete_rating(id: int) -> None:
     with Session(engine) as session:
@@ -48,7 +50,7 @@ def delete_rating(id: int) -> None:
         session.delete(rating.one())
         session.commit()
 
-def get_ratings(user_session: str, source_dataset: int) -> list[Rating]:
+def get_ratings(user_session: str, source_dataset: int) -> list[RatingRead]:
     with Session(engine) as session:
         ratings = session.exec(select(Rating).where(Rating.user_session == user_session).where(Rating.source_dataset == source_dataset)).all()
         return ratings

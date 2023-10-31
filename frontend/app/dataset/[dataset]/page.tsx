@@ -7,9 +7,9 @@ import { useCookies } from "react-cookie";
 import { v4 as uuidv4 } from "uuid";
 
 export default function Dataset({ params }: { params: { dataset: string } }) {
-  const [datasets, setDatasets] = useState([]);
-  const [ratings, setRatings] = useState([]);
-  const [cookies, setCookie] = useCookies(["user_session"]);
+  const [datasets, setDatasets] = useState<any[]>([]);
+  const [ratings, setRatings] = useState<any[]>([]);
+  const [cookies, setCookie] = useCookies<any>(["user_session"]);
   if (!("user_session" in cookies)) {
     setCookie("user_session", uuidv4());
   }
@@ -17,27 +17,44 @@ export default function Dataset({ params }: { params: { dataset: string } }) {
   useEffect(() => {
     const datasetUrl = `/api/datasets/${encodeURIComponent(params.dataset)}`;
     const ratingUrl = `/api/ratings/?user_session=${encodeURIComponent(cookies["user_session"])}&source_dataset=${encodeURIComponent(params.dataset)}`;
-    fetch(datasetUrl)
-      .then((res) => res.json())
-      .then((data) => {
-        setDatasets(data);
-      });
-    fetch(ratingUrl)
-      .then((res) => res.json())
-      .then((data) => {
-        setRatings(data);
-      });
+
+    Promise.all([
+      fetch(datasetUrl),
+      fetch(ratingUrl),
+    ]).then(async(res) => {
+        const datasetRes = await res[0].json();
+        const ratingRes = await res[1].json();
+        return [datasetRes, ratingRes];
+    }).then((data) => {
+        let newDatasets = data[0];
+        let newRatings = data[1];
+
+        // Add blank rating element if one was not fetched.
+        newDatasets.forEach((dataset: any) => {
+          let ratingIdx: number = newRatings.findIndex((e: any) => e.destination_dataset === dataset.id);
+          if (ratingIdx === -1) {
+            newRatings.push({
+              user_session: cookies["user_session"],
+              source_dataset: parseInt(params.dataset),
+              destination_dataset: parseInt(dataset.id),
+            });
+          }
+        });
+        setDatasets(newDatasets);
+        setRatings(newRatings);
+    });
+
   }, [params.dataset]);
 
-  if (!datasets) {
+  if (!(datasets && ratings)) {
     return <div>Loading...</div>;
   }
 
   const items = datasets.map((dataset: any) => {
-    let ratingData = ratings.find((e: any) => e.destination_dataset === dataset.id);
+    const ratingIdx: number = ratings.findIndex((e: any) => e.destination_dataset === dataset.id);
     return (
       <GridItem key={dataset.id} metadata={dataset}>
-        <Rating ratingData={ratingData} userSession={cookies["user_session"]}/>
+        <Rating ratingIdx={ratingIdx} ratings={ratings} setRatings={setRatings} />
       </GridItem>
     );
   });
@@ -50,3 +67,4 @@ export default function Dataset({ params }: { params: { dataset: string } }) {
     </main>
   );
 }
+

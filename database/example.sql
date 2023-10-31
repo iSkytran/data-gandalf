@@ -1,5 +1,5 @@
 CREATE TABLE dataset(
-   id INTEGER NOT NULL PRIMARY KEY,
+   id SERIAL PRIMARY KEY,
    topic TEXT NOT NULL,
    title TEXT NOT NULL,
    description TEXT NOT NULL,
@@ -15,7 +15,7 @@ CREATE TABLE dataset(
 );
 
 CREATE TABLE rating(
-   id INTEGER NOT NULL PRIMARY KEY,
+   id SERIAL PRIMARY KEY,
    user_session TEXT NOT NULL,
    recommend BOOLEAN NOT NULL,
    source_dataset INTEGER REFERENCES dataset(id),
@@ -59,4 +59,7 @@ INSERT INTO rating(id,user_session,recommend,source_dataset,destination_dataset)
 INSERT INTO rating(id,user_session,recommend,source_dataset,destination_dataset) VALUES (2,'79208474-49c5-46d9-97b8-824c52a25d82',true,1,3);
 INSERT INTO rating(id,user_session,recommend,source_dataset,destination_dataset) VALUES (3,'79208474-49c5-46d9-97b8-824c52a25d82',false,1,4);
 INSERT INTO rating(id,user_session,recommend,source_dataset,destination_dataset) VALUES (4,'079208474-49c5-46d9-97b8-824c52a25d82',false,1,5);
+
+SELECT setval('dataset_id_seq', (SELECT MAX(id) FROM dataset)+1);
+SELECT setval('rating_id_seq', (SELECT MAX(id) FROM rating)+1);
 
