@@ -18,7 +18,7 @@ fetch("http://localhost:3000/api/datasets")
   .then((res) => res.json())
   .then((data) => {
     data.forEach((dataset: any) => {
-      datasets.push(dataset.id + ' ' + dataset.title);      
+      datasets.push(dataset.id + ' ' + dataset.topic + ' ' + dataset.title);      
     });
   });
 
@@ -44,7 +44,8 @@ test.describe('View Available Datasets', () => {
     
     for (let i = 0; i < datasets.length; i++) {
       const id = datasets[i].substring(0, datasets[i].indexOf(' '));
-      const title = datasets[i].substring(datasets[i].indexOf(' ') + 1);
+      const temp = datasets[i].substring(datasets[i].indexOf(' ') + 1);
+      const title = temp.substring(temp.indexOf(' ') + 1);
 
       const gridItem = await grid.locator('_react=GridItem[key = \'' + id + '\']').innerHTML();
 
@@ -57,20 +58,46 @@ test.describe('Filter Available Datasets by Topic', () => {
   test('Page should have a grid of sports datasets', async({page}) => {
     const filterBar = page.locator('_react=FilterBar');
     await filterBar.click();
-
-    /*
-    const sportsTopic = page.frameLocator('_react=FilterBar').getByText('sports');
+    
+    const sportsLocators = await page.getByText('sports').all();
+    const sportsTopic = sportsLocators[0];
+    
     await sportsTopic.click();
 
     const grid = page.locator('_react=Grid');
-
+    
     for (let i = 0; i < datasets.length; i++) {
       const id = datasets[i].substring(0, datasets[i].indexOf(' '));
+      const temp = datasets[i].substring(datasets[i].indexOf(' ') + 1);
+      const topic = temp.substring(0, temp.indexOf(' '));
 
-      const gridItem = await grid.locator('_react=GridItem[key = \'' + id + '\']').innerHTML();
+      if (topic === 'sports') {
+        const gridItem = await grid.locator('_react=GridItem[key = \'' + id + '\']').innerHTML();
 
-      await expect(gridItem).toContain('sports');
+        await expect(gridItem).toContain('sports');
+      }
     }
-    */
   });
+});
+
+test.describe('View Dataset from Homepage', () => {
+  test('Page should have a grid of sports datasets', async({page}) => {
+    
+  });
+});
+
+test.describe('View Dataset from Filtered Results', () => {
+  
+});
+
+test.describe('Rate Recommendation Exists', () => {
+  
+});
+
+test.describe('Rate Recommendation as Good', () => {
+  
+});
+
+test.describe('Rate Recommendation as Bad', () => {
+  
 });
