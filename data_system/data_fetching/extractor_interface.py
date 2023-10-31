@@ -27,7 +27,7 @@ class MetadataExtractor:
                 
                 self.output_data(metadata, target_folder=topic, filename=filename)
             except Exception as e:
-                self.problem_files.append(dataset_folder)
+                self.problem_files.append(str(dataset_folder + ": " + str(e)))
                 print("Problem:", e)
     # Extract a single dataset.
     def extract_from_dataset(self, dataset_folder, topic) -> dict:

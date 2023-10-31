@@ -47,7 +47,7 @@ class KaggleExtractor(MetadataExtractor):
                     continue
             except Exception as e:
                 print(e)
-                self.problem_files.append(filename)
+                self.problem_files.append(str(filename + ": " + str(e)))
         self.datasets_processed.append(metadata['title'])
         return metadata
     

@@ -96,12 +96,13 @@ def pull_topic(topic, num_datasets):
     # Pessimistically, assume only 15/20 datasets pulled are usable
     pessimistic_pages = round((num_datasets + 14) / 15)
 
+
     path = os.path.join("datasets", topic)
     if not os.path.exists(path):
         os.makedirs(path)
 
     successful_pulls = 0
-    for page in range(1, pessimistic_pages):
+    for page in range(1, pessimistic_pages + 1):
         #Get the string value of all the returned datasets when the list command is run with a max size of 1MB and a given topic search command
         datasets = subprocess.check_output(f'kaggle datasets list --max-size 1000000 --file-type csv --page {page} --search \'{topic}\'').decode()
 
