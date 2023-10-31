@@ -37,7 +37,6 @@ multimethod==1.10
 mypy-extensions==1.0.0
 nltk==3.8.1
 numba==0.58.0
-numpy==1.25.2
 packaging==23.2
 pandas==1.5.3
 pandera==0.17.2
