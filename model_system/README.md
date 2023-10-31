@@ -11,5 +11,5 @@ Ensure that you have an active PostgreSQL database running. Change the `psycopg2
 
 TO run, execute
 ```
-python training/model
+python training/model_training.py
 ```
