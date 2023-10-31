@@ -42,7 +42,7 @@ export default function Rating({ ratingIdx, ratings, setRatings }: { ratingIdx: 
 
   const changeRating = (event: any, recommend: boolean | null) => {
     event.stopPropagation();
-    if (rating.recommend != null || recommend == null) {
+    if (recommend == null) {
       deleteRequest();
     } else {
       postRequest(recommend);
@@ -50,7 +50,7 @@ export default function Rating({ ratingIdx, ratings, setRatings }: { ratingIdx: 
   };
 
   return (
-    <>
+    <div className="flex space-x-1">
         {rating.recommend === true ? (
           <FontAwesomeIcon icon={solidThumbsUp} onClick={e => {changeRating(e, null);}}/>
         ) : (
@@ -61,6 +61,7 @@ export default function Rating({ ratingIdx, ratings, setRatings }: { ratingIdx: 
         ) : (
           <FontAwesomeIcon icon={regThumbsDown} onClick={e => {changeRating(e, false);}}/>
         )}
-    </>
+    </div>
   );
 }
+
