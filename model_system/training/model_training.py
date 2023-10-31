@@ -4,7 +4,7 @@ from recommenders.models.tfidf.tfidf_utils import TfidfRecommender
 import pickle
 import psycopg2
 
-# import model_system.config as cf # configurations
+import training.config as cf # configurations
 
 # Connect to database with metadata
 conn = psycopg2.connect(
@@ -51,6 +51,6 @@ top_k_recommendations = recommender.recommend_top_k_items(df_clean, k=10)
 full_rec_list = recommender.recommendations
 
 # Dump the model into our model pickle file
-model_path = Path("../backend/models/new_recommendations.pkl") # Path(cf.MODEL_PATH) 
+model_path = Path(cf.MODEL_PATH) 
 with open(model_path, 'wb') as file:
     pickle.dump(full_rec_list, file)
