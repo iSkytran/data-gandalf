@@ -5,7 +5,7 @@ services:
     ports:
       - "3000:3000"
     environment:
-      BACKEND_ADDRESS: localhost:8080
+      BACKEND_ADDRESS: http://backend:8080
   backend:
     build:
       context: backend
@@ -19,9 +19,9 @@ services:
   database:
     image: postgres
     environment:
-      POSTGRES_PASSWORD: default
+      POSTGRES_PASSWORD: password
     volumes:
-      - ./database/example.sql:/docker-entrypoint-initdb.d/example.sql
+      - ./database/pg_dump.sql:/docker-entrypoint-initdb.d/pg_dump.sql
     healthcheck:
       test: ["CMD-SHELL", "pg_isready"]
       interval: 10s

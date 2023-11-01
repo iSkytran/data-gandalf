@@ -15,14 +15,18 @@ SAVE_CSV = False
 DATASET_FOLDER = "datasets"
 
 # Whether to save the metadata JSON objects created. Should be true if you want the ability to edit.
-SAVE_METADATA = False
+SAVE_METADATA = True
 METADATA_FOLDER = "metadata"
 
 # The topics to query from. 
 TOPICS = ['sports', 'education', 'housing', 'health', 'finance', 'energy', 'politics', 'agriculture', 'chemistry', 'entertainment']
 
+
 # Source to query. 
 SOURCE = "kaggle"
+
+# Which Stages to Run- "FETCH", "EXTRACT", "UPLOAD"
+STAGES = ["EXTRACT"]
 
 # Initialize default objects to be overridden. 
 extractor = MetadataExtractor(DATASET_FOLDER)
@@ -30,22 +34,30 @@ uploader = MetadataUploader()
 
 # Override extractor and uploader objects. 
 if SOURCE == "kaggle":
-    kaggle.fetch(TOPICS, DATASET_FOLDER)
+    if "FETCH" in STAGES:
+        kaggle.fetch(topics=TOPICS, num_datasets=3, output_folder=DATASET_FOLDER)
     extractor = KaggleExtractor(file_input_path=DATASET_FOLDER, file_output_path=METADATA_FOLDER)
     uploader = JsonToDbUploader(file_input_path=METADATA_FOLDER)
 
-# # Extract Topics. 
-extractor.extract_topics(TOPICS)
+if "EXTRACT" in STAGES:
+    # Extract Topics. 
+    extractor.extract_topics(TOPICS)
 
-print("SUCCESSFULLY EXTRACTED TOPICS.")
+    print("SUCCESSFULLY EXTRACTED TOPICS.")
 
-# Upload Topics. 
-uploader.prepare_upload(topics=TOPICS)
-uploader.upload()
+if "UPLOAD" in STAGES:
+    # Upload Topics. 
+    uploader.prepare_upload(topics=TOPICS)
+    uploader.upload()
 
+    print("SUCCESSFULLY UPLOADED METADATA.")
 
-print("SUCCESSFULLY UPLOADED METADATA.")
+if "EXTRACT" in STAGES:
+    extractor.report_issues()
 
+if "UPLOAD" in STAGES:
+    uploader.report_issues()
+    
 # Delete Unnecessary data. 
 if not SAVE_CSV:
     for topic in TOPICS:

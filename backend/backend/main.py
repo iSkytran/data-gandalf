@@ -30,9 +30,8 @@ def get_datasets(topic: Optional[str] = None) -> list[Dataset]:
     
 @app.get("/datasets/{uid}")
 def get_dataset(uid: str) -> list[Dataset]:
-    # TODO: get list of Dataset objects (get_dataset in db.py)
-    #return recommendation_model.rank(uid)
-    return db.get_all()
+    dataset = db.get_by_id(uid)
+    return [dataset, recommendation_model.rank(uid)]
 
 @app.get("/ratings", response_model=list[RatingRead])
 def get_ratings(user_session: str, source_dataset: int) -> list[RatingRead]:
