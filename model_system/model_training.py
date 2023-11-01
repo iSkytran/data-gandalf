@@ -20,7 +20,7 @@ cursor.execute('SELECT * from dataset')
 # Create pandas data frame with metadata
 metadata = DataFrame(cursor.fetchall(), columns=['UID', 'Topic', 'Title', 'Description', 'Source', 
                                                  'Tags', 'Licenses', 'Col_names', 'Row_count', 'Col_count', 
-                                                 'Entry_count', 'Null_count', 'Usability'])
+                                                 'Entry_count', 'Null_count', 'Usability', 'url'])
 
 # why is each sports dataset duplicated three times???
 metadata = metadata.drop_duplicates(subset="Title", keep="first").reset_index(drop=True) 
