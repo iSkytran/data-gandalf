@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from typing import Optional
+from typing import Any, Optional
 
 from backend import db
 from backend.recommender import recommendation_model
@@ -29,9 +29,9 @@ def get_datasets(topic: Optional[str] = None) -> list[Dataset]:
         return datasets
     
 @app.get("/datasets/{uid}")
-def get_dataset(uid: str) -> list[Dataset]:
+def get_dataset(uid: str) -> tuple[list[Dataset], list[tuple[Any, list[Dataset]]]]:
     dataset = db.get_by_id(uid)
-    return [dataset, recommendation_model.rank(uid)]
+    return (dataset, recommendation_model.rank(uid))
 
 @app.get("/ratings", response_model=list[RatingRead])
 def get_ratings(user_session: str, source_dataset: int) -> list[RatingRead]:

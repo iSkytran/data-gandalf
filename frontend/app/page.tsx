@@ -14,7 +14,6 @@ export default function Home() {
       .then((res) => res.json())
       .then((data) => {
         setDatasets(data);
-        console.log(data);
       });
   }, [selectedTopic]);
 
