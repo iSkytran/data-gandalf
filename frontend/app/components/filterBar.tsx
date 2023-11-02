@@ -28,7 +28,7 @@ export default function FilterBar({
   };
   return (
     <Select
-      className={className}
+      className={className + ' topicSelect'}
       placeholder="Filter by Topic"
       instanceId={useId()}
       options={topics}
