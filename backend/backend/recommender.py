@@ -32,7 +32,7 @@ class RecommendationModel:
         elif isinstance(self.model, dict):
             # print(self.model)
             dataset_recs = self.model[dataset_id]
-            datasets = [(score, db.get_by_id(id)) for score,id in dataset_recs]
+            datasets = [(score, db.get_by_id(id)) for score,id in dataset_recs][:100]
             return datasets
         else:
             raise Exception("Unexpected model type")
