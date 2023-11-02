@@ -1,17 +1,17 @@
 from sqlmodel import Session, SQLModel, create_engine, select
-
-from backend.models import Dataset
+from backend.models import Dataset, Rating, RatingRead
 import backend.config as cf
+import os
 
 db_url = cf.DB_URL
 engine = create_engine(db_url)
 
-def set_engine(new_engine):
+def set_engine(new_engine) -> None:
     """Replace engine for testing"""
     global engine
     engine = new_engine
 
-def init():
+def init() -> None:
     SQLModel.metadata.create_all(engine)
 
 def get_topics() -> list[str]:
@@ -40,6 +40,33 @@ def get_by_id(id: str) -> list[Dataset]:
             pass
         return dataset
 
+def add_rating(rating: Rating) -> RatingRead:
+    with Session(engine) as session:
+        session.add(rating)
+        session.commit()
+        session.refresh(rating)
+        return rating
+
+def update_rating(rating: Rating) -> RatingRead:
+    with Session(engine) as session:
+        updated = session.exec(select(Rating).where(Rating.id == rating.id)).one()
+        updated.recommend = rating.recommend
+        session.add(updated)
+        session.commit()
+        session.refresh(updated)
+        return updated
+
+def delete_rating(id: int) -> None:
+    with Session(engine) as session:
+        rating = session.exec(select(Rating).where(Rating.id == id))
+        session.delete(rating.one())
+        session.commit()
+
+def get_ratings(user_session: str, source_dataset: int) -> list[RatingRead]:
+    with Session(engine) as session:
+        ratings = session.exec(select(Rating).where(Rating.user_session == user_session).where(Rating.source_dataset == source_dataset)).all()
+        return ratings
+
 def list_conversion_helper(datasets: list[Dataset]) -> list[Dataset]:
     for dataset in datasets:
         tags_str = dataset.tags
@@ -65,3 +92,4 @@ def list_conversion_helper(datasets: list[Dataset]) -> list[Dataset]:
         dataset.licenses = licenses_list
         dataset.col_names = col_names_list
     return datasets
+
