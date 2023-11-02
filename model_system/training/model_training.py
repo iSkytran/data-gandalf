@@ -4,6 +4,7 @@ from recommenders.models.tfidf.tfidf_utils import TfidfRecommender
 import pickle
 import psycopg2
 from psycopg2 import Error
+from tqdm import tqdm
 
 import config as cf # configurations
 
@@ -27,36 +28,31 @@ except Error as e:
 # Get all rows from database metadata table
 try:
     print(f"\nQuerying rows from '{cf.TABLENAME}' table in '{cf.DBNAME}' database...")
+    # Get columns names
     cursor = conn.cursor()
-    cursor.execute(f"SELECT * from {cf.TABLENAME}")
+    cursor.execute('SELECT * from dataset LIMIT 1')
+    column_names = [desc[0] for desc in cursor.description]
+    # Create pandas dataframe
+    cursor.execute('SELECT * from dataset')
+    metadata = DataFrame(cursor.fetchall(), columns=column_names)
 
 except Error as e:
     print("\tError Querying database")
     print("\tpsycopg2 ERROR:", e)
+
+finally:
+    # close database connection
     cursor.close()
     conn.close()
 
-# Create pandas dataframe with metadata
-metadata = DataFrame(cursor.fetchall(), columns=['UID', 'Topic', 'Title', 'Description', 'Source', 
-                                                 'Tags', 'Licenses', 'Col_names', 'Row_count', 'Col_count', 
-                                                 'Entry_count', 'Null_count', 'Usability'])
-
-# close database connection
-conn.close()
-cursor.close()
-
-# drop duplicate rows
-metadata = metadata.drop_duplicates(subset="Title", keep="first").reset_index(drop=True) 
-
 # Instantiate the TF-IDF recommender
 print("\nFitting TF-IDF Recommendation model...")
-recommender = TfidfRecommender(id_col='UID', tokenization_method='scibert')
+recommender = TfidfRecommender(id_col=cf.ID_COL, tokenization_method=cf.TOKENIZATION_METHOD)
 
 # clean up the columns that will be combined for TF_IDF input
-cols_to_clean = ["Topic", "Title", "Description"]
-metadata[cols_to_clean] = metadata[cols_to_clean].applymap(lambda x: x.lower())
+metadata[cf.COLS_TO_CLEAN] = metadata[cf.COLS_TO_CLEAN].applymap(lambda x: x.lower())
 clean_col = 'cleaned_text'
-df_clean = recommender.clean_dataframe(metadata, cols_to_clean, clean_col)
+df_clean = recommender.clean_dataframe(metadata, cf.COLS_TO_CLEAN, clean_col)
 
 # Tokenize text with tokenization_method specified in class instantiation
 tf, vectors_tokenized = recommender.tokenize_text(df_clean, text_col=clean_col)
@@ -80,26 +76,26 @@ def extract_strings(uid, col_name):
     return {string.lower() for string in strings.split(',')}
 
 # for every recommendation...
-metadata.set_index('UID', inplace=True) # to index directly into metadata rows
-for (rec_from_uid, rec_list) in full_rec_matrix.items():
+metadata.set_index(cf.ID_COL, inplace=True) # to index directly into metadata rows
+for (rec_from_uid, rec_list) in tqdm(full_rec_matrix.items()):
     for (original_score,rec_to_uid) in rec_list:
         
         # keep track of weight that will be applied to this recommendation
         weight = 1
         
         # Increase score if datasets have the same license
-        if(metadata.loc[rec_from_uid]['Licenses'] == metadata.loc[rec_to_uid]['Licenses']):
+        if(metadata.loc[rec_from_uid][cf.LICENSES_COL] == metadata.loc[rec_to_uid][cf.LICENSES_COL]):
             weight *= cf.LICENSES_WEIGHT
 
         # Increase score by the number of shared tags
-        from_tags = extract_strings(rec_from_uid, "Tags")
-        to_tags = extract_strings(rec_to_uid, "Tags")
+        from_tags = extract_strings(rec_from_uid, cf.TAGS_COL)
+        to_tags = extract_strings(rec_to_uid, cf.TAGS_COL)
         num_shared_tags = len(from_tags & to_tags)
         weight *= cf.TAGS_WEIGHT ** num_shared_tags
 
         # Increase score by the number of column names
-        from_cols = extract_strings(rec_from_uid, "Col_names")
-        to_cols = extract_strings(rec_to_uid, "Col_names")
+        from_cols = extract_strings(rec_from_uid, cf.COLUMN_NAMES_COL)
+        to_cols = extract_strings(rec_to_uid, cf.COLUMN_NAMES_COL)
         num_shared_cols = len(from_cols & to_cols)
         weight *= cf.COLUMN_NAMES_WEIGHT ** num_shared_cols
 
