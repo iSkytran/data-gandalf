@@ -1,6 +1,7 @@
 import pickle
 from pathlib import Path
 from recommenders.models.tfidf.tfidf_utils import TfidfRecommender
+from typing import Any
 
 from backend.models import Dataset
 import backend.config as cf
@@ -21,7 +22,7 @@ class RecommendationModel:
             self.model = pickle.load(file)
         # TODO: catch exceptions if model file doesn't exist
 
-    def rank(self, dataset_id: str) -> list[Dataset]:
+    def rank(self, dataset_id: str) -> list[tuple[Any, list[Dataset]]]:
         # Check if model is an instance of TfidfRecommender
         if isinstance(self.model, TfidfRecommender):
             full_rec_list = self.model.recommendations
@@ -32,9 +33,10 @@ class RecommendationModel:
         elif isinstance(self.model, dict):
             # print(self.model)
             dataset_recs = self.model[dataset_id]
-            datasets = [(score, db.get_by_id(id)) for score,id in dataset_recs]
+            datasets = [(score, db.get_by_id(id)) for score,id in dataset_recs][:100]
             return datasets
         else:
             raise Exception("Unexpected model type")
 
 recommendation_model = RecommendationModel(Path(cf.MODEL_PATH))
+

@@ -39,6 +39,7 @@ class KaggleExtractor(MetadataExtractor):
                     metadata['title'] = given_metadata['title']
                     metadata['description'] = given_metadata['description']
                     metadata['tags'] = given_metadata['keywords']
+                    metadata['url'] = given_metadata['url']
                     metadata['licenses'] = given_metadata['licenses']
 
                 # Otherwise, ignore
@@ -46,7 +47,7 @@ class KaggleExtractor(MetadataExtractor):
                     continue
             except Exception as e:
                 print(e)
-                self.problem_files.append(filename)
+                self.problem_files.append(str(filename + ": " + str(e)))
         self.datasets_processed.append(metadata['title'])
         return metadata
     

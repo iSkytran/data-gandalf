@@ -1,12 +1,7 @@
-import GridItem from "./gridItem";
-
-export default function Grid({ datasets }: { datasets: Array<object> }) {
-  if (!datasets) {
-    return <div>Loading...</div>;
-  }
-
-  const items = datasets.map((dataset: any) => {
-    return <GridItem key={dataset.id} metadata={dataset} />;
-  });
-  return <div className="grid grid-cols-4 gap-4">{items}</div>;
+export default function Grid({ children }: { children?: React.ReactNode }) {
+  return (
+    <div className="grid grid-cols-4 gap-4">
+      {children}
+    </div>
+  );
 }

@@ -1,5 +1,6 @@
-from typing import Optional, List
-from sqlmodel import Field, SQLModel, JSON
+from typing import Optional
+from sqlmodel import Field, SQLModel, JSON, Column, String
+from sqlalchemy.dialects import postgresql 
 
 class Dataset(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
@@ -7,9 +8,10 @@ class Dataset(SQLModel, table=True):
     title: str 
     description: str
     source: str
-    tags: List[str] = Field(sa_column=JSON)
-    licenses: List[str] = Field(sa_column=JSON)
-    col_names: List[str] = Field(sa_column=JSON)
+    url: str
+    tags: list[str] = Field(default=None, sa_column=Column(postgresql.ARRAY(String())))
+    licenses: list[str] = Field(default=None, sa_column=Column(postgresql.ARRAY(String())))
+    col_names: list[str] = Field(default=None, sa_column=Column(postgresql.ARRAY(String())))
     row_count: int
     col_count: int
     entry_count: int
