@@ -5,19 +5,7 @@ import pickle
 import psycopg2
 from psycopg2 import Error
 
-# TODO: import isn't working? Locally defining config for now
-# import training.config as cf # configurations
-MODEL_PATH = "../backend/models/new_recommendations.pkl"
-DBNAME="training_database"
-USER="postgres"
-PASSWORD="default"
-HOST="localhost"
-PORT="5432"
-TABLENAME="dataset"
-
-LICENSES_WEIGHT=1.1
-TAGS_WEIGHT=1.1
-COLUMN_NAMES_WEIGHT=1.05
+import config as cf # configurations
 
 # Main Script Code
 
@@ -25,11 +13,11 @@ COLUMN_NAMES_WEIGHT=1.05
 try:
     print("\nConnecting to database...")
     conn = psycopg2.connect(
-        dbname=DBNAME,
-        user=USER,
-        password=PASSWORD,
-        host=HOST,
-        port=PORT
+        dbname=cf.DBNAME,
+        user=cf.USER,
+        password=cf.PASSWORD,
+        host=cf.HOST,
+        port=cf.PORT
     )
 
 except Error as e:
@@ -38,9 +26,9 @@ except Error as e:
 
 # Get all rows from database metadata table
 try:
-    print(f"\nQuerying rows from '{TABLENAME}' table in '{DBNAME}' database...")
+    print(f"\nQuerying rows from '{cf.TABLENAME}' table in '{cf.DBNAME}' database...")
     cursor = conn.cursor()
-    cursor.execute(f"SELECT * from {TABLENAME}")
+    cursor.execute(f"SELECT * from {cf.TABLENAME}")
 
 except Error as e:
     print("\tError Querying database")
@@ -101,19 +89,19 @@ for (rec_from_uid, rec_list) in full_rec_matrix.items():
         
         # Increase score if datasets have the same license
         if(metadata.loc[rec_from_uid]['Licenses'] == metadata.loc[rec_to_uid]['Licenses']):
-            weight *= LICENSES_WEIGHT
+            weight *= cf.LICENSES_WEIGHT
 
         # Increase score by the number of shared tags
         from_tags = extract_strings(rec_from_uid, "Tags")
         to_tags = extract_strings(rec_to_uid, "Tags")
         num_shared_tags = len(from_tags & to_tags)
-        weight *= TAGS_WEIGHT ** num_shared_tags
+        weight *= cf.TAGS_WEIGHT ** num_shared_tags
 
         # Increase score by the number of column names
         from_cols = extract_strings(rec_from_uid, "Col_names")
         to_cols = extract_strings(rec_to_uid, "Col_names")
         num_shared_cols = len(from_cols & to_cols)
-        weight *= COLUMN_NAMES_WEIGHT ** num_shared_cols
+        weight *= cf.COLUMN_NAMES_WEIGHT ** num_shared_cols
 
         # Apply the weight to this recommendation
         if(weight != 1):
@@ -125,6 +113,6 @@ for (rec_from_uid, rec_list) in full_rec_matrix.items():
     rec_list.sort(key=lambda x: x[0], reverse=True)
 
 # Dump the full into our model pickle file
-model_path = Path(MODEL_PATH) 
+model_path = Path(cf.MODEL_PATH) 
 with open(model_path, 'wb') as file:
     pickle.dump(full_rec_matrix, file)
