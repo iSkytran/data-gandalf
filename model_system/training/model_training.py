@@ -84,20 +84,23 @@ for (rec_from_uid, rec_list) in tqdm(full_rec_matrix.items()):
         weight = 1
         
         # Increase score if datasets have the same license
-        if(metadata.loc[rec_from_uid][cf.LICENSES_COL] == metadata.loc[rec_to_uid][cf.LICENSES_COL]):
-            weight *= cf.LICENSES_WEIGHT
+        if(cf.LICENSES_WEIGHT != 1):
+            if(metadata.loc[rec_from_uid][cf.LICENSES_COL] == metadata.loc[rec_to_uid][cf.LICENSES_COL]):
+                weight *= cf.LICENSES_WEIGHT
 
         # Increase score by the number of shared tags
-        from_tags = extract_strings(rec_from_uid, cf.TAGS_COL)
-        to_tags = extract_strings(rec_to_uid, cf.TAGS_COL)
-        num_shared_tags = len(from_tags & to_tags)
-        weight *= cf.TAGS_WEIGHT ** num_shared_tags
+        if(cf.TAGS_WEIGHT != 1):
+            from_tags = extract_strings(rec_from_uid, cf.TAGS_COL)
+            to_tags = extract_strings(rec_to_uid, cf.TAGS_COL)
+            num_shared_tags = len(from_tags & to_tags)
+            weight *= cf.TAGS_WEIGHT ** num_shared_tags
 
         # Increase score by the number of column names
-        from_cols = extract_strings(rec_from_uid, cf.COLUMN_NAMES_COL)
-        to_cols = extract_strings(rec_to_uid, cf.COLUMN_NAMES_COL)
-        num_shared_cols = len(from_cols & to_cols)
-        weight *= cf.COLUMN_NAMES_WEIGHT ** num_shared_cols
+        if(cf.COLUMN_NAMES_WEIGHT != 1):
+            from_cols = extract_strings(rec_from_uid, cf.COLUMN_NAMES_COL)
+            to_cols = extract_strings(rec_to_uid, cf.COLUMN_NAMES_COL)
+            num_shared_cols = len(from_cols & to_cols)
+            weight *= cf.COLUMN_NAMES_WEIGHT ** num_shared_cols
 
         # Apply the weight to this recommendation
         if(weight != 1):
