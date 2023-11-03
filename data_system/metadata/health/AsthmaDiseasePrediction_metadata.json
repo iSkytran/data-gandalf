@@ -1,0 +1,47 @@
+{
+    "col_count": 19,
+    "col_names": [
+        "Tiredness",
+        "Dry-Cough",
+        "Difficulty-in-Breathing",
+        "Sore-Throat",
+        "None_Sympton",
+        "Pains",
+        "Nasal-Congestion",
+        "Runny-Nose",
+        "None_Experiencing",
+        "Age_0-9",
+        "Age_10-19",
+        "Age_20-24",
+        "Age_25-59",
+        "Age_60+",
+        "Gender_Female",
+        "Gender_Male",
+        "Severity_Mild",
+        "Severity_Moderate",
+        "Severity_None"
+    ],
+    "description": "The \"Asthma Disease Prediction\"\ud83d\ude2e\u200d\ud83d\udca8 dataset is a comprehensive collection of anonymized health records and patient data, meticulously curated for predictive modeling and research purposes. It includes vital patient information, environmental factors, and medical history, enabling the development of advanced machine learning models to forecast asthma onset, severity, and treatment outcomes. This dataset serves as a valuable resource for improving early diagnosis and management of asthma, ultimately enhancing the quality of care for affected individuals\ud83e\udd29.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 6019200,
+    "row_count": 316800,
+    "source": "kaggle",
+    "tags": [
+        "biology",
+        "health",
+        "artificial intelligence",
+        "tabular",
+        "binary classification"
+    ],
+    "title": "Asthma Disease Prediction",
+    "topic": "health",
+    "url": "kaggle.com/datasets/deepayanthakur/asthma-disease-prediction",
+    "usability": 0.7058823529411765
+}

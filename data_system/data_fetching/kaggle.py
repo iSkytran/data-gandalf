@@ -5,6 +5,7 @@ from zipfile import ZipFile
 import shutil
 
 fixed_directory = ""
+pulled_links = set()
 
 # Unzip ZIP files, then remove Non-JSON and Non-CSV files.
 def clean_dataset(path):
@@ -60,8 +61,9 @@ def process_dataset(link, topic):
         # Pull Dataset
         name = link[link.rindex('/') + 1:]
         folder = os.path.join(os.getcwd(), name)
-        if os.path.exists(folder):
+        if os.path.exists(folder) or link in pulled_links:
             raise Exception("Dataset already pulled.")
+        pulled_links.add(link)
         os.makedirs(folder)
         os.chdir(folder)
 
@@ -106,7 +108,6 @@ def pull_topic(topic, num_datasets):
         for page in range(1, pessimistic_pages + 1):
             #Get the string value of all the returned datasets when the list command is run with a max size of 1MB and a given topic search command
             datasets = subprocess.check_output(f'kaggle datasets list --max-size 1000000 --file-type csv --page {page} --search \'{topic}\'').decode()
-
 
             # Get list of all dataset URL suffixes.
             urlList = get_topic_urlList(datasets, topic)

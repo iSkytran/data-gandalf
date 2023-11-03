@@ -1,0 +1,51 @@
+{
+    "col_count": 23,
+    "col_names": [
+        "id",
+        "year",
+        "overall_pick",
+        "team",
+        "player",
+        "nationality",
+        "position",
+        "age",
+        "to_year",
+        "amateur_team",
+        "games_played",
+        "goals",
+        "assists",
+        "points",
+        "plus_minus",
+        "penalties_minutes",
+        "goalie_games_played",
+        "goalie_wins",
+        "goalie_losses",
+        "goalie_ties_overtime",
+        "save_percentage",
+        "goals_against_average",
+        "point_shares"
+    ],
+    "description": "The dataset contains every player drafted in the NHL Draft from (1963 - 2022).\n\nThe data was collected from&nbsp;Sports Reference&nbsp;then cleaned for data analysis.\n\nTabular data includes:\n- `year`: Year of draft\n- `overall_pick`: Overall pick player was drafted\n- `team`: Team player drafted to\n- `player`: Player drafted\n- `nationality`: Nationality of player drafted\n- `position`: Player position\n- `age`: Player age\n- `to_year`: Year draft pick played to\n- `amateur_team`: Amateur team drafted from\n- `games_played`: Total games played by player (non-goalie)\n- `goals`: Total goals\n- `assists`: Total assists\n- `points`: Total points\n- `plus_minus`: Plus minus of player\n- `penalties_minutes`: Penalties in minutes\n- `goalie_games_played`: Goalie games played\n- `goalie_wins`\n- `goalie_losses`\n- `goalie_ties_overtime`: Ties plus overtime/shootout losses\n- `save_percentage`\n- `goals_against_average`\n- `point_shares`",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 130603,
+    "num_entries": 281750,
+    "row_count": 12250,
+    "source": "kaggle",
+    "tags": [
+        "arts and entertainment",
+        "hockey",
+        "united states",
+        "sports",
+        "canada"
+    ],
+    "title": "NHL Draft Hockey Player Data (1963 - 2022)",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/mattop/nhl-draft-hockey-player-data-1963-2022",
+    "usability": 1.0
+}

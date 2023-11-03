@@ -1,0 +1,48 @@
+{
+    "col_count": 22,
+    "col_names": [
+        "School ID",
+        "School Name",
+        "Borough",
+        "Building Code",
+        "Street Address",
+        "City",
+        "State",
+        "Zip Code",
+        "Latitude",
+        "Longitude",
+        "Phone Number",
+        "Start Time",
+        "End Time",
+        "Student Enrollment",
+        "Percent White",
+        "Percent Black",
+        "Percent Hispanic",
+        "Percent Asian",
+        "Average Score (SAT Math)",
+        "Average Score (SAT Reading)",
+        "Average Score (SAT Writing)",
+        "Percent Tested"
+    ],
+    "description": "# Content\n\nThis dataset consists of a row for every accredited high school in New York City with its department ID number, school name, borough, building code, street address, latitude/longitude coordinates, phone number, start and end times, student enrollment with race breakdown, and average scores on each SAT test section for the 2014-2015 school year.\n\n\n# Acknowledgements\n\nThe high school data was compiled and published by the New York City Department of Education, and the SAT score averages and testing rates were provided by the College Board.\n\n\n# Inspiration\n\nWhich public high school's students received the highest overall SAT score? Highest score for each section? Which borough has the highest performing schools? Do schools with lower student enrollment perform better?",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 272,
+    "num_entries": 9570,
+    "row_count": 435,
+    "source": "kaggle",
+    "tags": [
+        "education",
+        "primary and secondary schools",
+        "standardized testing"
+    ],
+    "title": "Average SAT Scores for NYC Public Schools",
+    "topic": "education",
+    "url": "kaggle.com/datasets/nycopendata/high-schools",
+    "usability": 0.8235294117647058
+}

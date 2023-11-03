@@ -1,0 +1,44 @@
+{
+    "col_count": 39,
+    "col_names": [
+        "Date",
+        "IV01",
+        "IV02",
+        "IV03",
+        "IV04",
+        "IV05",
+        "IV06",
+        "IV07",
+        "IV08",
+        "IV09",
+        "IV10",
+        "IV11",
+        "IV12",
+        "IV13",
+        "IV14",
+        "IV15",
+        "IV16",
+        "IV17",
+        "IV18",
+        "Power"
+    ],
+    "description": "",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 516368,
+    "row_count": 26256,
+    "source": "kaggle",
+    "tags": [
+        "energy"
+    ],
+    "title": "Forecast Energy Consumption",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/gauravduttakiit/forecast-energy-consumption",
+    "usability": 0.29411764705882354
+}

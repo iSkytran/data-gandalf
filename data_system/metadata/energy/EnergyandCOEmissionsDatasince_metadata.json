@@ -1,0 +1,36 @@
+{
+    "col_count": 10,
+    "col_names": [
+        "Year",
+        "Energy Related CO2missions (Gigatonnes)",
+        "Oil Production (Million barrels per day)",
+        "Natural Gas Production (Billion Cubic Metres)",
+        "Coal Production (million tons)",
+        "Electricity Generation (Terawatt-hours)",
+        "Hydroelectricity consumption in TWh",
+        "Nuclear energy consumption in TWh",
+        "Installed Solar Capacity (GW)",
+        "Installed Wind Capacity in GW"
+    ],
+    "description": "the data provides a trend in energy consumption; i.e. fossil fuels and renewables \nin contrast to how energy related CO2 emissions have been increasing over the last three decades",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "Attribution 4.0 International (CC BY 4.0)",
+            "nameNullable": "Attribution 4.0 International (CC BY 4.0)"
+        }
+    ],
+    "null_count": 20,
+    "num_entries": 320,
+    "row_count": 32,
+    "source": "kaggle",
+    "tags": [
+        "pollution",
+        "energy",
+        "oil and gas"
+    ],
+    "title": "Energy  and CO2 Emissions Data since 1990",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/iannjuguna/energy-data-since-1990",
+    "usability": 0.7647058823529411
+}

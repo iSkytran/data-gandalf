@@ -1,0 +1,33 @@
+{
+    "col_count": 7,
+    "col_names": [
+        "Date",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Adj Close",
+        "Volume"
+    ],
+    "description": "**If you reach this DATASET, please UPVOTE this dataset to show your appreciation**\nTHIS DATASET CAN BE REALLY GOOD FOR BEGINNERS WHO WANT TO TEST THERE SKILLS IN FINANCE AND  MACHINE LEARNING, GET STARTED WITH LSTMs MODELLING OR DEEP REINFORCEMENT LEARNING AGENTS BEST FOR THIS DATASETS \n\nTRY YOUR FIRST KERNEL NOW!\nALL THE BSET",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "other",
+            "nameNullable": "other"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 39655,
+    "row_count": 5665,
+    "source": "kaggle",
+    "tags": [
+        "earth and nature",
+        "business",
+        "investing"
+    ],
+    "title": "amazon stocks life-time dataset",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/prasoonkottarathil/amazon-stocks-lifetime-dataset",
+    "usability": 1.0
+}

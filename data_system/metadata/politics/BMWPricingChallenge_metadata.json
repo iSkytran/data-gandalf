@@ -1,0 +1,43 @@
+{
+    "col_count": 18,
+    "col_names": [
+        "maker_key",
+        "model_key",
+        "mileage",
+        "engine_power",
+        "registration_date",
+        "fuel",
+        "paint_color",
+        "car_type",
+        "feature_1",
+        "feature_2",
+        "feature_3",
+        "feature_4",
+        "feature_5",
+        "feature_6",
+        "feature_7",
+        "feature_8",
+        "price",
+        "sold_at"
+    ],
+    "description": "### Context\n\nEstimating the value of a used car is one of the main everyday challenges in automotive business. We believe that the sales price of a car is not only based on the value of the product itself, but is also heavily influenced by things like market trends, current availability and politics.\nWith this challenge we hope to raise some interest in this exciting topic and also gain some insight in what the main factors are that drive the value of a used car.\n\n### Content\n\nThe data provided consists of almost 5000 real BMW cars that were sold via a b2b auction in 2018. The price shown in the table is the highest bid that was reached during the auction.\n\nWe have already done some data cleanup and filtered out cars with engine damage etc. However there may still be minor damages like scratches, but we do not have more information about that.\n\nWe have also extracted 8 criteria based on the equipment of car that we think might have a good impact on the value of a used car. These criteria have been labeled feature_1 to feature_8 and are shown in the data below.\n\n### Inspiration\n\nWe would like to find a good statistical model to describe the value of a used car depending on the basic description and the 8 provided features. The following questions are of special interest to us:\n\n1. How much impact does each of features have on the estimate value of the car?\n\n2. How does the estimated value of a car change over time? Can you detect any patterns? (e.g. the price of a convertible should be higher in summer than in winter)\n\n3. How big is the influence of the factors not represented in the data on the price? Or, in other words, what is the estimated variance included in your statistical model?",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 87174,
+    "row_count": 4843,
+    "source": "kaggle",
+    "tags": [
+        "retail and shopping",
+        "ratings and reviews"
+    ],
+    "title": "BMW Pricing Challenge",
+    "topic": "politics",
+    "url": "kaggle.com/datasets/danielkyrka/bmw-pricing-challenge",
+    "usability": 0.7647058823529411
+}

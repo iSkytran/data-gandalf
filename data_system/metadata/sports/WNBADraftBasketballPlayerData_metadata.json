@@ -1,0 +1,42 @@
+{
+    "col_count": 14,
+    "col_names": [
+        "overall_pick",
+        "year",
+        "team",
+        "player",
+        "former",
+        "college",
+        "years_played",
+        "games",
+        "win_shares",
+        "win_shares_40",
+        "minutes_played",
+        "points",
+        "total_rebounds",
+        "assists"
+    ],
+    "description": "The dataset contains all WNBA Draft picks from 1997-2022. Dataset consists of year, overall pick and player data.\n\nThe data was collected from&nbsp;Sports Reference&nbsp;then cleaned for data analysis.\n\nTabular data includes:\n- `overall_pick`\n- `year`\n- `team`\n- `player`\n- `former`\n- `college`\n- `years_played`\n- `games`\n- `win_shares`\n- `win_shares_40`\n- `minutes_played`\n- `points`\n- `total_rebounds`\n- `assists`",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 3366,
+    "num_entries": 14896,
+    "row_count": 1064,
+    "source": "kaggle",
+    "tags": [
+        "arts and entertainment",
+        "games",
+        "basketball",
+        "sports",
+        "statistical analysis"
+    ],
+    "title": "WNBA Draft Basketball Player Data (1997 - 2022)",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/mattop/wnba-draft-basketball-player-data-1997-2021",
+    "usability": 1.0
+}

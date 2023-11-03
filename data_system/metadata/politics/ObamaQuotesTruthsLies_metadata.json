@@ -1,0 +1,31 @@
+{
+    "col_count": 3,
+    "col_names": [
+        "Score",
+        "Date",
+        "Quote"
+    ],
+    "description": "The dataset contains records of Barack Obama's quotes, the date on which he said it and the fact check value of that statement. It has been collected from politifact.com. ",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 2382,
+    "row_count": 794,
+    "source": "kaggle",
+    "tags": [
+        "celebrities",
+        "literature",
+        "politics",
+        "nlp",
+        "text"
+    ],
+    "title": "Obama Quotes(Truths & Lies)",
+    "topic": "politics",
+    "url": "kaggle.com/datasets/niramay/obama-quotestruths-lies",
+    "usability": 1.0
+}

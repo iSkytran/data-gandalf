@@ -1,0 +1,47 @@
+{
+    "col_count": 33,
+    "col_names": [
+        "Domain",
+        "Area",
+        "Element",
+        "Item",
+        "Year",
+        "Unit",
+        "Value",
+        " Area",
+        "average_rain_fall_mm_per_year",
+        "year",
+        "country",
+        "avg_temp",
+        "Domain Code",
+        "Area Code",
+        "Element Code",
+        "Item Code",
+        "Year Code",
+        "Unnamed: 0",
+        "hg/ha_yield",
+        "pesticides_tonnes"
+    ],
+    "description": "# Context\nThe science of training machines to learn and produce models for future predictions is widely used, and not for nothing. Agriculture plays a critical role in the global economy. With the continuing expansion of the human population understanding worldwide crop yield is central to addressing food security challenges and reducing the impacts of climate change.\n\nCrop yield prediction is an important agricultural problem. The Agricultural yield primarily depends on weather conditions (rain, temperature, etc), pesticides and accurate information about history of crop yield is an important thing for making decisions related to agricultural risk management and future predictions.\n\n# Acknowledgements\nAll dataset(publicly available dataset) here are taken form FAO (Food and Agriculture Organization) and World Data Bank.\nhttp://www.fao.org/home/en/\nhttps://data.worldbank.org/",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "world-bank",
+            "nameNullable": "world-bank"
+        }
+    ],
+    "null_count": 3321,
+    "num_entries": 1171097,
+    "row_count": 167346,
+    "source": "kaggle",
+    "tags": [
+        "agriculture",
+        "beginner",
+        "recommender systems",
+        "regression"
+    ],
+    "title": "Crop Yield Prediction Dataset",
+    "topic": "agriculture",
+    "url": "kaggle.com/datasets/patelris/crop-yield-prediction-dataset",
+    "usability": 0.9705882352941176
+}

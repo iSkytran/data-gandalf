@@ -1,0 +1,35 @@
+{
+    "col_count": 7,
+    "col_names": [
+        "Date",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Adj Close",
+        "Volume"
+    ],
+    "description": "### Content\n\nIt's a time series dataset of SP500.<br>\nThe S&P 500, or simply the S&P, is a stock market index that measures the stock performance of 500 large companies listed on stock exchanges in the United States. It is one of the most commonly followed equity indices, and many consider it to be one of the best representations of the U.S. stock market. \n\n<br>\nDate: Date of the Stock Data\nClose/Last: Last close price of the company's shares on the relevant stock exchange\nVolume: Number of shares sold, traded over a certain period of time (Usually Daily)\nOpen: Opening price of company's shares\nHigh: Highest price at which a stock traded during the trading day\nLow: Lowest price at which a stock traded during the trading day\n\n\n\n\n### Inspiration\nPerform time series analysis concept on real world scenario and forecast future stock price on real world data and gain some knowledge.\n<br>\nHave a fun !!!",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 36183,
+    "row_count": 5169,
+    "source": "kaggle",
+    "tags": [
+        "business",
+        "finance",
+        "beginner",
+        "advanced",
+        "investing"
+    ],
+    "title": "Finance Data (S&P 500)",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/awadhi123/finance-data-sp-500",
+    "usability": 0.5294117647058824
+}

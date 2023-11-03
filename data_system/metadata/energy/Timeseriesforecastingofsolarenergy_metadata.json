@@ -1,0 +1,32 @@
+{
+    "col_count": 8,
+    "col_names": [
+        "Datetime",
+        "solar_mw",
+        "wind-direction",
+        "wind-speed",
+        "humidity",
+        "average-wind-speed-(period)",
+        "average-pressure-(period)",
+        "temperature"
+    ],
+    "description": "The following dataset solar forecasting consitsts of solar data and this can be used for forecasting the amount of energy consumed in future.\n\n\n### Content\n\nThe dataset consists of data from 2007 to 2020 and it consists of more than 1,16,113 lakh rows and comprises of 8 columns.\n\n### Acknowledgements\n\nWe wouldn't be here without the help of others. If you owe any attributions or thanks, include them here along with any citations of past research.\n\n\n### Inspiration\n\nYour data will be in front of the world's largest data science community. What questions do you want to see answered?",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 679183,
+    "num_entries": 928936,
+    "row_count": 116117,
+    "source": "kaggle",
+    "tags": [
+        "renewable energy"
+    ],
+    "title": "Time series forecasting of solar energy",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/chaitanyakumar12/time-series-forecasting-of-solar-energy",
+    "usability": 0.5294117647058824
+}

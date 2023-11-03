@@ -1,0 +1,31 @@
+{
+    "col_count": 7,
+    "col_names": [
+        "Date",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Adj Close",
+        "Volume"
+    ],
+    "description": "",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 23331,
+    "row_count": 3333,
+    "source": "kaggle",
+    "tags": [
+        "finance"
+    ],
+    "title": "backtesting finance data",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/yuvrajcs18/backtesting-finance-data",
+    "usability": 0.23529411764705882
+}

@@ -1,0 +1,39 @@
+{
+    "col_count": 70,
+    "col_names": [
+        "Domain Code",
+        "Domain",
+        "Area Code",
+        "Area",
+        "Element Code",
+        "Element",
+        "Item Code",
+        "Item",
+        "Year Code",
+        "Year",
+        "Unit",
+        "Value",
+        "Flag",
+        "Flag Description"
+    ],
+    "description": "### Context\n\nThe agriculture is the sector who moves the economy of various countries, including Brazil. So this dataset is to analyse how was the credit provided to agriculture in the years of 2012 to 2018.\n\n### Content\n\nThe Credit to Agriculture dataset provides data on the amount of loans provided by the private/commercial banking sector to producers in agriculture, forestry and fisheries, including household producers, cooperatives, and agro-businesses. The dataset also provides statistics on the total credit to all industries and indicators on the share of credit to agricultural producers.\n\nVariables provided: 1. Credit to Agriculture (broad definition which includes Forestry and Fishing), 2. Total credit to the economy; 3. Agriculture share of total credit; 4. Agricultural orientation index. For some countries the subsectors are completely specified and in these cases there are additional varibles: 1a. Agriculture (narrow definition), 1b. Forestry, 1c. Fishing.\n\nLocal currency unit expressed in millions, US dollar expressed in millions, and percent (%) (share of total credit to agriculture, agriculture orientation index).\n\n### Acknowledgements\n\nFood and Agriculture Organization of the United Nations (FAO)\nStatistics Division (ESS) - Piero Conforti, Eun Jeong Lee\n\n\n### Inspiration\n\nHow was the credit provided to agriculture in the years of 2012 to 2018? Why is credit for agriculture in Brazil so low in relation to the total, since it is a country of main economic activity in this sector?",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "other",
+            "nameNullable": "other"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 20748,
+    "row_count": 1482,
+    "source": "kaggle",
+    "tags": [
+        "finance",
+        "economics"
+    ],
+    "title": "Credit to agriculture in Brazil and world",
+    "topic": "agriculture",
+    "url": "kaggle.com/datasets/josehenriqueroveda/credit-for-agriculture-in-brazil",
+    "usability": 1.0
+}

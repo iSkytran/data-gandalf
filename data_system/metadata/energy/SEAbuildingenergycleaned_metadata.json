@@ -1,0 +1,51 @@
+{
+    "col_count": 27,
+    "col_names": [
+        "OSEBuildingID",
+        "DataYear",
+        "BuildingType",
+        "PrimaryPropertyType",
+        "PropertyName",
+        "Address",
+        "State",
+        "ZipCode",
+        "Neighborhood",
+        "LargestPropertyUseType",
+        "YearsENERGYSTARCertified",
+        "NumberofBuildings",
+        "NumberofFloors",
+        "PropertyGFATotal",
+        "ENERGYSTARScore",
+        "SiteEnergyUse(kBtu)",
+        "SteamUse(kBtu)",
+        "Electricity(kBtu)",
+        "NaturalGas(kBtu)",
+        "TotalGHGEmissions",
+        "BuildingAge",
+        "TotalUseTypeNumber",
+        "GFABuildingRate",
+        "GFAParkingRate",
+        "GFAPerBuilding",
+        "GFAPerFloor",
+        "harvesine_distance"
+    ],
+    "description": "### Initial context\n\nThis is a dataset hosted by the City of Seattle. The city has an open data platform and they update their information according the amount of data that is brought in. Explore the City of Seattle using Kaggle and all of the data sources available through the City of Seattle organization page !\n\n\n### Content\n\nThis Dataset is used as part of a Machine Learning Engineer training course. Data were cleaned for preparation and comparison of linear and non-linear models.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 2023,
+    "num_entries": 42525,
+    "row_count": 1575,
+    "source": "kaggle",
+    "tags": [
+        "energy"
+    ],
+    "title": "SEA-building-energy-cleaned",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/michaelfumery/buildingenergycleaned",
+    "usability": 0.8235294117647058
+}

@@ -1,0 +1,29 @@
+{
+    "col_count": 1,
+    "col_names": [
+        "Country;Year;Continent;Least Developed;Life Expectancy;Population;CO2 emissions;Health expenditure;Electric power consumption;Forest area;GDP per capita;Individuals using the Internet;Military expenditure;People practicing open defecation;People using at least basic drinking water services;Obesity among adults;Beer consumption per capita"
+    ],
+    "description": "Dataset built merging different datasets.\nThe goal of the dataset is to be useful for data analysis. \n\nColumns explanation:\n- **Country**: 119 countries names. The list is available [here](https://github.com/vrec99/vrec99.github.io/blob/main/list_of_countries).\n- **Year**: from 2000 to 2015 (both included). Longitudinal format.\n- **Continent**: names of the different continents (6 continets: Europe, Asia, Africa, North America, South America, Oceania). Data taken from this [link](https://ourworldindata.org/grapher/continents-according-to-our-world-in-data).\n- **Least Developed**: if the value is TRUE, the country is classified as \"Least Developed\", if it is FALSE, the country isn't classified as \"Least Developed\". Data of Least Developed countries taken from this [link](https://unctad.org/topic/least-developed-countries/list).\n- **Life Expectancy**: data taken from this [link](https://data.worldbank.org/indicator/SP.DYN.LE00.IN?view=chart).\n- **Population**: data taken from this [link](https://data.worldbank.org/indicator/SP.POP.TOTL?view=chart).\n- **CO2 emissions**: data taken from this [link](https://data.worldbank.org/indicator/EN.ATM.CO2E.PC?view=chart).\n- **Health expenditure**: data taken from this [link](https://data.worldbank.org/indicator/SH.XPD.CHEX.GD.ZS).\n- **Electric power consumption**: data taken from this [link](https://data.worldbank.org/indicator/EG.USE.ELEC.KH.PC).\n- **Forest area**: data taken from this [link](https://data.worldbank.org/indicator/AG.LND.FRST.ZS).\n- **GDP per capita**: data taken from this [link](https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD).\n- **Individuals using the Internet**: data taken from this [link](https://data.worldbank.org/indicator/IT.NET.USER.ZS).\n- **Military expenditure**: data taken from this [link](https://data.worldbank.org/indicator/MS.MIL.XPND.GD.ZS?view=chart).\n- **People practicing open defecation**: data taken from this [link](https://data.worldbank.org/indicator/SH.STA.ODFC.ZS).\n- **People using at least basic drinking water services**: data taken from this [link](https://data.worldbank.org/indicator/SH.H2O.BASW.ZS).\n- **Obesity among adults**: data taken from this [link](https://ourworldindata.org/grapher/share-of-adults-defined-as-obese).\n- **Beer consumption per capita**:  data taken from this [link](https://ourworldindata.org/grapher/beer-consumption-per-person).",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 1904,
+    "row_count": 1904,
+    "source": "kaggle",
+    "tags": [
+        "people",
+        "people and society",
+        "politics",
+        "social science",
+        "economics"
+    ],
+    "title": "Life Expectancy 2000-2015",
+    "topic": "politics",
+    "url": "kaggle.com/datasets/vrec99/life-expectancy-2000-2015",
+    "usability": 0.8823529411764706
+}

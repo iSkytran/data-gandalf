@@ -1,0 +1,45 @@
+{
+    "col_count": 16,
+    "col_names": [
+        "IndicatorCode",
+        "Indicator",
+        "ParentLocationCode",
+        "ParentLocation",
+        "Location type",
+        "SpatialDimValueCode",
+        "Location",
+        "Period type",
+        "Period",
+        "IsLatestYear",
+        "Dim1 type",
+        "Dim1",
+        "Dim1ValueCode",
+        "Value",
+        "Language",
+        "DateModified"
+    ],
+    "description": "This dataset is about the availability of education for assistive technology.\nIt is collected from WHO website.\nThe data is categorical and numerical.\n<br>\nSee More:\n- [Countries GDP 1960 to 2021](https://www.kaggle.com/datasets/yapwh1208/countries-gdp-2012-to-2021)\n- [Chatbot Dataset (AI Q&A)](https://www.kaggle.com/datasets/yapwh1208/chatbot-ai-q-and-a)\n- [Cat's Breed Dataset](https://www.kaggle.com/datasets/yapwh1208/cats-breed-dataset)\n- [Dog's Breed Dataset](https://www.kaggle.com/datasets/yapwh1208/dogs-breed-dataset)\n- [Household air pollution attributable deaths](https://www.kaggle.com/datasets/yapwh1208/household-air-pollution-attributable-deaths)\n<br><br>\nPlease upvote this if it helps you. Thanks\ud83d\ude04",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "other",
+            "nameNullable": "other"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 7840,
+    "row_count": 490,
+    "source": "kaggle",
+    "tags": [
+        "global",
+        "education",
+        "health",
+        "science and technology",
+        "text",
+        "english"
+    ],
+    "title": "Education for assistive technology",
+    "topic": "education",
+    "url": "kaggle.com/datasets/yapwh1208/availability-of-education-for-assistive-technology",
+    "usability": 0.9411764705882353
+}

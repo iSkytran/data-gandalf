@@ -1,0 +1,40 @@
+{
+    "col_count": 11,
+    "col_names": [
+        "Age",
+        "Diabetes",
+        "BloodPressureProblems",
+        "AnyTransplants",
+        "AnyChronicDiseases",
+        "Height",
+        "Weight",
+        "KnownAllergies",
+        "HistoryOfCancerInFamily",
+        "NumberOfMajorSurgeries",
+        "PremiumPrice"
+    ],
+    "description": "### Context\n\nA Medical Insurance Company Has Released Data For Almost 1000 Customers. Create A Model That Predicts The Yearly Medical Cover Cost. The Data Is Voluntarily Given By Customers.\n\n\n### Content\n\nThe Dataset Contains Health Related Parameters Of The Customers. Use Them To Build A Model And Also Perform EDA On The Same. \nThe Premium Price Is In INR(\u20b9) Currency And Showcases Prices For A Whole Year.\n\n### Inspiration\n\nHelp Solve A Crucial Finance Problem That Would Potentially Impact Many People And Would Help Them Make Better Decisions.\nDon't Forget To Submit Your EDAs And Models In The Task Section. These Will Be Keenly Reviewed\nHope You Enjoy Working On The Data.\nnote- This is a dummy dataset used for teaching and training purposes. It is free to use,\nImage Credits-Unsplash",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 10846,
+    "row_count": 986,
+    "source": "kaggle",
+    "tags": [
+        "finance",
+        "health",
+        "beginner",
+        "intermediate",
+        "tabular",
+        "insurance"
+    ],
+    "title": "Medical Insurance Premium Prediction",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/tejashvi14/medical-insurance-premium-prediction",
+    "usability": 1.0
+}

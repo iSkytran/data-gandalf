@@ -1,0 +1,34 @@
+{
+    "col_count": 10,
+    "col_names": [
+        "X1",
+        "X2",
+        "X3",
+        "X4",
+        "X5",
+        "X6",
+        "X7",
+        "X8",
+        "Y1",
+        "Y2"
+    ],
+    "description": "",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 7680,
+    "row_count": 768,
+    "source": "kaggle",
+    "tags": [
+        "energy"
+    ],
+    "title": "Building Energy Efficiency",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/tiangsin/building-energy-efficiency",
+    "usability": 0.29411764705882354
+}

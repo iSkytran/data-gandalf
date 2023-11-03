@@ -1,0 +1,27 @@
+{
+    "col_count": 3,
+    "col_names": [
+        "codebook:",
+        "http://www.eia.doe.gov/emeu/recs/recspubuse05/pdf/recs05codebook.pdf",
+        "Unnamed: 2"
+    ],
+    "description": "# Context \n\nAn energy consumption dataset for projecting the amount of energy consumption for each household.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 110,
+    "num_entries": 303,
+    "row_count": 101,
+    "source": "kaggle",
+    "tags": [
+        "energy"
+    ],
+    "title": "Energy Consumption",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/xinyaol/energy-consumption",
+    "usability": 0.5294117647058824
+}

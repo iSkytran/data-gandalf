@@ -1,0 +1,57 @@
+{
+    "col_count": 31,
+    "col_names": [
+        "\u00ef\u00bb\u00bfName",
+        "State",
+        "Political Party",
+        "House or Senate",
+        "DOB",
+        "Highest Level of Education",
+        "Speciality of Highest Degree",
+        "Highest Degree School",
+        "First degree type",
+        "Speciality of first degree",
+        "First Degree School",
+        "JD",
+        "PhD",
+        "MBA",
+        "MD",
+        "None",
+        "URL",
+        "Unnamed: 17",
+        "Unnamed: 18",
+        "Unnamed: 19",
+        "Unnamed: 20",
+        "Unnamed: 21",
+        "Unnamed: 22",
+        "Unnamed: 23",
+        "Unnamed: 24",
+        "Unnamed: 25",
+        "Unnamed: 26",
+        "Unnamed: 27",
+        "Unnamed: 28",
+        "Unnamed: 29",
+        "Unnamed: 30"
+    ],
+    "description": "### Context\n\nThis dataset contains complete education details for members of the 116th United States Congress, including universities, degrees, and political affiliations. I hope that this dataset is helpful for anyone who may wish to further investigate the correlation of education and academic credentials with policy decisions made by members of our government. \n\n### Content\n\nData was gathered by reviewing Wikipedia pages for members of the U.S. 116th Congress via: https://en.wikipedia.org/wiki/116th_United_States_Congress\n\n### Acknowledgements\n\nThank you Wikipedia. You are a modern miracle. \n\n### Inspiration\n\nThis dataset can be used to answer questions like: \n- Is political affiliation correlated with education?\n- What is the most common degree type for U.S. Senators?\n- What percentage of U.S. Congressmen dropped out of college?\n- Which college has the most representation in the House of Representatives?\n- What percentage of Congressmen are scientists?\n\nWith some creative co-mingling, this dataset can be used to supplement research questions like:\n- Are policy decisions correlated with education?\n- Are there relationships associated with college affiliations and voting in Congress?\n- Can we find a relationship between hot button topics and education?\n- How is public sentiment influenced by education level?",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "DbCL-1.0",
+            "nameNullable": "DbCL-1.0"
+        }
+    ],
+    "null_count": 7598,
+    "num_entries": 16740,
+    "row_count": 540,
+    "source": "kaggle",
+    "tags": [
+        "universities and colleges",
+        "government",
+        "primary and secondary schools"
+    ],
+    "title": "Complete Education Details (116th U.S. Congress)",
+    "topic": "education",
+    "url": "kaggle.com/datasets/philmohun/complete-education-details-116th-us-congress",
+    "usability": 0.9705882352941176
+}

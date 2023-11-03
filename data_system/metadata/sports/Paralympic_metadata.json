@@ -1,0 +1,30 @@
+{
+    "col_count": 6,
+    "col_names": [
+        "Team/Npc",
+        "Gold",
+        "silver",
+        "bronze",
+        "total medals",
+        "rank by total"
+    ],
+    "description": "### Content\n\nParalympic Games, a major international sports competition for athletes with disabilities. Comparable to the Olympic Games,this data set contains total number of medals of all teams and there respective ranks.\n\n###source \nData is collected from  this <a href=\"https://olympics.com/tokyo-2020/paralympic-games/en/results/all-sports/medal-standings.htm\">link</a>\n\n\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 516,
+    "row_count": 86,
+    "source": "kaggle",
+    "tags": [
+        "data visualization"
+    ],
+    "title": "Paralympic 2020 (2021)",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/saiabhitejachepuri/paralmpic-2020",
+    "usability": 0.8235294117647058
+}

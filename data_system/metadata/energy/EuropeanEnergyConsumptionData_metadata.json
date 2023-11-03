@@ -1,0 +1,27 @@
+{
+    "col_count": 3,
+    "col_names": [
+        "Unnamed: 0",
+        "gdp",
+        "energy"
+    ],
+    "description": "",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 60,
+    "row_count": 20,
+    "source": "kaggle",
+    "tags": [
+        "energy"
+    ],
+    "title": "European Energy Consumption Data",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/deepikakoche/european-energy-consumption-data",
+    "usability": 0.29411764705882354
+}

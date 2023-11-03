@@ -1,0 +1,37 @@
+{
+    "col_count": 10,
+    "col_names": [
+        "Unnamed: 0",
+        "Exchange",
+        "ShortName",
+        "QuoteType",
+        "Symbol",
+        "Index",
+        "Score",
+        "TypeDisp",
+        "LongName",
+        "IsYahooFinance"
+    ],
+    "description": "",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 70,
+    "row_count": 7,
+    "source": "kaggle",
+    "tags": [
+        "categorical",
+        "beginner",
+        "classification",
+        "investing"
+    ],
+    "title": "Yahoo Finance",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/ishreyakumari/yahoo-finance",
+    "usability": 0.4411764705882353
+}

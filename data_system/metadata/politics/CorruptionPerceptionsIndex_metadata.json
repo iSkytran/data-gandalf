@@ -1,0 +1,54 @@
+{
+    "col_count": 31,
+    "col_names": [
+        "CPI 2016 Rank",
+        "Country",
+        "Country Code",
+        "Region",
+        "CPI 2016 Score",
+        "CPI 2015 Score",
+        "CPI 2014 Score",
+        "CPI 2013 Score",
+        "CPI 2012 Score",
+        "CPI Rank",
+        "Corruption Perceptions Index (CPI)",
+        "Standard Error",
+        "Lower Confidence Interval",
+        "Upper Confidence Interval",
+        "World Bank CPIA",
+        "World Economic Forum EOS",
+        "Global Insight Country Risk Ratings",
+        "Bertelsmann Foundation Transformation Index",
+        "African Development Bank CPIA",
+        "IMD World Competitiveness Yearbook",
+        "Bertelsmann Foundation Sustainable Governance Index",
+        "World Justice Project Rule of Law Index",
+        "PRS International Country Risk Guide",
+        "Varities of Democracy Project",
+        "Economist Intelligence Unit Country Ratings",
+        "Freedom House Nations in Transit Ratings",
+        "PERC Asia Risk Guide",
+        "Sources"
+    ],
+    "description": "# Content\n\nThe Corruption Perceptions Index scores and ranks countries/territories based on how corrupt a country\u2019s public sector is perceived to be. It is a composite index, a combination of surveys and assessments of corruption, collected by a variety of reputable institutions. The CPI is the most widely used indicator of corruption worldwide.\n\nCorruption generally comprises illegal activities, which are deliberately hidden and only come to light through scandals, investigations or prosecutions. There is no meaningful way to assess absolute levels of corruption in countries or territories on the basis of hard empirical data. Possible attempts to do so, such as by comparing bribes reported, the number of prosecutions brought or studying court cases directly linked to corruption, cannot be taken as definitive indicators of corruption levels. Instead, they show how effective prosecutors, the courts or the media are in investigating and exposing corruption. Capturing perceptions of corruption of those in a position to offer assessments of public sector corruption is the most reliable method of comparing relative corruption levels across countries.\n\n\n# Acknowledgements\n\nThe data sources used to calculate the Corruption Perceptions Index scores and ranks were provided by the African Development Bank, Bertelsmann Stiftung Foundation, The Economist, Freedom House, IHS Markit, IMD Business School, Political and Economic Risk Consultancy, Political Risk Services, World Bank, World Economic Forum, World Justice Project, and Varieties of Democracy Project.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC-BY-NC-SA-4.0",
+            "nameNullable": "CC-BY-NC-SA-4.0"
+        }
+    ],
+    "null_count": 1157,
+    "num_entries": 5456,
+    "row_count": 352,
+    "source": "kaggle",
+    "tags": [
+        "crime",
+        "politics",
+        "news"
+    ],
+    "title": "Corruption Perceptions Index",
+    "topic": "politics",
+    "url": "kaggle.com/datasets/transparencyint/corruption-index",
+    "usability": 0.8235294117647058
+}

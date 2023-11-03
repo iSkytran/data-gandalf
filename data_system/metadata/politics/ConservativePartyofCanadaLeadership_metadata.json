@@ -1,0 +1,29 @@
+{
+    "col_count": 9,
+    "col_names": [
+        "Province",
+        "Candidate name",
+        "Round",
+        "Percent",
+        "Riding"
+    ],
+    "description": "On 27 May 2017, the Conservative Party of Canada elected a new party leader. As the party with the second-most seats in the Parliament, the new leader will become the official Leader of the Opposition. \n\nThe party rules dictate that each electoral district (riding) is equally represented in the leadership election, regardless of the number of members in the riding, although leadership contenders endeavour to sign up new members in order to increase their vote proportion in the riding. The election is an instant runoff vote, with members completing their preferences on the ballot paper. If no candidate achieves a majority, the candidate with the fewest votes is excluded and their votes distributed to remaining candidates, based on the preferences of the voters. Fourteen candidates registered for the leadership ballot and engaged in debates in both official languages. \n\nThe Member for Regina\u2014Qu'Appelle in Saskatchewan, Andrew Scheer MP, won the leadership on the thirteenth ballot with 50.95% of the vote, compared to Maxime Bernier MP, with 49.05% of the vote. \n\nThis dataset details the percentage of the vote received by each candidate in each round, by province and by riding. The results were taken from the Conservative Party of Canada website: https://www.intvoting.com/cpcresults/index.html?lang=en#results \n\nIt may be interesting to explore which candidates attracted the most preferences as other candidates were excluded and which were more polarising figures. It may also be interesting to see which candidates performed strongest in Conservative-held ridings, and which candidates performed best in competitive ridings. Perhaps a relationship exists between support for a party at the 2015 election and support for a candidate in the leadership.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 181108,
+    "row_count": 36492,
+    "source": "kaggle",
+    "tags": [
+        "politics"
+    ],
+    "title": "2017 Conservative Party of Canada Leadership",
+    "topic": "politics",
+    "url": "kaggle.com/datasets/smid80/2017conservativepartycanadaleadership",
+    "usability": 1.0
+}

@@ -1,0 +1,33 @@
+{
+    "col_count": 6,
+    "col_names": [
+        "gender",
+        "race/ethnicity",
+        "parent_education_level",
+        "lunch",
+        "test_prep_course",
+        "math"
+    ],
+    "description": "- **\"gender\"** - male / female\n- **\"race/ethnicity\"** - one of 5 combinations of race/ethnicity\n- **\"parent education level\"** - highest education level of either parent\n- **\"lunch\"** - whether the student receives free/reduced or standard lunch\n- **\"test prep course\"** - whether the student took the test preparation course\n- **\"math\"** - exam score in math",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 6000,
+    "row_count": 1000,
+    "source": "kaggle",
+    "tags": [
+        "education",
+        "beginner",
+        "primary and secondary schools",
+        "standardized testing"
+    ],
+    "title": "Analyzing exam scores",
+    "topic": "education",
+    "url": "kaggle.com/datasets/sudhanshu2198/analyzing-exam-scores",
+    "usability": 0.8235294117647058
+}

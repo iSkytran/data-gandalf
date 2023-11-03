@@ -1,0 +1,22 @@
+{
+    "description": "\nBinance was created as a utility token for discounted trading fees in 2017, but its uses have expanded to numerous applications, including payments for transaction fees (on the Binance Chain), travel bookings, entertainment, online services, and financial services.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC-BY-NC-SA-4.0",
+            "nameNullable": "CC-BY-NC-SA-4.0"
+        }
+    ],
+    "source": "kaggle",
+    "tags": [
+        "beginner",
+        "intermediate",
+        "lstm",
+        "tabular",
+        "currencies and foreign exchange"
+    ],
+    "title": "Binance Coin USD (BNB-USD)",
+    "topic": "entertainment",
+    "url": "kaggle.com/datasets/ranugadisansagamage/binance-coin-usd-bnbusd",
+    "usability": 1.0
+}

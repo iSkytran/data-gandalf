@@ -1,0 +1,36 @@
+{
+    "col_count": 10,
+    "col_names": [
+        "country",
+        "date",
+        "GNP",
+        "Population",
+        "Edu_prime",
+        "Edu_second",
+        "Edu_post_second",
+        "Edu_lower_second",
+        "Unemp",
+        "c_codes"
+    ],
+    "description": "### Context\n\n\n\n\n### Content\n\n\n\n\n### Acknowledgements\n\nMany thanks to World Bank API\n\n\n### Inspiration\n\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 79747,
+    "num_entries": 153120,
+    "row_count": 15312,
+    "source": "kaggle",
+    "tags": [
+        "education",
+        "demographics",
+        "economics"
+    ],
+    "title": "Education",
+    "topic": "education",
+    "url": "kaggle.com/datasets/ammon1/education-gnp-and-unemploynment",
+    "usability": 0.4411764705882353
+}

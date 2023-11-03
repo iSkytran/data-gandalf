@@ -1,0 +1,30 @@
+{
+    "col_count": 4,
+    "col_names": [
+        "utc_timestamp",
+        "wind_generation_actual",
+        "wind_capacity",
+        "temperature"
+    ],
+    "description": "### Context\n\nThe goal of this dataset is to forecast wind power generation at a daily rate using different time series and traditional machine learning models.\n\n\n### Content\nThis dataset is pretty simple, It's a time series dataset containing measurements of daily temperature, wind production and capacity from 2017 to 2019.\n\nThe columns in the dataset are : \n* utc_timestamp : Time in UTC \n* wind_generation : Daily wind production in MW\n* wind_capacity : Electrical capacity of wind in MW\n* temperature : Daily Temperature in degrees C\n\n### Acknowledgements\n\nI would like to thank OPSD for making this dataset available publicly.\nhttps://open-power-system-data.org/",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 4376,
+    "row_count": 1094,
+    "source": "kaggle",
+    "tags": [
+        "energy",
+        "renewable energy",
+        "time series analysis"
+    ],
+    "title": "Wind Energy in Germany",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/aymanlafaz/wind-energy-germany",
+    "usability": 1.0
+}

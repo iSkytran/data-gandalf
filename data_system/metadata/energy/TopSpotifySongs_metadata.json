@@ -1,0 +1,38 @@
+{
+    "col_count": 14,
+    "col_names": [
+        "Unnamed: 0",
+        "Track.Name",
+        "Artist.Name",
+        "Genre",
+        "Beats.Per.Minute",
+        "Energy",
+        "Danceability",
+        "Loudness..dB..",
+        "Liveness",
+        "Valence.",
+        "Length.",
+        "Acousticness..",
+        "Speechiness.",
+        "Popularity"
+    ],
+    "description": "- Check the data extracted by **year**: https://www.kaggle.com/leonardopena/top-spotify-songs-from-20102019-by-year\n- And by **country**: https://www.kaggle.com/leonardopena/top-50-spotify-songs-by-each-country\n\n### Context\n\nThe top 50 most listened songs in the world by spotify. This dataset has several variables about the songs.\n\n### Content\n50 songs\n13 variables\nData were stracted from: http://organizeyourmusic.playlistmachinery.com/\n\n\n### Inspiration\n\nWhat can we know about the genre? \nWhat is the mean of minutes that a top music has?",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "other",
+            "nameNullable": "other"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 700,
+    "row_count": 50,
+    "source": "kaggle",
+    "tags": [
+        "music"
+    ],
+    "title": "Top 50 Spotify Songs - 2019",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/leonardopena/top50spotify2019",
+    "usability": 1.0
+}

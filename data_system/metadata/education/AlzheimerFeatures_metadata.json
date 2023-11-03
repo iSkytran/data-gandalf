@@ -1,0 +1,38 @@
+{
+    "col_count": 10,
+    "col_names": [
+        "Group",
+        "M/F",
+        "Age",
+        "EDUC",
+        "SES",
+        "MMSE",
+        "CDR",
+        "eTIV",
+        "nWBV",
+        "ASF"
+    ],
+    "description": "## Alzheimer Features For Analysis\n\n\nGroup is a target for models\n\nGroup --&gt; Class\nAge --&gt; Age\nEDUC --&gt; Years of Education\nSES --&gt; Socioeconomic Status / 1-5\nMMSE --&gt; Mini Mental State Examination\nCDR --&gt; Clinical Dementia Rating\neTIV --&gt; Estimated total intracranial volume\nnWBV --&gt; Normalize Whole Brain Volume\nASF --&gt; Atlas Scaling Factor\n\n\nYou can use it as a categorical variable:\n\nGroup\nAge\nEDUC\n\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "DbCL-1.0",
+            "nameNullable": "DbCL-1.0"
+        }
+    ],
+    "null_count": 21,
+    "num_entries": 3730,
+    "row_count": 373,
+    "source": "kaggle",
+    "tags": [
+        "culture and humanities",
+        "diseases",
+        "categorical",
+        "psychology",
+        "artificial intelligence"
+    ],
+    "title": "Alzheimer Features",
+    "topic": "education",
+    "url": "kaggle.com/datasets/brsdincer/alzheimer-features",
+    "usability": 1.0
+}

@@ -1,0 +1,43 @@
+{
+    "col_count": 26,
+    "col_names": [
+        "\u00ef\u00bb\u00bfID",
+        "Marital Status",
+        "Gender",
+        "Income",
+        "Children",
+        "Education",
+        "Occupation",
+        "Home Owner",
+        "Cars",
+        "Commute Distance",
+        "Region",
+        "Age",
+        "Purchased Bike"
+    ],
+    "description": "### Bike Buyers Dataset for Exploratory Data Analysis\n\nThis dataset has details of 1000 users from different backgrounds and whether or not they buy a bike. This data can be used for prediction models using Machine Learning Algorithms. There are some NA values injected in the dataset. Use this dataset for Data Cleaning, Exploration and Visualization.\n\nColumns - \n- ID\t\n- Marital Status\t\n- Gender\t\n- Income\t\n- Children\t\n- Education\t\n- Occupation\t\n- Home Owner\t\n- Cars\t\n- Commute Distance\t\n- Region\t\n- Age\t\n- Purchased Bike\n\n\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "GPL-2.0",
+            "nameNullable": "GPL-2.0"
+        }
+    ],
+    "null_count": 53,
+    "num_entries": 26000,
+    "row_count": 2000,
+    "source": "kaggle",
+    "tags": [
+        "automobiles and vehicles",
+        "cycling",
+        "exploratory data analysis",
+        "data cleaning",
+        "data visualization",
+        "retail and shopping",
+        "online communities"
+    ],
+    "title": "Bike Buyers 1000",
+    "topic": "education",
+    "url": "kaggle.com/datasets/heeraldedhia/bike-buyers",
+    "usability": 1.0
+}

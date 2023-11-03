@@ -1,0 +1,35 @@
+{
+    "col_count": 8,
+    "col_names": [
+        "Date",
+        "Home Team",
+        "Away Team",
+        "Win or Loss for Celtics",
+        "Win or Loss for Warriors",
+        "Celtics score",
+        "Warriors score",
+        "Streak"
+    ],
+    "description": "# Context\nThe National Basketball Association is a professional basketball league in North America. The league is composed of 30 teams and is one of the major professional sports leagues in the United States and Canada. The Golden State Warriors and the Boston Celtics will be competing in the NBA Finals in June.\n\n# Content\n- This dataset contains all the past games between the 2 NBA Finals contenders.\n- They have competed against each other for a total of 346 regular season games, with the Celtics winning 208 games and the Warriors winning 138.\n- It contains the score of the game, the date the game was played, which team played in their home stadium (or sometimes in neither of the teams' stadiums which is labelled 'None'), and the streaks (number of consecutive wins) of the 2 teams.\n\n# Purpose\n- This dataset can be useful to see the history between the 2 teams, and how they have fared against each other in the past. It may or may not be relevant to their upcoming matches in the finals...\n\n# Acknowledgement\n- Thanks to the Land of Basketball for collecting all the past games between the 2 teams. Link: https://www.landofbasketball.com/head_to_head_gl/celtics_vs_warriors_game_log_season.htm",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "other",
+            "nameNullable": "other"
+        }
+    ],
+    "null_count": 70,
+    "num_entries": 2808,
+    "row_count": 351,
+    "source": "kaggle",
+    "tags": [
+        "basketball",
+        "sports",
+        "history",
+        "tabular"
+    ],
+    "title": "NBA Warriors vs Celtics ALL Past Games",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/neelgajare/warriors-vs-celtics-all-past-games",
+    "usability": 1.0
+}

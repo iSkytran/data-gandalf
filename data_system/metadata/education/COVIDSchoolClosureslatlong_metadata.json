@@ -1,0 +1,21 @@
+{
+    "description": "### Context\n\nWorld Bank Education COVID-19 School Closures\n\nhttps://www.worldbank.org/en/data/interactive/2020/03/24/world-bank-education-and-covid-19\n\n### Content\n\nNumber of countries by information status as of  15/03/2021 09:51:25\nNumber of Students in countries with fully closed schools\nNumber of Students in countries with partially closed schools\n\nhttps://www.worldbank.org/en/data/interactive/2020/03/24/world-bank-education-and-covid-19\n\n\n### Acknowledgements\n\nhttps://www.worldbank.org/en/data/interactive/2020/03/24/world-bank-education-and-covid-19\n\nPhoto by Nathan Dumlao on Unsplash\n\n\n### Inspiration\n\nSchool closures during the Covid-19 Pandemic.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "other",
+            "nameNullable": "other"
+        }
+    ],
+    "source": "kaggle",
+    "tags": [
+        "education",
+        "tabular",
+        "primary and secondary schools",
+        "covid19"
+    ],
+    "title": "COVID-19 School Closures (lat/long)",
+    "topic": "education",
+    "url": "kaggle.com/datasets/mpwolke/cusersmarildownloadsclosurecsv",
+    "usability": 1.0
+}

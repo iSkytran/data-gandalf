@@ -1,0 +1,49 @@
+{
+    "col_count": 63,
+    "col_names": [
+        "Unnamed: 0",
+        "F",
+        "M",
+        "L",
+        "I",
+        "V",
+        "P",
+        "Y",
+        "W",
+        "C",
+        "A",
+        "G",
+        "S",
+        "T",
+        "H",
+        "E",
+        "Q",
+        "D",
+        "N",
+        "K",
+        "R"
+    ],
+    "description": "This dataset contains 3 symmetrical matrices of  physicochemical distances taken from [Wikipedia](https://en.wikipedia.org/wiki/Amino_acid_replacement). Physicochemical distance is a measure that assesses the difference between replaced amino acids. The value of distance is based on properties of amino acids. There are 134 physicochemical properties that can be used to estimate similarity between amino acids. Each physicochemical distance is based on different composition of properties.\n\nEach row and column in all the tables from this dataset represent amino acids (designated by their letters) and each cell has the distance coefficient for every pair combination.\n\n### Epstein coefficient of difference\n\nEpstein's coefficient of difference is based on the differences in polarity and size between replaced pairs of amino acids. This index that distincts the direction of exchange between amino acids, described by 2 equations.\n\n### Grantham distance\n\nGrantham's distance depends on three properties: composition, polarity and molecular volume.\n\n### Sneath index\n\nSneath's index takes into account 134 categories of activity and structure. Dissimilarity index D is a percentage value of the sum of all properties not shared between two replaced amino acids. It is percentage value expressed by D=1-S, where S is Similarity.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 1260,
+    "row_count": 60,
+    "source": "kaggle",
+    "tags": [
+        "genetics",
+        "biology",
+        "chemistry",
+        "biotechnology",
+        "tabular"
+    ],
+    "title": "Amino Acid Replacement Datasets",
+    "topic": "chemistry",
+    "url": "kaggle.com/datasets/alejopaullier/amino-acid-replacement-datasets",
+    "usability": 0.8823529411764706
+}

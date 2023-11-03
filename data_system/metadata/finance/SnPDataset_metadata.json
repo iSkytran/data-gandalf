@@ -1,0 +1,35 @@
+{
+    "col_count": 8,
+    "col_names": [
+        "Date",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume",
+        "Dividends",
+        "Stock Splits"
+    ],
+    "description": "The dataset contains the stock price information of the s&p 500 from 1927 till June 2023 with features such as Date, Open, High, Low, Close, Volume, Dividends and splits. The dataset can be used for EDA as well as Time Series Analysis.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 191760,
+    "row_count": 23970,
+    "source": "kaggle",
+    "tags": [
+        "biology",
+        "business",
+        "finance",
+        "investing"
+    ],
+    "title": "SnP 500 Dataset ",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/yash16jr/snp500-dataset",
+    "usability": 1.0
+}

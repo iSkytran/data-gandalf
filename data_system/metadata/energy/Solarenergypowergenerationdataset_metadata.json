@@ -1,0 +1,49 @@
+{
+    "col_count": 21,
+    "col_names": [
+        "temperature_2_m_above_gnd",
+        "relative_humidity_2_m_above_gnd",
+        "mean_sea_level_pressure_MSL",
+        "total_precipitation_sfc",
+        "snowfall_amount_sfc",
+        "total_cloud_cover_sfc",
+        "high_cloud_cover_high_cld_lay",
+        "medium_cloud_cover_mid_cld_lay",
+        "low_cloud_cover_low_cld_lay",
+        "shortwave_radiation_backwards_sfc",
+        "wind_speed_10_m_above_gnd",
+        "wind_direction_10_m_above_gnd",
+        "wind_speed_80_m_above_gnd",
+        "wind_direction_80_m_above_gnd",
+        "wind_speed_900_mb",
+        "wind_direction_900_mb",
+        "wind_gust_10_m_above_gnd",
+        "angle_of_incidence",
+        "zenith",
+        "azimuth",
+        "generated_power_kw"
+    ],
+    "description": "Solar-based energy is becoming one of the most promising sources for producing power for residential, commercial, and industrial applications. Energy production based on solar photovoltaic (PV) systems has gained much attention from researchers and practitioners recently due to its desirable characteristics. However, the main difficulty in solar energy production is the volatility intermittent of photovoltaic system power generation, which is mainly due to weather conditions. For the large-scale solar farms, the power imbalance of the photovoltaic system may cause a significant loss in their economical profit. Accurate forecasting of the power output of PV systems in a short term is of great importance for daily/hourly efficient management of power grid production, delivery, and storage, as well as for decision-making on the energy market, facilitate early participation in energy auction markets and efficient resource planning.\n\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "Community Data License Agreement - Sharing - Version 1.0",
+            "nameNullable": "Community Data License Agreement - Sharing - Version 1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 88473,
+    "row_count": 4213,
+    "source": "kaggle",
+    "tags": [
+        "earth science",
+        "environment",
+        "science and technology",
+        "energy",
+        "renewable energy"
+    ],
+    "title": "Solar energy power generation dataset",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/stucom/solar-energy-power-generation-dataset",
+    "usability": 0.7647058823529411
+}

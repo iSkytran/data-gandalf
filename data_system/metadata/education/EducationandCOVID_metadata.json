@@ -1,0 +1,44 @@
+{
+    "col_count": 18,
+    "col_names": [
+        "Country Code",
+        "Country Name",
+        "Dt Extraction",
+        "If Closed due to COVID19 When",
+        "Income Level",
+        "Region Name",
+        "School Status",
+        "Year Pre",
+        "Year Prm",
+        "Year Sec",
+        "Year Ter",
+        "Latitude (generated)",
+        "Longitude (generated)",
+        "Enrollment",
+        "Se Pre Enrl",
+        "Se Prm Enrl",
+        "Se Sec Enrl",
+        "Se Ter Enrl"
+    ],
+    "description": "### Context\n\nMost governments around the world have temporarily closed educational institutions in an attempt to contain the spread of the COVID-19 pandemic.\n\nThese nationwide closures are impacting over 60% of the world\u2019s student population. Several other countries have implemented localized closures impacting millions of additional learners.\n\nIn addition to closing schools, countries are exploring options for remote learning and use of other educational resources to mitigate the loss of learning. This involves capitalizing on work already started and addressing ever-present challenges like degrees of accessibility within communities to ensure equity in access.\n\nSo here is the data of the status of schools around the globe during COVID-19\n\n### Content\n\nThe Dataset contains information about the closure of schools around the globe such as status and date of closing. It also contains the No. of students enrolled in various levels of school around the globe in various countries. Figures correspond to the number of learners enrolled at pre-primary, primary, secondary as well as at tertiary education levels.\n\n\n### Acknowledgements\n\nThanks to UNESCO Institute for Statistics(UIS) and World Bank for providing this data",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 66,
+    "num_entries": 3600,
+    "row_count": 200,
+    "source": "kaggle",
+    "tags": [
+        "education",
+        "primary and secondary schools",
+        "covid19"
+    ],
+    "title": "Education and COVID-19",
+    "topic": "education",
+    "url": "kaggle.com/datasets/landlord/education-and-covid19",
+    "usability": 1.0
+}

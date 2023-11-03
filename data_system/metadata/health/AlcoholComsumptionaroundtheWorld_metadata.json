@@ -1,0 +1,34 @@
+{
+    "col_count": 5,
+    "col_names": [
+        "country",
+        "beer_servings",
+        "spirit_servings",
+        "wine_servings",
+        "total_litres_of_pure_alcohol"
+    ],
+    "description": "### Content\n\nContains the data behind the story \"Dear Mona Followup: Where Do People Drink The Most Beer, Wine And Spirits?\"\n\nUnits: Average serving sizes per person Source: World Health Organisation, Global Information System on Alcohol and Health (GISAH), 2010",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "U.S. Government Works",
+            "nameNullable": "U.S. Government Works"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 965,
+    "row_count": 193,
+    "source": "kaggle",
+    "tags": [
+        "alcohol",
+        "health and fitness",
+        "healthcare",
+        "public health",
+        "government",
+        "food"
+    ],
+    "title": "Alcohol Comsumption around the World",
+    "topic": "health",
+    "url": "kaggle.com/datasets/codebreaker619/alcohol-comsumption-around-the-world",
+    "usability": 1.0
+}

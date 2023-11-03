@@ -1,0 +1,32 @@
+{
+    "col_count": 12,
+    "col_names": [
+        "Unnamed: 0",
+        "TxnDate",
+        "TxnTime",
+        "Consumption"
+    ],
+    "description": "This dataset featuring Consumption of Electrical Blower Machine with timeslots of around 10-15 min. this data is recorded with help of IoT device.\nEnergy Consumption is Measured between Current and Previous time stamp. \nNull or less than 0.5 value of Energy Consumption means machine was of during respective time slot time .\nabove time series consumption is Stationary with time as KWH i.e Kilo Watt/Hour Capacity of Blower motor is fixed.\n#TimeSeries #Stationary #HVAC #KWH \n\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "copyright-authors",
+            "nameNullable": "copyright-authors"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 14424,
+    "row_count": 3606,
+    "source": "kaggle",
+    "tags": [
+        "deep learning",
+        "lstm",
+        "tabular",
+        "seaborn",
+        "sklearn"
+    ],
+    "title": "Energy Consumption Time Series Dataset",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/vitthalmadane/energy-consumption-time-series-dataset",
+    "usability": 1.0
+}

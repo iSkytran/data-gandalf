@@ -1,0 +1,62 @@
+{
+    "col_count": 34,
+    "col_names": [
+        "id",
+        "year",
+        "team",
+        "average_age",
+        "runs_per_game",
+        "wins",
+        "losses",
+        "win_loss_percentage",
+        "ERA",
+        "run_average_9",
+        "games",
+        "games_started",
+        "games_finished",
+        "complete_game",
+        "shutouts",
+        "saves",
+        "innings_pitched",
+        "hits",
+        "runs",
+        "earned_runs",
+        "home_runs",
+        "walks",
+        "intentional_walks",
+        "strikeouts",
+        "hit_batter",
+        "balks",
+        "wild_pitches",
+        "batters_faced",
+        "WHIP",
+        "hits_9",
+        "homeruns_9",
+        "walks_9",
+        "strikeouts_9",
+        "strikeout_walk"
+    ],
+    "description": "The dataset contains team pitching data from every season of KBO Baseball.\n\nThe data was collected from Sports Reference then cleaned for data analysis.\n\nTabular data includes:\n- - `year`\n- - `teams`\n- - `average_age`: Average pitcher age\n- - `runs_per_game`: Runs scored per game\n- - `wins`: Total wins per season\n- - `losses`: Total losses per season\n- - `win_loss_percentage`\n- - `ERA`: Pitching ERA\n- - `run_average_9`\n- - `games`: Games played\n- - `games_started`: Games started\n- - `games_finished`: Games finished\n- - `complete_game`: Complete games\n- - `shutouts`: No runs allowed and complete games\n- - `saves`\n- - `innings_pitched`\n- - `hits`: Hits allowed\n- - `runs`: Runs allowed\n- - `earned_runs`: Earned runs allowed\n- - `home_runs`: Home runs allowed\n- - `walks`: Walks allowed\n- - `intentional_walks`: Intentional walks allowed\n- - `strikeouts`\n- - `hit_batter`: Hit batter with pitch\n- - `balks`: An illegal act by a pitcher with a runner or runners on base entitling all batters to advance one base\n- - `wild_pitches`\n- - `batters_faced`\n- - `WHIP`: (Walks + Hits) / Total Innings Pitched\n- - `hits_9`: Hits per 9 innings\n- - `homeruns_9`: Homeruns per 9 innings\n- - `walks_9`: Walks per 9 innings\n- - `strikeouts_9`: Strikeouts per 9 innings\n- - `strikeout_walk`: strikeouts / walks",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 695,
+    "num_entries": 10982,
+    "row_count": 323,
+    "source": "kaggle",
+    "tags": [
+        "arts and entertainment",
+        "games",
+        "baseball",
+        "sports",
+        "korea"
+    ],
+    "title": "Korean Baseball Pitching Data (1982 - 2021)",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/mattop/korean-baseball-pitching-data-1982-2021",
+    "usability": 0.9705882352941176
+}

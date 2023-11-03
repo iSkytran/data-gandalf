@@ -1,0 +1,40 @@
+{
+    "col_count": 12,
+    "col_names": [
+        "rank",
+        "name",
+        "org",
+        "sport",
+        "contract_val",
+        "avg_per_year",
+        "avg_per_game",
+        "num_years",
+        "duration",
+        "left",
+        "retired",
+        "not_guaranteed"
+    ],
+    "description": "List of largest sports contracts.\n\n###**COLUMN DESCRIPTION**\n- 'rank': rank of the person. Repeated values for the same person indicate a tie.\n- 'name': name of the person\n- 'org': organization\n- 'sport': name of the sport\n- 'contract_val': contract value in USD\n- 'avg_per_year': average per year in USD\n- 'avg_per_game': average per game/event in USD\n- 'num_years': number of years in the contract\n- 'duration': duration of the contract in years\n- 'left': if the person left the team or streaming service before the contract expired.\n- 'retired': if the person retired or not\n- 'not_guar': if the contract is guaranteed or not",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 1176,
+    "row_count": 98,
+    "source": "kaggle",
+    "tags": [
+        "celebrities",
+        "global",
+        "sports",
+        "people",
+        "exploratory data analysis"
+    ],
+    "title": "Largest sports contracts",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/kabhishm/largest-sports-contracts",
+    "usability": 0.9411764705882353
+}

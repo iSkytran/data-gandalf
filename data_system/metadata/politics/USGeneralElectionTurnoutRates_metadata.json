@@ -1,0 +1,39 @@
+{
+    "col_count": 15,
+    "col_names": [
+        "State",
+        "Source",
+        "Official/Unofficial",
+        "Total Ballots Counted (Estimate)",
+        "Vote for Highest Office (President)",
+        "VEP Turnout Rate",
+        "Voting-Eligible Population (VEP)",
+        "Voting-Age Population (VAP)",
+        "% Non-citizen",
+        "Prison",
+        "Probation",
+        "Parole",
+        "Total Ineligible Felon",
+        "Overseas Eligible",
+        "State Abv"
+    ],
+    "description": "# Intro\nVoter turnout is the percentage of eligible voters who cast a ballot in an election. Eligibility varies by country, and the voting-eligible population should not be confused with the total adult population. Age and citizenship status are often among the criteria used to determine eligibility, but some countries further restrict eligibility based on sex, race, or religion.\n# Context\nThe historical trends in voter turnout in the United States presidential elections have been determined by the gradual expansion of voting rights from the initial restriction to white male property owners aged 21 or older in the early years of the country's independence, to all citizens aged 18 or older in the mid-20th century. Voter turnout in United States presidential elections has historically been higher than the turnout for midterm elections.\n![f](https://upload.wikimedia.org/wikipedia/commons/a/a7/U.S._Vote_for_President_as_Population_Share.png)\n# Content\nTurnout rates by demographic breakdown from the Census Bureau's Current Population Survey, November Voting and Registration Supplement (or CPS for short). This table are corrected for vote overreporting bias. For uncorrected weights see the source link.\n\nOriginal source: https://data.world/government/vep-turnout",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "U.S. Government Works",
+            "nameNullable": "U.S. Government Works"
+        }
+    ],
+    "null_count": 119,
+    "num_entries": 780,
+    "row_count": 52,
+    "source": "kaggle",
+    "tags": [
+        "politics"
+    ],
+    "title": "2020 US General Election Turnout Rates",
+    "topic": "politics",
+    "url": "kaggle.com/datasets/imoore/2020-us-general-election-turnout-rates",
+    "usability": 1.0
+}

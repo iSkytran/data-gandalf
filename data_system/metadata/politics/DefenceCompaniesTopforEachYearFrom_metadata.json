@@ -1,0 +1,37 @@
+{
+    "col_count": 20,
+    "col_names": [
+        "Year",
+        "Rank",
+        "Company",
+        "Leadership",
+        "Country",
+        "Defense_Revenue_From_A_Year_Ago(in millions)",
+        "Defense_Revenue_From_Two_Years_Ago(in millions)",
+        "%Defense Revenue Change",
+        "Total Revenue(in millions)",
+        "%of Revenue from Defence"
+    ],
+    "description": "### Context\n\nThe dataset has scraped from Defence News.\n\nDefense News is a global website and magazine about politics, business and technology of defense. Defense News serves an audience of senior military, government and industry decision-makers throughout the world.\n\nDataset includes defence companies which are in top 100 and There are same feature about the companies.\n\n\n### Content\n\n`&gt;defence_companies_from_2005.csv - The dataset which scraped from Defence News thanks to Python Script`\n`&gt;defence_companies_from_2005_cleaned.csv - The dataset which cleaned`\n\n**Includes 11 columns and 1604 rows.**\n\n\n### Collection Methodology\n\n**If you wonder how to i collected the dataset. Here is my repo:**\n`https://github.com/onur-duman/DefenceCompanies-WebScraping-And-Cleaning`\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "other",
+            "nameNullable": "other"
+        }
+    ],
+    "null_count": 675,
+    "num_entries": 32040,
+    "row_count": 3204,
+    "source": "kaggle",
+    "tags": [
+        "earth and nature",
+        "business",
+        "science and technology",
+        "news"
+    ],
+    "title": "Defence Companies Top 100 for Each Year From 2005",
+    "topic": "politics",
+    "url": "kaggle.com/datasets/onurduman/defence-companies-top-100-for-each-year-from-2005",
+    "usability": 1.0
+}

@@ -1,0 +1,30 @@
+{
+    "col_count": 5,
+    "col_names": [
+        "EN_Name",
+        "Main_Section",
+        "Ticker",
+        "investment_id",
+        "corr"
+    ],
+    "description": "**map_df.csv**\n\n\n- *investment_id*\n\n Same id used in the competition.\n- *new_id* \n      \u4ec5\u542b\u6570\u5b57\u90e8\u5206\u7684\u80a1\u7968\u4ee3\u7801\n     The converted ticker (Note that it's only the stock id ,for full ticker ,refer to map_info.csv)\n- *corr* \n     \u539f\u59cb\u4ef7\u683c\u4e0e\u5339\u914d\u5230\u7684\u80a1\u7968\u4ef7\u683c\u7684\u5173\u8054\u7cfb\u6570\u3002\n    The correlation of price between new_id and investment_id\n\n**map_info.csv**\n\n- *investment_id*\n\n Same id used in the competition.\n\n\n- *corr* \n     \u539f\u59cb\u4ef7\u683c\u4e0e\u5339\u914d\u5230\u7684\u80a1\u7968\u4ef7\u683c\u7684\u5173\u8054\u7cfb\u6570\u3002\n    The correlation of price between new_id and investment_id\n\n\n- *ticker* \n     \u80a1\u7968\u4ee3\u7801\n     The converted ticker (this is the full ticker, you can search  it using Yahoo/Google Finance)\n\n- *CN_Short* *CN_Name* *EN_Name*\n    \u80a1\u7968\u4e2d\u6587\u7b80\u79f0/\u5168\u540d\uff0c\u82f1\u6587\u5168\u540d\n    Chinese Short, Full and English Name of the company\n\n\n- *Circulating_Market_Value* *Market_Value*\n    \u6d41\u901a\u5e02\u503c/\u5e02\u503c\u3002\u622a\u6b62\u52302022\u5e743\u67085\u65e5\u6536\u76d8\u3002\u4ee5\u5343RMB\u8ba1\u3002\n    Self Explanatory. At close as of 2022/3/25.In thousands RMB.\n\n\n- *Main_Section*\n     \u884c\u4e1a\u4ee3\u7801\n    Section of this stock.\n0001=\u91d1\u878d\uff0c0002=\u516c\u7528\u4e8b\u4e1a\uff0c0003=\u623f\u5730\u4ea7\uff0c0004=\u7efc\u5408\uff0c0005=\u5de5\u4e1a\uff0c0006=\u5546\u4e1a\n0001=Finance, 0002=Utilities, 0003=Real Estate, 0004=General, 0005=Industrial, 0006=Commercial",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+            "nameNullable": "Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 17525,
+    "row_count": 3505,
+    "source": "kaggle",
+    "tags": [
+        "finance",
+        "investing"
+    ],
+    "title": "ubiquant_stock",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/zyy2016/ubiquant-stock",
+    "usability": 0.7058823529411765
+}

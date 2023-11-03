@@ -1,0 +1,33 @@
+{
+    "col_count": 5,
+    "col_names": [
+        "GAME RANK",
+        "GAME NAME",
+        "AWARDING PRIZE MONEY ",
+        "TOTAL PLAYERS ",
+        "TOTAL TOURNAMENTS"
+    ],
+    "description": "### Context\n\nTHIS DATABASE SHOWES THE TOP 100 GAMES BY WINNING PRIZE POOL\n\n\n### Content\nFILE DESCRIBE THE GAME RANK AND WINING PRIZE POOL AND OTHER DETAILS\n\n### Acknowledgements\n\nTHIS DATA IS BASED ON WEB DATA.\n\n\n### Inspiration\n\nITS SHOWES THAT HOW E-SPORTS IS GROWING FOR GAMERS COMMUNITY.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 500,
+    "row_count": 100,
+    "source": "kaggle",
+    "tags": [
+        "games",
+        "video games",
+        "beginner",
+        "exploratory data analysis",
+        "simulations"
+    ],
+    "title": "TOP 100 E-SPORTS GAMES BY PRIZE POOL",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/sandipdevre/top-100-esports-games-by-winning-money-prize",
+    "usability": 0.8235294117647058
+}

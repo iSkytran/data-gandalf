@@ -1,0 +1,36 @@
+{
+    "col_count": 7,
+    "col_names": [
+        "Date",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Adj Close",
+        "Volume"
+    ],
+    "description": "Tesla, Inc. is an American automotive and clean energy company based in Austin, Texas. Tesla designs and manufactures electric vehicles, battery energy storage from home to grid-scale, solar panels and solar roof tiles, and related products and services. Wikipedia",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 21042,
+    "row_count": 3006,
+    "source": "kaggle",
+    "tags": [
+        "business",
+        "automobiles and vehicles",
+        "beginner",
+        "intermediate",
+        "rnn",
+        "tabular"
+    ],
+    "title": "Tesla Stocks ( Where Is My Cyber Truck @Elon? )",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/programmerrdai/tesla-stocks-where-is-my-cyber-truck",
+    "usability": 1.0
+}

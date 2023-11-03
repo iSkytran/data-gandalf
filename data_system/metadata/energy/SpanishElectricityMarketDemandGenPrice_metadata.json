@@ -1,0 +1,31 @@
+{
+    "col_count": 6,
+    "col_names": [
+        "datetime",
+        "id",
+        "name",
+        "geoid",
+        "geoname",
+        "value"
+    ],
+    "description": "### Context\n\nThis dataset is a daily time series of electricity demand, generation and prices in Spain from 2014 to 2018. It is gathered from ESIOS, a website managed by REE (Red Electrica Espa\u00f1ola) which is the Spanish TSO (Transmission System Operator)\n\nA TSO main function is to operate the electrical system and to invest in new transmission (high voltage) infrastructure.\n(https://www.ree.es/en/about-us/business-activities/electricity-business-in-Spain)\n\nAs a system operator, REE forecast electricity demand and offer and runs daily actions . As a result of daily actions,  a PBF Plan B\u00e1sico de Funcionamiento) is yielded. This is a basic schedulling of energy production (upon it several mechanisms are triggerd to ensure supply)\n\nEnery and prices data can be downloaded from : https://www.esios.ree.es/en\n\nOMIE (Operador del Mercado Iberico de Electricidad) is responsible for running those daily actions and also offers interesting data.\nhttp://www.omie.es/en/inicio\n\n### Content\nOriginal values are kept, so some names in Spanish are shown. Column name is describes each time series, so I provide a description of each name:\n\n* Demanda programada PBF total (MWh): Schedulled Total Demand\n* Demanda real (MW): Actual demanded power\n* Energ\u00eda asignada en Mercado SPOT Diario Espa\u00f1a (MWh): Energy traded in daily spot Spanish market (OMIE)\n* Energ\u00eda asignada en Mercado SPOT Diario Francia (MWh): Energy traded in daily spot French market\n* Generaci\u00f3n programada PBF Carb\u00f3n (MWh): Schedulled Coal electricity generation              \n* Generaci\u00f3n programada PBF Ciclo combinado (MWh): Schedulled Combined Cycle electricity generation\n* Generaci\u00f3n programada PBF E\u00f3lica: (MWh): Schedulled Wind electricity generation\n* Generaci\u00f3n programada PBF Gas Natural Cogeneraci\u00f3n (MWh): Schedulled Natural Gas electricity Co-generation\n* Generaci\u00f3n programada PBF Nuclear (MWh): Schedulled Nuclear electricity generation\n* Generaci\u00f3n programada PBF Solar fotovoltaica (MWh): Schedulled Photovoltaic electricity generation\n* Generaci\u00f3n programada PBF Turbinaci\u00f3n bombeo (MWh): Schedulled Reversible-Hydro electricity generation\n* Generaci\u00f3n programada PBF UGH + no UGH (MWh): Schedulled Total Hydro electricity generation\n* Generaci\u00f3n programada PBF total (MWh): Schedulled Total electricity generation\n* Precio mercado SPOT Diario ESP (\u20ac/MWh): Daily spot Spain market price\n* Precio mercado SPOT Diario FRA  (\u20ac/MWh): Daily spot France market price\nPrecio mercado SPOT Diario POR   (\u20ac/MWh): Daily spot Portugal market price\n* Rentas de congesti\u00f3n mecanismos impl\u00edcitos diario Francia exportaci\u00f3n (\u20ac/MWh): Daily spot export from France price\n* Rentas de congesti\u00f3n mecanismos impl\u00edcitos diario Francia importaci\u00f3n (\u20ac/MWh): Daily spot import to France price\n* Rentas de congesti\u00f3n mecanismos impl\u00edcitos diario Portugal exportaci\u00f3n (\u20ac/MWh): Daily spot export from Portugal price\n* Rentas de congesti\u00f3n mecanismos impl\u00edcitos diario Portugal importaci\u00f3n  (\u20ac/MWh): Daily spot import to Portugal price\n\nOriginal data format is maintained, just in case it is necessary to append new data downloaded from Esios, as a result, geo columns are null.\n\n### Inspiration\n\nI love energy and data and I couldn't find many datasets to practice daily forecasts. I hope that many data and energy enthusiasts find it interesting and enjoy it.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 63990,
+    "num_entries": 241272,
+    "row_count": 40212,
+    "source": "kaggle",
+    "tags": [
+        "energy",
+        "electricity"
+    ],
+    "title": "Spanish Electricity Market: Demand, Gen. & Price",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/manualrg/spanish-electricity-market-demand-gen-price",
+    "usability": 0.7647058823529411
+}

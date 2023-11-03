@@ -1,0 +1,44 @@
+{
+    "col_count": 16,
+    "col_names": [
+        "waste_type",
+        "waste_disposed_of_tonne",
+        "total_waste_recycled_tonne",
+        "total_waste_generated_tonne",
+        "recycling_rate",
+        "year",
+        "Waste Type",
+        "Total Generated ('000 tonnes)",
+        "Total Recycled ('000 tonnes)",
+        "Year",
+        "The table gives the amount of energy saved in kilowatt hour (kWh) and the amount of crude oil (barrels) by recycling 1 metric tonne (1000 kilogram)  per waste type",
+        "Unnamed: 1",
+        "Unnamed: 2",
+        "Unnamed: 3",
+        "Unnamed: 4",
+        "Unnamed: 5"
+    ],
+    "description": "### Context\n\nSingapore has a new milestone of becoming a zero-waste nation as government is worried about the rising number of waste disposal. At the current pace the Semakau Landfill will run out of space by year 2035 which is an alarming situation for Singaporeans (towardszerowaste.gov.sg). Making matters worse, Singapore has limited land for building new incineration plants or landfills. The government would like to motivate citizens by sharing the total energy that the combined recycling efforts have saved every year.\n\n\n### Content\n\nOur dataset is divided between two timelines, from 2003 to 2017 and 2018 to 2020. The 2020 data was manually added using the [NEA website](https://medium.com/r/?url=https%3A%2F%2Fwww.nea.gov.sg%2Four-services%2Fwaste-management%2Fwaste-statistics-and-overall-recycling). You can find additional energy data per material type on [Greentumble](https://medium.com/r/?url=https%3A%2F%2Fgreentumble.com%2Fhow-does-recycling-save-energy%2F)&nbsp;.\n\n\n### Acknowledgements\n\nThe National Environment Agency (NEA) for providing me with annual waste management data. Green tumble for providing key values of energy generation. \n\n### My Project \n- [Deepnote project](https://deepnote.com/project/Singapore-Recycled-Energy-Xh_wbptwTn2l-I1GQ-O1Vw/%2FAnnual-Recycled-Energy-Saved-in-Singapore%2Fnotebook.ipynb)\n- [Medium] (https://medium.com/@kingabzpro/annual-recycled-energy-saved-in-singapore-2d6bad49bfb2)\n- [GitHub](https://github.com/kingabzpro/Annual-Recycled-Energy-Saved-in-Singapore)",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 11,
+    "num_entries": 1560,
+    "row_count": 275,
+    "source": "kaggle",
+    "tags": [
+        "asia",
+        "energy",
+        "data cleaning",
+        "data visualization",
+        "data analytics"
+    ],
+    "title": "Singapore waste management",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/kingabzpro/singapore-waste-management",
+    "usability": 1.0
+}

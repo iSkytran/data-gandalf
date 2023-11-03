@@ -1,0 +1,30 @@
+{
+    "col_count": 6,
+    "col_names": [
+        "Symbol",
+        "Name",
+        "Last price in Sep 21",
+        "Change",
+        "% change",
+        "Volume"
+    ],
+    "description": "",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "copyright-authors",
+            "nameNullable": "copyright-authors"
+        }
+    ],
+    "null_count": 4,
+    "num_entries": 180,
+    "row_count": 30,
+    "source": "kaggle",
+    "tags": [
+        "business"
+    ],
+    "title": "Yahoo Finance NIFTY SYMBOL",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/jhasony/yahoo-finance-nifty-symbol",
+    "usability": 0.47058823529411764
+}

@@ -1,0 +1,37 @@
+{
+    "col_count": 11,
+    "col_names": [
+        "Category",
+        "Name",
+        "Brand",
+        "Size",
+        "Flavor",
+        "Servings",
+        "Rating",
+        "FlavorRating",
+        "Reviews",
+        "Price",
+        "PricePerServing"
+    ],
+    "description": "",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 1059,
+    "num_entries": 29909,
+    "row_count": 2719,
+    "source": "kaggle",
+    "tags": [
+        "exercise",
+        "nutrition",
+        "health"
+    ],
+    "title": "Sports nutrition supplements",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/daniyaljavaid/sports-nutrition-supplements",
+    "usability": 0.4117647058823529
+}

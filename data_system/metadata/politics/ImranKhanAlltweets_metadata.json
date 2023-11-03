@@ -1,0 +1,30 @@
+{
+    "col_count": 2,
+    "col_names": [
+        "Datetime",
+        "Text"
+    ],
+    "description": "The dataset contains 8,355 tweets posted by Imran Khan, a well-known politician who is often considered a nightmare for his opponents. The tweets cover a wide range of topics including politics, social issues, and personal views. The dataset is organized chronologically and covers a period of time from the start of Imran Khan's political career to the present day. The dataset provides a unique insight into Imran Khan's thoughts, opinions, and political agenda as communicated through his tweets. It could be useful for researchers, analysts, and journalists interested in studying Imran Khan's political career and the evolution of his political views over time. Additionally, the dataset could be used for sentiment analysis, topic modeling, and other natural language processing tasks.\ud83d\udc4a",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 16724,
+    "row_count": 8362,
+    "source": "kaggle",
+    "tags": [
+        "categorical",
+        "text",
+        "tabular classification",
+        "text classification",
+        "text conversation"
+    ],
+    "title": "Imran Khan All tweets ",
+    "topic": "politics",
+    "url": "kaggle.com/datasets/bilalwaseer/imran-khan-all-tweets",
+    "usability": 0.7647058823529411
+}

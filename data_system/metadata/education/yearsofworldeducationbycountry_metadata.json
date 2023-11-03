@@ -1,0 +1,29 @@
+{
+    "col_count": 1,
+    "col_names": [
+        "Entity;Code;Year;avg_years_of_schooling"
+    ],
+    "description": "This DataSet is downloaded from [https://ourworldindata.org/global-education](url) and contains by every country the average of years of schooling along the time in years, from 1870 to 2017. ",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 7763,
+    "row_count": 7763,
+    "source": "kaggle",
+    "tags": [
+        "education",
+        "demographics",
+        "data visualization",
+        "time series analysis",
+        "data analytics"
+    ],
+    "title": "years of world education by country",
+    "topic": "education",
+    "url": "kaggle.com/datasets/fredericksalazar/average-years-of-schooling-since-1870-2017",
+    "usability": 1.0
+}

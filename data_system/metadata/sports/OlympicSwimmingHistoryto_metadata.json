@@ -1,0 +1,38 @@
+{
+    "col_count": 10,
+    "col_names": [
+        "\u00ef\u00bb\u00bfLocation",
+        "Year",
+        "Distance (in meters)",
+        "Stroke",
+        "Relay?",
+        "Gender",
+        "Team",
+        "Athlete",
+        "Results",
+        "Rank"
+    ],
+    "description": "**Context**\nSwimming is one of the most popular Olympic sports where individual competitors race over various distance events in butterfly, backstroke, breaststroke, freestyle, and individual medley. Additionally, four swimmers can take part in a freestyle or medley relay. A medley relay consists of four swimmers each swimming a different stroke - ordered as backstroke, breaststroke, butterfly, and freestyle - over a set distance. Swimming has been a sport at every modern Summer Olympics but has only been open to women since 1912.\n\n**Content**\nThis dataset only focuses on results from competitive Olympic pool swimming. One row per competitor or relay team. \n| **Column** | **Description** |\n| --- | --- |\n|Location|Hosting City|\n|Year|Year of Olympics|\n|Distance|In Meters. Relays are written as the number of swimmers by the distance swam by one swimmer (i.e. 4x200)|\n|Stroke|Backstroke, Breaststroke, Butterfly, Freestyle, Medley, Individual Medley|\n|Relay?|0 - Individual, 1 - Relay|\n|Gender|Men or Women|\n|Team|Three Letter Country Code|\n|Athlete|Name of Athlete|\n|Results |Time|\n|Rank| 0 - Did not Start/Finish or Disqualified, 1 - Gold, 2 - Silver, 3- Bronze, 4- No Medal, 5 - No Data |\n\n\n**Acknowledgements**\nData is collected from [here](https://olympics.com/en/olympic-games/tokyo-2020/results/swimming/men-s-100m-backstroke) and updated 4 April 2023.\n\nFull webscraping code is available [here](https://github.com/datasciencedonut/Olympic-Swimming-History-1912-to-2020-).",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 42,
+    "num_entries": 43590,
+    "row_count": 4359,
+    "source": "kaggle",
+    "tags": [
+        "games",
+        "water sports",
+        "global",
+        "sports",
+        "tabular"
+    ],
+    "title": "Olympic Swimming History (1912 to 2020)",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/datasciencedonut/olympic-swimming-1912-to-2020",
+    "usability": 1.0
+}

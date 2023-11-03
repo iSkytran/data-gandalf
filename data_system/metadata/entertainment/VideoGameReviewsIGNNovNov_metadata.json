@@ -1,0 +1,18 @@
+{
+    "description": "#Context\n[IGN](https://www.ign.com/) (an abbreviation of its former name Imagine Games Network) is an American video game and entertainment media website operated by IGN Entertainment Inc. It is one of the leading Internet media companies focused on video games and entertainment.  It focuses on games, films, television, comics, technology, and other media. It is especially known for it's video game critique and journalism in the form of video reviews, essays and news stories. The following dataset contains a year's worth of information pertaining written reviews officially released by IGN; thus, providing valuable insights into the video game entertainment industry as a whole.\n\n#Content\nThe dataset is a .csv file with the following columns:\n- title\n- developers\n- publishers\n- release_date \n- platforms\n- genres\n- score\n- reviewed_by\n\n#Acknowledgements\n- [Selenium](https://www.selenium.dev/)\n- [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)\n- [Analytica](https://www.linkedin.com/company/analyticadatascience/)\n\n#Inspiration\n- Video games",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "source": "kaggle",
+    "tags": [
+        "video games"
+    ],
+    "title": "Video Game Reviews - IGN (Nov. 2020 - Nov. 2021)",
+    "topic": "entertainment",
+    "url": "kaggle.com/datasets/shettykrishna/video-game-reviews-ign-2020-2021",
+    "usability": 0.8823529411764706
+}

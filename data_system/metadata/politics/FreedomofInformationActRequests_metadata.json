@@ -1,0 +1,36 @@
+{
+    "col_count": 10,
+    "col_names": [
+        "Agency",
+        "Department",
+        "Year",
+        "Requests Pending Start Year",
+        "Requests Received",
+        "Requests Processed",
+        "Requests Pending End Year",
+        "Released in Full Ratio",
+        "Released in Part Ratio",
+        "Denied in Full Ratio"
+    ],
+    "description": "# Context \n\nSince 1967, the Freedom of Information Act (FOIA) has provided the public the right to request access to records from any federal agency. It is often described as the law that keeps citizens in the know about their government. Federal agencies are required to disclose any information requested under the FOIA unless it falls under one of nine exemptions which protect interests such as personal privacy, national security, and law enforcement. As Congress, the President, and the Supreme Court have all recognized, the Act is a vital part of our democracy.\n\nA FOIA request can be made for any agency record. You can also specify the format in which you wish to receive the records (for example, printed or electronic form). The Act does not require agencies to create new records or to conduct research, analyze data, or answer questions when responding to requests. Each federal agency handles its own records in response to requests. There are currently one hundred agencies subject to the FOIA with several hundred offices that process FOIA requests.\n\n\n# Content\n\nAnnual Freedom of Information Act Reports are submitted to Congress and published by FOIA.gov to promote agency accountability for the administration of the Act.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 567,
+    "num_entries": 22610,
+    "row_count": 2261,
+    "source": "kaggle",
+    "tags": [
+        "business",
+        "military",
+        "politics"
+    ],
+    "title": "Freedom of Information Act Requests",
+    "topic": "politics",
+    "url": "kaggle.com/datasets/doj/foia-requests",
+    "usability": 0.8235294117647058
+}

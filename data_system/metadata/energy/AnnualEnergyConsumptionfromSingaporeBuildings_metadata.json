@@ -1,0 +1,36 @@
+{
+    "col_count": 11,
+    "col_names": [
+        "buildingname",
+        "buildingaddress",
+        "buildingtype",
+        "greenmarkstatus",
+        "greenmarkrating",
+        "greenmarkyearaward",
+        "buildingsize",
+        "grossfloorarea",
+        "2017energyuseintensity",
+        "2018energyusintensity",
+        "voluntarydisclosure"
+    ],
+    "description": "### Context\n\nAll information for this data set can be found here: https://data.gov.sg/dataset/building-energy-performance-data",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "other",
+            "nameNullable": "other"
+        }
+    ],
+    "null_count": 2948,
+    "num_entries": 13684,
+    "row_count": 1244,
+    "source": "kaggle",
+    "tags": [
+        "energy",
+        "renewable energy"
+    ],
+    "title": "Annual Energy Consumption from Singapore Buildings",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/claytonmiller/annual-energy-consumption-from-singapore-buildings",
+    "usability": 0.6470588235294118
+}

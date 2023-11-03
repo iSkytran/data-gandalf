@@ -1,0 +1,37 @@
+{
+    "col_count": 13,
+    "col_names": [
+        "Series_reference",
+        "Period",
+        "Data_value",
+        "STATUS",
+        "UNITS",
+        "MAGNTUDE",
+        "Subject",
+        "Group",
+        "Series_title_1",
+        "Series_title_2",
+        "Series_title_3",
+        "Series_title_4",
+        "Series_title_5"
+    ],
+    "description": "",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 6458,
+    "num_entries": 28327,
+    "row_count": 2179,
+    "source": "kaggle",
+    "tags": [
+        "government"
+    ],
+    "title": "Government finance statistics (central government)",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/suneelkumarpatel/government-finance-statistics-central-government",
+    "usability": 0.29411764705882354
+}

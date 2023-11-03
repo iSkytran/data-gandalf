@@ -1,0 +1,18 @@
+{
+    "description": "",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "source": "kaggle",
+    "tags": [
+        "chemistry"
+    ],
+    "title": "Aqueous Solubility Dataset",
+    "topic": "chemistry",
+    "url": "kaggle.com/datasets/yeonseokcho/aqueous-solubility-dataset",
+    "usability": 0.29411764705882354
+}

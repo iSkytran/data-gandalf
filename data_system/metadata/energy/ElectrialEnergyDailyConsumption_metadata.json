@@ -1,0 +1,58 @@
+{
+    "col_count": 34,
+    "col_names": [
+        "\u00ef\u00bb\u00bfDate",
+        "53_kW_mean",
+        "53_kW_max",
+        "71_kW_mean",
+        "71_kW_max",
+        "71A_kW_mean",
+        "71A_kW_max",
+        "83_kW_mean",
+        "83_kW_max",
+        "totalkW_mean",
+        "totalkW_max",
+        "totalkW_d-1",
+        "totalkW_w-1",
+        "totalkW_d/1",
+        "totalkW_w/1",
+        "71_71AkW_mean",
+        "71_71AkW_max",
+        "Month",
+        "Year",
+        "Day",
+        "WD",
+        "53_kW_time_max",
+        "71_kW_time_max",
+        "71A_kW_time_max",
+        "83_kW_time_max",
+        "71_71AkW_time_max",
+        "totalkW_time_max",
+        "CDD_15",
+        "HDD_25",
+        "NWD",
+        "temp_max",
+        "insolation",
+        "temp_mean",
+        "RH"
+    ],
+    "description": "",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "copyright-authors",
+            "nameNullable": "copyright-authors"
+        }
+    ],
+    "null_count": 283,
+    "num_entries": 20400,
+    "row_count": 600,
+    "source": "kaggle",
+    "tags": [
+        "energy"
+    ],
+    "title": "Electrial Energy Daily Consumption",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/danielluzzi/electrial-energy-daily-consumption",
+    "usability": 0.6470588235294118
+}

@@ -1,0 +1,33 @@
+{
+    "col_count": 8,
+    "col_names": [
+        "N",
+        "P",
+        "K",
+        "temperature",
+        "humidity",
+        "ph",
+        "rainfall",
+        "label"
+    ],
+    "description": "&gt; THE INFORMATION IN THE DATASET IS PROVIDED TO THE BEST OF KNOWLEDGE OF ICAR. THE BELOW DATA CAN BE USED PUBLICALLY UNDER ALL PUBLIC AND PRIVATE UNDERTAKINGS\n\n**Context**\nPrecision agriculture is in trend nowadays. It helps the farmers to get informed decision about the farming strategy. Here, we present you a dataset which would allow the users to build a predictive model to recommend the most suitable crops to grow in a particular farm based on various parameters.**\n\n**Source**\nThis dataset was build by augmenting datasets of rainfall, climate and fertilizer data available for India. Gathered over the period by ICFA, India.\n\n\n**Data fields**\nN - ratio of Nitrogen content in soil\nP - ratio of Phosphorous content in soil\nK - ratio of Potassium content in soil\ntemperature - temperature in degree Celsius\nhumidity - relative humidity in %\nph - ph value of the soil\nrainfall - rainfall in mm\n\n&gt; COPYRIGHT: Indian Chamber of Food and Agriculture [https://www.icfa.org.in/](https://www.icfa.org.in/)\n![](https://www.google.com/url?sa=i&url=https%3A%2F%2F10times.com%2Fcompany%2Findian-council-of-food-and-agriculture&psig=AOvVaw0S9UpuXsVmmje0SgSjybK5&ust=1622035121203000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNie_uv15PACFQAAAAAdAAAAABAn)",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "Attribution 3.0 IGO (CC BY 3.0 IGO)",
+            "nameNullable": "Attribution 3.0 IGO (CC BY 3.0 IGO)"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 17600,
+    "row_count": 2200,
+    "source": "kaggle",
+    "tags": [
+        "agriculture",
+        "recommender systems"
+    ],
+    "title": "Crop Recommendation Dataset",
+    "topic": "agriculture",
+    "url": "kaggle.com/datasets/siddharthss/crop-recommendation-dataset",
+    "usability": 1.0
+}

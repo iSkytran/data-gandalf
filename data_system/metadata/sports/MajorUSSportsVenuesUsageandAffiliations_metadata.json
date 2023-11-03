@@ -1,0 +1,44 @@
+{
+    "col_count": 17,
+    "col_names": [
+        "index",
+        "OBJECTID",
+        "VENUEID",
+        "USE_",
+        "USE_POP",
+        "TEAM",
+        "LEAGUE",
+        "CONFERENCE",
+        "DIVISION",
+        "INST_AFFIL",
+        "TRACK_TYPE",
+        "LENGTH_MI",
+        "ROOF_TYPE",
+        "STADIUM_SH",
+        "ADDDATE",
+        "USEWEBSITE",
+        "COMMENTS"
+    ],
+    "description": "_____\n# Major US Sports Venues Usage and Affiliations\n### Team, League, Conference and Population Usage Records\nBy Homeland Infrastructure Foundation [[source]](https://data.world/dhs)\n_____\n\n### About this dataset\n> This dataset provides detailed information on major sport venues, along with their usage and affiliations. It includes data related to the *National Association for Stock Car Auto Racing, Indy Racing League, Major League Soccer, Major League Baseball, National Basketball Association, Women's National Basketball Association*, *National Hockey League*, *National Football League*, *PGA Tour*, *NCAA Division 1 FBS Football*, NCAA Division 1 Basketball and thoroughbred horse racing.* This dataset contains columns such as **USE** (which describes the type of use for the venue), **TEAM** (the team associated with the venue), **LEAGUE** (the league associated with the venue) , **CONFERENCE** (the conference associated with the venue), **DIVISION** (the division associated with the venue), **INST_AFFIL**(the institution affiliation associatedwith the venue), **TRACK_TYPE**(type of track at a specific point in time or over its complete life-cycle)  as well as **LENGTH_MILEGE ('length of track in milege') ROOF_TYPE**(The type of roof covering used at a specific point in time or over its complete life-cycle) and plenty other variables. With this astounding range and quantity of data points -- spanning countries across different continents and leagues -- explore patterns in sports games you never even thought were possible!\n\n### More Datasets\n> For more datasets, click [here](https://www.kaggle.com/thedevastator/datasets).\n\n### Featured Notebooks\n> - \ud83d\udea8 **Your notebook can be here!** \ud83d\udea8! \n\n### How to use the dataset\n> \n> The MajorUS Sports Venues Usage and Affiliations dataset includes data on major sports venues from leagues including  *National Association for Stock Car Auto Racing (NASCAR), Indy Racing League (IRL), Major League Soccer (MLS), Major League Baseball (MLB), National Basketball Association (NBA), Women's National Basketball Association (WNBA), National Hockey League (NHL), National Football League(NFL)*, PGA Tour, NCAA Division 1 FBS Football, NCAA Division 1 Basketball, and thoroughbred horse racing. The columns provided include `USE_`, `USE_POP`, `TEAM`,  `LEAGUE`,`CONFERENCE`,`DIVISION` ,`INST_AFFIL`,`TRACK_TYPE`. `LENGTH_MI`,`ROOF_TYPE ``STADIUM_SH`,`ADDDATAE   ,   USEWEBSITE',and'COMMENTS'.\n> \n> The `USE~ column specifies the type of usage of each venue at which point can be college athletics or professional athletics. The corresponding column to this is the \u2018USE~POP\u2019 which informs you about how many people are using each venue for a particular sport at a given time. For example if there were 6 NHL games being played that day then USE~ would say \u201cprofessional Athletics\u201d while USE~POP would state \u201cNNN\u201d reflecting there were NNN people spectating those events collectively: \n>     *The next column is TEAM which represents what team sponsors or manages each venue or what teams will be playing in them.*\n> \n>       Following on from TEAM is LEAGUE; here you can find out what league each team represents such as MLB, NBA etc\u2026 The next three columns CONFERENCE/DIVISION/INST ~ AFFIL provide more specific details as they blur into collegiate level as well where CONFERENCE indicates which conference they belong within their respective division: while INST ~ AFFIL states its affiliated school body e.g.: Southeastern Conference > University of Arkansas Razorbacks . Rounding up our overview these last three columns TRACK ~ TYPE/LENGTH\n\n### Research Ideas\n> - Analyzing the affiliations and usage of different sports venues to determine which teams or leagues have the most presence across a certain geographic area. \n> - Comparing different stadiums within a given conference in terms of their roof type, track length, and stadium shape for optimal design features for new construction projects. \n> - Placing sponsorships or advertisements within each sporting arena based on audience size, league popularity, and team affiliation within a given conference or division\n\n### Acknowledgements\n> If you use this dataset in your research, please credit the original authors.\n> [Data Source](https://data.world/dhs)\n> \n>\n\n\n### License\n> \n> \n> **License: [Dataset copyright by authors](https://creativecommons.org/licenses/by/4.0/)**\n> - You are free to:\n>      - **Share** - copy and redistribute the material in any medium or format for any purpose, even commercially.\n>      - **Adapt** - remix, transform, and build upon the material for any purpose, even commercially.\n> - You must:\n>      - **Give appropriate credit** - Provide a link to the license, and indicate if changes were made.\n>      - **ShareAlike** - You must distribute your contributions under the same license as the original.\n>      - **Keep intact** - all notices that refer to this license, including copyright notices.\n\n### Columns\n\n**File: Major_Sport_Venues_Usage.csv**\n| Column name    | Description                                                    |\n|:---------------|:---------------------------------------------------------------|\n| **USE_**       | The type of usage for the venue (String)                       |\n| **USE_POP**    | The population associated with the venue (Integer)             |\n| **TEAM**       | The team associated with the venue (String)                    |\n| **LEAGUE**     | The league associated with the venue (String)                  |\n| **CONFERENCE** | The conference associated with the venue (String)              |\n| **DIVISION**   | The division associated with the venue (String)                |\n| **INST_AFFIL** | The institution affiliation associated with the venue (String) |\n| **TRACK_TYPE** | The type of track associated with the venue (String)           |\n| **LENGTH_MI**  | The length of the track in miles (Float)                       |\n| **ROOF_TYPE**  | The type of roof associated with the venue (String)            |\n| **STADIUM_SH** | The shape of the stadium associated with the venue (String)    |\n| **ADDDATE**    | The date the venue was added to the dataset (DateTime)         |\n| **USEWEBSITE** | The website URL associated with the venue (String)             |\n| **COMMENTS**   | Any additional comments associated with the venue (String)     |\n\n### Acknowledgements\n> If you use this dataset in your research, please credit the original authors.\n> If you use this dataset in your research, please credit [Homeland Infrastructure Foundation](https://data.world/dhs).\n\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "copyright-authors",
+            "nameNullable": "copyright-authors"
+        }
+    ],
+    "null_count": 944,
+    "num_entries": 13107,
+    "row_count": 771,
+    "source": "kaggle",
+    "tags": [
+        "football",
+        "baseball",
+        "basketball",
+        "sports"
+    ],
+    "title": "Major US Sports Venues Usage and Affiliations",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/thedevastator/major-us-sports-venues-usage-and-affiliations",
+    "usability": 0.9411764705882353
+}

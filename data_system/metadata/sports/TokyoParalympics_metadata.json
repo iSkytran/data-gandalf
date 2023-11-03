@@ -1,0 +1,50 @@
+{
+    "col_count": 40,
+    "col_names": [
+        "Discipline",
+        "F",
+        "M",
+        "Total",
+        "Country",
+        "CountryCode",
+        "Name",
+        "Sport",
+        "Sport-code",
+        "Date of Birth",
+        "Gender",
+        "Event",
+        "Rank",
+        "Country-Code",
+        "Gold",
+        "Silver",
+        "Bronze",
+        "Rank-by-Total",
+        "Sport-short",
+        "Medal",
+        "Team"
+    ],
+    "description": "&gt; ==&gt; Compiled Paralympics data over the years : [60 years of Paralympics](https://www.kaggle.com/shivagovindasamy/60-years-of-paralympics)\n\n# Information\n***\nThis a collection of data from the Tokyo Paralympics Games 2020 held at Tokyo, Japan during 24-Aug-2021 to 5-Sep-2021.\n4426 Athletes, 212 Teams from 162 Countries/NPCs participated and competed against each other.\n\n\n# Dataset Description\n***\nEach dataset file describes:\n+ `NPCs-list.csv` : National Paralympic Committee's (NPCs) names and their corresponding short codes\n+ `entries-by-discipline.csv`: Different Sporting events at the Paralympics and their participant's gender counts\n+ `paralympic-athletes.csv` : List of participating athletes at the Tokyo Paralympics , their representing country and their sport\n+ `paralympic-coaches.csv` : List of Coaches of the participating teams (Team Sports only)\n+ `paralympic-medal-tally.csv` : Final Medal Tally of the Participating Countries/NPCs\n+ `paralympic-medals.csv` : List of Winning Athlete's/Team's details\n+ `paralympic-teams.csv` : List of participating Teams of different sports\n\n## Acknowledgement\n***\n**The data was collected from the [Official Tokyo Paralympics Website](https://olympics.com/tokyo-2020/en/paralympics/)**\n<br><br>\n### **Versions**\n+ `V2`: Updated `paralympic-athletes.csv` with Athlete's date of birth, Gender and Age.\n+ `V3`: Removed **Age** column, since it can get obsolete.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "Attribution 4.0 International (CC BY 4.0)",
+            "nameNullable": "Attribution 4.0 International (CC BY 4.0)"
+        }
+    ],
+    "null_count": 16,
+    "num_entries": 49605,
+    "row_count": 7243,
+    "source": "kaggle",
+    "tags": [
+        "games",
+        "sports",
+        "data visualization",
+        "data analytics",
+        "tabular",
+        "japan"
+    ],
+    "title": "2020 Tokyo Paralympics",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/shivagovindasamy/2020-tokyo-paralympics",
+    "usability": 1.0
+}

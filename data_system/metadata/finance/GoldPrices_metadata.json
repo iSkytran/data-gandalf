@@ -1,0 +1,34 @@
+{
+    "col_count": 7,
+    "col_names": [
+        "Date",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Adj Close",
+        "Volume"
+    ],
+    "description": "### Description\n\nYahoo Finance is a popular financial news and data platform owned by Yahoo! Inc. The platform provides users with real-time stock quotes, financial news, and analysis, as well as historical data for a wide range of financial assets, including stocks, bonds, commodities, currencies, and more.\n\nOne of the key features of Yahoo Finance is its extensive database of historical financial data, which allows users to analyze trends and make informed investment decisions. The platform offers historical data for various time periods and frequency options, including daily, weekly, monthly, and yearly.\n\nIn addition to its financial data, Yahoo Finance also provides a wide range of news and analysis content, including articles, videos, and podcasts, covering topics such as business, finance, and the global economy.\n\nOverall, Yahoo Finance is a useful tool for anyone interested in tracking financial markets and making informed investment decisions.\n\nIn this project I recorded historical annual and daily gold prices since 01.01.2001 and retrieved from Yahoo finance API.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "copyright-authors",
+            "nameNullable": "copyright-authors"
+        }
+    ],
+    "null_count": 642,
+    "num_entries": 36589,
+    "row_count": 5227,
+    "source": "kaggle",
+    "tags": [
+        "business",
+        "finance",
+        "exploratory data analysis",
+        "tabular"
+    ],
+    "title": "Gold Prices",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/kamyababedi/gold-prices",
+    "usability": 0.9411764705882353
+}

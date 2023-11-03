@@ -36,7 +36,6 @@ uploader = MetadataUploader()
 if SOURCE == "kaggle":
     if "FETCH" in STAGES:
         kaggle.fetch(topics=TOPICS, num_datasets=100, output_folder=DATASET_FOLDER)
-        print("FETCHING")
     extractor = KaggleExtractor(file_input_path=DATASET_FOLDER, file_output_path=METADATA_FOLDER)
     uploader = JsonToDbUploader(file_input_path=METADATA_FOLDER)
 

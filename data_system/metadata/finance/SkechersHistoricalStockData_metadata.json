@@ -1,0 +1,33 @@
+{
+    "col_count": 7,
+    "col_names": [
+        "Date",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Adj Close",
+        "Volume"
+    ],
+    "description": "Shoes, every woman loves to buy many of them! This dataset contains historical stock data of Skechers. It is a famous brand; Skechers sells comfortable footwear for men, women, and children worldwide. The company was founded in 1992 and it is the 3rd largest footwear brand in the US. \n\nI retrieved this dataset with Skechers' historical stock prices from Yahoo Finance.  I picked a time period spanning from January 1st, 2000 until 2023. I update the dataset monthly. The dataset contains daily stock data: the open and closing price at which the stock began and ended trading, and the highest and lowest price at which the stock traded that day.\n\n\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "other",
+            "nameNullable": "other"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 40971,
+    "row_count": 5853,
+    "source": "kaggle",
+    "tags": [
+        "beginner",
+        "time series analysis",
+        "retail and shopping"
+    ],
+    "title": "Skechers Historical Stock Data",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/lydia70/skechers-historical-stock-data",
+    "usability": 1.0
+}

@@ -1,0 +1,34 @@
+{
+    "col_count": 6,
+    "col_names": [
+        "Company",
+        "Valuation(US$ billions)",
+        "Valuation date",
+        "Industry",
+        "Country/countries",
+        "Founder(s)"
+    ],
+    "description": "This is a list of unicorn startup companies. In finance, a unicorn is a privately held startup company with a current valuation of US$1 billion or more, across technology centers throughout the world.\n\nNotable lists of unicorn companies are maintained by The Wall Street Journal, Fortune Magazine, CNNMoney/CB Insights, TechCrunch, PitchBook/Morningstar, and Tech in Asia.\nthis dataset is collected from Wikipedia ",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 583,
+    "num_entries": 3810,
+    "row_count": 635,
+    "source": "kaggle",
+    "tags": [
+        "categorical",
+        "business",
+        "intermediate",
+        "data visualization",
+        "clustering"
+    ],
+    "title": "list of all unicorns",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/battle11king/list-of-all-unicorns",
+    "usability": 1.0
+}

@@ -1,0 +1,31 @@
+{
+    "col_count": 7,
+    "col_names": [
+        "Date",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume",
+        "Adj Close"
+    ],
+    "description": "# Context \n\nThe subject matter of this dataset explores Tesla's stock price from its initial public offering (IPO) to yesterday.\n\n\n# Content\nWithin the dataset one will encounter the following:\n\n1. The date - \"Date\"\n\n2. The opening price of the stock - \"Open\"\n\n3. The high price of that day - \"High\"\n\n4. The low price of that day - \"Low\"\n\n5. The closed price of that day - \"Close\"\n\n6. The amount of stocks traded during that day - \"Volume\"\n\n7. The stock's closing price that has been amended to include any distributions/corporate actions  that occurs before next days open - \"Adj[usted] Close\"\n\n# Acknowledgements\n\nThrough Python programming and checking Sentdex out, I acquired the data from Yahoo Finance. The time period represented starts from 06/29/2010 to 03/17/2017.\n\n# Inspiration\n\nWhat happens when the volume of this stock trading increases/decreases in a short and long period of time? What happens when there is a discrepancy between the adjusted close and the next day's opening price?",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "DbCL-1.0",
+            "nameNullable": "DbCL-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 11844,
+    "row_count": 1692,
+    "source": "kaggle",
+    "tags": [
+        "investing"
+    ],
+    "title": "Tesla Stock Price",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/rpaguirre/tesla-stock-price",
+    "usability": 0.8235294117647058
+}

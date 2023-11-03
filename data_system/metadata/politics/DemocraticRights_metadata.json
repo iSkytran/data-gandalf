@@ -1,0 +1,31 @@
+{
+    "col_count": 4,
+    "col_names": [
+        "Entity",
+        "Code",
+        "Year",
+        "Political regime"
+    ],
+    "description": "### Context\n\nhttps://ourworldindata.org/democratic-rights\n\n### Content\n\nDatas come from [https://ourworldindata.org/democratic-rights](https://ourworldindata.org/democratic-rights)\n\n### Acknowledgements\n\n![Democratic Rights](https://sajadbangash.files.wordpress.com/2015/08/wpid-unnamed-16-jpg.jpeg)\n\n### Inspiration\n\nFor example, you can represent by country and by period history the evolution of democratic rights.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 606,
+    "num_entries": 121132,
+    "row_count": 30283,
+    "source": "kaggle",
+    "tags": [
+        "history",
+        "business",
+        "politics",
+        "human rights"
+    ],
+    "title": "Democratic Rights",
+    "topic": "politics",
+    "url": "kaggle.com/datasets/mathurinache/democratic-rights",
+    "usability": 1.0
+}

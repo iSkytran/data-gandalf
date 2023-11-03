@@ -1,0 +1,55 @@
+{
+    "col_count": 29,
+    "col_names": [
+        "index",
+        "Unnamed: 0",
+        "American football",
+        "Baseball",
+        "Basketball",
+        "Bowling",
+        "Boxing",
+        "Cycling and Road Bicycle Racing",
+        "Fencing",
+        "Figure Skating",
+        "Golf",
+        "Horse Racing",
+        "Ice hockey",
+        "Indianapolis 500",
+        "Kayaking",
+        "Mixed martial arts",
+        "NASCAR",
+        "Other individual sports",
+        "Other motor sports",
+        "Other team sports",
+        "Skiing",
+        "Snowboarding",
+        "Soccer",
+        "Surfing",
+        "Swimming",
+        "Tennis",
+        "Track & Field",
+        "Wrestling",
+        "Grand Total"
+    ],
+    "description": "_____\n# Sports Illustrated Covers Through Time\n### Analyzing Popularity of Sports Through Time\nBy CrowdFlower [[source]](https://data.world/crowdflower)\n_____\n\n### About this dataset\n&gt; Welcome to Sports Illustrated Covers by Sport since 1955. This comprehensive dataset offers a closer look at the sports that have graced the cover of Sports Illustrated Magazine for over 60 years! Explore which sports have gained traction and popularity over the decades, tracking each sport's journey from its first appearance to present day. With 32000 data rows detailing American football, baseball, basketball, bowling, boxing, cycling and road bike racing, fencing, figure skating , golf , horse racing , ice hockey , Indianapolis 500, kayaking mixed martial arts NASCAR other motor sports other team sports skiing snowboarding soccer surfing swimming tennis track & field wrestling - this dataset has something for everyone from armchair athletes to seasoned pros! So what are you waiting for? Dive in deep and unlock the secrets behind these stunning Sports Illustrated covers today!\n\n### More Datasets\n&gt; For more datasets, click [here](https://www.kaggle.com/thedevastator/datasets).\n\n### Featured Notebooks\n&gt; - \ud83d\udea8 **Your notebook can be here!** \ud83d\udea8! \n\n### How to use the dataset\n\n### Research Ideas\n&gt; - Analyzing the changing trends of sports coverage in the media by looking at the number of Sports Illustrated covers over time. \n&gt; - Creating a visualization that plots out popular sports over time to show which have become increasingly important and/or less relevant in terms of media coverage. \n&gt; - Building a predictive model that can forecast future SI cover athletes and teams based on historic data sets, athletes popularity, and other sports-trends related factors\n\n### Acknowledgements\n&gt; If you use this dataset in your research, please credit the original authors.\n&gt; [Data Source](https://data.world/crowdflower)\n&gt; \n&gt;\n\n\n### License\n&gt; \n&gt; \n&gt; **Unknown License - Please check the dataset description for more information.**\n\n### Columns\n\n**File: SI-Cover-by-Sport-DFE.csv**\n| Column name                         | Description                                                                                             |\n|:------------------------------------|:--------------------------------------------------------------------------------------------------------|\n| **American football**               | Number of Sports Illustrated covers featuring American football from 1955-2015. (Integer)               |\n| **Baseball**                        | Number of Sports Illustrated covers featuring baseball from 1955-2015. (Integer)                        |\n| **Basketball**                      | Number of Sports Illustrated covers featuring basketball from 1955-2015. (Integer)                      |\n| **Bowling**                         | Number of Sports Illustrated covers featuring bowling from 1955-2015. (Integer)                         |\n| **Boxing**                          | Number of Sports Illustrated covers featuring boxing from 1955-2015. (Integer)                          |\n| **Cycling and Road Bicycle Racing** | Number of Sports Illustrated covers featuring cycling and road bicycle racing from 1955-2015. (Integer) |\n| **Fencing**                         | Number of Sports Illustrated covers featuring fencing from 1955-2015. (Integer)                         |\n| **Figure Skating**                  | Number of Sports Illustrated covers featuring figure skating from 1955-2015. (Integer)                  |\n| **Golf**                            | Number of Sports Illustrated covers featuring golf from 1955-2015. (Integer)                            |\n| **Horse Racing**                    | Number of Sports Illustrated covers featuring horse racing from 1955-2015. (Integer)                    |\n| **Ice hockey**                      | Number of Sports Illustrated covers featuring ice hockey from 1955-2015. (Integer)                      |\n| **Indianapolis 500**                | Number of Sports Illustrated covers featuring the Indianapolis 500 from 1955-2015. (Integer)            |\n| **Kayaking**                        | Number of Sports Illustrated covers featuring kayaking from 1955-2015. (Integer)                        |\n| **Mixed martial arts**              | Number of Sports Illustrated covers featuring mixed martial arts from 1955-2015. (Integer)              |\n| **NASCAR**                          | Number of Sports Illustrated covers featuring NASCAR from 1955-2015. (Integer)                          |\n| **Other motor sports**              | Number of Sports Illustrated covers featuring other motor sports from 1955-2015. (Integer)              |\n| **Other team sports**               | Number of Sports Illustrated covers featuring other team sports from 1955-2015. (Integer)               |\n| **Skiing**                          | Number of Sports Illustrated covers featuring skiing from 1955-2015. (Integer)                          |\n| **Snowboarding**                    | Number of Sports Illustrated covers featuring snowboarding from 1955-2015. (Integer)                    |\n| **Soccer**                          | Number of Sports Illustrated covers featuring soccer from 1955-2015. (Integer)                          |\n| **Surfing**                         | Number of Sports Illustrated covers featuring surfing from 1955-2015. (Integer)                         |\n| **Swimming**                        | Number of Sports Illustrated covers featuring swimming from 1955-2015. (Integer                         |\n\n### Acknowledgements\n&gt; If you use this dataset in your research, please credit the original authors.\n&gt; If you use this dataset in your research, please credit [CrowdFlower](https://data.world/crowdflower).\n\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "other",
+            "nameNullable": "other"
+        }
+    ],
+    "null_count": 881,
+    "num_entries": 1769,
+    "row_count": 61,
+    "source": "kaggle",
+    "tags": [
+        "popular culture",
+        "movies and tv shows",
+        "sports"
+    ],
+    "title": "Sports Illustrated Covers Through Time",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/thedevastator/sports-illustrated-covers-by-sport-1955-2015",
+    "usability": 0.9411764705882353
+}

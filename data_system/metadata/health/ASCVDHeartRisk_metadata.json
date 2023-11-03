@@ -1,0 +1,38 @@
+{
+    "col_count": 10,
+    "col_names": [
+        "isMale",
+        "isBlack",
+        "isSmoker",
+        "isDiabetic",
+        "isHypertensive",
+        "Age",
+        "Systolic",
+        "Cholesterol",
+        "HDL",
+        "Risk"
+    ],
+    "description": "### Context\n\nThere is a tool [Here](https://tools.acc.org/ascvd-risk-estimator-plus/#!/calculate/estimate/) that helps you calculate your risk. It gives some values and outputs the risk of heart attack which is called ASCVD. There are many cases in this dataset with their ASCVDs.\n\n\n### Advantages\n\nYou can evaluate yourself in training a Machine Learning model that predicts ASCVD without knowing about the main algorithm. Share your notebook to have a good practice for both of us.\n\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "copyright-authors",
+            "nameNullable": "copyright-authors"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 10000,
+    "row_count": 1000,
+    "source": "kaggle",
+    "tags": [
+        "health",
+        "intermediate",
+        "linear regression",
+        "tabular",
+        "heart conditions"
+    ],
+    "title": "ASCVD (Heart) Risk ",
+    "topic": "health",
+    "url": "kaggle.com/datasets/mokar2001/ascvd-heart-risk",
+    "usability": 1.0
+}

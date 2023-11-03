@@ -1,0 +1,56 @@
+{
+    "col_count": 27,
+    "col_names": [
+        "submission_id",
+        "submission_date",
+        "gender",
+        "age",
+        "geography",
+        "financial_situation",
+        "education",
+        "employment_status",
+        "submission_state",
+        "are_there_children_0_to_2_yrs_out_of_educational_system",
+        "were_children_3_to_17_yrs_enrolled_and_did_not_return_to_school",
+        "are_there_children_who_stopped_enrolling_in_primary_education",
+        "are_there_children_who_stopped_enrolling_in_secondary_education",
+        "are_children_attending_face_to_face_classes",
+        "can_children_observe_deterioration_of_basic_services_of_school",
+        "do_children_3_and_17_yrs_receive_regular_school_meals",
+        "are_there_teachers_at_scheduled_class_hours",
+        "are_children_3_to_17_yrs_dealing_with_irregular_school_activity",
+        "are_children_being_teached_by_unqualified_people",
+        "did_teachers_leave_the_educational_system",
+        "do_school_and_the_teachers_have_internet_connection",
+        "do_children_have_internet_connection",
+        "do_children_3_to_17_yrs_miss_virtual_class_due_to_lack_of_electricity",
+        "does_home_shows_severe_deficit_of_electricity",
+        "does_home_shows_severe_deficit_of_internet",
+        "do_children_3_to_17_yrs_miss_class_or_in_lower_grade",
+        "are_children_promoted_with_a_modality_different_from_formal_evaluation"
+    ],
+    "description": "Contains data crowdsourced from Venezuelans through the Premise Data mobile application. The survey is presented only once to users and aims to capture the impact of COVID-19 on children's education.\n\nData source : [https://data.humdata.org/dataset/open_one_time_covid_education_impact](https://data.humdata.org/dataset/open_one_time_covid_education_impact)",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "ODC Attribution License (ODC-By)",
+            "nameNullable": "ODC Attribution License (ODC-By)"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 119772,
+    "row_count": 4436,
+    "source": "kaggle",
+    "tags": [
+        "business",
+        "education",
+        "beginner",
+        "intermediate",
+        "data visualization",
+        "data analytics"
+    ],
+    "title": "COVID-19 Education Impact Survey",
+    "topic": "education",
+    "url": "kaggle.com/datasets/leventoz/covid19-education-impact-survey",
+    "usability": 0.9705882352941176
+}

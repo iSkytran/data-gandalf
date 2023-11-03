@@ -1,0 +1,36 @@
+{
+    "col_count": 8,
+    "col_names": [
+        "unit",
+        "isced97",
+        "hlth_pb",
+        "sex",
+        "age",
+        "time",
+        "geo",
+        "value"
+    ],
+    "description": "## Context\n\nData about access to education and training for persons with disability in Europe. Source is https://ec.europa.eu/eurostat/data/database (official European Data Source). Data is downloaded from the source. \n\n## Content\n\n### Original data\n\nThe original data (hlth_de040.tsv) is provided in TSV (tab delimited) format.\nUnit used is THS (thousands).\nData contains information about access to education and training for people with disability by country and year in Europe.\nThe time unit used are years. Geography is at country level (in Europe) .\n\nDisability levels present in the data are according to the European classification (that can be consulted at http://dd.eionet.europa.eu/vocabulary/eurostat/hlth_pb/view): \n\n* PB1040 - Difficulty in basic activities\n* PB1041 - No difficulty in basic activities  \n* PB1070 - Limitation in work caused by a health condition or difficulty in a basic activity  \n* PB1071 - No limitation in work caused by a health condition or difficulty in basic activities\n* TOTAL  \n\nEducation attainment levels are according to [ISCED-97 International classification](http://uis.unesco.org/sites/default/files/documents/international-standard-classification-of-education-1997-en_0.pdf).\n\n### Transformed data\n\nThe transformed data (`education_disabled_eu.csv`) is in csv format. The geographical data was pivoted using [Starter Kernel: Education Access for Disabled](https://www.kaggle.com/gpreda/starter-kernel-educaton-access-for-disabled) Kernel.\n\n## How to\n\nThe original data has the temporal information given as columns (per year). In order to further use this data, it would be more easy to pivot first these columns to get instead date/value pairs. This pivot operation, using `melt` from `pandas` is done in the starter kernel:\n* [Starter Kernel: Education Access for Disabled](https://www.kaggle.com/gpreda/starter-kernel-educaton-access-for-disabled) ;  we convert the year to an integer. Just run this Kernel to put the data in csv format, with yearly data pivoted.\n\n## Acknowledgements\n\nAll merit for data collection, curation, and initial publishing goes to [Eurostat](https://ec.europa.eu/eurostat/data/database).\n\n## Inspiration\n\nYou can use this data for various demographic, social, health conditions analysis about Europe, combining with alternative data from Kaggle and other sources.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 2890,
+    "num_entries": 111600,
+    "row_count": 13950,
+    "source": "kaggle",
+    "tags": [
+        "europe",
+        "education",
+        "beginner",
+        "tabular",
+        "health conditions"
+    ],
+    "title": "Access to Education of Disabled People in Europe ",
+    "topic": "education",
+    "url": "kaggle.com/datasets/gpreda/access-to-education-of-disabled-people-in-europe",
+    "usability": 1.0
+}

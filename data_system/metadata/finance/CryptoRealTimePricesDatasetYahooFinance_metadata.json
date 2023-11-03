@@ -1,0 +1,39 @@
+{
+    "col_count": 10,
+    "col_names": [
+        "Symbol",
+        "Name",
+        "Price (Intraday)",
+        "Change",
+        "% Change",
+        "Market Cap",
+        "Volume in Currency (Since 0:00 UTC)",
+        "Volume in Currency (24Hr)",
+        "Total Volume All Currencies (24Hr)",
+        "Circulating Supply"
+    ],
+    "description": "<img src=\"https://algotrading101.com/learn/wp-content/uploads/2020/06/yahoo-finance-api-guide.png\">\n\nThis dataset contains real-time prices of various cryptocurrencies that are listed on Yahoo Finance. The data has been collected from Yahoo Finance API and consists of 9,600 rows of data.\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 447,
+    "num_entries": 96190,
+    "row_count": 9619,
+    "source": "kaggle",
+    "tags": [
+        "business",
+        "data cleaning",
+        "data visualization",
+        "data analytics",
+        "tabular",
+        "currencies and foreign exchange"
+    ],
+    "title": "Crypto Real-Time Prices Dataset (Yahoo Finance)",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/azim069/yahoo-finance-crypto-real-time-prices-dataset",
+    "usability": 1.0
+}

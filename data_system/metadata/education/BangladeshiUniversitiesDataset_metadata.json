@@ -1,0 +1,36 @@
+{
+    "col_count": 8,
+    "col_names": [
+        "University",
+        "Acronym",
+        "Established",
+        "Location",
+        "Division",
+        "Specialization",
+        "Type",
+        "Ph.D. granting"
+    ],
+    "description": "The **Bangladeshi Universities Dataset** provides information on the geographical location, administrative division, field of specialization, type and Ph.D. granting status of various universities in Bangladesh.\n\nThe \"Location\" column in the dataset provides the geographic location of each university in Bangladesh. This information can be used to identify universities located in different parts of the country and to analyze the distribution of higher education institutions across the regions of Bangladesh.\n\nThe \"Division\" column categorizes each university according to its administrative division within Bangladesh. This information can be useful for studying the distribution of higher education institutions across the administrative regions of the country and identifying any regional disparities in access to higher education.\n\nThe \"Specialization\" column in the dataset identifies the fields of study that each university is known for. This information can be useful for students seeking admission to universities that offer programs in their areas of interest and for researchers studying the strengths and weaknesses of higher education institutions in Bangladesh.\n\nThe \"Type\" column categorizes each university as either public or private. This information can be used to analyze the distribution of public and private universities in Bangladesh and to compare the quality and accessibility of education offered by each type of institution.\n\nFinally, the \"Ph.D. granting\" column indicates whether each university offers doctoral programs or not. This information can be useful for students seeking advanced degrees and for researchers studying the availability and quality of doctoral education in Bangladesh.\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 1,
+    "num_entries": 1288,
+    "row_count": 161,
+    "source": "kaggle",
+    "tags": [
+        "universities and colleges",
+        "education",
+        "beginner",
+        "data analytics",
+        "english"
+    ],
+    "title": "Bangladeshi Universities Dataset",
+    "topic": "education",
+    "url": "kaggle.com/datasets/joyshil0599/bangladeshi-universities-dataset",
+    "usability": 1.0
+}

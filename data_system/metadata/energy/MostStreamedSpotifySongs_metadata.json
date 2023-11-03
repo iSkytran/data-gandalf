@@ -1,0 +1,53 @@
+{
+    "col_count": 24,
+    "col_names": [
+        "track_name",
+        "artist(s)_name",
+        "artist_count",
+        "released_year",
+        "released_month",
+        "released_day",
+        "in_spotify_playlists",
+        "in_spotify_charts",
+        "streams",
+        "in_apple_playlists",
+        "in_apple_charts",
+        "in_deezer_playlists",
+        "in_deezer_charts",
+        "in_shazam_charts",
+        "bpm",
+        "key",
+        "mode",
+        "danceability_%",
+        "valence_%",
+        "energy_%",
+        "acousticness_%",
+        "instrumentalness_%",
+        "liveness_%",
+        "speechiness_%"
+    ],
+    "description": "# Description :\n\n&gt; This dataset contains a comprehensive list of the most famous songs of 2023 as listed on Spotify. The dataset offers a wealth of features beyond what is typically available in similar datasets. It provides insights into each song's attributes, popularity, and presence on various music platforms. The dataset includes information such as **track name, artist(s) name, release date, Spotify playlists and charts, streaming statistics, Apple Music presence, Deezer presence, Shazam charts, and various audio features**.\n\n\n# Key Features:\n\n\n&gt;- **track_name**: *Name of the song*\n- **artist(s)_name**: *Name of the artist(s) of the song*\n- **artist_count**: *Number of artists contributing to the song*\n- **released_year**: *Year when the song was released*\n- **released_month**: *Month when the song was released*\n- **released_day**: *Day of the month when the song was released*\n- **in_spotify_playlists**: *Number of Spotify playlists the song is included in*\n- **in_spotify_charts**: *Presence and rank of the song on Spotify charts*\n- **streams**: *Total number of streams on Spotify*\n- **in_apple_playlists**: *Number of Apple Music playlists the song is included in*\n- **in_apple_charts**: *Presence and rank of the song on Apple Music charts*\n- **in_deezer_playlists**: *Number of Deezer playlists the song is included in*\n- **in_deezer_charts**: *Presence and rank of the song on Deezer charts*\n- **in_shazam_charts**: *Presence and rank of the song on Shazam charts*\n- **bpm**: *Beats per minute, a measure of song tempo*\n- **key**: *Key of the song*\n- **mode**: *Mode of the song (major or minor)*\n- **danceability_%**: *Percentage indicating how suitable the song is for dancing*\n- **valence_%**: *Positivity of the song's musical content*\n- **energy_%**: *Perceived energy level of the song*\n- **acousticness_%**: *Amount of acoustic sound in the song*\n- **instrumentalness_%**: *Amount of instrumental content in the song*\n- **liveness_%**: *Presence of live performance elements*\n- **speechiness_%**: *Amount of spoken words in the song*\n\n# Potential Use Cases:\n\n&gt;- **Music analysis:** Explore patterns in audio features to understand trends and preferences in popular songs.\n- **Platform comparison:** Compare the song's popularity across different music platforms.\n- **Artist impact:** Analyze how artist involvement and attributes relate to a song's success.\n- **Temporal trends:** Identify any shifts in music attributes and preferences over time.\n- **Cross-platform presence:** Investigate how songs perform across different streaming services.\n\nIf you find this dataset useful, your support through an upvote would be greatly appreciated \u2764\ufe0f\ud83d\ude42 <br>\nThank you",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "other",
+            "nameNullable": "other"
+        }
+    ],
+    "null_count": 145,
+    "num_entries": 22872,
+    "row_count": 953,
+    "source": "kaggle",
+    "tags": [
+        "music",
+        "education",
+        "computer science",
+        "exploratory data analysis",
+        "data visualization",
+        "classification"
+    ],
+    "title": "Most Streamed Spotify Songs 2023 ",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023",
+    "usability": 1.0
+}

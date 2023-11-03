@@ -1,0 +1,44 @@
+{
+    "col_count": 16,
+    "col_names": [
+        "name",
+        "date_of_event",
+        "age",
+        "citizenship",
+        "event_location",
+        "event_location_district",
+        "event_location_region",
+        "date_of_death",
+        "gender",
+        "took_part_in_the_hostilities",
+        "place_of_residence",
+        "place_of_residence_district",
+        "type_of_injury",
+        "ammunition",
+        "killed_by",
+        "notes"
+    ],
+    "description": "This dataset provides information on the individuals killed during the Israeli-Palestinian conflict since the second intifada, which began in September 2000. The data has been meticulously collected and investigated by B\u2019Tselem \u2013 The Israeli Information Center for Human Rights in the Occupied Territories. \n\nThe dataset includes statistics on all human beings \u2013 Palestinians, Israelis, and foreign nationals \u2013 who lost their lives during this conflict. It provides details such as name, age, citizenship, date of death, gender, participation in hostilities, place of residence, type of injury, ammunition used, and more.\n\n## Some Task Ideas:\n\n1. **Analyze Fatality Trends**: Explore the dataset and track the trends in fatalities over time. Identify any significant changes, spikes, or declines in the number of fatalities.\n2. **Demographic Analysis**: Conduct a demographic analysis by examining the age, gender, and citizenship of the individuals killed. Determine if there are any notable patterns or disparities in the data.\n3. **Geospatial Analysis**: Utilize the event location, district, and region information to perform geospatial analysis. Visualize the distribution of fatalities on a map and identify areas that have experienced higher levels of violence.\n4. **Hostilities Participation Analysis**: Investigate the extent of individuals' participation in hostilities before their deaths. Analyze the relationship between participation and the circumstances surrounding each fatality.\n5. **Injury Analysis**: Examine the types of injuries inflicted on individuals. Identify the most common types of injuries and assess their severity.\n6. **Weapons Used**: Analyze the ammunition and means by which the individuals were killed. Determine the most frequently used weapons or methods and evaluate their impact.\n7. **Victim Profiles**: Create profiles of the victims based on the available data such as age, gender, citizenship, and place of residence. Identify common characteristics among the victims.\n\n---\n\n&gt; Please note that the dataset contains sensitive information and focuses on the humanitarian aspect rather than taking any political stance.\n\n---\n\nIf you find this dataset valuable, don't forget to hit the upvote button! \ud83d\ude0a\ud83d\udc9d \n\n---\n\n## Related Datasets\n\n[Data on Palestinian Structures Israel Demolished](https://www.kaggle.com/datasets/asaniczka/data-on-palestinian-structures-israel-demolished/)\n\n[Daily Public Opinion on Israel-Palestine War](https://www.kaggle.com/datasets/asaniczka/reddit-on-israel-palestine-daily-updated)\n\n---\n\nPhoto by [Levi Meir Clancy](https://unsplash.com/@levimeirclancy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/LheHIV3XpGM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 7539,
+    "num_entries": 177984,
+    "row_count": 11124,
+    "source": "kaggle",
+    "tags": [
+        "military",
+        "politics",
+        "data analytics",
+        "social issues and advocacy",
+        "middle east"
+    ],
+    "title": "Fatalities in the Israeli-Palestinian Conflict",
+    "topic": "politics",
+    "url": "kaggle.com/datasets/asaniczka/fatalities-in-the-israeli-palestinian-conflict",
+    "usability": 1.0
+}

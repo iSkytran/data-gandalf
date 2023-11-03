@@ -1,0 +1,33 @@
+{
+    "col_count": 8,
+    "col_names": [
+        "Unnamed: 0",
+        "Date",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Adj Close",
+        "Volume"
+    ],
+    "description": "### Context\n\nThis Data set Contains the values of Stock of Amazon which dates between 15 July ,2019 to 15 July,2020\n\n\n### Content\n\nThe Data set contains 7 different columns that includes Date, The opening value of the stock, the closing value of stock, volume and a few other things necessary to make predictions.\n\n\n### Acknowledgements\n\nThis data was scraped from Yahoo finance and you can also use their API to access the data.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 23,
+    "num_entries": 2000,
+    "row_count": 250,
+    "source": "kaggle",
+    "tags": [
+        "business",
+        "investing"
+    ],
+    "title": "Reliance Stock Data[Jul 2019 - Jul 2020]",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/aayushmishra1512/reliance-stock-datajul-2019-jul-2020",
+    "usability": 1.0
+}

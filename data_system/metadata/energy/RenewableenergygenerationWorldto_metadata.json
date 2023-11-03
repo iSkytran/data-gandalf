@@ -1,0 +1,32 @@
+{
+    "col_count": 7,
+    "col_names": [
+        "Entity",
+        "Code",
+        "Year",
+        "Hydropower (terawatt-hours)",
+        "Solar (terawatt-hours)",
+        "Wind (terawatt-hours)",
+        "Other renewables (terawatt-hours)"
+    ],
+    "description": "Renewable energy sources like hydropower, solar, wind, geothermal and modern biofuel production for all the countries from the year 1965 to 2018\n\nThe source of the data http://www.bp.com/statisticalreview",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 1060,
+    "num_entries": 35637,
+    "row_count": 5091,
+    "source": "kaggle",
+    "tags": [
+        "energy",
+        "renewable energy"
+    ],
+    "title": "Renewable energy generation, World, 1965 to 2018",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/khadeejahalghadeer/renewable-energy-generation-world-1965-to-2018",
+    "usability": 0.6764705882352942
+}

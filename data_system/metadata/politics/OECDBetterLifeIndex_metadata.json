@@ -1,0 +1,53 @@
+{
+    "col_count": 25,
+    "col_names": [
+        "Country",
+        "Dwellings without basic facilities as pct",
+        "Housing expenditure as pct",
+        "Rooms per person as rat",
+        "Household net adjusted disposable income in usd",
+        "Household net financial wealth in usd",
+        "Labour market insecurity as pct",
+        "Employment rate as pct",
+        "Long-term unemployment rate as pct",
+        "Personal earnings in usd",
+        "Quality of support network as pct",
+        "Educational attainment as pct",
+        "Student skills as avg score",
+        "Years in education in yrs",
+        "Air pollution in ugm3",
+        "Water quality as pct",
+        "Stakeholder engagement for developing regulations as avg score",
+        "Voter turnout as pct",
+        "Life expectancy in yrs",
+        "Self-reported health as pct",
+        "Life satisfaction as avg score",
+        "Feeling safe walking alone at night as pct",
+        "Homicide rate as rat",
+        "Employees working very long hours as pct",
+        "Time devoted to leisure and personal care in hrs"
+    ],
+    "description": "### Content\n\nThis is the Better Life Index for 2017 gathered from the OECD stats page. Grouping labels have been removed and the row for units of measurment for each column has been removed with the units added to the end of each column label as such: (Percentage: 'as pct'; Ratio: 'as rat'; US Dollar: 'in usd'; Average score: 'as avg score'; Years: 'in years'; Micrograms per cubic metre: 'in ugm3'; Hours: 'in hrs'). Also, although included in the report, Brazil, Russia, and South Africa are non-OECD economies at the time of reporting\n\n### Acknowledgements\n\nOECD stats page\nFor full index and others please visit: http://stats.oecd.org/Index.aspx?DataSetCode=BLI",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 975,
+    "row_count": 39,
+    "source": "kaggle",
+    "tags": [
+        "government",
+        "politics",
+        "demographics",
+        "international relations",
+        "investing"
+    ],
+    "title": "OECD Better Life Index 2017",
+    "topic": "politics",
+    "url": "kaggle.com/datasets/jej13b/oecd-better-life-index",
+    "usability": 0.7058823529411765
+}

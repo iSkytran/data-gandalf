@@ -1,0 +1,40 @@
+{
+    "col_count": 15,
+    "col_names": [
+        "Player Name",
+        "Team-name",
+        "Age",
+        "Position",
+        "App",
+        "MinP",
+        "Goals",
+        "Assist",
+        "YC",
+        "RC",
+        "SPG",
+        "PS%",
+        "AW",
+        "MOTM",
+        "Rating"
+    ],
+    "description": "This dataset provides detailed player statistics for the 2022-2023 La Liga season, including player names, team affiliations, goals, assists, appearances, yellow and red cards, shots per game, pass accuracy, and ratings. Uploading this data on Kaggle will allow users to easily analyze and compare player performance across the league, as well as develop models for predicting future outcomes. This dataset is a valuable resource for football analysts, sports enthusiasts, and anyone interested in the performance of La Liga players.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 1840,
+    "num_entries": 8130,
+    "row_count": 542,
+    "source": "kaggle",
+    "tags": [
+        "football",
+        "sports"
+    ],
+    "title": "La Liga Player Status  Season 2022-2023",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/rayhan32/la-liga-player-status-season-2022-2023",
+    "usability": 1.0
+}

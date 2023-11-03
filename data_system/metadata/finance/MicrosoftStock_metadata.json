@@ -1,0 +1,33 @@
+{
+    "col_count": 7,
+    "col_names": [
+        "Date",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Adj Close",
+        "Volume"
+    ],
+    "description": "### Context\n\nThis dataset is the one I used to train my Support Vector Regression and Linear Regression models for my data science unit at University. It's an extremely small dataset as I only used the amount of data I needed to train my predictive models. \n\nYou can find all the data at Yahoo Finance! here: https://finance.yahoo.com/quote/MSFT/history\n\n\n### Content\n\nDate: Date of stock information.\nOpen: Opening price.\nHigh: Highest price.\nLow: Lowest price.\nClose: Closing price.\nAdj Close: Closing price after adjustments for all applicable splits and dividend distributions.\nVolume: Amount of stock.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 140,
+    "row_count": 20,
+    "source": "kaggle",
+    "tags": [
+        "earth and nature",
+        "business",
+        "investing"
+    ],
+    "title": "Microsoft-Stock",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/pauldavidjarvis/microsoft-stock",
+    "usability": 1.0
+}

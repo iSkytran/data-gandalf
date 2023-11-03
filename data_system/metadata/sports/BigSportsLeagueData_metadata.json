@@ -1,0 +1,50 @@
+{
+    "col_count": 47,
+    "col_names": [
+        "team",
+        "W",
+        "L",
+        "W-L%",
+        "GB",
+        "year",
+        "League",
+        "W/L%",
+        "PS/G",
+        "PA/G",
+        "SRS",
+        "DSRS",
+        "MoV",
+        "OSRS",
+        "PA",
+        "PD",
+        "PF",
+        "SoS",
+        "T",
+        "GP",
+        "OL",
+        "PTS",
+        "PTS%",
+        "GF",
+        "GA",
+        "SOS",
+        "RPt%",
+        "ROW"
+    ],
+    "description": "",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 80,
+    "num_entries": 8235,
+    "row_count": 683,
+    "source": "kaggle",
+    "tags": [],
+    "title": "Big4 Sports League Data",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/malayparmar/big4-sports-league-data",
+    "usability": 0.29411764705882354
+}

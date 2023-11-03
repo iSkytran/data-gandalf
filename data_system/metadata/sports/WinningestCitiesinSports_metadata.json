@@ -1,0 +1,47 @@
+{
+    "col_count": 26,
+    "col_names": [
+        "index",
+        "key",
+        "values",
+        "population",
+        "seasons",
+        "metro",
+        "seasonArray",
+        "teamArray",
+        "level_0",
+        "year",
+        "level",
+        "sport",
+        "winner",
+        "winner_metro",
+        "runner_up",
+        "runner_up_metro",
+        "final_four3",
+        "final_four3_metro",
+        "final_four4",
+        "final_four4_metro"
+    ],
+    "description": "_____\n# Winningest Cities in Sports\n### Professional and NCAA Titles, 1870-2018\nBy data.world's Admin [[source]](https://data.world/dataworldadmin)\n_____\n\n### About this dataset\n> This dataset contains the key information about some of the most prominent titletowns in North American professional and NCAA sports. It is a comprehensive collection of team and city data, including information about champions, runners-up, final four appearances, seasons competed in and other valuable insights. Analyzing this data can provide an inside look into why certain cities become titletowns through athletic success. This dataset sheds light on different eras, trends and milestones that demonstrate how sports have shaped our culture across time. With this data you can identify patterns over time to see which cities have been successful or which franchises have had a consistent presence throughout various leagues and eras. The data also offers perspective on how different players, teams or locals have contributed to achieving these titles and creating a standout sporting culture within their city or region\n\n### More Datasets\n> For more datasets, click [here](https://www.kaggle.com/thedevastator/datasets).\n\n### Featured Notebooks\n> - \ud83d\udea8 **Your notebook can be here!** \ud83d\udea8! \n\n### How to use the dataset\n> This dataset provides comprehensive information about the winningest cities in North American professional and NCAA sports. It includes details on the teams, sport, titles, finals, and final fours of each city based on data collected from 1920 to 2018. With this dataset, you can analyze the success of different cities living in North America and identify how many titles they have won over the years.\n>  \n> **Step 1:** Look at the data fields included in this dataset. The columns include key (unique identifier for each city), values (array of objects containing info about teams from that city), population (population of that city), seasons (array with information about seasons in which teams from th city competed), level_0 (index for each row), year (year of championship), sport (sport of championships), winner (winning team for each championship season), winner_metro(metro area for winning team) runner_up(runner up team for each cahmpionship season) runner_up_metro( me tro area fpr runner up tema) finalfour3( thirdteam itnhfinal four championship session) fiNalfour3Metroc maxotityfiegddamnssfnfore34ampxshipsd asfkvq8nearnaeffinalfoumdfvrmaxorityedteamder7thmcffinlafoursesson ) dfiniatfdovrfour4emtroeeramomnea afinthffonfe4 darmotionihffidftoamoeduaraofeimtdyivmpalityasp  icratttintThif5tmReBaayYOergucfienPlpouorrliainfnashinipitons .\n> \n> \n> **Step 2:** For a deeper analysis look into a specific title count by year using filters or search through single rows like those included in \u2018case2\u2019 json file to see detailed info regarding objects inside \u2018teamArray\u2019 where you can find out more information such as team name ,sport or league as well as array with titles etcetera. You can also use \u2018seasons\u2019 field contained inside case2 json files to look into years and list down all competing teams under that particular season giving us a better understanding which countries/teams were competing against one another over that period. \n>   \n> **Step 3:** To make comparison easier between cities don't forget to include metro area filters when searching otherwise you might not get\n\n### Research Ideas\n> - The dataset can be used to create an interactive web-based map showing the winningest cities in North American professional and NCAA sports by year. For example, users could hover over a city to see its total number of titles won, which sports it was won in, and details about the teams that won them. \n> - Data from this dataset can be used to publish a list of all-time greatest teams in each sport from North American professional and NCAA sports. This can then be filtered by metro area or city for an even deeper perspective into the greatest sporting franchises across North America over time. \n> - The dataset could also be used to compare titles won between different cities within one year, allowing people to look at two (or more) cities simultaneously and gain insight into how they fared competitively on each other in that season across all their respective sports championships/titles\n\n### Acknowledgements\n> If you use this dataset in your research, please credit the original authors.\n> [Data Source](https://data.world/dataworldadmin)\n> \n>\n\n\n### License\n> \n> \n> See the dataset description for more information.\n\n### Columns\n\n**File: case1.csv**\n| Column name    | Description                                                                                |\n|:---------------|:-------------------------------------------------------------------------------------------|\n| **key**        | Unique identifier for each city. (String)                                                  |\n| **values**     | Array of objects containing information about the teams in a city. (Array)                 |\n| **population** | Population of a city. (Integer)                                                            |\n| **seasons**    | Array of objects containing information about seasons competed by teams in a city. (Array) |\n\n_____\n\n**File: titles.csv**\n| Column name           | Description                           |\n|:----------------------|:--------------------------------------|\n| **level_0**           | Index number (Integer)                |\n| **year**              | Year of championship (Integer)        |\n| **sport**             | Sport being played (String)           |\n| **winner**            | Winning team (String)                 |\n| **winner_metro**      | Metro area of winning team (String)   |\n| **runner_up**         | Runner-up team (String)               |\n| **runner_up_metro**   | Metro area of runner-up team (String) |\n| **final_four3**       | Third team in final four (String)     |\n| **final_four3_metro** | Metro area of third team (String)     |\n| **final_four4**       | Fourth team (String)                  |\n| **final_four4_metro** | Metro area fourths fourth (String)    |\n\n### Acknowledgements\n> If you use this dataset in your research, please credit the original authors.\n> If you use this dataset in your research, please credit [data.world's Admin](https://data.world/dataworldadmin).\n\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "other",
+            "nameNullable": "other"
+        }
+    ],
+    "null_count": 1660,
+    "num_entries": 17322,
+    "row_count": 2010,
+    "source": "kaggle",
+    "tags": [
+        "football",
+        "baseball",
+        "basketball",
+        "sports"
+    ],
+    "title": "Winningest Cities in Sports",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/thedevastator/winningest-cities-in-sports",
+    "usability": 0.9411764705882353
+}

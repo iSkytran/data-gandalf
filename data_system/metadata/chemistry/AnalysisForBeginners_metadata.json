@@ -1,0 +1,34 @@
+{
+    "col_count": 10,
+    "col_names": [
+        "Names",
+        "Mathematics",
+        "English",
+        "Physics",
+        "Chemistry",
+        "Biology",
+        "Economics",
+        "Computer std",
+        "Governmnet",
+        "Total"
+    ],
+    "description": "",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "copyright-authors",
+            "nameNullable": "copyright-authors"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 190,
+    "row_count": 19,
+    "source": "kaggle",
+    "tags": [
+        "earth and nature"
+    ],
+    "title": "Analysis For Beginners",
+    "topic": "chemistry",
+    "url": "kaggle.com/datasets/austinotutu/analysis-for-beginners",
+    "usability": 0.4117647058823529
+}

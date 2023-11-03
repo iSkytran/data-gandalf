@@ -1,0 +1,32 @@
+{
+    "col_count": 5,
+    "col_names": [
+        "date",
+        "open",
+        "high",
+        "low",
+        "close"
+    ],
+    "description": "**Title**:  \n`VIX (^VIX) Historical Data from Yahoo Finance`\n`Daily historical data for the VIX (^VIX) from 2000 to TODAY`\n\n**Description**:  \nThis dataset contains the historical daily prices of the Volatility Index, VIX (^VIX), sourced from Yahoo Finance using the `yfinance` library. The data spans from the start of the year 2000 until TODAY.\n\n**Introduction**:  \nThe VIX Index, colloquially known as the \"fear index\", measures the market's expectation of volatility over the next 30 days. This dataset provides daily data on the VIX, offering insights into market perceptions of future volatility. It's especially valuable for financial analysts, traders, and researchers seeking to understand market dynamics, evaluate potential risks, or craft trading strategies.\n\n**File Contents**:\n\n- `vix_data.csv`: Contains the daily open, high, low, close prices, and volume for the VIX.\n\n**Column Descriptions**:\n\n- `date`: The date for the recorded data in the format YYYY-MM-DD.\n- `open`: The opening price of the VIX for the given date.\n- `high`: The highest price of the VIX during the trading session.\n- `low`: The lowest price of the VIX during the trading session.\n- `close`: The closing price of the VIX for the given date.\n- `volume`: The number of shares traded during the session.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 42630,
+    "row_count": 8526,
+    "source": "kaggle",
+    "tags": [
+        "business",
+        "finance",
+        "investing",
+        "news"
+    ],
+    "title": "VIX (CBOE Volatility Index) Daily Updated",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/guillemservera/vix-cboe-volatility-index-daily-updated",
+    "usability": 1.0
+}

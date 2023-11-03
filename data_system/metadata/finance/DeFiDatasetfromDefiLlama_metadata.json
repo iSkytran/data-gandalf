@@ -1,0 +1,21 @@
+{
+    "description": "### Context\n\nDecentralized Finance (DeFi) is gaining momentum day by day and a number of Defi protocols are coming up everyday. [DefiLlama](https://defillama.com/) does a great job of capturing all the data related to Defi and open sourcing the same for us to analyze and use. \n\n\n### Content\n\nDetails about different defi protocols, the chains they belong to, total value locked etc are present in this dataset at daily basis.\n\n\n### Acknowledgements\n\n[DefiLlama](https://defillama.com/) is the one who made this dataset and I am just publishing it here for ease of analysis.\n\nPhoto Credits: Photo by <a href=\"https://unsplash.com/@theshubhamdhage?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Shubham Dhage</a> on <a href=\"https://unsplash.com/s/photos/decentralized?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Unsplash</a>\n  \n\n\n### Inspiration\n\nSome questions are\n1. Which DeFi protocols are gaining momentum?\n2. Which chains are gaining prominence in the DeFi space?\n3. Change in TVL value over time at protocol / chain level?",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "copyright-authors",
+            "nameNullable": "copyright-authors"
+        }
+    ],
+    "source": "kaggle",
+    "tags": [
+        "business",
+        "finance",
+        "tabular",
+        "currencies and foreign exchange"
+    ],
+    "title": "DeFi Dataset from DefiLlama",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/sudalairajkumar/defi-dataset-from-defillama",
+    "usability": 0.9375
+}

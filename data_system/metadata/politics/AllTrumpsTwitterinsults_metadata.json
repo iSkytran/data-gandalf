@@ -1,0 +1,32 @@
+{
+    "col_count": 5,
+    "col_names": [
+        "Unnamed: 0",
+        "date",
+        "target",
+        "insult",
+        "tweet"
+    ],
+    "description": "As a political figure, Donald J. Trump used Twitter to praise, to cajole, to entertain, to lobby, to establish his version of events \u2014 and, perhaps most notably, to amplify his scorn. This list documents the verbal attacks Mr. Trump posted on Twitter, from when he declared his candidacy in June 2015 to Jan. 8, when Twitter permanently barred him.\n\nBased on an analysis of tweets since Mr. Trump declared his candidacy for president, on June 16, 2015. Retweets are not included. Some names may be omitted. This was first published in 2016; some of the people insulted have since died, and some people\u2019s titles or public roles have changed.\nSource: Trump Twitter Archive\n\nThis dataset has been extracted from [The New York Times](https://www.nytimes.com/interactive/2021/01/19/upshot/trump-complete-insult-list.html).",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 2,
+    "num_entries": 51800,
+    "row_count": 10360,
+    "source": "kaggle",
+    "tags": [
+        "politics",
+        "social science",
+        "internet",
+        "online communities"
+    ],
+    "title": "All Trump's Twitter insults (2015-2021)",
+    "topic": "politics",
+    "url": "kaggle.com/datasets/ayushggarg/all-trumps-twitter-insults-20152021",
+    "usability": 1.0
+}

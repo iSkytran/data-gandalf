@@ -1,0 +1,46 @@
+{
+    "col_count": 21,
+    "col_names": [
+        "\u00ef\u00bb\u00bfYear",
+        "Energy from renewable & waste sources",
+        "Total energy consumption of primary fuels and equivalents",
+        "Fraction from renewable sources and waste",
+        "Hydroelectric power",
+        "Wind, wave, tidal",
+        "Solar photovoltaic",
+        "Geothermal aquifers",
+        "Landfill gas",
+        "Sewage gas",
+        "Biogas from autogen",
+        "Municipal solid waste (MSW)",
+        "Poultry litter",
+        "Straw",
+        "Wood",
+        "Charcoal",
+        "Liquid bio-fuels",
+        "Bioethanol",
+        "Biodiesel",
+        "Biomass",
+        "Cross-boundary Adjustment"
+    ],
+    "description": "&gt; ###*\"The future is green energy, sustainability, renewable energy\"* - [Arnold Schwarzenegger](https://www.bbc.co.uk/news/av/world-us-canada-17863391), 2012\n\n#Context\n\nRenewable energy is essential for reducing carbon emissions and mitigating climate change. Additionally, renewable energy\n\n- improves public health\n- creates jobs\n- ensures energy security through diversification\n- stabilises energy prices\n\nThe importance of moving away from fossil fuels and towards renewable sources cannot be understated. As such, this dataset tracks the growth of the UK's renewable sector from 1990 to 2020.\n\n#Content\n\nThis dataset details the consumption of energy from 17 different renewable and waste sources from 1990 to 2020. It contains the energy use from each source individually as well as the total consumption. It also contains the total energy consumption from primary fuels and therefore the very useful metric: % of consumption from renewables!\n\nUnits: The unit of energy used in this dataset is the [megatonne of oil equivalent (mtoe)](https://energyeducation.ca/encyclopedia/Tonne_of_oil_equivalent#:~:text=on%20the%20toe-,Mtoe,a%20tremendous%20amount%20of%20energy.) . For context 1 mtoe = 42 petajoules (42 x 10^15 J)\n\n#Dataset Notes\n\n- Wind includes wave and tidal from 2000\n- Cross-boundary adjustment includes use by UK residents abroad and excludes by foreign residents in UK territory. It applies to bioethanol and biodiesel.\n- All figures are reported to 3 decimal places. Total figures are based on raw data and therefore may not sum due to rounding. \n\n#Acknowledgements\n\nThis data is from Ricardo Energy and Environment, [Office for National Statistics (ONS)](https://www.ons.gov.uk/) and was downloaded from [here](https://www.ons.gov.uk/economy/environmentalaccounts/datasets/ukenvironmentalaccountsenergyconsumptionfromrenewableandwastesources) on 9 October 2022.\n\nThe dataset's release date was 9 June 2022.\n\nThe dataset is licensed under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) according to [ONS](https://www.ons.gov.uk/census/2001censusandearlier/dataandproducts/copyrightandlicensing/licenseinformation).\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "other",
+            "nameNullable": "other"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 651,
+    "row_count": 31,
+    "source": "kaggle",
+    "tags": [
+        "renewable energy",
+        "tabular"
+    ],
+    "title": "UK Renewable Energy Consumption Dataset",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/magnussesodia/uk-renewable-energy-production",
+    "usability": 1.0
+}

@@ -1003,7 +1003,7 @@ COPY public.dataset (id, topic, title, description, source, url, tags, licenses,
 -- Name: dataset_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.dataset_id_seq', 948, true);
+SELECT pg_catalog.setval('public.dataset_id_seq', 955, true);
 
 
 --

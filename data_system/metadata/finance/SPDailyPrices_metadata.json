@@ -1,0 +1,30 @@
+{
+    "col_count": 2,
+    "col_names": [
+        "date",
+        "close"
+    ],
+    "description": "### Context\nIt is surprisingly hard to find **Daily price data for S&P500** index that goes back more than a few years. Most public data only goes back to the 2000's , or if it's longer term, is weekly frequency instead of daily. So I have compiled this dataset containing **Daily Closing Prices** for the **SPY** going from **1986 to 2018**. \n\n\n### Content\nThe dataset is simple - a CSV format with one column with a daily **timestamp** and the second with the raw, un-adjusted **closing prices** for each day.\n\n\n### Inspiration\n\nWith this longer term, more granular time series dataset, researchers now have a good sized publicly available financial dataset to explore time series trends or use as part of a quantitative finance project.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 16384,
+    "row_count": 8192,
+    "source": "kaggle",
+    "tags": [
+        "business",
+        "finance",
+        "economics",
+        "investing",
+        "news"
+    ],
+    "title": "S&P500 Daily Prices 1986 - 2018",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/pdquant/sp500-daily-19862018",
+    "usability": 0.8235294117647058
+}

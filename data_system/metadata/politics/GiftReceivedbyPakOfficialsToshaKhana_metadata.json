@@ -1,0 +1,37 @@
+{
+    "col_count": 9,
+    "col_names": [
+        "Detail of Gifts",
+        "Item Category",
+        "Name of Recipient",
+        "Affiliation",
+        "Date",
+        "Assessed Value",
+        "Retention Cost",
+        "Retained",
+        "Remarks"
+    ],
+    "description": "A country official receives certain gifts from other countries on his visit. Different countries have different policies for these gifts. It is actually state-owned property but in Pakistan, the policy for these gifts is that an official can take this gift by paying a certain percentage of money otherwise it will be auctioned.\n\nThe Data Released by Cabinet Division of Pakistan.\nThe political affiliation was also added and the cost of gifts is in PKR/=.\n \n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "other",
+            "nameNullable": "other"
+        }
+    ],
+    "null_count": 2924,
+    "num_entries": 37926,
+    "row_count": 4214,
+    "source": "kaggle",
+    "tags": [
+        "asia",
+        "government",
+        "politics",
+        "data cleaning",
+        "statistical analysis"
+    ],
+    "title": "Gift Received by Pak Officials 2002-22 Tosha Khana",
+    "topic": "politics",
+    "url": "kaggle.com/datasets/abdullahshahzad12345/ref-tk-data-02-to-22",
+    "usability": 1.0
+}

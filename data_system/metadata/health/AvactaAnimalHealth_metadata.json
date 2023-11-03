@@ -1,0 +1,31 @@
+{
+    "col_count": 6,
+    "col_names": [
+        "Dog",
+        "Breed",
+        "Age",
+        "Result1",
+        "Result2",
+        "Result3"
+    ],
+    "description": "This dataset and associated kernel(s) are part of the blog series **Understanding Veterinary Papers - A Data and Statistics Perspective** which can be found [here](https://www.avactaanimalhealth.com/news/understanding-veterinary-papers-a-data-and-statistics-perspective-part-1/)",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 300,
+    "row_count": 50,
+    "source": "kaggle",
+    "tags": [
+        "healthcare",
+        "biology"
+    ],
+    "title": "Avacta Animal Health",
+    "topic": "health",
+    "url": "kaggle.com/datasets/tentotheminus9/avacta-animal-health",
+    "usability": 0.7058823529411765
+}

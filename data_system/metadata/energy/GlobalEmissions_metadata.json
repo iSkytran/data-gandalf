@@ -1,0 +1,38 @@
+{
+    "col_count": 9,
+    "col_names": [
+        "Unnamed: 0",
+        "region",
+        "country",
+        "emissions",
+        "type",
+        "segment",
+        "reason",
+        "baseYear",
+        "notes"
+    ],
+    "description": "## Context\nMethane is responsible for around 30% of the rise in global temperatures since the Industrial Revolution, and rapid and sustained reductions in methane emissions are key to limiting near-term global warming and improving air quality. The energy sector \u2013 including oil, natural gas, coal and bioenergy \u2013 accounts for nearly 40% of methane emissions from human activity.\n \n## Content\nThe following dataset has information about methane gas emissions globally. Details about the columns are as follows:\n1. region - \n2. country - Country of Emission.\n3. emissions - Methane Emissions in kt.\n4. type - Sector from which emissions occur.\n5.  Segment- Sub-sector from which emissions occur.\n6. reason - The reason for the emission.\n7. baseYear - Base year for the tracking of emissions.\n8. notes - The source of data",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 13932,
+    "row_count": 1548,
+    "source": "kaggle",
+    "tags": [
+        "global",
+        "earth and nature",
+        "energy",
+        "exploratory data analysis",
+        "data visualization",
+        "clustering"
+    ],
+    "title": "Global Emissions.",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/ashishraut64/global-methane-emissions",
+    "usability": 1.0
+}

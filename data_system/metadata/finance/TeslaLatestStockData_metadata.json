@@ -1,0 +1,34 @@
+{
+    "col_count": 7,
+    "col_names": [
+        "Date",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Adj Close",
+        "Volume"
+    ],
+    "description": "Tesla, Inc. is an American electric vehicle and clean energy company based in Palo Alto, California. Tesla's current products include electric cars, battery energy storage from home to grid-scale, solar products, and related products and services. \nHere is the Latest stock data of Tesla till 2020.\n\nThis data is compiled from [Yahoo Finance](https://finance.yahoo.com/).",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "copyright-authors",
+            "nameNullable": "copyright-authors"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 18053,
+    "row_count": 2579,
+    "source": "kaggle",
+    "tags": [
+        "business",
+        "economics",
+        "automobiles and vehicles",
+        "investing"
+    ],
+    "title": "Tesla Latest Stock Data (2010 - 2020)",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/salehahmedrony/tesla-latest-stock-data-2010-2020",
+    "usability": 1.0
+}

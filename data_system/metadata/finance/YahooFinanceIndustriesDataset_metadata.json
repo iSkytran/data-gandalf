@@ -1,0 +1,31 @@
+{
+    "col_count": 6,
+    "col_names": [
+        "Symbol",
+        "Name",
+        "Price",
+        "Change",
+        "market cap",
+        "PE_ratio"
+    ],
+    "description": "<img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO20g5cBn_b3UvD4HrPSKMrujGXq8LfT2NQP3LC3F3k8ufSV6TP97l7Har-625Bju08bc&usqp=CAU\" alt=\"File:Yahoo Finance Logo 2013.svg - Wikipedia\">\n\n**Yahoo! Finance is a media property that is part of the Yahoo! network. It provides financial news, data and commentary including stock quotes, press releases, financial reports, and original content. It also offers some online tools for personal finance management. In addition to posting partner content from other web sites, it posts original stories by its team of staff journalists. It is ranked 20th by Similar Web on the list of largest news and media websites.**\n\n\n## Description: This dataset contains financial information for companies listed on major stock exchanges around the world, as provided by Yahoo Finance. The data covers a range of industries and includes key financial metrics such as price, volume, market capitalization, P/E ratio, and more.\n### \n```python\n1.Content:\n2.Symbol:\n3.Name:\n4.Price:  \n5.Volume:  \n6.Market cap:  \n7.P/E ratio:\n```\n\nThe data is sourced from Yahoo Finance and is updated daily, providing users with the most up-to-date financial information for each company listed.\n\n`The dataset is suitable for anyone interested in analyzing or predicting stock market trends and is particularly useful for financial analysts, investors, and traders.`",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "other",
+            "nameNullable": "other"
+        }
+    ],
+    "null_count": 15,
+    "num_entries": 7500,
+    "row_count": 1250,
+    "source": "kaggle",
+    "tags": [
+        "business",
+        "finance"
+    ],
+    "title": "Yahoo Finance - Industries - Dataset",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/belayethossainds/yahoo-finance-industries-dataset",
+    "usability": 1.0
+}

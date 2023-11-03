@@ -1,0 +1,33 @@
+{
+    "col_count": 7,
+    "col_names": [
+        "\u00ef\u00bb\u00bfSeason",
+        "Location",
+        "Round/Stage",
+        "Obstacle Name",
+        "Obstacle Order",
+        "Unnamed: 5",
+        "Unnamed: 6"
+    ],
+    "description": "",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 1883,
+    "num_entries": 6328,
+    "row_count": 904,
+    "source": "kaggle",
+    "tags": [
+        "movies and tv shows",
+        "water sports",
+        "sports"
+    ],
+    "title": " American Ninja Warrior Obstacles (CSV)",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/haidermasood/american-ninja-warrior-obstacles-csv",
+    "usability": 0.5882352941176471
+}

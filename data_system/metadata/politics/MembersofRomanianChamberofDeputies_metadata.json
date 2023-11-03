@@ -1,0 +1,30 @@
+{
+    "col_count": 5,
+    "col_names": [
+        "Name",
+        "Constituency",
+        "Party",
+        "Note",
+        "Legislature"
+    ],
+    "description": "## Content\n\nList of members of Chamber of Deputies of Romania in 2016-2020 and 2020-2024.\n\n## Collection\n\nScrapped from 2 Wikipedia pages:\n- https://en.wikipedia.org/wiki/List_of_members_of_the_Chamber_of_Deputies_of_Romania_(2016%E2%80%932020)  \n- https://en.wikipedia.org/wiki/List_of_members_of_the_Chamber_of_Deputies_of_Romania_(2020%E2%80%932024)\n\n## Inspiration\n\nAnalyze the distribution of chairs per political party in the 2 legislatures (2016-2020 and 2020-2024). Observe if some individuals migrated from one party to another. See which members of the Parliament maintained their constituencies or changes it from one legislature to the next.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 343,
+    "num_entries": 3285,
+    "row_count": 657,
+    "source": "kaggle",
+    "tags": [
+        "government",
+        "politics"
+    ],
+    "title": "Members of Romanian Chamber of Deputies",
+    "topic": "politics",
+    "url": "kaggle.com/datasets/gpreda/members-of-romanian-chamber-of-deputies",
+    "usability": 1.0
+}

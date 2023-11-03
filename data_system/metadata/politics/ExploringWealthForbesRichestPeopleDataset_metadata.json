@@ -1,0 +1,35 @@
+{
+    "col_count": 7,
+    "col_names": [
+        "Rank",
+        "Name",
+        "Net Worth",
+        "Age",
+        "Country",
+        "Source",
+        "Industry"
+    ],
+    "description": "The Forbes Richest People Dataset is a collection of data related to the world's wealthiest individuals. It includes information about the billionaire's origins, current net worth, source of wealth, age, gender, education, and philanthropic activities. The dataset is regularly updated by Forbes and is widely used by researchers, analysts, and journalists to study trends in wealth accumulation, income inequality, and economic growth.\n\n**Forbes** is an American business magazine owned by Integrated Whale Media Investments and the Forbes family. Published eight times a year, it features articles on finance, industry, investing, and marketing topics. Forbes also reports on related subjects such as technology, communications, science, politics, and law. It is based in Jersey City, New Jersey. Competitors in the national business magazine category include Fortune and Bloomberg Businessweek. Forbes has an international edition in Asia as well as editions produced under license in 27 countries and regions worldwide.The magazine is well known for its lists and rankings, including of the richest Americans (the Forbes 400), of the America's Wealthiest Celebrities, of the world's top companies (the Forbes Global 2000), Forbes list of the World's Most Powerful People, and The World's Billionaires.The motto of Forbes magazine is \"Change the World\". Its chair and editor-in-chief is Steve Forbes, and its CEO is Mike Federle. In 2014, it was sold to a Hong Kong\u2013based investment group, Integrated Whale Media Investments.\n\nAnalyzing this dataset can provide valuable insights into the distribution of wealth and the factors that contribute to wealth accumulation. For example, researchers may use this dataset to study the relationship between education level and wealth, or to explore the impact of technological advancements on wealth creation.\n\nMoreover, the dataset can be utilized for various purposes, such as predictive modeling, machine learning, and data visualization. It can also be used to create rankings and indices that help businesses and governments make informed decisions.\n\nOverall, the Forbes Richest People Dataset is a valuable resource for anyone interested in exploring wealth distribution and understanding the factors that contribute to wealth accumulation.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 940,
+    "num_entries": 18424,
+    "row_count": 2632,
+    "source": "kaggle",
+    "tags": [
+        "global",
+        "business",
+        "finance",
+        "beginner",
+        "data analytics"
+    ],
+    "title": "Exploring Wealth: Forbes Richest People Dataset",
+    "topic": "politics",
+    "url": "kaggle.com/datasets/joyshil0599/exploring-wealth-forbes-richest-people-dataset",
+    "usability": 1.0
+}

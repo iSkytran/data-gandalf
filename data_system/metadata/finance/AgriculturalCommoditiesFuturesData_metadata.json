@@ -1,0 +1,35 @@
+{
+    "col_count": 8,
+    "col_names": [
+        "ticker",
+        "commodity",
+        "date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+    ],
+    "description": "**\u270d\ufe0f Personal Note**:\nWhile I'm presenting this dataset for analysis and insights, I want to emphasize the importance of ethical sourcing and consumption, especially in commodities like cocoa and coffee which have known ethical concerns in their supply chains.\n\n---\n\n**About This Dataset**:\n\nThis dataset delivers an extensive and current assortment of futures related to soft commodities. Futures are financial contracts obligating the buyer to purchase, and the seller to sell, a specified amount of a particular commodity at a predetermined price on a set date in the future.\n\n**Use Cases**:\n1. **Price Forecasting**: Harness machine learning to predict the price dynamics of commodities like coffee and cocoa, aiding stakeholders in their decision-making.\n2. **Supply Chain Analysis**: Evaluate the correlation between futures prices and global events, offering insights into potential supply chain disruptions.\n3. **Demand Projections**: Utilize deep learning techniques to correlate historical consumption patterns with price movements, projecting future demand.\n\n**Dataset Image Source**:\nPhoto by Tom Fisk from Pexels: https://www.pexels.com/photo/aerial-shot-of-green-milling-tractor-1595108/\n\n**Column Descriptions**:\n1. **Date**: The date when the data was recorded. Format: YYYY-MM-DD.\n2. **Open**: The opening market price for the day.\n3. **High**: Maximum price achieved during the trading session.\n4. **Low**: Lowest traded price during the session.\n5. **Close**: Market's concluding price.\n6. **Volume**: Count of contracts traded throughout the session.\n7. **Ticker**: Distinct market quotation symbol for the commodity future.\n8. **Commodity**: Indicates the type of soft commodity the futures contract pertains to (e.g., Cocoa, Coffee).\n\nRemember to link to the correct image source for your dataset's image!",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)",
+            "nameNullable": "Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 241048,
+    "row_count": 30131,
+    "source": "kaggle",
+    "tags": [
+        "finance",
+        "economics",
+        "agriculture",
+        "investing"
+    ],
+    "title": "Agricultural Commodities Futures Data",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/guillemservera/agricultural-futures",
+    "usability": 0.9411764705882353
+}

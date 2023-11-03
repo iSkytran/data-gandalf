@@ -1,0 +1,41 @@
+{
+    "col_count": 14,
+    "col_names": [
+        "average_flavor_rating",
+        "brand_name",
+        "link",
+        "number_of_flavors",
+        "number_of_reviews",
+        "overall_rating",
+        "price",
+        "price_per_serving",
+        "product_category",
+        "product_description",
+        "product_name",
+        "top_flavor_rated",
+        "verified_buyer_number",
+        "verified_buyer_rating"
+    ],
+    "description": "I've always been a workout and fitness fanatic and now that I've learned about web scrapping, I want to try my new found skills in scrapping one of the biggest (if not THE biggest) online website for sports nutrition -- **bodybuilding.com**\n\nIn this attempt, I would like to create a dataset that has **all Sports Nutrition and Workout Support** products. Specifically my aim is to select the following features from each product:\n- Product name\n- Brand name\n- Product description\n- Product category\n- Total price\n- Price per serving\n- Number of reviews\n- Overall rating\n- Number of overall reviewers\n- Verified buyer rating\n- Number of verified buyer reviews\n- Average flavor rating\n- Number of flavors\n- Top rated flavor rating\n- Top rated flavor name\n\n**To Note:** this data set can be further enhanced by including other product properties, such as:\n- Ingredients\n- Different servings sizes and their corresponding prices\n- etc...\n\nHowever, due to time constraints and this being the first time I attempt to scrape a website, I will stick to the list I have currently :)\n\n## Potential questions to answer using this dataset\n\n- Which product categories are associated with the highest rating? As a potential product developer, which category should you focus on?\n\n- What flavor should the product you create make available? Does that make a difference? Do flavors affect overall product rating?\n\n- Does value affect overall product rating? Is price negatively correlated with overall product rating?\n\nThese and other potential questuons could be answered and/or alluded to using the available dataset. Happy coding pythonistas!!!",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 2242,
+    "num_entries": 11760,
+    "row_count": 840,
+    "source": "kaggle",
+    "tags": [
+        "exercise",
+        "sports",
+        "nutrition",
+        "health"
+    ],
+    "title": "Workout supplements and nutrition products",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/afsaja/workout-supplements-and-nutrition-products",
+    "usability": 0.7058823529411765
+}

@@ -1,0 +1,38 @@
+{
+    "col_count": 10,
+    "col_names": [
+        "Date",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume",
+        "Dividends",
+        "Stock Splits",
+        "zip",
+        "94025"
+    ],
+    "description": "![Facebook](https://logos-world.net/wp-content/uploads/2020/04/Facebook-Logo.png)\n\nFacebook is an American online social media and social networking service owned by Facebook, Inc.\n\nFounded in 2004 by Mark Zuckerberg with fellow Harvard College students and roommates Eduardo Saverin, Andrew McCollum, Dustin Moskovitz, and Chris Hughes, its name comes from the face book directories often given to American university students. Membership was initially limited to Harvard students, gradually expanding to other North American universities and, since 2006, anyone over 13 years old. As of 2020, Facebook claimed 2.8 billion monthly active users, and ranked seventh in global internet usage. It was the most downloaded mobile app of the 2010s.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 39,
+    "num_entries": 19172,
+    "row_count": 2509,
+    "source": "kaggle",
+    "tags": [
+        "finance",
+        "computer science",
+        "deep learning",
+        "investing",
+        "social networks"
+    ],
+    "title": "Facebook Stock Data - Live and Latest",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/kalilurrahman/facebook-stock-data-live-and-latest",
+    "usability": 1.0
+}

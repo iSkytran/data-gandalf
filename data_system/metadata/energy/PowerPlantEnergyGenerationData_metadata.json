@@ -1,0 +1,29 @@
+{
+    "col_count": 1,
+    "col_names": [
+        "\u00ef\u00bb\u00bfcountry_id;country_name;powerplant_name;gppd_idnr;capacity_mw;latitude;longitude;primary_fuel_id;primary_fuel;source;url;geolocation_source;generation_gwh_2013;generation_gwh_2014;generation_gwh_2015;generation_gwh_2016;generation_gwh_2017"
+    ],
+    "description": "This data set is a pre-processed version of the file available on the website https://datasets.wri.org/dataset/globalpowerplantdatabase (Global PowerPlant Database), and contains several powerplants, their countries of origin and the total annual energy generation in GW from 2013 to 2017",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 6817,
+    "row_count": 6817,
+    "source": "kaggle",
+    "tags": [
+        "global",
+        "energy",
+        "renewable energy",
+        "time series analysis",
+        "electricity"
+    ],
+    "title": "PowerPlant Energy Generation Data",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/jorgesandoval/powerplant-energy-generation-database",
+    "usability": 0.9411764705882353
+}

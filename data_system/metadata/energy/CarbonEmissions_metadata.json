@@ -1,0 +1,31 @@
+{
+    "col_count": 6,
+    "col_names": [
+        "MSN",
+        "YYYYMM",
+        "Value",
+        "Column_Order",
+        "Description",
+        "Unit"
+    ],
+    "description": "Monthly/Annual carbon dioxide emissions from electricity generation from the Energy Information Administration. Data is broken down by fuel type.\n\nhttp://www.eia.gov/electricity/data.cfm#elecenv",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 30564,
+    "row_count": 5094,
+    "source": "kaggle",
+    "tags": [
+        "environment",
+        "energy"
+    ],
+    "title": "Carbon Emissions",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/txtrouble/carbon-emissions",
+    "usability": 0.7058823529411765
+}

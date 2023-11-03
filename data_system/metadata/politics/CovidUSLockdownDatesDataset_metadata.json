@@ -1,0 +1,30 @@
+{
+    "col_count": 5,
+    "col_names": [
+        "Country",
+        "State",
+        "County",
+        "Date",
+        "Type"
+    ],
+    "description": "### Context & Content\n\nInformation is from this [NYTimes article](https://www.nytimes.com/interactive/2020/us/coronavirus-stay-at-home-order.html?campaign_id=9&emc=edit_NN_p_20200330&instance_id=17179&nl=morning-briefing\u00aei_id=119872245\u00a7ion=topNews&segment_id=23277&te=1&user_id=6b58b317b2131c915de58a4774fe51a9). \n\nDate of when is each state / county's stay-at-home order becomes effective as a result of the covid-19 pandemic. This dataset is updated daily as more states & counties issue stay-at-home order. \n\nCurrently there are at least 42 states with orders to stay home. Last updated on Apr 07, 2020.\n\n### See Data in Action\n\nI have built a covid-19 tracking dashboard using this & other datasets [here](http://sloth.shinyapps.io/covid19/). This dashboard is updated daily. All feedback is welcome!\n\n### Column Description\n* `Country` - country \n* `State` - state\n* `County` - county is \"\" if the stay-at-home order is effective state-wide; otherwise county shows the counties/regions in that state with stay at home orders.\n* `Date` - date of when the stay-at-home order becomes effective\n* `Type` - type of the stay-at-home order\n\n### Acknowledgements\n\n* This [NYTimes article](https://www.nytimes.com/interactive/2020/us/coronavirus-stay-at-home-order.html?campaign_id=9&emc=edit_NN_p_20200330&instance_id=17179&nl=morning-briefing\u00aei_id=119872245\u00a7ion=topNews&segment_id=23277&te=1&user_id=6b58b317b2131c915de58a4774fe51a9) for making the information available\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "copyright-authors",
+            "nameNullable": "copyright-authors"
+        }
+    ],
+    "null_count": 44,
+    "num_entries": 865,
+    "row_count": 173,
+    "source": "kaggle",
+    "tags": [
+        "politics",
+        "covid19"
+    ],
+    "title": "Covid19 US Lockdown Dates Dataset",
+    "topic": "politics",
+    "url": "kaggle.com/datasets/lin0li/us-lockdown-dates-dataset",
+    "usability": 1.0
+}

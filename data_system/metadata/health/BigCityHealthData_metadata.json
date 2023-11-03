@@ -1,0 +1,35 @@
+{
+    "col_count": 11,
+    "col_names": [
+        "Indicator Category",
+        "Indicator",
+        "Year",
+        "Gender",
+        "Race/ Ethnicity",
+        "Value",
+        "Place",
+        "BCHC Requested Methodology",
+        "Source",
+        "Methods",
+        "Notes"
+    ],
+    "description": "### Context\n\nIllustrates health status of 26 of the nation\u2019s largest and most urban cities.\n\n### Content\n\nWhat's inside is more than just rows and columns. Make it easy for others to get started by describing how you acquired the data and what time period it represents, too.\n\n\n### Acknowledgements\n\nWe wouldn't be here without the help of others. If you owe any attributions or thanks, include them here along with any citations of past research.\n\n\n### Inspiration\n\nAttribution: U.S. Centers for Disease Control and Prevention\nSource: Big Cities Health Inventory Data",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 22062,
+    "num_entries": 148632,
+    "row_count": 13512,
+    "source": "kaggle",
+    "tags": [
+        "health"
+    ],
+    "title": "Big City Health Data",
+    "topic": "health",
+    "url": "kaggle.com/datasets/noordeen/big-city-health-data",
+    "usability": 0.5882352941176471
+}

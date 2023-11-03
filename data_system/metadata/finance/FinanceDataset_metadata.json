@@ -1,0 +1,36 @@
+{
+    "col_count": 14,
+    "col_names": [
+        "Symbol",
+        "Name",
+        "Sector",
+        "Price",
+        "Price/Earnings",
+        "Dividend Yield",
+        "Earnings/Share",
+        "52 Week Low",
+        "52 Week High",
+        "Market Cap",
+        "EBITDA",
+        "Price/Sales",
+        "Price/Book",
+        "SEC Filings"
+    ],
+    "description": "",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 10,
+    "num_entries": 7070,
+    "row_count": 505,
+    "source": "kaggle",
+    "tags": [],
+    "title": "Finance Dataset",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/adityamullick/financials",
+    "usability": 0.17647058823529413
+}

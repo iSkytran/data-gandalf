@@ -1,0 +1,36 @@
+{
+    "col_count": 18,
+    "col_names": [
+        "date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "adjusted_close",
+        "change_percent",
+        "avg_vol_20d",
+        "raw_close"
+    ],
+    "description": "This dataset offers a granular look at the daily Open, High, Low, Close, and Volume (OHLCV) data for some of the Apple Inc. stock (AAPL) Updated every trading day, it aims to serve as a resource for researchers, traders, and finance enthusiasts.\n\nKey Features:\n- OHLCV: The foundational data points for any financial analysis.\n- Adjusted Close: This considers dividends and splits, offering a true reflection of value over time.\n- Change %: Offers a day-to-day percentage change, capturing market momentum.\n- 20 Day Average Volume: A rolling metric to gauge trading liquidity and interest over roughly a month.\n\n\n**Split Adjusted:** Given its history of stock splits, a separate dataset with split-adjusted data is available, ensuring accuracy in historical comparisons.\n\n---\n\nImage source: https://www.tradingview.com/symbols/NASDAQ-AAPL/history-timeline/",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)",
+            "nameNullable": "Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)"
+        }
+    ],
+    "null_count": 40,
+    "num_entries": 176904,
+    "row_count": 19656,
+    "source": "kaggle",
+    "tags": [
+        "business",
+        "finance",
+        "investing"
+    ],
+    "title": "Apple (AAPL) Stock Data",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/guillemservera/aapl-stock-data",
+    "usability": 1.0
+}

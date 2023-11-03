@@ -1,0 +1,27 @@
+{
+    "col_count": 5,
+    "col_names": [
+        "Name",
+        "Posts",
+        "Likes",
+        "Comments",
+        "Shares"
+    ],
+    "description": "",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 70,
+    "num_entries": 600,
+    "row_count": 120,
+    "source": "kaggle",
+    "tags": [],
+    "title": "sports_data",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/engrshabir/sports-data",
+    "usability": 0.23529411764705882
+}

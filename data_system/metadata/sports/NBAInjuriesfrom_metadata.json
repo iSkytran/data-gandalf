@@ -1,0 +1,30 @@
+{
+    "col_count": 5,
+    "col_names": [
+        "Date",
+        "Team",
+        "Acquired",
+        "Relinquished",
+        "Notes"
+    ],
+    "description": "### Content\n\nThis dataset includes detail on every injury in the NBA from the beginning of the 2010-2011 season through the end of the 2019-2020 season.\n\n\n### Acknowledgements\n\nThe data was scraped from the  Pro Sports Transactions website ([prosportstransactions.com][1]). \n\n\n### Inspiration\n\nWhich teams have had the most injuries in the past 5 seasons? Which types of injuries has a specific player sustained? Since 2010, in which season did the NBA suffer the most injuries? Which types of injuries tend to be season ending?\n\n  [1]: http://www.prosportstransactions.com",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 27110,
+    "num_entries": 135525,
+    "row_count": 27105,
+    "source": "kaggle",
+    "tags": [
+        "basketball",
+        "sports"
+    ],
+    "title": "NBA Injuries from 2010-2020",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/ghopkins/nba-injuries-2010-2018",
+    "usability": 1.0
+}

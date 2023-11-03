@@ -1,0 +1,36 @@
+{
+    "col_count": 12,
+    "col_names": [
+        "Timestamp",
+        "Age",
+        "Gender",
+        "Current Status",
+        "Resident Type",
+        "Salary per annum",
+        "Work Experience (in Years) ",
+        "What is your preferred choice? ",
+        "What according to you is the main driving force for the Work from Home culture? ",
+        "What according to you is the main driving force for the Work from Office culture? ",
+        "Do you think work from home gives more flexibility to develop soft skills than work from office? Answer this on a range of 1-5",
+        "How satisfied are you with your company's decision related to WFH/WFO"
+    ],
+    "description": "Question : \nWFH has fewer interruptions, is free of office politics, has more time to focus, is quieter and more comfortable, has more family time, and spends less time commuting. WFO employees missed their coworkers and water cooler conversations, and several felt lonely at home\n\nAge\tGender\tCurrent Status\tResident Type\tSalary per annum\tWork Experience (in Years) \t\nWhat is your preferred choice? \t\nWhat according to you is the main driving force for the Work from Home culture? \t\nWhat according to you is the main driving force for the Work from Office culture? \t\nDo you think work from home gives more flexibility to develop soft skills than work from office? \nAnswer this on a range of 1-5\t\nHow satisfied are you with your company's decision related to WFH/WFO",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 6,
+    "num_entries": 1140,
+    "row_count": 95,
+    "source": "kaggle",
+    "tags": [
+        "business"
+    ],
+    "title": "Home and Office Conflict (WFH vs WFO) survey",
+    "topic": "politics",
+    "url": "kaggle.com/datasets/syedsajjadaskari/home-and-office-conflict-wfh-vs-wfo-survey",
+    "usability": 0.5882352941176471
+}

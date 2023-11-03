@@ -1,0 +1,39 @@
+{
+    "col_count": 11,
+    "col_names": [
+        "City",
+        "Year",
+        "Sport",
+        "Discipline",
+        "Event",
+        "Athlete",
+        "Gender",
+        "Country_Code",
+        "Country",
+        "Event_gender",
+        "Medal"
+    ],
+    "description": "This dataset is a list of all the medal winners in the Summer Olympics from 1976 Montreal to 2008 Beijing. It includes each and every medal awarded within the period. This dataset is intended for beginners so that they can get a taste of advanced Excel functions which is perhaps one of the key skills required to be a great data scientist. I too got my hands dirty with the dataset and played with some advanced Excel functions. Further, this dataset can also be used for a predictive model as to which country is likely to fetch the highest number of gold in a particular sports category (just an example), etc. ",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 1287,
+    "num_entries": 169763,
+    "row_count": 15433,
+    "source": "kaggle",
+    "tags": [
+        "arts and entertainment",
+        "sports",
+        "cycling",
+        "time series analysis",
+        "regression"
+    ],
+    "title": "Summer Olympics Medals (1976-2008)",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/divyansh22/summer-olympics-medals",
+    "usability": 0.9411764705882353
+}

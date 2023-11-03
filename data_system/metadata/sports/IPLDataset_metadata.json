@@ -1,0 +1,41 @@
+{
+    "col_count": 16,
+    "col_names": [
+        "season",
+        "city",
+        "team1",
+        "team2",
+        "toss_winner",
+        "toss_decision",
+        "result",
+        "dl_applied",
+        "winner",
+        "win_by_runs",
+        "win_by_wickets",
+        "player_of_match",
+        "venue",
+        "umpire1",
+        "umpire2",
+        "umpire3"
+    ],
+    "description": "**The Indian Premier League (IPL**) is a professional Twenty20 cricket league in India. It is one of the most popular and lucrative cricket leagues in the world. The tournament was established by the Board of Control for Cricket in India (BCCI) in 2007 and is played every year during the months of March, April, and May.\n\nThe IPL follows a franchise-based model, where eight teams representing different cities or regions in India compete against each other. The teams are owned by various individuals, companies, and consortiums, including Bollywood actors, business tycoons, and corporate entities. Some of the prominent teams in the IPL include the Mumbai Indians, Chennai Super Kings, Royal Challengers Bangalore, and Kolkata Knight Riders.\n\nThe IPL has a star-studded lineup of players, with both international and domestic cricketers participating in the tournament. Many of the world's top cricketers, such as Virat Kohli, Rohit Sharma, AB de Villiers, and Chris Gayle, have been a part of the IPL. The league has provided a platform for young talents to showcase their skills and has played a significant role in the development of Indian cricket.\n\nThe tournament format involves a round-robin group stage followed by playoffs. Each team plays a total of 14 matches, facing every other team twice, once at home and once away. The top four teams in the group stage advance to the playoffs, which consist of the qualifier matches and the final. The team that finishes first in the group stage gets two chances to reach the final, while the other three teams compete in the eliminator and the second qualifier matches.\n\nThe IPL has witnessed intense rivalries, thrilling matches, and high-scoring contests over the years. The league has also been a platform for innovation in cricket, with features like strategic time-outs, cheerleaders, and the introduction of the Decision Review System (DRS) in the league before it was implemented globally.\n\nApart from the cricketing action, the IPL has become a significant entertainment spectacle, attracting a large fan base. The matches are held in various cricket stadiums across India, with fans supporting their favorite teams with enthusiasm and passion. The league has also been associated with glitz, glamour, and celebrity performances, making it a blend of sports and entertainment.\n\nThe IPL's success has led to the emergence of similar leagues in other countries, such as the Big Bash League in Australia and the Caribbean Premier League. It has also contributed to the growth of franchise-based sports leagues worldwide.\n\nOverall, the Indian Premier League has revolutionized cricket in India and has become a global phenomenon, attracting players, fans, and sponsors from around the world. It has provided a platform for top-level cricket, entertainment, and commercial opportunities, making it a highly anticipated and celebrated event in the cricket calendar.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "ODC Public Domain Dedication and Licence (PDDL)",
+            "nameNullable": "ODC Public Domain Dedication and Licence (PDDL)"
+        }
+    ],
+    "null_count": 590,
+    "num_entries": 9232,
+    "row_count": 577,
+    "source": "kaggle",
+    "tags": [
+        "football",
+        "cricket"
+    ],
+    "title": "IPL Dataset 2008-2016",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/bhanupratapbiswas/ipl-dataset-2008-2016",
+    "usability": 1.0
+}

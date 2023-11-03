@@ -1,0 +1,49 @@
+{
+    "col_count": 23,
+    "col_names": [
+        "Unnamed: 0",
+        "country",
+        "country_name",
+        "2017_ElectHouse",
+        "2018_ElectHouse",
+        "2019_ElectHouse",
+        "2020_ElectHouse",
+        "2021_ElectHouse",
+        "2017_ElectNoHouse",
+        "2018_ElectNoHouse",
+        "2019_ElectNoHouse",
+        "2020_ElectNoHouse",
+        "2021_ElectNoHouse",
+        "2017_GasHouse",
+        "2018_GasHouse",
+        "2019_GasHouse",
+        "2020_GasHouse",
+        "2021_GasHouse",
+        "2017_GasNoHouse",
+        "2018_GasNoHouse",
+        "2019_GasNoHouse",
+        "2020_GasNoHouse",
+        "2021_GasNoHouse"
+    ],
+    "description": "_____\n# Euro Zone Energy Prices\n### Household and Industrial Sectors from 2017-2021\nBy  [[source]](https://zenodo.org/record/6424152#.Y9Y7Y9JBwUE)\n_____\n\n### About this dataset\n> This dataset contains comprehensive Euro Zone energy market prices for electricity and gas in both the household and non-household sectors. The records are accompanied by a country code, the nation\u2019s name, and pricing information intertwined in Euros. \n> With this data, you will be able to track the evolution of energy prices between 2017-2021 - both in terms of residential households individuals as well as industrial entities alike. Gain insight into how different countries stack up against each other when it comes to where they source their electricity/gas from; ultimately gaining a clearer picture of Europe\u2019s wide-reaching energy markets. Are some countries more resource dependent than others? What type of sector consumes more energy per capita? Unlock the answers to those questions with this rich dataset!\n\n### More Datasets\n> For more datasets, click [here](https://www.kaggle.com/thedevastator/datasets).\n\n### Featured Notebooks\n> - \ud83d\udea8 **Your notebook can be here!** \ud83d\udea8! \n\n### How to use the dataset\n> This dataset provides detailed price information on electricity and gas in the Euro Zone. It includes pricing information for both households and non-household sectors across multiple years. This data can be used to investigate market trends, compare prices between different countries, compare energy sources such as electricity versus gas, and make informed decisions about purchasing energy within the Euro Zone. \n> \n> To use this dataset, simply select the desired country by its country code or name from the columns \u2018country\u2019 or \u2018country_name\u2019. You will then be able to access all of the pricing records available for that particular country by year, with separate ones given for prices of electricity used by households, non-households sectors and also for gas used by households/non-households. You can create visuals such as graphs to track changing energy trends over time within a specific country or across multiple Euro zone nations at once if you so choose\n\n### Research Ideas\n> - Analyzing the impact of an increased increase in energy costs over time on Euro Zone households, non-households, and industry sectors. By comparing electricity prices across different countries may be able to identify different trends on how energy costs are effecting the different regions differently and find ways to best optimize savings when it comes to electricity use. \n> - Estimating climate change impacts on Europe\u2019s energy market by tracking potential changes in electricity and gas prices as a result of an altered environment or changing policy initiatives over time \n> - Identifying correlations between social economic factors and differences in electricity price that arise from varying policy implementations between regions in order to reduce the cost associated with accessing energy for vulnerable households or certain industrial sectors\n\n### Acknowledgements\n> If you use this dataset in your research, please credit the original authors.\n> [Data Source](https://zenodo.org/record/6424152#.Y9Y7Y9JBwUE)\n> \n>\n\n\n### License\n> \n> \n> **License: [CC0 1.0 Universal (CC0 1.0) - Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)**\n> No Copyright - You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. [See Other Information](https://creativecommons.org/publicdomain/zero/1.0/).\n\n### Columns\n\n**File: energy_price_dataset.csv**\n| Column name           | Description                                                  |\n|:----------------------|:-------------------------------------------------------------|\n| **country**           | Country code of the nation. (String)                         |\n| **country_name**      | Name of the nation. (String)                                 |\n| **2017_ElectHouse**   | Price of electricity used by households in 2017. (Float)     |\n| **2018_ElectHouse**   | Price of electricity used by households in 2018. (Float)     |\n| **2019_ElectHouse**   | Price of electricity used by households in 2019. (Float)     |\n| **2020_ElectHouse**   | Price of electricity used by households in 2020. (Float)     |\n| **2021_ElectHouse**   | Price of electricity used by households in 2021. (Float)     |\n| **2017_ElectNoHouse** | Price of electricity used by non-households in 2017. (Float) |\n| **2018_ElectNoHouse** | Price of electricity used by non-households in 2018. (Float) |\n| **2019_ElectNoHouse** | Price of electricity used by non-households in 2019. (Float) |\n| **2020_ElectNoHouse** | Price of electricity used by non-households in 2020. (Float) |\n| **2021_ElectNoHouse** | Price of electricity used by non-households in 2021. (Float) |\n| **2017_GasHouse**     | Price of gas used by households in 2017. (Float)             |\n| **2018_GasHouse**     | Price of gas used by households in 2018. (Float)             |\n| **2019_GasHouse**     | Price of gas used by households in 2019. (Float)             |\n| **2020_GasHouse**     | Price of gas used by households in 2020. (Float)             |\n| **2021_GasHouse**     | Price of gas used by households in 2021. (Float)             |\n| **2017_GasNoHouse**   | Price of gas used by non-households in 2017. (Float)         |\n| **2018_GasNoHouse**   | Price of gas used by non-households in 2018. (Float)         |\n| **2019_GasNoHouse**   | Price of gas used by non-households in 2019. (Float)         |\n| **2020_GasNoHouse**   | Price of gas used by non-households in 2020. (Float)         |\n| **2021_GasNoHouse**   | Price of gas used by non-households in 2021. (Float)         |\n\n### Acknowledgements\n> If you use this dataset in your research, please credit the original authors.\n> If you use this dataset in your research, please credit [](https://zenodo.org/record/6424152#.Y9Y7Y9JBwUE).\n\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 782,
+    "row_count": 34,
+    "source": "kaggle",
+    "tags": [
+        "pollution",
+        "energy",
+        "data visualization"
+    ],
+    "title": "Euro Zone Energy Prices",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/thedevastator/euro-zone-energy-prices",
+    "usability": 0.8823529411764706
+}

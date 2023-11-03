@@ -1,0 +1,43 @@
+{
+    "col_count": 63,
+    "col_names": [
+        "name",
+        "points",
+        "time",
+        "position",
+        "level",
+        "season",
+        "episode",
+        "result",
+        "injury",
+        "completed",
+        "classified",
+        "won",
+        "type",
+        "age",
+        "profession",
+        "team",
+        "identifier"
+    ],
+    "description": "# Context \n\nI like to compensate my frustration with sports analyzing sports data so I put together every data I could from the first season of this Netflix series and here we are.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "DbCL-1.0",
+            "nameNullable": "DbCL-1.0"
+        }
+    ],
+    "null_count": 4,
+    "num_entries": 36846,
+    "row_count": 2979,
+    "source": "kaggle",
+    "tags": [
+        "popular culture",
+        "movies and tv shows",
+        "music"
+    ],
+    "title": "Ultimate Beastmaster: All Seasons",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/kandebonfim/ultimate-beastmaster",
+    "usability": 0.7647058823529411
+}

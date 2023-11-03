@@ -1,0 +1,35 @@
+{
+    "col_count": 8,
+    "col_names": [
+        "Date",
+        "Symbol",
+        "Adj Close",
+        "Close",
+        "High",
+        "Low",
+        "Open",
+        "Volume"
+    ],
+    "description": "### Context\n\nData were collected from Yahoo Finance. \n\n\n### Content\n\nTake a look at the stock performance of largest luxury products in the world.\n\n### Acknowledgement\nData source: Yahoo Finance (https://finance.yahoo.com/quote/MOH.F?p=MOH.F&.tsrc=fin-srch)",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 45192,
+    "row_count": 5649,
+    "source": "kaggle",
+    "tags": [
+        "finance",
+        "tabular",
+        "retail and shopping",
+        "investing"
+    ],
+    "title": "Louis Vuitton Daily Stock Prices 2000-2022",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/prasertk/louis-vuitton-daily-stock-prices-20002022",
+    "usability": 0.9411764705882353
+}

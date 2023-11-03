@@ -1,0 +1,32 @@
+{
+    "col_count": 8,
+    "col_names": [
+        "Date",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Day Difference",
+        "Adj Close",
+        "Volume"
+    ],
+    "description": "\u25b6 Context \ud83d\udcdd\nThe dataset is taken from Yahoo Finance website. It is about the historical stock price of Apple Inc.\n\n\u25b6 Acknowledgements \ud83d\ude4f\nI want to emphasize that my contribution is solely focused on providing historical stock price data for Apple Inc. to the Kaggle community.\n\n\u25b6 Inspiration \ud83d\udcad\nForecasting stock price after Oct 2023\nImplementing time series models.\nPerform data analysis/data visualization of historical stock prices.\n\n\u25b6 Log \ud83d\udcf0\n03-Oct-2023 : Last Update of dataset",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 86328,
+    "row_count": 10791,
+    "source": "kaggle",
+    "tags": [
+        "business"
+    ],
+    "title": "APPLE Stock Prices",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/gauravtopre/apple-inc-stock-historical-prices",
+    "usability": 0.8823529411764706
+}

@@ -1,0 +1,42 @@
+{
+    "col_count": 15,
+    "col_names": [
+        "Country",
+        "City",
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+        "Year"
+    ],
+    "description": "The \"Worldwide Sunshine Hours Dataset\" is a comprehensive collection of data documenting the average annual sunshine hours for cities across the globe. This dataset provides valuable information about the amount of sunlight received in different cities, aiding in various fields such as climate research, solar energy planning, tourism, and agriculture.\n\n\n**Description**: ChatGPT",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 5880,
+    "row_count": 392,
+    "source": "kaggle",
+    "tags": [
+        "intermediate",
+        "advanced",
+        "data analytics",
+        "travel"
+    ],
+    "title": " sunshine hours for cities around the world ",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/bilalwaseer/sunshine-hours-for-cities-around-the-world",
+    "usability": 1.0
+}

@@ -1,0 +1,37 @@
+{
+    "col_count": 8,
+    "col_names": [
+        "id",
+        "timestamp",
+        "url",
+        "tweet",
+        "replies",
+        "retweets",
+        "quotes",
+        "likes"
+    ],
+    "description": "### Content\nJoe Biden's tweets from 24th October, 2007 to 31st October, 2020.\n\n### Acknowledgements\n**Twitter:** For providing its API service: https://developer.twitter.com/en",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 48512,
+    "row_count": 6064,
+    "source": "kaggle",
+    "tags": [
+        "politics",
+        "internet",
+        "nlp",
+        "text",
+        "email and messaging",
+        "social networks"
+    ],
+    "title": "Joe Biden Tweets (2007 - 2020)",
+    "topic": "politics",
+    "url": "kaggle.com/datasets/rohanrao/joe-biden-tweets",
+    "usability": 1.0
+}

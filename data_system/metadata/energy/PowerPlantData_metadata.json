@@ -1,0 +1,30 @@
+{
+    "col_count": 9,
+    "col_names": [
+        "AT",
+        "EV",
+        "AP",
+        "RH",
+        "PE"
+    ],
+    "description": "About the dataset\nThe data points were collected from a Combined Cycle Power Plant over 6 years (2006-2011) when the power plant was set to work with a full load. Features consist of hourly average ambient variables - Ambient Temperature (AT), Ambient Pressure (AP), Relative Humidity (RH) and Exhaust Vacuum (V) to predict the net hourly electrical energy output (PE) of the plant.\n\nA combined-cycle power plant uses both gas and a steam turbine together to produce up to 50 percent more electricity from the same fuel than a traditional simple-cycle plant. The waste heat from the gas turbine is routed to the nearby steam turbine, which generates extra power.\n\nAll the UN Member States have to submit a report on the combined cycle power plant to the United Nations. The Power Plant officials of Mexico are devising a way to predict the net hourly electrical energy output (PE) of the plant. You are appointed as the chief for this operation. Create a Machine Learning Model to solve this problem efficiently.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 44682,
+    "row_count": 9568,
+    "source": "kaggle",
+    "tags": [
+        "electronics",
+        "electricity"
+    ],
+    "title": "Power Plant Data",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/gauravduttakiit/power-plant-data",
+    "usability": 0.7058823529411765
+}

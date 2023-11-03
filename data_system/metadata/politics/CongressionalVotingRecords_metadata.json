@@ -1,0 +1,42 @@
+{
+    "col_count": 17,
+    "col_names": [
+        "Class Name",
+        " handicapped-infants",
+        " water-project-cost-sharing",
+        " adoption-of-the-budget-resolution",
+        " physician-fee-freeze",
+        " el-salvador-aid",
+        " religious-groups-in-schools",
+        " anti-satellite-test-ban",
+        " aid-to-nicaraguan-contras",
+        " mx-missile",
+        " immigration",
+        " synfuels-corporation-cutback",
+        " education-spending",
+        " superfund-right-to-sue",
+        " crime",
+        " duty-free-exports",
+        " export-administration-act-south-africa"
+    ],
+    "description": "### Description\n\nThis data set includes votes for each of the U.S. House of Representatives Congressmen on the 16 key votes identified by the CQA. The CQA lists nine different types of votes: voted for, paired for, and announced for (these three simplified to yea), voted against, paired against, and announced against (these three simplified to nay), voted present, voted present to avoid conflict of interest, and did not vote or otherwise make a position known (these three simplified to an unknown disposition).\n\n### Attribute Information:\n\n1. Class Name: 2 (democrat, republican)\n2. handicapped-infants: 2 (y,n)\n3. water-project-cost-sharing: 2 (y,n)\n4. adoption-of-the-budget-resolution: 2 (y,n)\n5. physician-fee-freeze: 2 (y,n)\n6. el-salvador-aid: 2 (y,n)\n7. religious-groups-in-schools: 2 (y,n)\n8. anti-satellite-test-ban: 2 (y,n)\n9. aid-to-nicaraguan-contras: 2 (y,n)\n10. mx-missile: 2 (y,n)\n11. immigration: 2 (y,n)\n12. synfuels-corporation-cutback: 2 (y,n)\n13. education-spending: 2 (y,n)\n14. superfund-right-to-sue: 2 (y,n)\n15. crime: 2 (y,n)\n16. duty-free-exports: 2 (y,n)\n17. export-administration-act-south-africa: 2 (y,n)\n\n### Source\n\nOrigin:\n\nCongressional Quarterly Almanac, 98th Congress, 2nd session 1984, Volume XL: Congressional Quarterly Inc. Washington, D.C., 1985.\nhttps://archive.ics.uci.edu/ml/datasets/Congressional+Voting+Records\n\nCitation:  \nDua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "other",
+            "nameNullable": "other"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 7395,
+    "row_count": 435,
+    "source": "kaggle",
+    "tags": [
+        "government",
+        "politics"
+    ],
+    "title": "Congressional Voting Records",
+    "topic": "politics",
+    "url": "kaggle.com/datasets/devvret/congressional-voting-records",
+    "usability": 0.8823529411764706
+}

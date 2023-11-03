@@ -1,0 +1,36 @@
+{
+    "col_count": 8,
+    "col_names": [
+        "Unnamed: 0",
+        "titles",
+        "brand_names",
+        "images_links",
+        "prices",
+        "offers",
+        "Gender",
+        "Type"
+    ],
+    "description": "The \"Watches of all range\" dataset consists of information about different watch products, including the following columns:\n\n1. \"Titles\": This column contains the names or titles of the watch products.\n2. \"Brand_names\": This column lists the brand names of the watches.\n3. \"Images_links\": This column provides the links to the images of the watches.\n4. \"Prices\": This column lists the prices of the watches.\n5. \"Offers\": This column mentions any special offers or discounts available on the watches.\n6. \"Gender\": This column specifies the gender for which the watch is suitable, for example, men or women.\n7. \"Type\": This column describes the type of watch, such as sports, dress, smartwatch, etc.\n\nOverall, the \"Watches\" dataset is a comprehensive collection of information about different watch products that can be used for research or analysis purposes.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 7800,
+    "row_count": 975,
+    "source": "kaggle",
+    "tags": [
+        "websites",
+        "clothing and accessories",
+        "business",
+        "marketing",
+        "e-commerce services"
+    ],
+    "title": " Watches of all range",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/anas123siddiqui/watches-of-all-ranges",
+    "usability": 1.0
+}

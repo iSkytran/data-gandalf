@@ -1,0 +1,26 @@
+{
+    "col_count": 2,
+    "col_names": [
+        "ticker",
+        "name"
+    ],
+    "description": "### What is this data?\n\nThis is a yahoo finance mapper for world indices. You can use this file to fetch the historical data using the YFinance API.\n\n### Original data?\nhttps://finance.yahoo.com/world-indices",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "other",
+            "nameNullable": "other"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 72,
+    "row_count": 36,
+    "source": "kaggle",
+    "tags": [
+        "business"
+    ],
+    "title": "Yahoo Finance Major World Indices",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/code1110/yahoo-finance-major-world-indices",
+    "usability": 1.0
+}

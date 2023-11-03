@@ -1,0 +1,31 @@
+{
+    "col_count": 4,
+    "col_names": [
+        "RM",
+        "LSTAT",
+        "PTRATIO",
+        "MEDV"
+    ],
+    "description": "### Context\n\nThe dataset for this project originates from the UCI Machine Learning Repository. The Boston housing data was collected in 1978 and each of the 506 entries represent aggregated data about 14 features for homes from various suburbs in Boston, Massachusetts.\n\n### Acknowledgements\n\nhttps://github.com/udacity/machine-learning\n\nhttps://archive.ics.uci.edu/ml/datasets/Housing",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC-BY-NC-SA-4.0",
+            "nameNullable": "CC-BY-NC-SA-4.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 1956,
+    "row_count": 489,
+    "source": "kaggle",
+    "tags": [
+        "earth and nature",
+        "education",
+        "real estate",
+        "social issues and advocacy"
+    ],
+    "title": "Boston Housing",
+    "topic": "housing",
+    "url": "kaggle.com/datasets/schirmerchad/bostonhoustingmlnd",
+    "usability": 0.8235294117647058
+}

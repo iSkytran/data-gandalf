@@ -1,0 +1,35 @@
+{
+    "col_count": 11,
+    "col_names": [
+        "buildingaddress",
+        "buildingtype",
+        "greenmarkstatus",
+        "greenmarkrating",
+        "greenmarkyearaward",
+        "buildingsize",
+        "grossfloorarea",
+        "2017energyuseintensity",
+        "2018energyusintensity",
+        "greenmarkrating_numeric",
+        "buildingtype_color"
+    ],
+    "description": "Modified data set ready for analysis (modifications done and source will be mentioned later)\nThis dataset is related to energy consumption in Singapore buildings in 207 and 2018. And this data has 976 rows and 10 columns.\n\nThe columns are respectively:\nbuildingaddress\nbuildingtype\ngreenmarkstatus\ngreenmarkrating\ngreenmarkyearaward\nbuildingsize\ngrossfloorarea\n2017 energy use intensity\n2018 energy intensity\ngreenmarkrating_numeric\nbuildingtype_color\n\n\nThe main source of the data set is:\nhttps://data.gov.sg/dataset/building-energy-performance-data\n\n**But its general flaws, including the following, have been fixed and are ready for analysis :**\n\nEmpty and missing data have been corrected in two columns, and each column has been managed (corrected or deleted) according to the nature of the data and the importance of that missing data.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 10736,
+    "row_count": 976,
+    "source": "kaggle",
+    "tags": [
+        "business"
+    ],
+    "title": "Singapore Building Energy Performance",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/ariohakhamanesh/singapore-building-energy-performance",
+    "usability": 0.47058823529411764
+}

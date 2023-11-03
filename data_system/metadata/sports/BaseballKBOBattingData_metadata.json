@@ -1,0 +1,55 @@
+{
+    "col_count": 27,
+    "col_names": [
+        "year",
+        "team",
+        "average_batter_age",
+        "runs_per_game",
+        "games",
+        "plate_appearances",
+        "at_bats",
+        "runs",
+        "hits",
+        "doubles",
+        "triples",
+        "homeruns",
+        "RBI",
+        "stolen_bases",
+        "caught_stealing",
+        "bases_on_balls",
+        "strikeouts",
+        "batting_average",
+        "OBP",
+        "SLG",
+        "OPS",
+        "total_bases",
+        "GDP",
+        "HBP",
+        "sacrifice_hits",
+        "sacrifice_flies",
+        "IBB"
+    ],
+    "description": "The dataset contains yearly Korean Baseball Organization regular season batting data  for every KBO season.\n\nThe data was collected from Sports Reference then cleaned for data analysis.\n\n\nTabular data includes:\n- year\n- teams\n- average_batter_age: Average batter age\n- runs_per_game: Runs scored per game\n- games: Games played\n- plate_appearances: Plate appearances\n- at_bats: At bats\n- hits: Hits\n- runs: Runs\n- doubles: Doubles\n- triples: Triples\n- homeruns: Home runs \n- RBI: Runs batted in\n- stolen_bases: Bases stolen\n- caught_stealing: Caught stealing\n- bases_on_balls: Walks\n- strikeouts\n- batting_average: Batting average\n- OBP: On base percentage\n- SLG: Slugging percentage\n- OPS: On base + slugging percentage\n- total_bases: Total bases\n- GDP: Double plays grounded into\n- HBP: Times hit by pitch\n- sacrifice_hits: Sacrifice hits\n- sacrifice_flies: Sacrifice flies\n- IBB: Intentional bases on balls",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 417,
+    "num_entries": 8721,
+    "row_count": 323,
+    "source": "kaggle",
+    "tags": [
+        "baseball",
+        "sports",
+        "time series analysis",
+        "statistical analysis",
+        "korea"
+    ],
+    "title": "Baseball KBO Batting Data (1982 - 2021)",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/mattop/baseball-kbo-batting-data-1982-2021",
+    "usability": 1.0
+}

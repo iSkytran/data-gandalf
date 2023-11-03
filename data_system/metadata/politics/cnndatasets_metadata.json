@@ -1,0 +1,28 @@
+{
+    "col_count": 4,
+    "col_names": [
+        "\u00ef\u00bb\u00bfName",
+        "Posta",
+        "Comments",
+        "Shares"
+    ],
+    "description": "",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 1,
+    "num_entries": 828,
+    "row_count": 207,
+    "source": "kaggle",
+    "tags": [
+        "news"
+    ],
+    "title": "cnn datasets",
+    "topic": "politics",
+    "url": "kaggle.com/datasets/engrshabir/cnn-datasets",
+    "usability": 0.29411764705882354
+}

@@ -1,0 +1,43 @@
+{
+    "col_count": 19,
+    "col_names": [
+        "Date",
+        "Name",
+        "Position",
+        "Session_Type",
+        "Sleep_Duration",
+        "Sleep_Score",
+        "Sleep_Quality",
+        "Soreness",
+        "Stress",
+        "RPE",
+        "Distance",
+        "Acceleration_Count",
+        "Max_Acceleration",
+        "Deceleration_Count",
+        "Max_Deceleration",
+        "Max_Speed",
+        "Injury_Illness",
+        "Injury_Type",
+        "Unnamed: 18"
+    ],
+    "description": "The data is of ten hypothetical soccer players, their sleep duration, sleep quality, soreness, stress, as well as GPS metrics such as total distance, acceleration count, deceleration count, max acceleration, max deceleration, and max speed. The purpose of this data set is to off realistic data to those looking to work in sports science.\n\n*Sheet4* from *Workout_Routine* is clean data with no missing values.\n\n*Dirty_Data* from *Workout_Routine_Dirty* is dirty data with blank values for you to clean and manipulate. *Dirty_Data* also RPE values, Injury/Illness, and description of the Injury/Illness.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 847,
+    "num_entries": 7714,
+    "row_count": 406,
+    "source": "kaggle",
+    "tags": [
+        "football"
+    ],
+    "title": "Soccer Performance Data",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/michaelhegedusich/soccer-performance-data",
+    "usability": 0.7058823529411765
+}

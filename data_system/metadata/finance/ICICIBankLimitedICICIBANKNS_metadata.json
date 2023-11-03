@@ -1,0 +1,35 @@
+{
+    "col_count": 7,
+    "col_names": [
+        "Date",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Adj Close",
+        "Volume"
+    ],
+    "description": "**About ICICI BANK**\n\n- Today's live share price for ICICI BANK LTD is NSE: \u20b9 902.00, BSE: \u20b9 902.25 with a current market capitalization of Rs 6,33,899 Cr.\n\n - ICICI Bank Ltd is a major banking and financial services organization in India. The Bank is the second largest bank in India and the largest private sector bank in India by market capitalization. They are a publicly held banking company engaged in providing a wide range of banking and financial services including commercial banking and treasury operations.\n\n- The Bank and their subsidiaries offers a wide range of banking and financial services including commercial banking, retail banking, project and corporate finance, working capital finance, insurance, venture capital and private equity, investment banking, broking and treasury products and services. They offer through a variety of delivery channels and through their specialised subsidiaries in the areas of investment banking, life and non-life insurance, venture capital and asset management.\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "DbCL-1.0",
+            "nameNullable": "DbCL-1.0"
+        }
+    ],
+    "null_count": 6,
+    "num_entries": 14910,
+    "row_count": 2130,
+    "source": "kaggle",
+    "tags": [
+        "finance",
+        "banking",
+        "data analytics",
+        "outlier analysis",
+        "investing"
+    ],
+    "title": "ICICI Bank Limited (ICICIBANK.NS)",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/rajkumarpandey02/icici-bank-limited-icicibankns",
+    "usability": 1.0
+}

@@ -1,0 +1,34 @@
+{
+    "col_count": 10,
+    "col_names": [
+        "Peak Brightness Date/Time (UT)",
+        "Latitude (deg.)",
+        "Longitude (deg.)",
+        "Altitude (km)",
+        "Velocity (km/s)",
+        "vx",
+        "vy",
+        "vz",
+        "Total Radiated Energy (J)",
+        "Calculated Total Impact Energy (kt)"
+    ],
+    "description": "Fireballs and bolides are astronomical terms for exceptionally bright meteors that are spectacular enough to to be seen over a very wide area. A world map shows a visual representation of the data table that provides a chronological data summary of fireball and bolide events provided by U.S. Government sensors. Ground-based observers sometimes also witness these events at night, or much more rarely in daylight, as impressive atmospheric light displays. This website is not meant to be a complete list of all fireball events. Only the brightest fireballs are noted.\n\n### Content\n\nThe accompanying table provides information on the date and time of each reported fireball event with its approximate total optical radiated energy and its calculated total impact energy. When reported, the event\u2019s geographic location, altitude and velocity at peak brightness are also provided. Note that data are not provided in real-time and not all fireballs are reported. A blank (empty) field in the table indicates the associated value was not reported.\n\nFor more information about fireballs and bolides, please see https://cneos.jpl.nasa.gov/fireballs/intro.html.\n\n### Field legend\n - Peak Brightness Date/Time (UT) The date and time in UT (Universal\n   Time) of this event's peak brightness.\n - Latitude (deg.) Geodetic latitude in degrees north (N) or south (S)\n   of the equator for this event.\n - Longitude (deg.) Geodetic longitude in degrees east (E) or west (W)\n   of the prime meridian for this event.\n - Altitude (km) Altitude in kilometers (km) above the reference geoid\n   for this event.\n - Velocity (km/s) The magnitude of the meteor's pre-impact velocity in\n   kilometers per second (km/s).\n - Velocity Components (km/s) The magnitude of the meteor's pre-impact velocity in a geocentric Earth-fixed reference frame defined as follows: the z-axis is directed along the Earth's rotation axis towards the celestial north pole, the x-axis lies in the Earth's equatorial plane, directed towards the prime meridian, and the y-axis completes the right-handed coordinate system.\n - Total Radiated Energy (J) The approximate total radiated energy in the atmosphere in Joules [a unit of energy given in kilograms times velocity squared, or kg \u00d7 (m/s)2]\n - Calculated Total Impact Energy (kt)\nThe impact energy of the event in kilotons of TNT (kt) computed from an empirical expression relating radiated and impact energy\n\n### Acknowledgements\n\nThis dataset was kindly made available by NASA. You can find the original dataset at https://cneos.jpl.nasa.gov/fireballs/\n\nYou might also be interested in their Planetary Defense FAQ.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "other",
+            "nameNullable": "other"
+        }
+    ],
+    "null_count": 3020,
+    "num_entries": 7190,
+    "row_count": 719,
+    "source": "kaggle",
+    "tags": [
+        "astronomy"
+    ],
+    "title": "Fireballs",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/nasa/fireballs",
+    "usability": 0.8235294117647058
+}

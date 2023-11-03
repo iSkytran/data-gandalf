@@ -1,0 +1,29 @@
+{
+    "col_count": 7,
+    "col_names": [
+        "date",
+        "Temperature",
+        "Humidity",
+        "Light",
+        "CO2",
+        "HumidityRatio",
+        "Occupancy"
+    ],
+    "description": "binary classification (room occupancy) from Temperature,Humidity,Light and CO2. \noccupancy was obtained from time stamped pictures that were taken every minute.\n\n\n[source](https://github.com/LuisM78/Occupancy-detection-data)\n\nAccurate occupancy detection of an office room from light, temperature, humidity and CO2 measurements using statistical learning models. Luis M. Candanedo, V\u00e9ronique Feldheim. Energy and Buildings. Volume 112, 15 January 2016, Pages 28-39.\n\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 143920,
+    "row_count": 20560,
+    "source": "kaggle",
+    "tags": [],
+    "title": "Room Occupancy detection data (IoT sensor)",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/kukuroo3/room-occupancy-detection-data-iot-sensor",
+    "usability": 0.6470588235294118
+}

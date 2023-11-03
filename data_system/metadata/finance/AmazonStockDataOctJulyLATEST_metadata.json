@@ -1,0 +1,33 @@
+{
+    "col_count": 8,
+    "col_names": [
+        "Unnamed: 0",
+        "Date",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Adj. Close",
+        "Volume"
+    ],
+    "description": "### Context\n\nThis Data set Contains the values of Stock of Amazon which dates between 1st October,2019 to 14 July,2020\n\n### Content\n\nThe Data set contains 7 different columns that includes Date, The opening value of the stock, the closing value of stock, volume and a few other things necessary to make predictions.\n\n### Acknowledgements\n\nThis data was scraped from Yahoo finance and you can also use their API to access the data.\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 13,
+    "num_entries": 1616,
+    "row_count": 202,
+    "source": "kaggle",
+    "tags": [
+        "business",
+        "tabular"
+    ],
+    "title": "Amazon Stock Data(Oct 2019 - July 2020)[LATEST]",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/aayushmishra1512/amazon",
+    "usability": 0.9411764705882353
+}

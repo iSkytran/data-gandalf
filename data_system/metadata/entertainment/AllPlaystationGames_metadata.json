@@ -1,0 +1,22 @@
+{
+    "description": "## Playstation 4 Games \n\nThe PlayStation 4 (PS4) is a home video game console developed by Sony Computer Entertainment. Announced as the successor to the PlayStation 3 in February 2013, it was launched on November 15, 2013, in North America, November 29, 2013, in Europe, South America a and Australia, and on February 22, 2014, in Japan. \n\n## Acknowledments  \n\nThe dataset is scraped from TrueTrophies.com which is a website that maintains players' winnings and achievements of PlayStation games. \n\n## Interesting Tasks - Analysis / Modelling Ideas \n\n1. Which year were the most games released? \n2. What are some of the shortest and longest games? \n3. Who are the popular publishers and developers? \n4. Is there any relation between game time and game size? ",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "GPL-2.0",
+            "nameNullable": "GPL-2.0"
+        }
+    ],
+    "source": "kaggle",
+    "tags": [
+        "arts and entertainment",
+        "games",
+        "video games",
+        "sports",
+        "online communities"
+    ],
+    "title": "All Playstation 4 Games",
+    "topic": "entertainment",
+    "url": "kaggle.com/datasets/shivamb/all-playstation-4-games",
+    "usability": 1.0
+}

@@ -1,0 +1,40 @@
+{
+    "col_count": 11,
+    "col_names": [
+        "\u00ef\u00bb\u00bfYear",
+        "Government expenditure per primary student as % of GDP per capita (%)",
+        "Government expenditure per secondary student as % of GDP per capita (%)",
+        "Government expenditure per tertiary student as % of GDP per capita (%)",
+        "Expenditure on education as % of total government expenditure (%)",
+        "Expenditure on primary as % of government expenditure on education (%)",
+        "Expenditure on secondary as % of government expenditure on education (%)",
+        "Expenditure on tertiary as % of government expenditure on education (%)",
+        "Adjusted savings: education expenditure (% of GNI)",
+        "Adjusted savings: education expenditure (current US$)",
+        "Government expenditure on education as % of GDP (%)"
+    ],
+    "description": "Public spending on education includes direct expenditure on educational institutions as well as educational-related public subsidies given to households and administered by educational institutions. This indicator is shown as a percentage of GDP, divided by primary, primary to post-secondary non-tertiary and tertiary levels. Public entities include ministries other than ministries of education, local and regional governments, and other public agencies. Public spending includes expenditure on schools, universities and other public and private institutions delivering or supporting educational services. This indicator shows the priority given by governments to education relative to other areas of investment, such as health care, social security, defence and security. Education expenditure covers expenditure on schools, universities and other public and private institutions delivering or supporting educational services.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 484,
+    "row_count": 44,
+    "source": "kaggle",
+    "tags": [
+        "education",
+        "government",
+        "data analytics",
+        "tabular",
+        "primary and secondary schools",
+        "middle east"
+    ],
+    "title": "Education Statistics 1970-2014",
+    "topic": "education",
+    "url": "kaggle.com/datasets/adivireza/education-statistics",
+    "usability": 0.6470588235294118
+}

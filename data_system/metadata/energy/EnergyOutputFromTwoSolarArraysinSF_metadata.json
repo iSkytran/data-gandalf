@@ -1,0 +1,29 @@
+{
+    "col_count": 3,
+    "col_names": [
+        "location",
+        "date",
+        "kwh"
+    ],
+    "description": "Energy Output From Two Solar Arrays in San Francisco\nDescription\nThe data provide the energy output for several months from two roof-top solar arrays in San Francisco. This city is known for having highly variable weather, so while these two arrays are only about 1 mile apart from each other, the Inner Sunset location tends to have more fog.\n\nUsage\nsolar\nFormat\nA data frame with 284 observations on the following 3 variables. Each row represents a single day for one of the arrays.\n\nlocation\nLocation for the array.\n\ndate\nDate.\n\nkwh\nNumber of kWh\n\nDetails\nThe Haight-Ashbury array is a 10.4 kWh array, while the Inner Sunset array is a 2.8 kWh array. The kWh units represents kilowatt-hours, which is the unit of energy that typically is used for electricity bills. The cost per kWh in San Francisco was about $0.25 in 2016.\n\nSource\nThese data were provided by Larry Rosenfeld, a resident in San Francisco.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "other",
+            "nameNullable": "other"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 852,
+    "row_count": 284,
+    "source": "kaggle",
+    "tags": [
+        "energy",
+        "renewable energy",
+        "electricity"
+    ],
+    "title": "Energy Output From Two Solar Arrays in SF",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/eugeniyosetrov/energy-output-from-two-solar-arrays-in-sf",
+    "usability": 0.8823529411764706
+}

@@ -1,0 +1,36 @@
+{
+    "col_count": 10,
+    "col_names": [
+        "Country Name",
+        "PPT",
+        "GDP",
+        "PRPE",
+        "OOCP",
+        "ESE",
+        "EPE",
+        "UNEMP",
+        "LEB",
+        "TDP"
+    ],
+    "description": "Education is an area that interests me and I wanted to have a clearer picture of the level of education in different countries of the world. So the idea of this project appeared.\n\nAfter collecting data from 107 countries in the world, I want to analyze the level of schooling of the population according to indicators such as the primary school cycle, the percentage of pupils who repeat the primary school, those who start the primary cycle and those who continue, the unemployed population, GDP, life expectancy at birth and, at the same time, the total population.\n\nIndicators used:\n-  Population\n-  GDP\n-  Percentage of repeaters in Primary Education\n-  Out-of-school children of Primary School\n-  Enrolment in Secondary Education\n-  Enrolment in Primary Education\n-  Unemployment\n-  Life expectancy at birth\n-  Theoretical Duration of Primary Education\n\nThe data source is represented by http://data.worldbank.org/.\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 1070,
+    "row_count": 107,
+    "source": "kaggle",
+    "tags": [
+        "education",
+        "clustering",
+        "pca"
+    ],
+    "title": "Education DataSet",
+    "topic": "education",
+    "url": "kaggle.com/datasets/denisadutca/education-indicators-2014-worldwide",
+    "usability": 0.6470588235294118
+}

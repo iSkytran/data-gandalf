@@ -1,0 +1,61 @@
+{
+    "col_count": 34,
+    "col_names": [
+        "column_a",
+        "player_id",
+        "year",
+        "rnd",
+        "pick",
+        "tm",
+        "player",
+        "hof",
+        "pos",
+        "position_standard",
+        "first4av",
+        "age",
+        "to",
+        "ap1",
+        "pb",
+        "st",
+        "carav",
+        "drav",
+        "g",
+        "cmp",
+        "pass_att",
+        "pass_yds",
+        "pass_td",
+        "pass_int",
+        "rush_att",
+        "rush_yds",
+        "rush_tds",
+        "rec",
+        "rec_yds",
+        "rec_tds",
+        "tkl",
+        "def_int",
+        "sk",
+        "college_univ"
+    ],
+    "description": "The NFL Draft dataset contains detailed information on every player selected in the annual NFL draft from 1985 to 2015. The NFL draft is a crucial event for NFL teams, as it provides them with the opportunity to acquire new talent and build their rosters for the upcoming season.\n\nThe dataset includes information on the players' names, positions, colleges, and draft round selections. It also provides data on the players' physical attributes, such as height, weight, and 40-yard dash times. Additionally, the dataset contains information on the teams that selected each player and their overall performance in the NFL.\n\nThis dataset is valuable for football analysts and enthusiasts who are interested in understanding the trends and patterns in NFL draft selections over the past three decades. The dataset can be used to identify the most successful teams in drafting talent, as well as to analyze the factors that contribute to a player's success in the NFL. Additionally, the dataset may have practical applications in fields such as sports betting and fantasy football, as it provides insights into the performance of individual players and teams over time.",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "Attribution 4.0 International (CC BY 4.0)",
+            "nameNullable": "Attribution 4.0 International (CC BY 4.0)"
+        }
+    ],
+    "null_count": 106133,
+    "num_entries": 286790,
+    "row_count": 8435,
+    "source": "kaggle",
+    "tags": [
+        "sports",
+        "beginner",
+        "intermediate",
+        "regression"
+    ],
+    "title": "NFL Draft 1985-2015",
+    "topic": "sports",
+    "url": "kaggle.com/datasets/ulrikthygepedersen/nfl-draft-1985-2015",
+    "usability": 1.0
+}

@@ -1,0 +1,43 @@
+{
+    "col_count": 22,
+    "col_names": [
+        "year",
+        "energy_products",
+        "percentage",
+        "sector",
+        "subsector",
+        "electricity_consumption_gwh",
+        "month",
+        "peak_system_demand_mw",
+        "mean_sunshine_hrs",
+        "overall",
+        "public_housing",
+        "1-room_2-room",
+        "3-room",
+        "4-room",
+        "5-room_and_executive",
+        "private_housing",
+        "private_apts_and_condo",
+        "landed_properties",
+        "others"
+    ],
+    "description": "I've created this dataset just fro my own personal use but you can use it as well",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "CC0-1.0",
+            "nameNullable": "CC0-1.0"
+        }
+    ],
+    "null_count": 0,
+    "num_entries": 4259,
+    "row_count": 1032,
+    "source": "kaggle",
+    "tags": [
+        "electricity"
+    ],
+    "title": "Energy consumption Singapore",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/zyc191/energy-consumption-singapore-from-opendata",
+    "usability": 0.5882352941176471
+}

@@ -1,0 +1,31 @@
+{
+    "col_count": 7,
+    "col_names": [
+        "Date",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Adj Close",
+        "Volume"
+    ],
+    "description": "# Context\nDogecoin is a cryptocurrency created by software engineers Billy Markus and Jackson Palmer, who decided to create a payment system as a \"joke\", making fun of the wild speculation in cryptocurrencies at the time. It is considered both the first \"meme coin\", and, more specifically, the first \"dog coin\". Despite its satirical nature, some consider it a legitimate investment prospect. Dogecoin features the face of the Shiba Inu dog from the \"doge\" meme as its logo and namesake. It was introduced on December 6, 2013, and quickly developed its own online community, reaching a market capitalization of over $85 billion on May 5, 2021.\n\n# Content\nThis dataset contains 1018 text files with comma-separated values, with each file representing historical data for each company. The data in each file contains daily stock data for the company from when it became public to present.\nThere are 7 columns:\n- Date\n- Open\n- High\n- Low\n- Close\n- Adjusted close price for splits and dividend and/or capital gain distributions\n- Volume\n\n# Acknowledgements\nThanks to Yahoo Finance!",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "other",
+            "nameNullable": "other"
+        }
+    ],
+    "null_count": 6,
+    "num_entries": 12061,
+    "row_count": 1723,
+    "source": "kaggle",
+    "tags": [
+        "currencies and foreign exchange"
+    ],
+    "title": "DogeCoin Historical Price Data",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/neelgajare/dogecoin-historical-price-data",
+    "usability": 1.0
+}

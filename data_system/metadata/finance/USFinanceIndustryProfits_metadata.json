@@ -1,0 +1,32 @@
+{
+    "col_count": 8,
+    "col_names": [
+        "Unnamed: 0",
+        "year",
+        "CorporateProfitsAdj",
+        "Domestic",
+        "Financial",
+        "Nonfinancial",
+        "restOfWorld",
+        "FinanceProportion"
+    ],
+    "description": "",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "unknown",
+            "nameNullable": "unknown"
+        }
+    ],
+    "null_count": 89,
+    "num_entries": 672,
+    "row_count": 84,
+    "source": "kaggle",
+    "tags": [
+        "finance"
+    ],
+    "title": "US Finance Industry Profits",
+    "topic": "finance",
+    "url": "kaggle.com/datasets/deepikakoche/us-finance-industry-profits",
+    "usability": 0.23529411764705882
+}

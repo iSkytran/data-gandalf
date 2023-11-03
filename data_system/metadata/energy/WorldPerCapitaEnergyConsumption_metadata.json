@@ -1,0 +1,31 @@
+{
+    "col_count": 4,
+    "col_names": [
+        "Entity",
+        "Code",
+        "Year",
+        "Energy consumption per capita (kWh)"
+    ],
+    "description": "There are large inequalities in energy consumption between countries. The average US citizen still consumes more than ten times the energy of the average Indian, 4-5 times that of a Brazilian, and three times more than China. The gulf between these and very low-income nations is even greater- a number of low-income nations consume less than 100 kilowatt-hour equivalents per person.\n\nSecondly, global average per capita energy consumption has been consistently increasing; between 1970 and 2014, average consumption increased by approximately 45%.\n\nThis growth in per capita energy consumption does, however, vary significantly between countries and regions. Most of the growth in per capita energy consumption over the last few decades has been driven by increased consumption in transitioning middle-income (and to a lesser extent, low income countries). In the chart we see a significant increase in consumption in transitioning BRICS economies (China, India and Brazil in particular); China\u2019s per capita use has grown by nearly 250 percent since 2000; India by more than 50 percent; and Brazil by 38 percent.\n\nWhilst global energy growth is growing from developing economies, the trend for many high-income nations is a notable decline. As we see in exemplar trends from the UK and US, the growth we are currently seeing in transitioning economies ended for many high-income nations by over the 1970s and 80s. Both the US and UK peaked in terms of per capita energy consumption in the 1970s, plateauing for several decades until the early 2000s. Since then, we see a reduction in consumption; since 2000, UK usage has decreased by 20 to 25%.\n\n### Source\nHannah Ritchie (2019) - \"Access to Energy\". Published online at OurWorldInData.org. \nRetrieved from: 'https://ourworldindata.org/energy-access'\n",
+    "licenses": [
+        {
+            "hasName": true,
+            "name": "Attribution 4.0 International (CC BY 4.0)",
+            "nameNullable": "Attribution 4.0 International (CC BY 4.0)"
+        }
+    ],
+    "null_count": 165,
+    "num_entries": 35844,
+    "row_count": 8961,
+    "source": "kaggle",
+    "tags": [
+        "music",
+        "business",
+        "economics",
+        "energy"
+    ],
+    "title": "World Per Capita Energy Consumption",
+    "topic": "energy",
+    "url": "kaggle.com/datasets/mannmann2/world-per-capita-energy-consumption",
+    "usability": 0.9411764705882353
+}
