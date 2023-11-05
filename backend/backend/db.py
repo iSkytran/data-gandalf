@@ -34,10 +34,10 @@ def get_all(limit: int = 100) -> list[Dataset]:
 def get_by_id(id: str) -> list[Dataset]:
     with Session(engine) as session:
         dataset = session.exec(select(Dataset).where(Dataset.id == id)).first()
-        dataset = list_conversion_helper([dataset])
         if dataset is None:
-            #TODO: is this an error?
-            pass
+            print("No dataset found with id:", id)
+            return None
+        dataset = list_conversion_helper([dataset])
         return dataset
 
 def add_rating(rating: Rating) -> RatingRead:
