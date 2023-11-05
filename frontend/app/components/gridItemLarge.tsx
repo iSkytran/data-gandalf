@@ -9,7 +9,7 @@ export default function GridItemLarge({ metadata }: { metadata: any }) {
 
   return (
     <Link href={`/dataset/${metadata.id}`}>
-      <div className="w-full h-80 shadow-lg rounded-lg p-6 border overflow-x-hidden overflow-y-scroll bg-white">
+      <div className="w-full shadow-lg rounded-lg p-6 border overflow-x-hidden overflow-y-scroll bg-white">
         <h2 className="text-xl font-bold underline">{metadata.title}</h2>
         <p className="text-xl font-bold underline">Topic:</p>
         <p className="text-xl font-bold underline"> {metadata.topic}</p>
