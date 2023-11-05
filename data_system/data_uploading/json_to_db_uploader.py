@@ -11,7 +11,6 @@ class JsonToDbUploader(MetadataUploader):
 
     def prepare_upload_for_topic(self, topic):
         topic_path = os.path.join(self.file_input_path, topic)
-        print(os.listdir(self.file_input_path))
         files_to_upload = os.listdir(topic_path)
         # Add datasets to list
         for filename in files_to_upload:
