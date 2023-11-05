@@ -31,9 +31,8 @@ class RecommendationModel:
             return datasets
         # Check if model is dictionary
         elif isinstance(self.model, dict):
-            # print(self.model)
-            dataset_recs = self.model[dataset_id]
-            datasets = [(score, db.get_by_id(id)) for score,id in dataset_recs][:100]
+            dataset_recs = self.model[int(dataset_id)]
+            datasets = [(score, db.get_by_id(int(id))) for score,id in dataset_recs][:100]
             return datasets
         else:
             raise Exception("Unexpected model type")
