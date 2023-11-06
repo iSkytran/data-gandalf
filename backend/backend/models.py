@@ -13,9 +13,9 @@ class Dataset(SQLModel, table=True):
     description: str
     url: str
     source: str
-    tags: list[str] = Field(sa_column=Column(JSON))
-    licenses: list[str] = Field(sa_column=Column(JSON))
-    col_names: list[str] = Field(sa_column=Column(JSON))
+    tags: str = Field(sa_column=Column(JSON))
+    licenses: str = Field(sa_column=Column(JSON))
+    col_names: str = Field(sa_column=Column(JSON))
     col_count: int
     row_count: int
     entry_count: int

@@ -52,20 +52,22 @@ def list_conversion_helper(datasets: list[Dataset]) -> list[Dataset]:
         licenses_str = dataset.licenses
         col_names_str = dataset.col_names
 
-        tags_str = tags_str.replace("\"", "")
-        tags_str = tags_str.replace("{", "")
-        tags_str = tags_str.replace("}", "")
+        if tags_str is not None:
+            tags_str = tags_str.replace("\"", "")
+            tags_str = tags_str.replace("{", "")
+            tags_str = tags_str.replace("}", "")
+            dataset.tags = tags_str 
 
-        licenses_str = licenses_str.replace("\"", "")
-        licenses_str = licenses_str.replace("{", "")
-        licenses_str = licenses_str.replace("}", "")
+        if licenses_str is not None:
+            licenses_str = licenses_str.replace("\"", "")
+            licenses_str = licenses_str.replace("{", "")
+            licenses_str = licenses_str.replace("}", "")
+            dataset.licenses = licenses_str
 
-        col_names_str = col_names_str.replace("\"", "")
-        col_names_str = col_names_str.replace("{", "")
-        col_names_str = col_names_str.replace("}", "")
-
-        dataset.tags = tags_str 
-        dataset.licenses = licenses_str
-        dataset.col_names = col_names_str
+        if col_names_str is not None:
+            col_names_str = col_names_str.replace("\"", "")
+            col_names_str = col_names_str.replace("{", "")
+            col_names_str = col_names_str.replace("}", "")
+            dataset.col_names = col_names_str
     return datasets
 

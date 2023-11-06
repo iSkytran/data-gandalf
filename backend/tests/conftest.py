@@ -31,10 +31,10 @@ def mock_db_engine() -> Generator[Engine, None, None]:
 def init_mock_db(mock_db_engine: Engine) -> None:
     with Session(mock_db_engine) as session:
         datasets = [
-            Dataset(topic="Topic1", title="Dataset1", description="Description", url="http://example.com", source="Source", tags="['example']", licenses="['MIT']", col_names="['example']", col_count=1, row_count=2, entry_count=2, null_count=0, usability=1.0),
-            Dataset(topic="Topic2", title="Dataset2", description="Description", url="http://example.com", source="Source", tags="['example']", licenses="['MIT']", col_names="['example']", col_count=1, row_count=2, entry_count=2, null_count=0, usability=1.0),
-            Dataset(topic="Topic1", title="Dataset3", description="Description", url="http://example.com", source="Source", tags="['example']", licenses="['MIT']", col_names="['example']", col_count=1, row_count=2, entry_count=2, null_count=0, usability=1.0),
-            Dataset(topic="Topic2", title="Dataset4", description="Description", url="http://example.com", source="Source", tags="['example']", licenses="['MIT']", col_names="['example']", col_count=1, row_count=2, entry_count=2, null_count=0, usability=1.0),
+            Dataset(topic="Topic1", title="Dataset1", description="Description", url="http://example.com", source="Source", tags="[\"example\"]", licenses="['MIT']", col_names="['example']", col_count=1, row_count=2, entry_count=2, null_count=0, usability=1.0),
+            Dataset(topic="Topic2", title="Dataset2", description="Description", url="http://example.com", source="Source", tags="[\"example\"]", licenses="['MIT']", col_names="['example']", col_count=1, row_count=2, entry_count=2, null_count=0, usability=1.0),
+            Dataset(topic="Topic1", title="Dataset3", description="Description", url="http://example.com", source="Source", tags="[\"example\"]", licenses="['MIT']", col_names="['example']", col_count=1, row_count=2, entry_count=2, null_count=0, usability=1.0),
+            Dataset(topic="Topic2", title="Dataset4", description="Description", url="http://example.com", source="Source", tags="[\"example\"]", licenses="['MIT']", col_names="['example']", col_count=1, row_count=2, entry_count=2, null_count=0, usability=1.0),
         ]
         session.add_all(datasets)
         session.commit()

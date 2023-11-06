@@ -2,6 +2,8 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI, Depends
 from typing import Annotated, Any, Optional
 from sqlmodel import Session, SQLModel, create_engine
+from psycopg2.extensions import register_adapter, AsIs
+import numpy as np
 
 from backend import config as cf
 from backend import db
@@ -17,6 +19,9 @@ async def lifespan(app: FastAPI):
     db_url = cf.DB_URL
     db_engine = create_engine(db_url)
     SQLModel.metadata.create_all(db_engine)
+
+    register_adapter(np.int64, AsIs)
+
     yield
 
 app = FastAPI(lifespan=lifespan)
