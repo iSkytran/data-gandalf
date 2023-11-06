@@ -9,5 +9,5 @@ def test_singleton_behavior(recommendation_model: RecommendationModel):
 
 def test_ranking(mock_db_session: Session, recommendation_model: RecommendationModel):
     # TODO: how to not hard code this every retrain if want to compare ranking results
-    assert recommendation_model.rank(mock_db_session, "245") is not None
+    assert recommendation_model.rank(mock_db_session, "1837") is not None
 

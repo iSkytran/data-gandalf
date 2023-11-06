@@ -24,6 +24,6 @@ def test_datasets_with_topic(test_client: TestClient):
 
 
 def test_dataset(test_client: TestClient):
-    uid = "245"  # may need to be changed
+    uid = "1837"  # may need to be changed
     response = test_client.get(f"/datasets/{uid}")
     assert response.status_code == 200
