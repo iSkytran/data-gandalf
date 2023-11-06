@@ -1,3 +1,4 @@
+from contextlib import asynccontextmanager
 from fastapi import FastAPI, Depends
 from typing import Annotated, Any, Optional
 from sqlmodel import Session, SQLModel, create_engine
@@ -7,15 +8,20 @@ from backend import db
 from backend.recommender import recommendation_model
 from backend.models import Dataset, Rating
 
-app = FastAPI()
+db_engine = None
 
 # Database Setup
-db_url = cf.DB_URL
-engine = create_engine(db_url)
-SQLModel.metadata.create_all(engine)
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    db_url = cf.DB_URL
+    db_engine = create_engine(db_url)
+    SQLModel.metadata.create_all(db_engine)
+    yield
+
+app = FastAPI(lifespan=lifespan)
 
 def get_session():
-    with Session(engine) as session:
+    with Session(db_engine) as session:
         yield session
 
 @app.get("/health")
