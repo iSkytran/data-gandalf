@@ -13,6 +13,7 @@ db_engine = None
 # Database Setup
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    global db_engine
     db_url = cf.DB_URL
     db_engine = create_engine(db_url)
     SQLModel.metadata.create_all(db_engine)
