@@ -64,11 +64,8 @@ def list_conversion_helper(datasets: list[Dataset]) -> list[Dataset]:
         col_names_str = col_names_str.replace("{", "")
         col_names_str = col_names_str.replace("}", "")
 
-        tags_list = tags_str.split(",")
-        licenses_list = licenses_str.split(",")
-        col_names_list = col_names_str.split(",")
-        dataset.tags = tags_list
-        dataset.licenses = licenses_list
-        dataset.col_names = col_names_list
+        dataset.tags = tags_str 
+        dataset.licenses = licenses_str
+        dataset.col_names = col_names_str
     return datasets
 
