@@ -20,7 +20,9 @@ METADATA_FOLDER = "metadata"
 
 # The topics to query from. 
 TOPICS = ['sports', 'education', 'housing', 'health', 'finance', 'energy', 'politics', 'agriculture', 'chemistry', 'entertainment']
-# TOPICS = ['sports']
+
+# Number of datasets to fetch per topic.
+DATASETS_PER_TOPIC = 105
 
 # Source to query. 
 SOURCE = "kaggle"
@@ -35,8 +37,7 @@ uploader = MetadataUploader()
 # Override extractor and uploader objects. 
 if SOURCE == "kaggle":
     if "FETCH" in STAGES:
-        kaggle.fetch(topics=TOPICS, num_datasets=100, output_folder=DATASET_FOLDER)
-        print("FETCHING")
+        kaggle.fetch(topics=TOPICS, num_datasets=DATASETS_PER_TOPIC, output_folder=DATASET_FOLDER)
     extractor = KaggleExtractor(file_input_path=DATASET_FOLDER, file_output_path=METADATA_FOLDER)
     uploader = JsonToDbUploader(file_input_path=METADATA_FOLDER)
 
@@ -62,8 +63,12 @@ if "UPLOAD" in STAGES:
 # Delete Unnecessary data. 
 if not SAVE_CSV:
     for topic in TOPICS:
-        shutil.rmtree(os.path.join(DATASET_FOLDER, topic))
+        path = os.path.join(DATASET_FOLDER, topic)
+        if os.path.exists(path):
+            shutil.rmtree(path)
 
 if not SAVE_METADATA:
     for topic in TOPICS:
-        shutil.rmtree(os.path.join(METADATA_FOLDER, topic))
+        path = os.path.join(METADATA_FOLDER, topic)
+        if os.path.exists(path):
+            shutil.rmtree(path)

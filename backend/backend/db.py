@@ -1,71 +1,50 @@
-from sqlmodel import Session, SQLModel, create_engine, select
-from backend.models import Dataset, Rating, RatingRead
-import backend.config as cf
-import os
+from sqlmodel import Session, select
+from backend.models import Dataset, Rating
 
-db_url = cf.DB_URL
-engine = create_engine(db_url)
+def get_topics(session: Session) -> list[str]:
+    topics = session.exec(select(Dataset.topic).distinct()).all()
+    return topics
 
-def set_engine(new_engine) -> None:
-    """Replace engine for testing"""
-    global engine
-    engine = new_engine
+def get_by_topic(session: Session, topic: str, limit: int = 100) -> list[Dataset]:
+    datasets = session.exec(select(Dataset).where(Dataset.topic == topic).limit(limit)).all()
+    datasets = list_conversion_helper(datasets)
+    return datasets
 
-def init() -> None:
-    SQLModel.metadata.create_all(engine)
+def get_all(session: Session, limit: int = 100) -> list[Dataset]:
+    datasets = session.exec(select(Dataset).limit(limit)).all()
+    datasets = list_conversion_helper(datasets)
+    return datasets
 
-def get_topics() -> list[str]:
-    with Session(engine) as session:
-        topics = session.exec(select(Dataset.topic).distinct()).all()
-        return topics
-
-def get_by_topic(topic: str, limit: int = 100) -> list[Dataset]:
-    with Session(engine) as session:
-        datasets = session.exec(select(Dataset).where(Dataset.topic == topic).limit(limit)).all()
-        datasets = list_conversion_helper(datasets)
-        return datasets
-
-def get_all(limit: int = 100) -> list[Dataset]:
-    with Session(engine) as session:
-        datasets = session.exec(select(Dataset).limit(limit)).all()
-        datasets = list_conversion_helper(datasets)
-        return datasets
-
-def get_by_id(id: str) -> list[Dataset]:
-    with Session(engine) as session:
-        dataset = session.exec(select(Dataset).where(Dataset.id == id)).first()
+def get_by_id(session: Session, id: str) -> list[Dataset]:
+    dataset = session.exec(select(Dataset).where(Dataset.id == id)).first()
+    if dataset is not None:
         dataset = list_conversion_helper([dataset])
-        if dataset is None:
-            #TODO: is this an error?
-            pass
         return dataset
+    else:
+        return []
 
-def add_rating(rating: Rating) -> RatingRead:
-    with Session(engine) as session:
-        session.add(rating)
-        session.commit()
-        session.refresh(rating)
-        return rating
+def add_rating(session: Session, rating: Rating) -> Rating:
+    session.add(rating)
+    session.commit()
+    session.refresh(rating)
+    return rating
 
-def update_rating(rating: Rating) -> RatingRead:
-    with Session(engine) as session:
-        updated = session.exec(select(Rating).where(Rating.id == rating.id)).one()
-        updated.recommend = rating.recommend
-        session.add(updated)
-        session.commit()
-        session.refresh(updated)
-        return updated
+def update_rating(session: Session, rating: Rating) -> Rating:
+    updated = session.exec(select(Rating).where(Rating.id == rating.id)).one()
+    updated.recommend = rating.recommend
+    session.add(updated)
+    session.commit()
+    session.refresh(updated)
+    return updated
 
-def delete_rating(id: int) -> None:
-    with Session(engine) as session:
-        rating = session.exec(select(Rating).where(Rating.id == id))
-        session.delete(rating.one())
-        session.commit()
+def delete_rating(session: Session, id: int) -> None:
+    rating = session.exec(select(Rating).where(Rating.id == id))
+    session.delete(rating.one())
+    session.commit()
 
-def get_ratings(user_session: str, source_dataset: int) -> list[RatingRead]:
-    with Session(engine) as session:
-        ratings = session.exec(select(Rating).where(Rating.user_session == user_session).where(Rating.source_dataset == source_dataset)).all()
-        return ratings
+def get_ratings(session: Session, user_session: str, source_dataset: int) -> list[Rating]:
+    ratings = session.exec(select(Rating).where(Rating.user_session == user_session).where(Rating.source_dataset == source_dataset)).all()
+    return ratings
 
 def list_conversion_helper(datasets: list[Dataset]) -> list[Dataset]:
     for dataset in datasets:
@@ -73,23 +52,22 @@ def list_conversion_helper(datasets: list[Dataset]) -> list[Dataset]:
         licenses_str = dataset.licenses
         col_names_str = dataset.col_names
 
-        tags_str = tags_str.replace("\"", "")
-        tags_str = tags_str.replace("{", "")
-        tags_str = tags_str.replace("}", "")
+        if tags_str is not None:
+            tags_str = tags_str.replace("\"", "")
+            tags_str = tags_str.replace("{", "")
+            tags_str = tags_str.replace("}", "")
+            dataset.tags = tags_str 
 
-        licenses_str = licenses_str.replace("\"", "")
-        licenses_str = licenses_str.replace("{", "")
-        licenses_str = licenses_str.replace("}", "")
+        if licenses_str is not None:
+            licenses_str = licenses_str.replace("\"", "")
+            licenses_str = licenses_str.replace("{", "")
+            licenses_str = licenses_str.replace("}", "")
+            dataset.licenses = licenses_str
 
-        col_names_str = col_names_str.replace("\"", "")
-        col_names_str = col_names_str.replace("{", "")
-        col_names_str = col_names_str.replace("}", "")
-
-        tags_list = tags_str.split(",")
-        licenses_list = licenses_str.split(",")
-        col_names_list = col_names_str.split(",")
-        dataset.tags = tags_list
-        dataset.licenses = licenses_list
-        dataset.col_names = col_names_list
+        if col_names_str is not None:
+            col_names_str = col_names_str.replace("\"", "")
+            col_names_str = col_names_str.replace("{", "")
+            col_names_str = col_names_str.replace("}", "")
+            dataset.col_names = col_names_str
     return datasets
 
