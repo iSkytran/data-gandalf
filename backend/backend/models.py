@@ -1,6 +1,5 @@
-from typing import Optional, List
-from sqlmodel import Field, SQLModel, JSON
-from uuid import UUID
+from typing import Optional
+from sqlmodel import Field, SQLModel, Column, JSON
 
 class Dataset(SQLModel, table=True):
     """Schema for a dataset.
@@ -14,9 +13,9 @@ class Dataset(SQLModel, table=True):
     description: str
     url: str
     source: str
-    tags: List[str] = Field(sa_column=JSON)
-    licenses: List[str] = Field(sa_column=JSON)
-    col_names: List[str] = Field(sa_column=JSON)
+    tags: str = Field(sa_column=Column(JSON))
+    licenses: str = Field(sa_column=Column(JSON))
+    col_names: str = Field(sa_column=Column(JSON))
     col_count: int
     row_count: int
     entry_count: int
@@ -48,13 +47,4 @@ class Rating(RatingBase, table=True):
         id: Primary key for the entry.
     """
     id: Optional[int] = Field(default=None, primary_key=True)
-
-class RatingRead(RatingBase):
-    """Rating model that includes the primary key id.
-    Inherits from RatingBase.
-
-    Attributes:
-        id: Primary key for the entry.
-    """
-    id: int
 

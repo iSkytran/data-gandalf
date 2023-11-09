@@ -1,51 +1,70 @@
-from fastapi import FastAPI
-from typing import Any, Optional
+from contextlib import asynccontextmanager
+from fastapi import FastAPI, Depends
+from typing import Annotated, Any, Optional
+from sqlmodel import Session, SQLModel, create_engine
+from psycopg2.extensions import register_adapter, AsIs
+import numpy as np
 
+from backend import config as cf
 from backend import db
 from backend.recommender import recommendation_model
-from backend.models import Dataset, Rating, RatingRead
+from backend.models import Dataset, Rating
 
-app = FastAPI()
+db_engine = None
 
-@app.on_event("startup")
-def startup() -> None:
-    db.init()
+# Database Setup
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    global db_engine
+    db_url = cf.DB_URL
+    db_engine = create_engine(db_url)
+    SQLModel.metadata.create_all(db_engine)
+
+    register_adapter(np.int64, AsIs)
+
+    yield
+
+app = FastAPI(lifespan=lifespan)
+
+def get_session():
+    with Session(db_engine) as session:
+        yield session
 
 @app.get("/health")
 async def get_health() -> str:
     return "Service is up"
 
 @app.get("/topics", response_model=list[str])
-def get_topics() -> list[str]:
-    return db.get_topics()
+def get_topics(session: Annotated[Session, Depends(get_session)]) -> list[str]:
+    return db.get_topics(session)
 
 @app.get("/datasets", response_model=list[Dataset])
-def get_datasets(topic: Optional[str] = None) -> list[Dataset]:
+def get_datasets(session: Annotated[Session, Depends(get_session)], topic: Optional[str] = None) -> list[Dataset]:
     if topic:
-        datasets = db.get_by_topic(topic)
+        datasets = db.get_by_topic(session, topic)
         return datasets
     else:
-        datasets = db.get_all()
+        datasets = db.get_all(session)
         return datasets
     
 @app.get("/datasets/{uid}")
-def get_dataset(uid: str) -> tuple[list[Dataset], list[tuple[Any, list[Dataset]]]]:
-    dataset = db.get_by_id(uid)
-    return (dataset, recommendation_model.rank(uid))
+def get_dataset(session: Annotated[Session, Depends(get_session)], uid: str) -> tuple[list[Dataset], list[tuple[Any, list[Dataset]]]]:
+    dataset = db.get_by_id(session, uid)
+    return (dataset, recommendation_model.rank(session, uid))
 
-@app.get("/ratings", response_model=list[RatingRead])
-def get_ratings(user_session: str, source_dataset: int) -> list[RatingRead]:
-    return db.get_ratings(user_session, source_dataset)
+@app.get("/ratings", response_model=list[Rating])
+def get_ratings(session: Annotated[Session, Depends(get_session)], user_session: str, source_dataset: int) -> list[Rating]:
+    return db.get_ratings(session, user_session, source_dataset)
 
-@app.post("/ratings", response_model=RatingRead)
-def post_rating(rating: Rating) -> RatingRead:
+@app.post("/ratings", response_model=Rating)
+def post_rating(session: Annotated[Session, Depends(get_session)], rating: Rating) -> Rating:
     rating = Rating.from_orm(rating)
     if (rating.id == None):
-        return db.add_rating(rating)
+        return db.add_rating(session, rating)
     else:
-        return db.update_rating(rating)
+        return db.update_rating(session, rating)
 
 @app.delete("/ratings/{uid}")
-def delete_rating(uid: int) -> None:
-    db.delete_rating(uid)
+def delete_rating(session: Annotated[Session, Depends(get_session)], uid: int) -> None:
+    db.delete_rating(session, uid)
 

@@ -72,13 +72,13 @@ class KaggleExtractor(MetadataExtractor):
         null_count:int = int(df.isnull().sum().sum()) 
         metadata['null_count'] = null_count + metadata.get('null_count', 0)
 
-        num_entries:int = df.size
+        num_entries:int = int(df.size)
         metadata['num_entries'] = num_entries + metadata.get('num_entries', 0)
 
-        row_count:int = df.shape[0]
+        row_count:int = int(df.shape[0])
         metadata['row_count'] = row_count + metadata.get('row_count', 0)
 
-        col_count:int = df.shape[1]
+        col_count:int = int(df.shape[1])
         metadata['col_count'] = col_count + metadata.get('col_count', 0)
 
         col_names:list[str] = df.columns.tolist()
