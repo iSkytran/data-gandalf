@@ -4,6 +4,7 @@ import Grid from "@/app/components/grid";
 import GridItem from "@/app/components/gridItem";
 import GridItemLarge from "@/app/components/gridItemLarge";
 import Rating from "@/app/components/rating";
+import Link from "next/link";
 import { processMetadata } from "@/app/utilities";
 import { useCookies } from "react-cookie";
 import { v4 as uuidv4 } from "uuid";
@@ -20,7 +21,7 @@ export default function Dataset({ params }: { params: { dataset: string } }) {
   useEffect(() => {
     const datasetUrl = `/api/datasets/${encodeURIComponent(params.dataset)}`;
     const ratingUrl = `/api/ratings/?user_session=${encodeURIComponent(
-      cookies["user_session"],
+      cookies["user_session"]
     )}&source_dataset=${encodeURIComponent(params.dataset)}`;
 
     Promise.all([fetch(datasetUrl), fetch(ratingUrl)])
@@ -42,7 +43,7 @@ export default function Dataset({ params }: { params: { dataset: string } }) {
         // Add blank rating element if one was not fetched.
         newDatasets.forEach((newDataset: any) => {
           let ratingIdx: number = newRatings.findIndex(
-            (e: any) => e.destination_dataset === newDataset.id,
+            (e: any) => e.destination_dataset === newDataset.id
           );
           if (ratingIdx === -1) {
             newRatings.push({
@@ -64,7 +65,7 @@ export default function Dataset({ params }: { params: { dataset: string } }) {
 
   const items = datasets.map((dataset: any) => {
     const ratingIdx: number = ratings.findIndex(
-      (e: any) => e.destination_dataset === dataset.id,
+      (e: any) => e.destination_dataset === dataset.id
     );
     return (
       <GridItem key={dataset.id} metadata={dataset}>
@@ -80,9 +81,11 @@ export default function Dataset({ params }: { params: { dataset: string } }) {
   return (
     <>
       <header className="flex p-6 fixed top-0 w-full bg-white shadow-md">
-        <h1 className="flex-auto basis-4/6 text-4xl font-bold text-sas_blue">
-          Data Gandalf
-        </h1>
+        <Link href="/">
+          <h1 className="flex-auto basis-4/6 text-4xl font-bold text-sas_blue">
+            Data Gandalf
+          </h1>
+        </Link>
       </header>
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <h1 className="flex-auto m-6 basis-4/6 text-4xl font-bold text-sas_blue">
