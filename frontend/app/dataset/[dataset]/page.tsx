@@ -1,9 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
-import Grid from "../../components/grid";
-import GridItem from "../../components/gridItem";
-import GridItemLarge from "../../components/gridItemLarge";
-import Rating from "../../components/rating";
+import Grid from "@/app/components/grid";
+import GridItem from "@/app/components/gridItem";
+import GridItemLarge from "@/app/components/gridItemLarge";
+import Rating from "@/app/components/rating";
+import { processMetadata } from "@/app/utilities";
 import { useCookies } from "react-cookie";
 import { v4 as uuidv4 } from "uuid";
 
@@ -18,27 +19,31 @@ export default function Dataset({ params }: { params: { dataset: string } }) {
 
   useEffect(() => {
     const datasetUrl = `/api/datasets/${encodeURIComponent(params.dataset)}`;
-    const ratingUrl = `/api/ratings/?user_session=${encodeURIComponent(cookies["user_session"])}&source_dataset=${encodeURIComponent(params.dataset)}`;
+    const ratingUrl = `/api/ratings/?user_session=${encodeURIComponent(
+      cookies["user_session"]
+    )}&source_dataset=${encodeURIComponent(params.dataset)}`;
 
-    Promise.all([
-      fetch(datasetUrl),
-      fetch(ratingUrl),
-    ]).then(async(res) => {
+    Promise.all([fetch(datasetUrl), fetch(ratingUrl)])
+      .then(async (res) => {
         const datasetRes = await res[0].json();
         const ratingRes = await res[1].json();
         return [datasetRes, ratingRes];
-    }).then((data) => {
-	let newMetadata = data[0][0][0];
+      })
+      .then((data) => {
+        let newMetadata = processMetadata(data[0][0][0]);
         let newDatasets = data[0][1].map((e: any) => {
-          const dataset = e[1][0];
+          const dataset = processMetadata(e[1][0]);
           dataset.similarity = e[0];
+
           return dataset;
         });
         let newRatings = data[1];
 
         // Add blank rating element if one was not fetched.
         newDatasets.forEach((newDataset: any) => {
-          let ratingIdx: number = newRatings.findIndex((e: any) => e.destination_dataset === newDataset.id);
+          let ratingIdx: number = newRatings.findIndex(
+            (e: any) => e.destination_dataset === newDataset.id
+          );
           if (ratingIdx === -1) {
             newRatings.push({
               user_session: cookies["user_session"],
@@ -50,19 +55,24 @@ export default function Dataset({ params }: { params: { dataset: string } }) {
         setMetadata(newMetadata);
         setDatasets(newDatasets);
         setRatings(newRatings);
-    });
-
-  }, [params.dataset]);
+      });
+  }, [params.dataset, cookies]);
 
   if (!(datasets && ratings)) {
     return <div>Loading...</div>;
   }
 
   const items = datasets.map((dataset: any) => {
-    const ratingIdx: number = ratings.findIndex((e: any) => e.destination_dataset === dataset.id);
+    const ratingIdx: number = ratings.findIndex(
+      (e: any) => e.destination_dataset === dataset.id
+    );
     return (
       <GridItem key={dataset.id} metadata={dataset}>
-        <Rating ratingIdx={ratingIdx} ratings={ratings} setRatings={setRatings} />
+        <Rating
+          ratingIdx={ratingIdx}
+          ratings={ratings}
+          setRatings={setRatings}
+        />
       </GridItem>
     );
   });
@@ -75,18 +85,15 @@ export default function Dataset({ params }: { params: { dataset: string } }) {
         </h1>
       </header>
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <h1 className="flex-auto basis-4/6 text-4xl font-bold text-sas_blue">
-            Chosen Dataset
-          </h1>
+        <h1 className="flex-auto m-6 basis-4/6 text-4xl font-bold text-sas_blue">
+          Chosen Dataset
+        </h1>
         <GridItemLarge metadata={metadata} />
-        <h1 className="flex-auto basis-4/6 text-4xl font-bold text-sas_blue">
+        <h1 className="flex-auto m-6 basis-4/6 text-4xl font-bold text-sas_blue">
           Recommended Datasets
         </h1>
-        <Grid>
-          {items}
-	</Grid>
+        <Grid>{items}</Grid>
       </main>
     </>
   );
 }
-

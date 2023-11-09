@@ -1,8 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
-import FilterBar from "./components/filterBar";
-import Grid from "./components/grid";
-import GridItem from "./components/gridItem";
+import FilterBar from "@/app/components/filterBar";
+import Grid from "@/app/components/grid";
+import GridItem from "@/app/components/gridItem";
+import { processMetadata } from "@/app/utilities";
 
 export default function Home() {
   const [datasets, setDatasets] = useState([]);
@@ -13,14 +14,15 @@ export default function Home() {
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
+        data.map((dataset: any) => {
+          return processMetadata(dataset);
+        });
         setDatasets(data);
       });
   }, [selectedTopic]);
 
   const items = datasets.map((dataset: any) => {
-    return (
-      <GridItem key={dataset.id} metadata={dataset}/>
-    );
+    return <GridItem key={dataset.id} metadata={dataset} />;
   });
 
   if (!datasets) {
@@ -43,9 +45,7 @@ export default function Home() {
           Find relevant datasets by filtering with a topic or through selecting
           a dataset.
         </h2>
-        <Grid>
-          { items }
-        </Grid>
+        <Grid>{items}</Grid>
       </main>
     </>
   );

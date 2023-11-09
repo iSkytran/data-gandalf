@@ -8,11 +8,8 @@ export default function GridItem({ metadata, children }: { metadata: any, childr
       </Link>
       {metadata.similarity && <p className="font-semibold my-1 ">Similarity: {Math.round(10000 * metadata.similarity)/100}</p>}
       { children }
-      <p className="font-semibold my-1 ">Topic:</p>
+      <p className="font-semibold my-1">Topic:</p>
       <p className="text-l"> {metadata.topic}</p>
-      <p className="font-semibold my-1 underline">Description:</p>
-      <p className="text-sm"> {metadata.description}</p>
-
       <p className="font-semibold my-1 underline">Licenses:</p>
       <p className="text-sm"> {metadata.licenses}</p>
       <p className="font-semibold my-1 underline">Tags:</p>
