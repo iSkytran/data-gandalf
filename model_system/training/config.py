@@ -1,5 +1,5 @@
 # Where to save trained model
-MODEL_PATH = "../backend/models/new_recommendations.pkl"
+MODEL_PATH = "../backend/models/test.pkl"
 
 # DB Configurations
 DBNAME="training_database"
@@ -17,10 +17,11 @@ LICENSES_COL="licenses"
 TAGS_COL="tags"
 COLUMN_NAMES_COL="col_names"
 
-# Tokenization method used by the TF-IDF Mode
+# Tokenization method used by the TF-IDF Model
 TOKENIZATION_METHOD="scibert"
 
 # Weights of specific features on final recommendation scores
+# To deactivate a feature, set feature weight to 1
 LICENSES_WEIGHT=1.1
 TAGS_WEIGHT=1.1
 COLUMN_NAMES_WEIGHT=1.05
