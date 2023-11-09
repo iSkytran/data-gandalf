@@ -20,7 +20,7 @@ export default function Dataset({ params }: { params: { dataset: string } }) {
   useEffect(() => {
     const datasetUrl = `/api/datasets/${encodeURIComponent(params.dataset)}`;
     const ratingUrl = `/api/ratings/?user_session=${encodeURIComponent(
-      cookies["user_session"]
+      cookies["user_session"],
     )}&source_dataset=${encodeURIComponent(params.dataset)}`;
 
     Promise.all([fetch(datasetUrl), fetch(ratingUrl)])
@@ -42,7 +42,7 @@ export default function Dataset({ params }: { params: { dataset: string } }) {
         // Add blank rating element if one was not fetched.
         newDatasets.forEach((newDataset: any) => {
           let ratingIdx: number = newRatings.findIndex(
-            (e: any) => e.destination_dataset === newDataset.id
+            (e: any) => e.destination_dataset === newDataset.id,
           );
           if (ratingIdx === -1) {
             newRatings.push({
@@ -64,7 +64,7 @@ export default function Dataset({ params }: { params: { dataset: string } }) {
 
   const items = datasets.map((dataset: any) => {
     const ratingIdx: number = ratings.findIndex(
-      (e: any) => e.destination_dataset === dataset.id
+      (e: any) => e.destination_dataset === dataset.id,
     );
     return (
       <GridItem key={dataset.id} metadata={dataset}>

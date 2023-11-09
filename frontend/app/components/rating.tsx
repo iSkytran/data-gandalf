@@ -1,13 +1,29 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faThumbsUp as solidThumbsUp, faThumbsDown as solidThumbsDown } from "@fortawesome/free-solid-svg-icons";
-import { faThumbsUp as regThumbsUp, faThumbsDown as regThumbsDown } from "@fortawesome/free-regular-svg-icons";
+import {
+  faThumbsUp as solidThumbsUp,
+  faThumbsDown as solidThumbsDown,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faThumbsUp as regThumbsUp,
+  faThumbsDown as regThumbsDown,
+} from "@fortawesome/free-regular-svg-icons";
 
-export default function Rating({ ratingIdx, ratings, setRatings }: { ratingIdx: number, ratings: any, setRatings: any }) {
+export default function Rating({
+  ratingIdx,
+  ratings,
+  setRatings,
+}: {
+  ratingIdx: number;
+  ratings: any;
+  setRatings: any;
+}) {
   // For rating.recommend, 0 represents no selection, 1 is positive, -1 is negative.
   const rating = ratings[ratingIdx];
 
   const deleteRequest = () => {
-    fetch(`/api/ratings/${encodeURIComponent(rating.id)}`, { method: "DELETE" });
+    fetch(`/api/ratings/${encodeURIComponent(rating.id)}`, {
+      method: "DELETE",
+    });
     const newRatings = ratings.map((e: any) => {
       if (e.id === rating.id) {
         delete e.id;
@@ -19,14 +35,15 @@ export default function Rating({ ratingIdx, ratings, setRatings }: { ratingIdx: 
   };
 
   const postRequest = (recommend: boolean) => {
-      rating.recommend = recommend;
-      fetch("/api/ratings", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(rating),
-      }).then((res) => res.json())
+    rating.recommend = recommend;
+    fetch("/api/ratings", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(rating),
+    })
+      .then((res) => res.json())
       .then((data) => {
         const newRatings = ratings.map((e: any, i: number) => {
           if (i === ratingIdx) {
@@ -50,17 +67,40 @@ export default function Rating({ ratingIdx, ratings, setRatings }: { ratingIdx: 
 
   return (
     <div className="flex space-x-1">
-        {rating.recommend === true ? (
-          <FontAwesomeIcon icon={solidThumbsUp} onClick={e => {changeRating(e, null);}}/>
-        ) : (
-          <FontAwesomeIcon icon={regThumbsUp} onClick={e => {changeRating(e, true);}}/>
-        )}
-        {rating.recommend === false ? (
-          <FontAwesomeIcon icon={solidThumbsDown} onClick={e => {changeRating(e, null);}}/>
-        ) : (
-          <FontAwesomeIcon icon={regThumbsDown} onClick={e => {changeRating(e, false);}}/>
-        )}
+      {rating.recommend === true ? (
+        <FontAwesomeIcon
+          icon={solidThumbsUp}
+          size="lg"
+          onClick={(e) => {
+            changeRating(e, null);
+          }}
+        />
+      ) : (
+        <FontAwesomeIcon
+          icon={regThumbsUp}
+          size="lg"
+          onClick={(e) => {
+            changeRating(e, true);
+          }}
+        />
+      )}
+      {rating.recommend === false ? (
+        <FontAwesomeIcon
+          icon={solidThumbsDown}
+          size="lg"
+          onClick={(e) => {
+            changeRating(e, null);
+          }}
+        />
+      ) : (
+        <FontAwesomeIcon
+          icon={regThumbsDown}
+          size="lg"
+          onClick={(e) => {
+            changeRating(e, false);
+          }}
+        />
+      )}
     </div>
   );
 }
-
