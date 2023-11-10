@@ -8,26 +8,45 @@ import { processMetadata } from "@/app/utilities";
 export default function Home() {
   const [datasets, setDatasets] = useState([]);
   const [selectedTopic, setSelectedTopic] = useState("");
+  const [offset, setOffset] = useState(0);
+  const [pageCount, setPageCount] = useState(0);
 
   useEffect(() => {
-    let url = `/api/datasets?topic=${encodeURIComponent(selectedTopic)}`;
+    let url =
+      "/api/datasets?" +
+      new URLSearchParams([
+        ["offset", offset.toString()],
+        ["topic", selectedTopic],
+      ]);
+
     fetch(url)
-      .then((res) => res.json())
+      .then((res) => {
+        let xCount = res.headers.get("x-total-count");
+        let xOffset = res.headers.get("x-offset-count");
+        if (xCount) {
+          setPageCount(parseInt(xCount) / 100);
+        }
+        if (xOffset) {
+          setOffset(parseInt(xOffset));
+        }
+        return res.json();
+      })
       .then((data) => {
         data.map((dataset: any) => {
           return processMetadata(dataset);
         });
         setDatasets(data);
       });
-  }, [selectedTopic]);
+  }, [selectedTopic, offset]);
+
+  const pageChange = (event: any) => {
+    const newOffset = event.selected * 100;
+    setOffset(newOffset);
+  };
 
   const items = datasets.map((dataset: any) => {
     return <GridItem key={dataset.id} metadata={dataset} />;
   });
-
-  if (!datasets) {
-    return <div>Loading...</div>;
-  }
 
   return (
     <>
@@ -45,7 +64,11 @@ export default function Home() {
           Find relevant datasets by filtering with a topic or through selecting
           a dataset.
         </h2>
-        <Grid>{items}</Grid>
+        {datasets.length != 0 && (
+          <Grid pageCount={pageCount} pageChange={pageChange}>
+            {items}
+          </Grid>
+        )}
       </main>
     </>
   );

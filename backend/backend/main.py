@@ -1,5 +1,5 @@
 from contextlib import asynccontextmanager
-from fastapi import FastAPI, Depends
+from fastapi import FastAPI, Depends, Response
 from typing import Annotated, Any, Optional
 from sqlmodel import Session, SQLModel, create_engine
 from psycopg2.extensions import register_adapter, AsIs
@@ -19,9 +19,7 @@ async def lifespan(app: FastAPI):
     db_url = cf.DB_URL
     db_engine = create_engine(db_url)
     SQLModel.metadata.create_all(db_engine)
-
     register_adapter(np.int64, AsIs)
-
     yield
 
 app = FastAPI(lifespan=lifespan)
@@ -39,12 +37,15 @@ def get_topics(session: Annotated[Session, Depends(get_session)]) -> list[str]:
     return db.get_topics(session)
 
 @app.get("/datasets", response_model=list[Dataset])
-def get_datasets(session: Annotated[Session, Depends(get_session)], topic: Optional[str] = None) -> list[Dataset]:
-    if topic:
-        datasets = db.get_by_topic(session, topic)
+def get_datasets(session: Annotated[Session, Depends(get_session)], response: Response, topic: Optional[str] = None, offset: Optional[int] = 0) -> list[Dataset]:
+    response.headers["X-Offset-Count"] = str(offset)
+    if topic and topic != "":
+        datasets = db.get_by_topic(session, topic, offset)
+        response.headers["X-Total-Count"] = str(db.get_topic_count(session, topic))
         return datasets
     else:
-        datasets = db.get_all(session)
+        datasets = db.get_all(session, offset)
+        response.headers["X-Total-Count"] = str(db.get_all_count(session))
         return datasets
     
 @app.get("/datasets/{uid}")
@@ -67,4 +68,3 @@ def post_rating(session: Annotated[Session, Depends(get_session)], rating: Ratin
 @app.delete("/ratings/{uid}")
 def delete_rating(session: Annotated[Session, Depends(get_session)], uid: int) -> None:
     db.delete_rating(session, uid)
-

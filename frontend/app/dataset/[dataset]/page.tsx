@@ -14,6 +14,7 @@ export default function Dataset({ params }: { params: { dataset: string } }) {
   const [datasets, setDatasets] = useState<any[]>([]);
   const [ratings, setRatings] = useState<any[]>([]);
   const [cookies, setCookie] = useCookies<any>(["user_session"]);
+
   if (!("user_session" in cookies)) {
     setCookie("user_session", uuidv4());
   }
