@@ -1,13 +1,14 @@
 "use client";
 import { useState, useEffect } from "react";
+import { useCookies } from "react-cookie";
+import { v4 as uuidv4 } from "uuid";
 import Grid from "@/app/components/grid";
 import GridItem from "@/app/components/gridItem";
 import GridItemLarge from "@/app/components/gridItemLarge";
 import Rating from "@/app/components/rating";
 import Link from "next/link";
+import LoadingIcon from "@/app/components/loadingIcon";
 import { processMetadata } from "@/app/utilities";
-import { useCookies } from "react-cookie";
-import { v4 as uuidv4 } from "uuid";
 
 export default function Dataset({ params }: { params: { dataset: string } }) {
   const [metadata, setMetadata] = useState<any>(null);
@@ -60,10 +61,6 @@ export default function Dataset({ params }: { params: { dataset: string } }) {
       });
   }, [params.dataset, cookies]);
 
-  if (!(datasets && ratings)) {
-    return <div>Loading...</div>;
-  }
-
   const items = datasets.map((dataset: any) => {
     const ratingIdx: number = ratings.findIndex(
       (e: any) => e.destination_dataset === dataset.id
@@ -88,16 +85,22 @@ export default function Dataset({ params }: { params: { dataset: string } }) {
           </h1>
         </Link>
       </header>
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <h1 className="flex-auto m-6 basis-4/6 text-4xl font-bold text-sas_blue">
-          Chosen Dataset
-        </h1>
-        <GridItemLarge metadata={metadata} />
-        <h1 className="flex-auto m-6 basis-4/6 text-4xl font-bold text-sas_blue">
-          Recommended Datasets
-        </h1>
-        <Grid>{items}</Grid>
-      </main>
+      {datasets && datasets.length > 0 ? (
+        <main className="flex flex-col items-center justify-between min-h-screen p-24 bg-zinc-100">
+          <h1 className="flex-auto m-6 basis-4/6 text-4xl font-bold text-sas_blue">
+            Chosen Dataset
+          </h1>
+          <GridItemLarge metadata={metadata} />
+          <h1 className="flex-auto m-6 basis-4/6 text-4xl font-bold text-sas_blue">
+            Recommended Datasets
+          </h1>
+          <Grid>{items}</Grid>
+        </main>
+      ) : (
+        <main className="flex flex-col items-center justify-center min-h-screen p-24 bg-zinc-100">
+          <LoadingIcon />
+        </main>
+      )}
     </>
   );
 }

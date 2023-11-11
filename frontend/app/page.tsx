@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import FilterBar from "@/app/components/filterBar";
 import Grid from "@/app/components/grid";
 import GridItem from "@/app/components/gridItem";
+import LoadingIcon from "@/app/components/loadingIcon";
 import { processMetadata } from "@/app/utilities";
 
 export default function Home() {
@@ -24,7 +25,7 @@ export default function Home() {
         let xCount = res.headers.get("x-total-count");
         let xOffset = res.headers.get("x-offset-count");
         if (xCount) {
-          setPageCount(parseInt(xCount) / 100);
+          setPageCount(Math.ceil(parseInt(xCount) / 100));
         }
         if (xOffset) {
           setOffset(parseInt(xOffset));
@@ -59,17 +60,21 @@ export default function Home() {
           setSelectedTopic={setSelectedTopic}
         />
       </header>
-      <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-zinc-100">
-        <h2 className="text-3xl font-semibold text-center m-6 text-sas_blue">
-          Find relevant datasets by filtering with a topic or through selecting
-          a dataset.
-        </h2>
-        {datasets.length != 0 && (
+      {datasets && datasets.length > 0 ? (
+        <main className="flex flex-col items-center justify-between min-h-screen p-24 bg-zinc-100">
+          <h2 className="text-3xl font-semibold text-center mt-6 text-sas_blue">
+            Find relevant datasets by filtering with a topic or through
+            selecting a dataset.
+          </h2>
           <Grid pageCount={pageCount} pageChange={pageChange}>
             {items}
           </Grid>
-        )}
-      </main>
+        </main>
+      ) : (
+        <main className="flex flex-col items-center justify-center min-h-screen p-24 bg-zinc-100">
+          <LoadingIcon />
+        </main>
+      )}
     </>
   );
 }

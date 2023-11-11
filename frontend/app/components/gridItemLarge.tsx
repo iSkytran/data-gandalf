@@ -1,15 +1,15 @@
 import Link from "next/link";
 
 export default function GridItemLarge({ metadata }: { metadata: any }) {
-  if (!metadata) {
-    return <div>Loading...</div>;
-  }
   return (
     <Link href={`/dataset/${metadata.id}`}>
       <div className="w-full shadow-lg rounded-lg p-6 border overflow-x-hidden overflow-y-scroll bg-white">
         <h2 className="text-xl font-bold underline">{metadata.title}</h2>
 
-        <p style={metadata.topicStyle} className="flex-initial text-l max-w-fit border-medium_blue bg-blue-100 text-midnight_blue border-2 rounded my-2 px-2.5 py-0.5 font-semibold">
+        <p
+          style={metadata.topicStyle}
+          className="flex-initial text-l max-w-fit border-medium_blue bg-blue-100 text-midnight_blue border-2 rounded my-2 px-2.5 py-0.5 font-semibold"
+        >
           {metadata.topic}
         </p>
 
@@ -35,9 +35,8 @@ export default function GridItemLarge({ metadata }: { metadata: any }) {
               window.open("https://" + metadata.url);
             }}
           >
-            {" "}
-            View Source{" "}
-          </button>{" "}
+            View Source
+          </button>
         </p>
       </div>
     </Link>
