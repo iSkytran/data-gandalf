@@ -14,7 +14,7 @@ export default function Grid({
   const paginateItem = pageCount && pageChange && (
     <ReactPaginate
       className="inline-flex my-4"
-      activeLinkClassName={`${paginateStyle} bg-light_blue text-black`}
+      activeLinkClassName={`${paginateStyle} !bg-light_blue !text-sas_blue`}
       previousLinkClassName={`${paginateStyle} rounded-l-lg bg-sas_blue`}
       nextLinkClassName={`${paginateStyle} rounded-r-lg bg-sas_blue`}
       pageLinkClassName={`${paginateStyle} bg-sas_blue`}
