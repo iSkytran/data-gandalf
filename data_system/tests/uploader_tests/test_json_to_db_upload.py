@@ -29,6 +29,6 @@ def test_upload():
     assert len(datasets) == 3
     assert datasets[0].title == "Grades"
     assert datasets[1].title == "energy"
-    assert datasets[2].title == "Income"
+    assert datasets[2].title == "income"
 
     os.chdir(fixed_directory)
