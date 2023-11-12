@@ -29,14 +29,14 @@ def test_clean_dataset():
 
     files_in_folder = os.listdir(test_dataset_path)
     assert len(files_in_folder) == 4
-    assert files_in_folder == ["dataset-metadata.json", "nested", "sample_grades.csv", "test.txt"]
+    assert sorted(files_in_folder) == sorted(["dataset-metadata.json", "nested", "sample_grades.csv", "test.txt"])
 
     kaggle.clean_dataset(test_dataset_path)
 
     files_in_folder = os.listdir(test_dataset_path)
 
     assert len(files_in_folder) == 2
-    assert files_in_folder == ["dataset-metadata.json", "sample_grades.csv"]
+    assert sorted(files_in_folder) == sorted(["dataset-metadata.json", "sample_grades.csv"])
 
     os.chdir(fixed_directory)
 
@@ -48,7 +48,7 @@ def test_get_topic_url_list():
 
     url_list = kaggle.get_topic_urlList(datasets, "topic")
     assert len(url_list) == 2
-    assert url_list == ["url_parsed", "owi2.()*"]
+    assert sorted(url_list) == sorted(["url_parsed", "owi2.()*"])
 
     os.chdir(fixed_directory)
 
