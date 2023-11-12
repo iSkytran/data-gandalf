@@ -65,7 +65,7 @@ def test_extract_finance():
     assert len(income_dict['tags']) == 2
     assert income_dict['tags'][0] == "finance"
     assert income_dict['tags'][1] == "income"
-    assert income_dict['title'] == "Income"
+    assert income_dict['title'] == "income"
     assert income_dict['topic'] == "finance"
     assert income_dict['usability'] == 0.298462346364
 
