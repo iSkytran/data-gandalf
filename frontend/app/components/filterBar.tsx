@@ -1,4 +1,5 @@
 import { useState, useEffect, useId } from "react";
+import { titleCase } from "title-case";
 import Select from "react-select";
 
 export default function FilterBar({
@@ -16,7 +17,7 @@ export default function FilterBar({
       .then((data) => {
         let options: Array<object> = [];
         data.forEach((topic: string) => {
-          options.push({ value: topic, label: topic });
+          options.push({ value: topic, label: titleCase(topic) });
         });
         setTopics(options);
       });
@@ -28,7 +29,7 @@ export default function FilterBar({
   };
   return (
     <Select
-      className={className + ' topicSelect'}
+      className={className + " topicSelect"}
       placeholder="Filter by Topic"
       instanceId={useId()}
       options={topics}

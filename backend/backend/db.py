@@ -1,17 +1,26 @@
 from sqlmodel import Session, select
+from sqlalchemy import func
 from backend.models import Dataset, Rating
 
 def get_topics(session: Session) -> list[str]:
     topics = session.exec(select(Dataset.topic).distinct()).all()
     return topics
 
-def get_by_topic(session: Session, topic: str, limit: int = 100) -> list[Dataset]:
-    datasets = session.exec(select(Dataset).where(Dataset.topic == topic).limit(limit)).all()
+def get_topic_count(session: Session, topic: str) -> int:
+    count = session.exec(select([func.count(Dataset.id)]).where(Dataset.topic == topic)).one()
+    return count
+
+def get_by_topic(session: Session, topic: str, offset: int, limit: int = 100) -> list[Dataset]:
+    datasets = session.exec(select(Dataset).where(Dataset.topic == topic).limit(limit).offset(offset)).all()
     datasets = list_conversion_helper(datasets)
     return datasets
 
-def get_all(session: Session, limit: int = 100) -> list[Dataset]:
-    datasets = session.exec(select(Dataset).limit(limit)).all()
+def get_all_count(session: Session) -> int:
+    count = session.exec(select([func.count(Dataset.id)])).one()
+    return count
+
+def get_all(session: Session, offset: int, limit: int = 100) -> list[Dataset]:
+    datasets = session.exec(select(Dataset).limit(limit).offset(offset)).all()
     datasets = list_conversion_helper(datasets)
     return datasets
 
@@ -70,4 +79,3 @@ def list_conversion_helper(datasets: list[Dataset]) -> list[Dataset]:
             col_names_str = col_names_str.replace("}", "")
             dataset.col_names = col_names_str
     return datasets
-
