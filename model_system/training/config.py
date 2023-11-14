@@ -10,7 +10,7 @@ minute = current_datetime.minute
 second = current_datetime.second
 
 # Where to save trained model
-MODEL_PATH = f"../backend/models/{year}-{month:02d}-{day:02d}_{hour:02d}:{minute:02d}:{second:02d}_model.pkl"
+MODEL_PATH = f"../backend/models/{year}-{month:02d}-{day:02d}T{hour:02d}-{minute:02d}-{second:02d}_model.pkl"
 
 # DB Configurations
 DBNAME = "training_database"
