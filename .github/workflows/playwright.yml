@@ -28,7 +28,7 @@ jobs:
       volumes: 
         - /github/workspace/database/pg_dump.sql:/docker-entrypoint-initdb.d/pg_dump.sql
     steps:
-      - uses: actions/checkout@v3
+    #   - uses: actions/checkout@v3
       - name: Test node
         run: |
             echo "Checking for a usable node in /__e/node"
