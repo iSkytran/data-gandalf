@@ -2,10 +2,12 @@ import ReactPaginate from "react-paginate";
 
 export default function Grid({
   pageCount,
+  selectedPage,
   pageChange,
   children,
 }: {
   pageCount?: number;
+  selectedPage?: number;
   pageChange?: any;
   children?: Array<React.ReactNode>;
 }) {
@@ -21,6 +23,7 @@ export default function Grid({
       breakLinkClassName={`${paginateStyle} bg-sas_blue`}
       pageCount={pageCount}
       onPageChange={pageChange}
+      forcePage={selectedPage}
       renderOnZeroPageCount={null}
     />
   );
