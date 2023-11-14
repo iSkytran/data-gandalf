@@ -4,10 +4,8 @@
 name: Python application
 
 on:
-  # push: 
-  #   branches: [ "entran/skeleton" ]
-  # pull_request:
-  #   branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
   workflow_dispatch:
 
 permissions:
