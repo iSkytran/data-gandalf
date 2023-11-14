@@ -26,9 +26,16 @@ jobs:
       ports:
         - 5432
       volumes: 
-        - /github/_work/2023FallTeam26-SAS/2023FallTeam26-SAS/database/pg_dump.sql:/docker-entrypoint-initdb.d/pg_dump.sql
+        - /github/workspace/database/pg_dump.sql:/docker-entrypoint-initdb.d/pg_dump.sql
     steps:
       - uses: actions/checkout@v3
+      - name: Test node
+        run: |
+            echo "Checking for a usable node in /__e/node"
+            for f in /__e/node*/bin/node; do
+                echo "Testing: $f --version";
+                $f --version || echo "$f does not work, exit status: $?"
+            done
       - name: PWD
         run: cd usr/local && ls
       - name: Check Dockerenv
