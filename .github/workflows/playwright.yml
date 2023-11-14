@@ -28,9 +28,8 @@ jobs:
       volumes: 
         - /github/_work/2023FallTeam26-SAS/2023FallTeam26-SAS/database/pg_dump.sql:/docker-entrypoint-initdb.d/pg_dump.sql
     steps:
-      - uses: actions/checkout@v3
       - name: PWD
-        run: cd ${{ github.workspace }} && pwd
+        run: pwd
       - name: Check Dockerenv
         run: (ls /.dockerenv && echo Found dockerenv) || (echo No dockerenv)
 
