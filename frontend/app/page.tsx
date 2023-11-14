@@ -40,6 +40,11 @@ export default function Home() {
       });
   }, [selectedTopic, offset]);
 
+  const updateSelectedTopic = (topic: string) => {
+    setOffset(0);
+    setSelectedTopic(topic);
+  };
+
   const pageChange = (event: any) => {
     const newOffset = event.selected * 100;
     setOffset(newOffset);
@@ -57,7 +62,7 @@ export default function Home() {
         </h1>
         <FilterBar
           className="flex-auto basis-2/6"
-          setSelectedTopic={setSelectedTopic}
+          updateSelectedTopic={updateSelectedTopic}
         />
       </header>
       {datasets && datasets.length > 0 ? (
@@ -66,7 +71,7 @@ export default function Home() {
             Find relevant datasets by filtering with a topic or through
             selecting a dataset.
           </h2>
-          <Grid pageCount={pageCount} pageChange={pageChange}>
+          <Grid pageCount={pageCount} selectedPage={Math.floor(offset / 100)} pageChange={pageChange}>
             {items}
           </Grid>
         </main>

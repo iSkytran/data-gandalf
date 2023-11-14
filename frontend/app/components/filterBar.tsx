@@ -4,10 +4,10 @@ import Select from "react-select";
 
 export default function FilterBar({
   className,
-  setSelectedTopic,
+  updateSelectedTopic,
 }: {
   className: string;
-  setSelectedTopic: Function;
+  updateSelectedTopic: Function;
 }) {
   const [topics, setTopics] = useState(null);
 
@@ -25,7 +25,7 @@ export default function FilterBar({
 
   let selectionChange = (selection: Array<object>) => {
     let topic = selection?.value || "";
-    setSelectedTopic(topic);
+    updateSelectedTopic(topic);
   };
   return (
     <Select
