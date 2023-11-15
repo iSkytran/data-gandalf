@@ -20,5 +20,10 @@ psql -U postgres -f ../data_system/data_storage/pg_dump.sql {database_name}
 
 5. To run, execute
 ```
-python training/model_training.py
+python -m training.model_training
+```
+
+6. To run tests with coverage, execute 
+```
+pytest --cov="training"  tests/model_training_test.py
 ```
