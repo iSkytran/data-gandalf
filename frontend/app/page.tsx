@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import FilterBar from "@/app/components/filterBar";
 import Grid from "@/app/components/grid";
 import GridItem from "@/app/components/gridItem";
@@ -57,6 +58,7 @@ export default function Home() {
   return (
     <>
       <header className="flex p-6 fixed top-0 w-full bg-white shadow-md">
+        {/* <Image src="/original_logo.svg" alt="Data Gandalf Logo"/> */}
         <h1 className="flex-auto basis-4/6 text-4xl font-bold text-sas_blue">
           Data Gandalf
         </h1>
