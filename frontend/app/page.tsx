@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import FilterBar from "@/app/components/filterBar";
 import Grid from "@/app/components/grid";
 import GridItem from "@/app/components/gridItem";
@@ -57,13 +56,17 @@ export default function Home() {
 
   return (
     <>
-      <header className="flex p-6 fixed top-0 w-full bg-white shadow-md">
-        {/* <Image src="/original_logo.svg" alt="Data Gandalf Logo"/> */}
-        <h1 className="flex-auto basis-4/6 text-4xl font-bold text-sas_blue">
+      <header className="flex justify-center items-center fixed top-0 w-full bg-white shadow-md">
+        <img
+          className="max-h-16 px-4"
+          src="/original_logo.svg"
+          alt="Data Gandalf Logo"
+        />
+        <h1 className="flex-auto p-6 basis-4/6 text-4xl font-bold text-sas_blue">
           Data Gandalf
         </h1>
         <FilterBar
-          className="flex-auto basis-2/6"
+          className="flex-auto p-6 basis-2/6"
           updateSelectedTopic={updateSelectedTopic}
         />
       </header>
@@ -73,7 +76,11 @@ export default function Home() {
             Find relevant datasets by filtering with a topic or through
             selecting a dataset.
           </h2>
-          <Grid pageCount={pageCount} selectedPage={Math.floor(offset / 100)} pageChange={pageChange}>
+          <Grid
+            pageCount={pageCount}
+            selectedPage={Math.floor(offset / 100)}
+            pageChange={pageChange}
+          >
             {items}
           </Grid>
         </main>
