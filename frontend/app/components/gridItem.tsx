@@ -25,7 +25,7 @@ export default function GridItem({
       {metadata.similarity && (
         <p className="my-1">
           <span className="font-semibold">Similarity: </span>
-          <span>{Math.round(10000 * metadata.similarity) / 100}</span>
+          <span>{Math.round(100 * metadata.similarity) / 100}%</span>
         </p>
       )}
 
