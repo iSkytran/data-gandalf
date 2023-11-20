@@ -33,9 +33,9 @@ export default function Dataset({ params }: { params: { dataset: string } }) {
         return [datasetRes, ratingRes];
       })
       .then((data) => {
-        let newMetadata = processMetadata(data[0][0][0]);
+        let newMetadata = processMetadata(100, data[0][0][0]);
         let newDatasets = data[0][1].map((e: any) => {
-          const dataset = processMetadata(e[1][0]);
+          const dataset = processMetadata(e[0], e[1][0]);
           dataset.similarity = e[0];
 
           return dataset;
