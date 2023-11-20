@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Don't forget to click around and have ratings before creating the dump
+
 # Docker database configs
 CONTAINER_NAME="2023fallteam26-sas-database-1"
 DB_NAME="postgres"
