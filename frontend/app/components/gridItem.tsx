@@ -14,22 +14,25 @@ export default function GridItem({
         <h2 className="text-xl font-bold underline">{metadata.title}</h2>
       </Link>
 
-      <p
-        style={metadata.topicStyle}
-        className="flex-initial text-l max-w-fit border-medium_blue bg-blue-100 text-midnight_blue border-2 rounded my-2 px-2.5 py-0.5 font-semibold"
-      >
-        {metadata.topic}
-      </p>
+      <div className="flex space-x-1">
+        <p
+          style={metadata.topicStyle}
+          className="flex-initial text-l max-w-fit border-medium_blue bg-blue-100 text-midnight_blue border-2 rounded my-2 px-2.5 py-0.5 font-semibold"
+        >
+          {metadata.topic}
+        </p>
+        {metadata.similarity && (
+          <p className="flex-initial text-l max-w-fit border-medium_blue bg-blue-100 text-midnight_blue border-2 rounded my-2 px-2.5 py-0.5 font-semibold"
+            style={metadata.similarityStyle}>
+              {Math.round(100 * metadata.similarity) / 100}
+          </p>
+        )}
+      </div>
+
 
       {children}
 
-      {metadata.similarity && (
-        <p className="my-1">
-          <span className="font-semibold">Similarity: </span>
-          <span className="flex-initial text-l max-w-fit border-medium_blue bg-blue-100 text-midnight_blue border-2 rounded my-2 px-2.5 py-0.5 font-semibold"
-          style={metadata.similarityStyle}>{Math.round(100 * metadata.similarity) / 100}</span>
-        </p>
-      )}
+
 
       <p className="my-1">
         <span className="font-semibold">Licenses: </span>
