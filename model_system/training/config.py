@@ -18,7 +18,8 @@ USER = "postgres"
 PASSWORD = "default"
 HOST = "localhost"
 PORT = "5432"
-TABLENAME = "dataset"
+METADATA_TABLENAME = "dataset"
+RATING_TABLENAME = "rating"
 
 # Text columns to be used as input into TF-IDF
 COLS_TO_CLEAN = ["topic", "title", "description"]
