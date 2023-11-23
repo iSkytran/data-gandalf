@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 
 export default function GridItem({
   metadata,
@@ -26,7 +27,12 @@ export default function GridItem({
               <p>
                 {Math.round(100 * metadata.similarity) / 100}
               </p>
-              <p style={{borderRadius: '50%', alignSelf: "center"}} className="text-gray-700 bg-gray-300 border-2 flex items-center rounded-full h-5 w-5 justify-center">?</p>
+              <p data-tooltip-id={"tooltip" + metadata.id} style={{borderRadius: '50%', alignSelf: "center"}} className="text-gray-700 bg-gray-300 border-2 flex items-center rounded-full h-5 w-5 justify-center">?</p>
+            <ReactTooltip
+              id={"tooltip" + metadata.id}
+              place="top"
+              content="Similarity Score indicates how similar this dataset is to the chosen dataset. Higher = Better."
+            />
           </div>
         )}
       </div>
