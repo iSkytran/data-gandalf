@@ -78,9 +78,17 @@ export default function Dataset({ params }: { params: { dataset: string } }) {
 
   return (
     <>
-      <header className="flex p-6 fixed top-0 w-full bg-white shadow-md">
-        <Link href="/">
-          <h1 className="flex-auto basis-4/6 text-4xl font-bold text-sas_blue">
+      <header>
+        <Link
+          className="flex fixed justify-center items-center top-0 w-full bg-white shadow-md"
+          href="/"
+        >
+          <img
+            className="max-h-16 px-4"
+            src="/original_logo.svg"
+            alt="Data Gandalf Logo"
+          />
+          <h1 className="flex-auto p-6 basis-1 text-4xl font-bold text-sas_blue">
             Data Gandalf
           </h1>
         </Link>
