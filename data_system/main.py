@@ -1,4 +1,4 @@
-import shutil, os
+import shutil, os, sys, getopt
 
 from data_fetching import kaggle
 from data_fetching.extractor_interface import MetadataExtractor
@@ -22,13 +22,50 @@ METADATA_FOLDER = "metadata"
 TOPICS = ['sports', 'education', 'housing', 'health', 'finance', 'energy', 'politics', 'agriculture', 'chemistry', 'entertainment']
 
 # Number of datasets to fetch per topic.
-DATASETS_PER_TOPIC = 105
+DATASETS_PER_TOPIC = 2
 
 # Source to query. 
 SOURCE = "kaggle"
 
 # Which Stages to Run- "FETCH", "EXTRACT", "UPLOAD"
 STAGES = ["FETCH", "EXTRACT", "UPLOAD"]
+
+# READ CONFIGURATION FROM CLI
+if __name__ == '__main__':
+    topics_specified = False
+    stages_specified = False
+    options, arguments = getopt.getopt(sys.argv[1:], "feucmt:n:", ["topic=", "num_datasets="])
+
+    for option, value in options:
+        if option == '-c':
+            SAVE_CSV = True
+        elif option == '-m':
+            SAVE_METADATA = True
+        elif option == '-f':
+            if not stages_specified:
+                stages_specified = True
+                STAGES = []
+            STAGES.append("FETCH")
+        elif option == '-e':
+            if not stages_specified:
+                stages_specified = True
+                STAGES = []
+            STAGES.append("EXTRACT")
+        elif option == '-u':
+            if not stages_specified:
+                stages_specified = True
+                STAGES = []
+            STAGES.append("UPLOAD")
+        elif option in ('-t', '--topic'):
+            if not topics_specified:
+                topics_specified = True
+                TOPICS = []
+            TOPICS.append(value.lower())
+        elif option in ('-n', '--num_datasets'):
+            DATASETS_PER_TOPIC = int(value)
+            if DATASETS_PER_TOPIC <= 0:
+                raise ValueError("Number of datasets (-n) must be >= 0.")
+        
 
 # Initialize default objects to be overridden. 
 extractor = MetadataExtractor(DATASET_FOLDER)

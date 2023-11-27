@@ -96,7 +96,7 @@ class KaggleExtractor(MetadataExtractor):
         # Report issues
         with open("data_fetching/problem-files.txt", "w+") as newfile:
             newfile.write(json.dumps(self.problem_files))
-        print("Processed", len(self.datasets_processed), "datasets.")
+        print("Successfully extracted", len(self.datasets_processed), "datasets.")
         print("Found", len(self.problem_files), "problem files while extracting. Look at data_fetching/problem-files.txt for a list.")
         return len(self.problem_files)
 
