@@ -7,7 +7,7 @@ from psycopg2 import Error
 from tqdm import tqdm
 import os
 
-from . import config as cf
+from training import config as cf
 
 def get_metadata_from_db():
     metadata = None
