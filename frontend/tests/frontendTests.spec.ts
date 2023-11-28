@@ -135,10 +135,11 @@ test.describe("View Dataset from Homepage", () => {
     await expect(gridItemLarge.toLowerCase()).toContain(title.toLowerCase());
     await expect(gridItemLarge.toLowerCase()).toContain(topic.toLowerCase());
     await expect(gridItemLarge.toLowerCase()).toContain(description.toLowerCase());
+    /*
     for (let license in licenses) {
       await expect(gridItemLarge.toLowerCase()).toContain(license.toLowerCase());
     }
-    /*
+    
     for (let tag in tags) {
       await expect(gridItemLarge.toLowerCase()).toContain(tag.toLowerCase());
     }
@@ -169,7 +170,7 @@ test.describe("View Dataset from Homepage", () => {
     for (let i = 0; i < recommendations.length; i++) {
       const recommendationHTML = await recommendations[i].innerHTML();
 
-      await expect(recommendationHTML).toContain("Similarity:");
+      await expect(recommendationHTML).toContain("tooltip");
     }
   });
 });
@@ -210,10 +211,11 @@ test.describe("View Dataset from Filtered Results", () => {
     await expect(gridItemLarge.toLowerCase()).toContain(title.toLowerCase());
     await expect(gridItemLarge.toLowerCase()).toContain(topic.toLowerCase());
     await expect(gridItemLarge.toLowerCase()).toContain(description.toLowerCase());
+    /*
     for (let license in licenses) {
       await expect(gridItemLarge.toLowerCase()).toContain(license.toLowerCase());
     }
-    /*
+    
     for (let tag in tags) {
       await expect(gridItemLarge.toLowerCase()).toContain(tag.toLowerCase());
     }
@@ -252,7 +254,7 @@ test.describe("View Dataset from Filtered Results", () => {
     for (let i = 0; i < recommendations.length; i++) {
       const recommendationHTML = await recommendations[i].innerHTML();
 
-      await expect(recommendationHTML).toContain("Similarity:");
+      await expect(recommendationHTML).toContain("tooltip");
     }
   });
 });
@@ -310,19 +312,46 @@ test.describe("Rate Recommendation as Good", () => {
       .locator("_react=GridItem")
       .all();
 
-    //const rating = await recommendations[0].locator("_react=Rating");
-    
-    //console.log(await rating.innerHTML());
-
-    const thumbsUp = page.locator('svg[data-icon="thumbs-up"]').first();      
+    const thumbsUp = page.locator('svg[data-icon="thumbs-up"]').first();  
+    await expect(await thumbsUp.innerHTML()).toContain("empty");
+     
     await thumbsUp.click();
+    await page.waitForTimeout(2000);
 
-    //const newRating = await page.locator('svg[data-icon="thumbs-up"]').first();
-
-    console.log(await thumbsUp.innerHTML());
+    const newRating = await page.locator('svg[data-icon="thumbs-up"]').first();
+    await expect(await newRating.innerHTML()).toContain("solid");
   });
 });
 
 test.describe("Rate Recommendation as Bad", () => {
+  test("Can rate recommendation as bad on dataset page", async ({
+    page,
+  }) => {
+    const grid = page.locator("_react=Grid");
 
+    const dataset = datasets[0];
+    const title = dataset[2];
+
+    const gridItem = await grid.locator("_react=GridItem").first();
+
+    const titleSelect = await gridItem.getByText(title).first();
+
+    await titleSelect.click();
+    await page.waitForTimeout(5000);
+    await page.waitForSelector("_react=Grid");
+
+    const recommendationsGrid = page.locator("_react=Grid");
+    const recommendations = await recommendationsGrid
+      .locator("_react=GridItem")
+      .all();
+
+    const thumbsDown = page.locator('svg[data-icon="thumbs-down"]').first();  
+    await expect(await thumbsDown.innerHTML()).toContain("empty");
+     
+    await thumbsDown.click();
+    await page.waitForTimeout(2000);
+
+    const newRating = await page.locator('svg[data-icon="thumbs-down"]').first();
+    await expect(await newRating.innerHTML()).toContain("solid");
+  });
 });

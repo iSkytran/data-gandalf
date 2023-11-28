@@ -70,6 +70,7 @@ export default function Rating({
       {rating.recommend === true ? (
         <FontAwesomeIcon
           icon={solidThumbsUp}
+          title="solid"
           size="lg"
           onClick={(e) => {
             changeRating(e, null);
@@ -78,6 +79,7 @@ export default function Rating({
       ) : (
         <FontAwesomeIcon
           icon={regThumbsUp}
+          title="empty"
           size="lg"
           onClick={(e) => {
             changeRating(e, true);
@@ -87,6 +89,7 @@ export default function Rating({
       {rating.recommend === false ? (
         <FontAwesomeIcon
           icon={solidThumbsDown}
+          title="solid"
           size="lg"
           onClick={(e) => {
             changeRating(e, null);
@@ -95,6 +98,7 @@ export default function Rating({
       ) : (
         <FontAwesomeIcon
           icon={regThumbsDown}
+          title="empty"
           size="lg"
           onClick={(e) => {
             changeRating(e, false);
