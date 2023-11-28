@@ -16,5 +16,6 @@ def test_get_by_topic(mock_db_session: Session):
 def test_get_all(mock_db_session: Session):
     datasets = db.get_all(mock_db_session, offset=0)
     names = [d.title for d in datasets]
+    print([d.id for d in datasets])
     assert sorted(names) == sorted(["Dataset1","Dataset2","Dataset3","Dataset4"])
 
