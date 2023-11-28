@@ -5,7 +5,66 @@ from data_fetching.extractor_interface import MetadataExtractor
 
 
 class KaggleExtractor(MetadataExtractor):
+    """Provides functionality for extracting metadata from a folder that's
+    containing topics folders that contain dataset folders (see file_input_path Attribute) 
+    populated using kaggle.py. Extends MetadataExtractor to utilize extract_topics, extract_topic. 
+    
+    Superclass Attributes
+    ---------------------
+    file_input_path : str
+        the path of the folder containing topic folders (e.g. file_input_path/{topic}/{dataset}). 
+    metadata_suffix : str
+        The suffix to use when saving metadata files (e.g. {dataset_name}/metadatasuffix). 
+    datasets_processed : list
+        The list of datasets that have been successfully processed. Used for reporting results.
+    problem_files : int
+        The list of files causing exceptions for the extractor. Used for reporting results
+
+            
+    Superclass Methods
+    -------------------
+    extract_topics(topics: list) -> None
+        Calls self.extract_topic on each topic. 
+
+    extract_topic(topic: str) -> None
+        Calls self.extract_from_dataset and self.output_data on each dataset
+        folder in the file_input_path/{topic} directory. Outputs metadata with 
+        the filename {dataset_name}/{self.metadata_suffix}. 
+
+        
+    Class Attributes
+    ----------------
+    file_output_path : str
+        Defines the folder used to output metadata when calling self.output_data.
+
+    source : str
+        Defines the source of the data to populate metadata['source']. 
+
+    Class Methods
+    -------------
+    extract_from_dataset(dataset_folder:str, topic:str) -> dict
+        Combines pandas analysis of CSV files in {self.dataset_folder} with values 
+        from metadatta in {self.dataset_folder} to produce a final metadata dictionary.
+
+    output_data(metadata: dict, target_folder: str, filename: str) -> None
+        Formats and outputs a .JSON file containing metadata from the dictionary.
+    
+    report_issues() -> None
+        Reports any issues encountered using self.problem_files.
+    """
+
     def __init__(self, file_input_path, file_output_path):
+        """    
+        Parameters
+        ----------
+        file_input_path : str
+            Defines the folder to search for topic folders that contain dataset folders. 
+
+        file_output_path : str
+            Defines the folder used to output metadata when calling self.output_data.
+
+        source : str
+            Defines the source of the data to populate metadata['source']."""
         self.file_output_path = file_output_path
         self.source = "kaggle"
 
@@ -19,6 +78,23 @@ class KaggleExtractor(MetadataExtractor):
 
     # Extract a single dataset from a folder of CSVs and JSON.
     def extract_from_dataset(self, dataset_folder, topic) -> dict:
+        """
+        Convert from a folder dataset generated from kaggle.py to a python dictionary.  
+
+        Parameters
+        ----------
+        dataset_folder : str
+            The folder to extract a dataset from.
+
+        topic : str
+            The topic of the dataset, used for populating metadata['title']. 
+
+
+        Return
+        ------
+        metadata : dict
+            A dictionary containing all metadata representing the dataset in dataset_folder. 
+        """
         metadata:dict = {}
         for filename in os.listdir(dataset_folder):
             try:
@@ -53,7 +129,22 @@ class KaggleExtractor(MetadataExtractor):
     
     # Output metadata to a target file.
     def output_data(self, metadata, target_folder, filename):
-        
+        """
+        Empty method to be overridden by subclass. Should define how to read in a python
+        dictionary and produce output of desired format (JSON file in case of kaggle extractor).
+
+        Parameters
+        ----------
+        metadata : dict
+            The metadata to output. 
+
+        target_folder : str
+            Specifies a folder to output metadata to. 
+
+        filename : str
+            Specifies the filename to output metadata to. 
+        """
+
         full_folder_path:str = os.path.join(self.file_output_path, target_folder)
 
         if not os.path.exists(full_folder_path):
