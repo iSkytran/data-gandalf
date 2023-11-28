@@ -13,6 +13,7 @@ export default function Home() {
   const [pageCount, setPageCount] = useState(0);
 
   useEffect(() => {
+    // URL query for getting all the datasets.
     let url =
       "/api/datasets?" +
       new URLSearchParams([
@@ -20,11 +21,14 @@ export default function Home() {
         ["topic", selectedTopic],
       ]);
 
+    // Get data from the backend.
     fetch(url)
       .then((res) => {
+        // Compute pagination values.
         let xCount = res.headers.get("x-total-count");
         let xOffset = res.headers.get("x-offset-count");
         if (xCount) {
+          // Default pagination is 100 items to a page..
           setPageCount(Math.ceil(parseInt(xCount) / 100));
         }
         if (xOffset) {
@@ -33,6 +37,7 @@ export default function Home() {
         return res.json();
       })
       .then((data) => {
+        // Format each dataset's metadata to look nice.
         data.map((dataset: any) => {
           return processMetadata(dataset);
         });
@@ -41,16 +46,19 @@ export default function Home() {
   }, [selectedTopic, offset]);
 
   const updateSelectedTopic = (topic: string) => {
+    // Function for updating the topic.
     setOffset(0);
     setSelectedTopic(topic);
   };
 
   const pageChange = (event: any) => {
+    // Update offset when page is changed.
     const newOffset = event.selected * 100;
     setOffset(newOffset);
   };
 
   const items = datasets.map((dataset: any) => {
+    // Wrap each dataset in a GridItem component.
     return <GridItem key={dataset.id} metadata={dataset} />;
   });
 
