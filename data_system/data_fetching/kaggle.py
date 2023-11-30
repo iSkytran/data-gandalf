@@ -1,3 +1,8 @@
+""" 
+This module contains utility functions for pulling datasets from kaggle and populating local 
+folders with them. Example usage can be found in data_system/main.py. 
+"""
+
 import subprocess
 import json
 import os
@@ -7,9 +12,16 @@ import shutil
 fixed_directory = ""
 pulled_links = set()
 
-# Unzip ZIP files, then remove Non-JSON and Non-CSV files.
 def clean_dataset(path):
-    # for each file
+    """
+    Unzips ZIP files in the directory specified by path. Removes all non-csv, non-json files and 
+    directories. 
+
+    Parameters
+    ----------
+    path : str
+        The path of the dataset directory to clean. 
+    """
     for f in os.listdir(path):
         file = os.path.join(path, f)
         if file.endswith('.zip') == True:
@@ -21,8 +33,20 @@ def clean_dataset(path):
         if os.path.isdir(file):
             shutil.rmtree(file)
 
-# Ensure at least one CSV file exists in the directory.
 def ensure_data_exists(folder_path):
+    """
+    Ensure at least one CSV file exists in the dataset directory for analysis. 
+
+    Parameters
+    ----------
+    folder_path : str
+        The path of the dataset directory to validate. 
+
+    Return
+    -------
+    csv
+        Returns true if at least one csv file exists, false otherwise.
+    """
     # Ensure Data is non-empty
     csv = False
     for f in os.listdir(folder_path):
@@ -31,8 +55,22 @@ def ensure_data_exists(folder_path):
             csv = True
     return csv
     
-# Given a string represnting datasets (pulled from kaggle), get a topic URL list.
-def get_topic_urlList(datasets, topic):
+def get_topic_urlList(datasets: str) -> list[str]:
+    """
+    Processes the string returned by kaggle representing various datasets. Outputs a 
+    list of URLs to be individually queried.
+
+    Parameters
+    ----------
+    datasets : str
+        A string representation of datasets in the form returned by kaggle CLI. 
+
+    Return
+    ------
+    urlList : list[str]
+        A list of URLs to individually query kaggle with.
+    """
+
     #Split the datasets into a list and remove the headers
     datasetList = datasets.split('\r\n')
     datasetList.pop(0)
@@ -45,13 +83,39 @@ def get_topic_urlList(datasets, topic):
 
     return urlList
 
-# Pulls a dataset from kaggle with a given link.
 def pull_dataset(link):
+    """
+    Pulls kaggle with an individual dataset URL.
+
+    Parameters
+    ----------
+    link : str
+        The kaggle link of the dataset to download. 
+    """
     subprocess.run(f'kaggle datasets download -d {link}')
     subprocess.run(f'kaggle datasets metadata {link}')
 
-# Pull a dataset with a given link from kaggle, then validates it.
 def process_dataset(link, topic):
+    """
+    Pulls a dataset with a given link from kaggle, then validates it.
+
+    
+    Parameters
+    ----------
+    topic : str
+        The topic the dataset belongs to, used for navigating to the correct path. 
+
+    link : str
+        The URL to call pull_dataset with. 
+
+    Returns
+    -------
+    True
+        Returns false if dataset has already been pulled, contains no .csv files for analysis, or
+        other errors are encountered. Returns true if dataset is succesfully pulled and validated.
+
+    """
+
     global fixed_directory
     path = os.path.join(fixed_directory, "datasets", topic)
     os.chdir(path)
@@ -94,6 +158,20 @@ def process_dataset(link, topic):
         return False
 
 def pull_topic(topic, num_datasets):
+    """
+    Pulls num_datasets datasets relating to a given topic. Queries Kaggle for a list of related
+    datasets with the toipc, then processes and downloads all found valid datasets. Will attempt 
+    to pull new datasets if invalid ones are found until num_datasets have been successfully processed.
+
+    Parameters
+    ----------
+    topic : str
+        The topic to query kaggle for. 
+
+    num_datasets : int
+        The number of datasets to pull. 
+    """
+
     # Pessimistically, assume only 15/20 datasets pulled are usable
     pessimistic_pages = round((num_datasets + 14) / 15)
 
@@ -123,6 +201,22 @@ def pull_topic(topic, num_datasets):
         print(e)
 
 def fetch(topics, num_datasets, output_folder):
+    """
+    Queries kaggle for a list of topics and number of datasets per topic, saving all datasets to the 
+    output folder. 
+
+    Parameters
+    ----------
+    topics : list[str]
+        A list of the topics to query kaggle for. 
+
+    num_datasets : int
+        The number of datasets to fetch for each topic in topics. 
+
+    output_folder : str
+        The path of the output folder- where to save the data.
+    """
+
     global fixed_directory
     # Fix initial working directory
     fixed_directory = os.getcwd()

@@ -130,8 +130,8 @@ class KaggleExtractor(MetadataExtractor):
     # Output metadata to a target file.
     def output_data(self, metadata, target_folder, filename):
         """
-        Empty method to be overridden by subclass. Should define how to read in a python
-        dictionary and produce output of desired format (JSON file in case of kaggle extractor).
+        Reads in a python dictionary generated from extract_from-dataset 
+        and produce output of desired format (JSON file in case of kaggle extractor).
 
         Parameters
         ----------
@@ -159,6 +159,24 @@ class KaggleExtractor(MetadataExtractor):
 
     # Updates metadata dict from a dataframe (one data file).
     def update_metadata_from_df(self, df: pd.DataFrame, metadata: dict) -> dict:
+        """
+        Updates the metadata dictionary with a dataframe representing a table. 
+        Adds column names, null count, row count, num entries. 
+
+        Parameters
+        ----------
+        df : pd.DataFrame
+            The dataframe to use to update metadata. 
+
+        metadata : dict
+            The metadata to be modified and returned. 
+
+        Return
+        ------
+        metadata : dict
+            The updated metadata.
+        """
+
         # Compute Values
         null_count:int = int(df.isnull().sum().sum()) 
         metadata['null_count'] = null_count + metadata.get('null_count', 0)
@@ -184,6 +202,10 @@ class KaggleExtractor(MetadataExtractor):
 
     # Reports any issues. 
     def report_issues(self):  
+        """
+        Reports the number of datasets successfully extracted and how many had problems. 
+        Writes to a file with the list of files that caused exceptions.
+        """
         # Report issues
         with open("data_fetching/problem-files.txt", "w+") as newfile:
             newfile.write(json.dumps(self.problem_files))
