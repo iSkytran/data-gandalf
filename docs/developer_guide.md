@@ -12,7 +12,7 @@ docker compose up -d
 
 ### Database
 
-Before the backend can run, a database needs to be running for it to connect to. PostgreSQL is the database that is supported by the project. The database should be populated with the information from [database](../database). The information for a production deployment is in [pg_dump.sql](../database/pg_dump.sql) while [example.sql](../database/example.sql) is for testing purposes.
+Before the backend can run, a database needs to be running for it to connect to. [PostgreSQL](https://www.postgresql.org/) is the database that is supported by the project. The database should be populated with the information from [database](../database). The information for a production deployment is in [pg_dump.sql](../database/pg_dump.sql) while [example.sql](../database/example.sql) is for testing purposes.
 
 ### Backend
 
