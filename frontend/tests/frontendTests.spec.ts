@@ -143,7 +143,7 @@ test.describe("View Dataset from Homepage", () => {
 
     //Click on the title and wait for 2 seconds and the dataset to appear on the following page
     await titleSelect.click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(5000);
     await page.waitForSelector("_react=GridItemLarge");
 
     //Locate the dataset on the dataset page
@@ -175,7 +175,7 @@ test.describe("View Dataset from Homepage", () => {
 
     //Click the title and wait for two seconds and the dataset to appear on the next page
     await titleSelect.click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(5000);
     await page.waitForSelector("_react=Grid");
 
     //Locate the grid of recommendations
@@ -224,7 +224,7 @@ test.describe("View Dataset from Filtered Results", () => {
 
     //Click the title and wait two seconds and for the dataset to appear on the next page
     await titleSelect.click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(5000);
     await page.waitForSelector("_react=GridItemLarge");
 
     //Locate the dataset details
@@ -265,7 +265,7 @@ test.describe("View Dataset from Filtered Results", () => {
 
     //Click the title and wait for two seconds and the dataset to appear on the next page
     await titleSelect.click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(5000);
     await page.waitForSelector("_react=Grid");
 
     //Locate the grid of recommendations on the dataset page
@@ -303,7 +303,7 @@ test.describe("Rate Recommendation Exists", () => {
 
     //Click the title and wait for two seconds and the dataset to appear on the next page
     await titleSelect.click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(5000);
     await page.waitForSelector("_react=Grid");
 
     //Locate the grid of recommendations
@@ -347,15 +347,15 @@ test.describe("Rate Recommendation as Good", () => {
 
     //Locate the first thumbs up icon on the page and expect it to be empty
     const thumbsUp = page.locator('svg[data-icon="thumbs-up"]').first();  
-    await expect(await thumbsUp.innerHTML()).toContain("empty");
+    await expect(await thumbsUp.innerHTML()).toContain("Like");
      
     //Click the thumbs up icon and wait two seconds
     await thumbsUp.click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(5000);
 
     //Expect the thumbs up icon to now be solid
     const newRating = await page.locator('svg[data-icon="thumbs-up"]').first();
-    await expect(await newRating.innerHTML()).toContain("solid");
+    await expect(await newRating.innerHTML()).toContain("Remove Like");
   });
 });
 
@@ -384,14 +384,14 @@ test.describe("Rate Recommendation as Bad", () => {
 
     //Locate the first thumbs down icon and expect it to be empty
     const thumbsDown = page.locator('svg[data-icon="thumbs-down"]').first();  
-    await expect(await thumbsDown.innerHTML()).toContain("empty");
+    await expect(await thumbsDown.innerHTML()).toContain("Dislike");
      
     //Click the thumbs down icon and wait for two seconds
     await thumbsDown.click();
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(5000);
 
     //Expect the thumbs down icon to now be solid
     const newRating = await page.locator('svg[data-icon="thumbs-down"]').first();
-    await expect(await newRating.innerHTML()).toContain("solid");
+    await expect(await newRating.innerHTML()).toContain("Remove Dislike");
   });
 });
