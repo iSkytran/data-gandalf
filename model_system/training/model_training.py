@@ -1,16 +1,17 @@
-from pandas import DataFrame
+from pandas import DataFrame, MultiIndex
 from pathlib import Path
 from recommenders.models.tfidf.tfidf_utils import TfidfRecommender
 import pickle
 import psycopg2
 from psycopg2 import Error
 from tqdm import tqdm
-import os
+import math
 
 from training import config as cf
 
-def get_metadata_from_db():
+def get_metadata_and_ratings_from_db():
     metadata = None
+    ratings = None
     conn = None
     cursor = None
     try:
@@ -23,15 +24,27 @@ def get_metadata_from_db():
             port=cf.PORT
         )
 
-        print(f"\nQuerying rows from '{cf.TABLENAME}' table in '{cf.DBNAME}' database...")
+        print(f"\nQuerying rows from '{cf.METADATA_TABLENAME}' table in '{cf.DBNAME}' database...")
         # Get columns names
         cursor = conn.cursor()
-        cursor.execute('SELECT * from dataset LIMIT 1')
+        cursor.execute(f'SELECT * from {cf.METADATA_TABLENAME} LIMIT 1')
         column_names = [desc[0] for desc in cursor.description]
 
-        # Create pandas dataframe
-        cursor.execute('SELECT * from dataset')
+        # Create pandas dataframe for metadata
+        cursor.execute(f'SELECT * from {cf.METADATA_TABLENAME}')
         metadata = DataFrame(cursor.fetchall(), columns=column_names)
+
+        print(f"\nQuerying rows from '{cf.RATING_TABLENAME}' table in '{cf.DBNAME}' database...")
+        try:
+            # Get columns names
+            cursor.execute(f'SELECT * from {cf.RATING_TABLENAME} LIMIT 1')
+            column_names = [desc[0] for desc in cursor.description]
+
+            # Create pandas dataframe for ratings
+            cursor.execute(f'SELECT * from {cf.RATING_TABLENAME}')
+            ratings = DataFrame(cursor.fetchall(), columns=column_names)
+        except Exception as e:
+            print("\tNo ratings found in database. Ignoring ratings.")
 
     except Exception as e:
         print("\tDatabase error")
@@ -43,7 +56,7 @@ def get_metadata_from_db():
             cursor.close()
         if conn is not None:
             conn.close()
-        return metadata
+        return metadata, ratings
     
 def build_rec_matrix(metadata):
     # Instantiate the TF-IDF recommender
@@ -67,7 +80,30 @@ def build_rec_matrix(metadata):
     # Get recommendations
     return recommender.recommendations
 
-def tune_rec_matrix(rec_matrix,metadata):
+# return a weight for n positive ratings and m negative ratings
+def rating_weight(n, m):
+    # Range of values the weights can take, centered at 1
+    # i.e. a range of 1 -> [0.5,1.5]; 0.5 -> [0.75,1.25]
+    WEIGHT_RANGE = 1
+
+    # The greater this threshold, the more ratings required to change the weight
+    CONFIDENCE_THRESHOLD = 7 
+
+    # return a neutral weight for equal ratings
+    if(n == m):
+        return 1
+
+    # Calculate the ratio of the difference of ratings over all ratings
+    ratio = (n - m) / (n + m)
+
+    # Calculate confidence factor, placing more confidence around 1
+    # confidence_factor = 1 - math.exp(-(n + m) / CONFIDENCE_THRESHOLD)
+    confidence_factor = (1 - math.exp(-(n + m) / CONFIDENCE_THRESHOLD))
+
+    return 1 + (WEIGHT_RANGE / 2) * ratio * confidence_factor
+
+
+def tune_rec_matrix(rec_matrix,metadata,ratings):
     # Tune the model
     print("\nTuning the model...")
 
@@ -104,6 +140,15 @@ def tune_rec_matrix(rec_matrix,metadata):
                 num_shared_cols = len(from_cols & to_cols)
                 weight *= cf.COLUMN_NAMES_WEIGHT ** num_shared_cols
 
+            # Weight score based on user ratings
+            try:
+                rating = ratings.loc[(rec_from_uid,rec_to_uid)]
+                up_ratings = rating[0][0]
+                down_ratings = rating[0][1]
+                weight *= rating_weight(up_ratings, down_ratings)
+            except:
+                pass # ignore recs that don't have a rating
+
             # Apply the weight to this recommendation
             if(weight != 1):
                 index = next((i for i, rec in enumerate(rec_list) if rec[1] == rec_to_uid), None)
@@ -115,6 +160,19 @@ def tune_rec_matrix(rec_matrix,metadata):
 
     return rec_matrix
 
+# Realigns the ratings to be a 2D matrix
+def realign_ratings(ratings):
+    # Calculate positive and negative ratings
+    positive_ratings = ratings[ratings['recommend'] == True].groupby(['source_dataset', 'destination_dataset']).size().unstack(fill_value=0)
+    negative_ratings = ratings[ratings['recommend'] == False].groupby(['source_dataset', 'destination_dataset']).size().unstack(fill_value=0)
+    # Align the indices and columns to ensure both DataFrames have the same shape
+    positive_ratings, negative_ratings = positive_ratings.align(negative_ratings, fill_value=0)
+    # combine into a 2d matrix of source,destination with (positive,negative) ratings values
+    return DataFrame({
+        'ratings': list(zip(positive_ratings.to_numpy().flatten(), negative_ratings.to_numpy().flatten()))
+    }, index=MultiIndex.from_product([positive_ratings.index, positive_ratings.columns], names=['source', 'destination']))
+
+
 def main():
     # Open path before training as to not waste time training if we can't
     model_path = Path(cf.MODEL_PATH)
@@ -124,15 +182,19 @@ def main():
         print("\nFailed to write to given model path: ", e)
         exit(1)
 
-    # Get metadata from database
-    metadata = get_metadata_from_db()
+    # Get metadata and ratings from database
+    metadata, ratings = get_metadata_and_ratings_from_db()
     if metadata is None:
         print("\nFailed to retrieve metadata from database")
         exit(1)
+    if ratings is None:
+        print("\nFailed to retrieve ratings from database")
+    else:
+        ratings = realign_ratings(ratings)
     
     # Fit the TF-IDF model and then tune it
     recommendation_matrix = build_rec_matrix(metadata)
-    recommendation_matrix = tune_rec_matrix(recommendation_matrix,metadata)
+    recommendation_matrix = tune_rec_matrix(recommendation_matrix,metadata,ratings)
 
     # Dump the full into our model pickle file
     with open(model_path, 'wb') as file:
