@@ -212,5 +212,4 @@ This folder contains Jupyter notebooks for exploration and research of the the T
 
 #### [model_system/mock_data](../model_system/mock_data/)
 
-
-
+This folder contains mock metadata used to train some of the prelimanary models. 
