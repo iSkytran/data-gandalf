@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module data_fetching.kaggle_extractor</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="data_fetching.html"><font color="#ffffff">data_fetching</font></a>.kaggle_extractor</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cdavid%5Cdesktop%5Ccourses%5C25%5Ccsc492%5C2023fallteam26-sas%5Cdata_system%5Cdata_fetching%5Ckaggle_extractor.py">c:\users\david\desktop\courses\25\csc492\2023fallteam26-sas\data_system\data_fetching\kaggle_extractor.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="json.html">json</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="pandas.html">pandas</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="data_fetching.extractor_interface.html#MetadataExtractor">data_fetching.extractor_interface.MetadataExtractor</a>(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="data_fetching.kaggle_extractor.html#KaggleExtractor">KaggleExtractor</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="KaggleExtractor">class <strong>KaggleExtractor</strong></a>(<a href="data_fetching.extractor_interface.html#MetadataExtractor">data_fetching.extractor_interface.MetadataExtractor</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#KaggleExtractor">KaggleExtractor</a>(file_input_path,&nbsp;file_output_path)<br>
+&nbsp;<br>
+Provides&nbsp;functionality&nbsp;for&nbsp;extracting&nbsp;metadata&nbsp;from&nbsp;a&nbsp;folder&nbsp;that's<br>
+containing&nbsp;topics&nbsp;folders&nbsp;that&nbsp;contain&nbsp;dataset&nbsp;folders&nbsp;(see&nbsp;file_input_path&nbsp;Attribute)&nbsp;<br>
+populated&nbsp;using&nbsp;kaggle.py.&nbsp;Extends&nbsp;<a href="data_fetching.extractor_interface.html#MetadataExtractor">MetadataExtractor</a>&nbsp;to&nbsp;utilize&nbsp;extract_topics,&nbsp;extract_topic.&nbsp;<br>
+&nbsp;<br>
+Superclass&nbsp;Attributes<br>
+---------------------<br>
+file_input_path&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;path&nbsp;of&nbsp;the&nbsp;folder&nbsp;containing&nbsp;topic&nbsp;folders&nbsp;(e.g.&nbsp;file_input_path/{topic}/{dataset}).&nbsp;<br>
+metadata_suffix&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;suffix&nbsp;to&nbsp;use&nbsp;when&nbsp;saving&nbsp;metadata&nbsp;files&nbsp;(e.g.&nbsp;{dataset_name}/metadatasuffix).&nbsp;<br>
+datasets_processed&nbsp;:&nbsp;list<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;list&nbsp;of&nbsp;datasets&nbsp;that&nbsp;have&nbsp;been&nbsp;successfully&nbsp;processed.&nbsp;Used&nbsp;for&nbsp;reporting&nbsp;results.<br>
+problem_files&nbsp;:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;list&nbsp;of&nbsp;files&nbsp;causing&nbsp;exceptions&nbsp;for&nbsp;the&nbsp;extractor.&nbsp;Used&nbsp;for&nbsp;reporting&nbsp;results<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Superclass&nbsp;Methods<br>
+-------------------<br>
+<a href="#KaggleExtractor-extract_topics">extract_topics</a>(topics:&nbsp;list)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Calls&nbsp;self.<strong>extract_topic</strong>&nbsp;on&nbsp;each&nbsp;topic.&nbsp;<br>
+&nbsp;<br>
+<a href="#KaggleExtractor-extract_topic">extract_topic</a>(topic:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Calls&nbsp;self.<strong>extract_from_dataset</strong>&nbsp;and&nbsp;self.<strong>output_data</strong>&nbsp;on&nbsp;each&nbsp;dataset<br>
+&nbsp;&nbsp;&nbsp;&nbsp;folder&nbsp;in&nbsp;the&nbsp;file_input_path/{topic}&nbsp;directory.&nbsp;Outputs&nbsp;metadata&nbsp;with&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;filename&nbsp;{dataset_name}/{self.<strong>metadata_suffix</strong>}.&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Class&nbsp;Attributes<br>
+----------------<br>
+file_output_path&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Defines&nbsp;the&nbsp;folder&nbsp;used&nbsp;to&nbsp;output&nbsp;metadata&nbsp;when&nbsp;calling&nbsp;self.<strong>output_data</strong>.<br>
+&nbsp;<br>
+source&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Defines&nbsp;the&nbsp;source&nbsp;of&nbsp;the&nbsp;data&nbsp;to&nbsp;populate&nbsp;metadata['source'].&nbsp;<br>
+&nbsp;<br>
+Class&nbsp;Methods<br>
+-------------<br>
+<a href="#KaggleExtractor-extract_from_dataset">extract_from_dataset</a>(dataset_folder:str,&nbsp;topic:str)&nbsp;-&gt;&nbsp;dict<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Combines&nbsp;pandas&nbsp;analysis&nbsp;of&nbsp;CSV&nbsp;files&nbsp;in&nbsp;{self.<strong>dataset_folder</strong>}&nbsp;with&nbsp;values&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;metadatta&nbsp;in&nbsp;{self.<strong>dataset_folder</strong>}&nbsp;to&nbsp;produce&nbsp;a&nbsp;final&nbsp;metadata&nbsp;dictionary.<br>
+&nbsp;<br>
+<a href="#KaggleExtractor-output_data">output_data</a>(metadata:&nbsp;dict,&nbsp;target_folder:&nbsp;str,&nbsp;filename:&nbsp;str)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Formats&nbsp;and&nbsp;outputs&nbsp;a&nbsp;.JSON&nbsp;file&nbsp;containing&nbsp;metadata&nbsp;from&nbsp;the&nbsp;dictionary.<br>
+&nbsp;<br>
+<a href="#KaggleExtractor-report_issues">report_issues</a>()&nbsp;-&gt;&nbsp;None<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Reports&nbsp;any&nbsp;issues&nbsp;encountered&nbsp;using&nbsp;self.<strong>problem_files</strong>.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="data_fetching.kaggle_extractor.html#KaggleExtractor">KaggleExtractor</a></dd>
+<dd><a href="data_fetching.extractor_interface.html#MetadataExtractor">data_fetching.extractor_interface.MetadataExtractor</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="KaggleExtractor-__init__"><strong>__init__</strong></a>(self, file_input_path, file_output_path)</dt><dd><tt>Parameters<br>
+----------<br>
+file_input_path&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Defines&nbsp;the&nbsp;folder&nbsp;to&nbsp;search&nbsp;for&nbsp;topic&nbsp;folders&nbsp;that&nbsp;contain&nbsp;dataset&nbsp;folders.&nbsp;<br>
+&nbsp;<br>
+file_output_path&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Defines&nbsp;the&nbsp;folder&nbsp;used&nbsp;to&nbsp;output&nbsp;metadata&nbsp;when&nbsp;calling&nbsp;self.<strong>output_data</strong>.<br>
+&nbsp;<br>
+source&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Defines&nbsp;the&nbsp;source&nbsp;of&nbsp;the&nbsp;data&nbsp;to&nbsp;populate&nbsp;metadata['source'].</tt></dd></dl>
+
+<dl><dt><a name="KaggleExtractor-extract_from_dataset"><strong>extract_from_dataset</strong></a>(self, dataset_folder, topic) -&gt; dict</dt><dd><tt>Convert&nbsp;from&nbsp;a&nbsp;folder&nbsp;dataset&nbsp;generated&nbsp;from&nbsp;kaggle.py&nbsp;to&nbsp;a&nbsp;python&nbsp;dictionary.&nbsp;&nbsp;<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+dataset_folder&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;folder&nbsp;to&nbsp;extract&nbsp;a&nbsp;dataset&nbsp;from.<br>
+&nbsp;<br>
+topic&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;topic&nbsp;of&nbsp;the&nbsp;dataset,&nbsp;used&nbsp;for&nbsp;populating&nbsp;metadata['title'].&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+Return<br>
+------<br>
+metadata&nbsp;:&nbsp;dict<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;dictionary&nbsp;containing&nbsp;all&nbsp;metadata&nbsp;representing&nbsp;the&nbsp;dataset&nbsp;in&nbsp;dataset_folder.</tt></dd></dl>
+
+<dl><dt><a name="KaggleExtractor-extract_topic"><strong>extract_topic</strong></a>(self, topic)</dt><dd><tt>Calls&nbsp;self.<strong>extract_from_dataset</strong>&nbsp;and&nbsp;self.<strong>output_data</strong>&nbsp;on&nbsp;each&nbsp;dataset<br>
+folder&nbsp;in&nbsp;the&nbsp;{self.<strong>file_input_path</strong>}/{topic}&nbsp;directory.&nbsp;Outputs&nbsp;metadata&nbsp;with&nbsp;<br>
+the&nbsp;filename&nbsp;{dataset_name}/{self.<strong>metadata_suffix</strong>}.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+topic&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;folder&nbsp;({self.<strong>file_input_path</strong>}/{topic})&nbsp;to&nbsp;extract&nbsp;datasets&nbsp;from.</tt></dd></dl>
+
+<dl><dt><a name="KaggleExtractor-extract_topics"><strong>extract_topics</strong></a>(self, topics)</dt><dd><tt>Calls&nbsp;extract_topic&nbsp;on&nbsp;en&nbsp;each&nbsp;topic.&nbsp;<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+topics&nbsp;:&nbsp;list[str]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Names&nbsp;of&nbsp;topic&nbsp;folders&nbsp;to&nbsp;extract&nbsp;metadata&nbsp;from.</tt></dd></dl>
+
+<dl><dt><a name="KaggleExtractor-output_data"><strong>output_data</strong></a>(self, metadata, target_folder, filename)</dt><dd><tt>Reads&nbsp;in&nbsp;a&nbsp;python&nbsp;dictionary&nbsp;generated&nbsp;from&nbsp;extract_from-dataset&nbsp;<br>
+and&nbsp;produce&nbsp;output&nbsp;of&nbsp;desired&nbsp;format&nbsp;(JSON&nbsp;file&nbsp;in&nbsp;case&nbsp;of&nbsp;kaggle&nbsp;extractor).<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+metadata&nbsp;:&nbsp;dict<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;metadata&nbsp;to&nbsp;output.&nbsp;<br>
+&nbsp;<br>
+target_folder&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Specifies&nbsp;a&nbsp;folder&nbsp;to&nbsp;output&nbsp;metadata&nbsp;to.&nbsp;<br>
+&nbsp;<br>
+filename&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Specifies&nbsp;the&nbsp;filename&nbsp;to&nbsp;output&nbsp;metadata&nbsp;to.</tt></dd></dl>
+
+<dl><dt><a name="KaggleExtractor-report_issues"><strong>report_issues</strong></a>(self)</dt><dd><tt>Reports&nbsp;the&nbsp;number&nbsp;of&nbsp;datasets&nbsp;successfully&nbsp;extracted&nbsp;and&nbsp;how&nbsp;many&nbsp;had&nbsp;problems.&nbsp;<br>
+Writes&nbsp;to&nbsp;a&nbsp;file&nbsp;with&nbsp;the&nbsp;list&nbsp;of&nbsp;files&nbsp;that&nbsp;caused&nbsp;exceptions.</tt></dd></dl>
+
+<dl><dt><a name="KaggleExtractor-update_metadata_from_df"><strong>update_metadata_from_df</strong></a>(self, df: pandas.core.frame.DataFrame, metadata: dict) -&gt; dict</dt><dd><tt>Updates&nbsp;the&nbsp;metadata&nbsp;dictionary&nbsp;with&nbsp;a&nbsp;dataframe&nbsp;representing&nbsp;a&nbsp;table.&nbsp;<br>
+Adds&nbsp;column&nbsp;names,&nbsp;null&nbsp;count,&nbsp;row&nbsp;count,&nbsp;num&nbsp;entries.&nbsp;<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+df&nbsp;:&nbsp;pd.DataFrame<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;dataframe&nbsp;to&nbsp;use&nbsp;to&nbsp;update&nbsp;metadata.&nbsp;<br>
+&nbsp;<br>
+metadata&nbsp;:&nbsp;dict<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;metadata&nbsp;to&nbsp;be&nbsp;modified&nbsp;and&nbsp;returned.&nbsp;<br>
+&nbsp;<br>
+Return<br>
+------<br>
+metadata&nbsp;:&nbsp;dict<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;updated&nbsp;metadata.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="data_fetching.extractor_interface.html#MetadataExtractor">data_fetching.extractor_interface.MetadataExtractor</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

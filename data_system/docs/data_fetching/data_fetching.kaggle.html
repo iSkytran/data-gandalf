@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module data_fetching.kaggle</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="data_fetching.html"><font color="#ffffff">data_fetching</font></a>.kaggle</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cdavid%5Cdesktop%5Ccourses%5C25%5Ccsc492%5C2023fallteam26-sas%5Cdata_system%5Cdata_fetching%5Ckaggle.py">c:\users\david\desktop\courses\25\csc492\2023fallteam26-sas\data_system\data_fetching\kaggle.py</a></font></td></tr></table>
+    <p><tt>This&nbsp;module&nbsp;contains&nbsp;utility&nbsp;functions&nbsp;for&nbsp;pulling&nbsp;datasets&nbsp;from&nbsp;kaggle&nbsp;and&nbsp;populating&nbsp;local&nbsp;<br>
+folders&nbsp;with&nbsp;them.&nbsp;Example&nbsp;usage&nbsp;can&nbsp;be&nbsp;found&nbsp;in&nbsp;data_system/main.py.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="json.html">json</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="shutil.html">shutil</a><br>
+</td><td width="25%" valign=top><a href="subprocess.html">subprocess</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-clean_dataset"><strong>clean_dataset</strong></a>(path)</dt><dd><tt>Unzips&nbsp;ZIP&nbsp;files&nbsp;in&nbsp;the&nbsp;directory&nbsp;specified&nbsp;by&nbsp;path.&nbsp;Removes&nbsp;all&nbsp;non-csv,&nbsp;non-json&nbsp;files&nbsp;and&nbsp;<br>
+directories.&nbsp;<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+path&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;path&nbsp;of&nbsp;the&nbsp;dataset&nbsp;directory&nbsp;to&nbsp;clean.</tt></dd></dl>
+ <dl><dt><a name="-ensure_data_exists"><strong>ensure_data_exists</strong></a>(folder_path)</dt><dd><tt>Ensure&nbsp;at&nbsp;least&nbsp;one&nbsp;CSV&nbsp;file&nbsp;exists&nbsp;in&nbsp;the&nbsp;dataset&nbsp;directory&nbsp;for&nbsp;analysis.&nbsp;<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+folder_path&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;path&nbsp;of&nbsp;the&nbsp;dataset&nbsp;directory&nbsp;to&nbsp;validate.&nbsp;<br>
+&nbsp;<br>
+Return<br>
+-------<br>
+csv<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Returns&nbsp;true&nbsp;if&nbsp;at&nbsp;least&nbsp;one&nbsp;csv&nbsp;file&nbsp;exists,&nbsp;false&nbsp;otherwise.</tt></dd></dl>
+ <dl><dt><a name="-fetch"><strong>fetch</strong></a>(topics, num_datasets, output_folder)</dt><dd><tt>Queries&nbsp;kaggle&nbsp;for&nbsp;a&nbsp;list&nbsp;of&nbsp;topics&nbsp;and&nbsp;number&nbsp;of&nbsp;datasets&nbsp;per&nbsp;topic,&nbsp;saving&nbsp;all&nbsp;datasets&nbsp;to&nbsp;the&nbsp;<br>
+output&nbsp;folder.&nbsp;<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+topics&nbsp;:&nbsp;list[str]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;list&nbsp;of&nbsp;the&nbsp;topics&nbsp;to&nbsp;query&nbsp;kaggle&nbsp;for.&nbsp;<br>
+&nbsp;<br>
+num_datasets&nbsp;:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;number&nbsp;of&nbsp;datasets&nbsp;to&nbsp;fetch&nbsp;for&nbsp;each&nbsp;topic&nbsp;in&nbsp;topics.&nbsp;<br>
+&nbsp;<br>
+output_folder&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;path&nbsp;of&nbsp;the&nbsp;output&nbsp;folder-&nbsp;where&nbsp;to&nbsp;save&nbsp;the&nbsp;data.</tt></dd></dl>
+ <dl><dt><a name="-get_topic_urlList"><strong>get_topic_urlList</strong></a>(datasets: str) -&gt; list</dt><dd><tt>Processes&nbsp;the&nbsp;string&nbsp;returned&nbsp;by&nbsp;kaggle&nbsp;representing&nbsp;various&nbsp;datasets.&nbsp;Outputs&nbsp;a&nbsp;<br>
+list&nbsp;of&nbsp;URLs&nbsp;to&nbsp;be&nbsp;individually&nbsp;queried.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+datasets&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;string&nbsp;representation&nbsp;of&nbsp;datasets&nbsp;in&nbsp;the&nbsp;form&nbsp;returned&nbsp;by&nbsp;kaggle&nbsp;CLI.&nbsp;<br>
+&nbsp;<br>
+Return<br>
+------<br>
+urlList&nbsp;:&nbsp;list[str]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;list&nbsp;of&nbsp;URLs&nbsp;to&nbsp;individually&nbsp;query&nbsp;kaggle&nbsp;with.</tt></dd></dl>
+ <dl><dt><a name="-process_dataset"><strong>process_dataset</strong></a>(link, topic)</dt><dd><tt>Pulls&nbsp;a&nbsp;dataset&nbsp;with&nbsp;a&nbsp;given&nbsp;link&nbsp;from&nbsp;kaggle,&nbsp;then&nbsp;validates&nbsp;it.<br>
+&nbsp;<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+topic&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;topic&nbsp;the&nbsp;dataset&nbsp;belongs&nbsp;to,&nbsp;used&nbsp;for&nbsp;navigating&nbsp;to&nbsp;the&nbsp;correct&nbsp;path.&nbsp;<br>
+&nbsp;<br>
+link&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;URL&nbsp;to&nbsp;call&nbsp;pull_dataset&nbsp;with.&nbsp;<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+True<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Returns&nbsp;false&nbsp;if&nbsp;dataset&nbsp;has&nbsp;already&nbsp;been&nbsp;pulled,&nbsp;contains&nbsp;no&nbsp;.csv&nbsp;files&nbsp;for&nbsp;analysis,&nbsp;or<br>
+&nbsp;&nbsp;&nbsp;&nbsp;other&nbsp;errors&nbsp;are&nbsp;encountered.&nbsp;Returns&nbsp;true&nbsp;if&nbsp;dataset&nbsp;is&nbsp;succesfully&nbsp;pulled&nbsp;and&nbsp;validated.</tt></dd></dl>
+ <dl><dt><a name="-pull_dataset"><strong>pull_dataset</strong></a>(link)</dt><dd><tt>Pulls&nbsp;kaggle&nbsp;with&nbsp;an&nbsp;individual&nbsp;dataset&nbsp;URL.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+link&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;kaggle&nbsp;link&nbsp;of&nbsp;the&nbsp;dataset&nbsp;to&nbsp;download.</tt></dd></dl>
+ <dl><dt><a name="-pull_topic"><strong>pull_topic</strong></a>(topic, num_datasets)</dt><dd><tt>Pulls&nbsp;num_datasets&nbsp;datasets&nbsp;relating&nbsp;to&nbsp;a&nbsp;given&nbsp;topic.&nbsp;Queries&nbsp;Kaggle&nbsp;for&nbsp;a&nbsp;list&nbsp;of&nbsp;related<br>
+datasets&nbsp;with&nbsp;the&nbsp;toipc,&nbsp;then&nbsp;processes&nbsp;and&nbsp;downloads&nbsp;all&nbsp;found&nbsp;valid&nbsp;datasets.&nbsp;Will&nbsp;attempt&nbsp;<br>
+to&nbsp;pull&nbsp;new&nbsp;datasets&nbsp;if&nbsp;invalid&nbsp;ones&nbsp;are&nbsp;found&nbsp;until&nbsp;num_datasets&nbsp;have&nbsp;been&nbsp;successfully&nbsp;processed.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+topic&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;topic&nbsp;to&nbsp;query&nbsp;kaggle&nbsp;for.&nbsp;<br>
+&nbsp;<br>
+num_datasets&nbsp;:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;number&nbsp;of&nbsp;datasets&nbsp;to&nbsp;pull.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>fixed_directory</strong> = ''<br>
+<strong>pulled_links</strong> = set()</td></tr></table>
+</body></html>

@@ -1,7 +1,7 @@
 import { titleCase } from "title-case";
 
-export const processMetadata = (dataset: any) => {
-  // Utility function to beautify text.
+// Utility function to beautify text.
+export const processMetadata = (similarity: number, dataset: any) => {
   dataset.title = dataset.title.replace(/,/g, ", ");
   dataset.topic = dataset.topic.replace(/,/g, ", ");
   dataset.licenses = dataset.licenses.replace(/,/g, ", ");
@@ -11,8 +11,25 @@ export const processMetadata = (dataset: any) => {
   dataset.licenses = titleCase(dataset.licenses);
   dataset.tags = titleCase(dataset.tags);
   dataset.topicStyle = hashToStyle(hashCode(dataset.topic));
+  dataset.similarityStyle = similarityToStyle(similarity);
   return dataset;
 };
+
+export const similarityToStyle = (similarity: number) => {
+  similarity = Math.max(similarity, 50);
+  const hue = 2 * (similarity - 47.5)
+  const background = `hsl(${hue}, 90%, 90%)`;
+  const text = `hsl(${hue}, 50%, 20%)`;
+  const border = `hsl(${hue}, 50%, 35%)`;
+
+  const style = {
+    backgroundColor: background,
+    color: text,
+    borderColor: border,
+  };
+
+  return style;
+}
 
 export const hashCode = (str: string) => {
   // Naive hashcode computation.

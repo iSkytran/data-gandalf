@@ -13,12 +13,13 @@ second = current_datetime.second
 MODEL_PATH = f"../backend/models/{year}-{month:02d}-{day:02d}T{hour:02d}-{minute:02d}-{second:02d}_model.pkl"
 
 # DB Configurations
-DBNAME = "training_database"
+DBNAME = "postgres"
 USER = "postgres"
-PASSWORD = "default"
+PASSWORD = "password"
 HOST = "localhost"
 PORT = "5432"
-TABLENAME = "dataset"
+METADATA_TABLENAME = "dataset"
+RATING_TABLENAME = "rating"
 
 # Text columns to be used as input into TF-IDF
 COLS_TO_CLEAN = ["topic", "title", "description"]

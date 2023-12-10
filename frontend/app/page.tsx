@@ -39,7 +39,7 @@ export default function Home() {
       .then((data) => {
         // Format each dataset's metadata to look nice.
         data.map((dataset: any) => {
-          return processMetadata(dataset);
+          return processMetadata(100, dataset);
         });
         setDatasets(data);
       });

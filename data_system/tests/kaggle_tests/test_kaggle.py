@@ -46,7 +46,7 @@ def test_get_topic_url_list():
 
     datasets = """title\r\ndescription\r\nurl_parsed this should not be parsed\r\nowi2.()* this should not be parsed"""
 
-    url_list = kaggle.get_topic_urlList(datasets, "topic")
+    url_list = kaggle.get_topic_urlList(datasets)
     assert len(url_list) == 2
     assert sorted(url_list) == sorted(["url_parsed", "owi2.()*"])
 

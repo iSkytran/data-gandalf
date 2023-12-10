@@ -1,9 +1,15 @@
 import os
 
 class MetadataUploader:
+    """
+    Acts as an abstract class with some common state. Subclasses should override prepare_upload, 
+    upload, and report_issues. 
+
+    Attributes
+    --------------
+
+    """
     def __init__(self):
-        self.metadata_suffix = '_metadata.json'
-        self.datasets_uploaded = []
         self.problem_files = []
 
     def prepare_upload(self, topics):
