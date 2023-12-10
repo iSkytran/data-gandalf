@@ -150,4 +150,67 @@ The data subsystem is used by administrators of the system to pull datasets from
 
 ## Model Subsystem
 
-The model subsystem is used by administrators as well to train models from the pulled datasets for the web application to use.
+The model subsystem is used by administrators to train models from the pulled datasets for the web application to use. This subsystem uses the [Microsoft Recommenders](https://github.com/recommenders-team/recommenders) package to train models. This subsystem has the same [dependencies](../backend/requirements.txt) as the backend.
+
+The following section will look at each subfolder of the model subsystem indivudally.
+
+#### [model_system/training](../model_system/training/)
+
+This folder trains the TF-IDF model. [model_training.py](../model_system/training/model_training.py) is the training script, and it is configured by [config.py](../model_system/training/config.py). 
+
+Before running the training script, ensure that there is an active PostgreSQL database running that has the following 2 tables: 
+
+1. **Dataset**: This table contains the dataset metadata used to train the model. 
+2. **Rating**: This table contains the user ratings for recommendations between two datasets. This table is optional, and if it does not exist, the model will be trained on just the metadata.
+
+These tables should follow the schema defined in the [backend](../backend/backend/models.py). The location of this PostgreSQL database and its tables are determined by [config.py](../model_system/training/config.py).
+
+[config.py](../model_system/training/config.py) also has the following options:
+- COLS_TO_CLEAN: The names of the columns that will be combined into a single column and used as text input TF-IDF.
+- [*]_COL: The name of the given column. These four columns are required for model training and tuning.
+- TOKENIZATION_METHOD: This is the tokenization method that the model will use to generate tokens for the input text. It has the following options ([Source](https://github.com/recommenders-team/recommenders/blob/main/examples/00_quick_start/tfidf_covid.ipynb)):
+  1. "**none**": No tokenization is applied. Each word is considered a token.
+  2. "**nltk**": Simple stemming is applied using NLTK.
+  3. "**bert**": HuggingFace BERT word tokenization is applied.
+  4. "**scibert**":	SciBERT word tokenization  is applied. This is recommended for scientific journal articles.
+- [*]_WEIGHT: The tuning weight for the given column. If the weight is set to 1, the column will be ignored.
+
+To run the training script, run the following command:
+```sh
+python -m training.model_training
+```
+
+#### [model_system/tests](../model_system/tests/)
+
+This folder contains unit tests for the `model_training.py` script. The tests mostly cover the tuning functionlity, because TF-IDF training is already tested by Microsoft.
+
+To run the tests without coverage:
+```sh
+pytest tests/model_training_test.py
+```
+
+To run the tests with coverage:
+```sh
+pytest --cov="training"  tests/model_training_test.py
+```
+
+#### [model_system/scripts](../model_system/scripts/)
+
+This folder contains a script to dump all the user ratings for ease of use with the `model_training.py` script. To run the script, have the app running locally, then run:
+```sh
+bash scripts/rating_dump.sh
+```
+
+#### [model_system/notebooks](../model_system/notebooks/)
+
+This folder contains Jupyter notebooks for exploration and research of the the TF-IDF model. It contains the following notebooks:
+- `preliminary_TFIDF`: Initial TF-IDF API testing. Uses mock metadata to train and examine a model.
+- `real_data_TFIDF`: TF-IDF training using real metadata sources from Kaggle.
+- `v2_TFIDF`: Testing of model serailization using pickle. 
+- `naive_recommnder`: Testing of a naive model used to compare to the complex model.
+- `custom_weights_TFIDF`: Exploration and testing of a custom weighting loop after model training.
+
+#### [model_system/mock_data](../model_system/mock_data/)
+
+
+
