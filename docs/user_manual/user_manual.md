@@ -10,7 +10,7 @@ Accessing Data Gandalf is straightforward. Open up your browser of choice, and n
 
 On the home page for Data Gandalf, users are able to browse through all the different datasets that are loaded into the application, filter by a specific topic using the filter bar, and select a specific dataset to learn more about it. Each page of results here contains up to 100 dataset entries.
 
-![Screenshot of the home page for Data Gandalf.](images/home_page.png)
+![Screenshot of the home page for Data Gandalf.](../images/home_page.png)
 
 1. The filter bar to filter down by topic.
 
@@ -30,7 +30,7 @@ On the home page for Data Gandalf, users are able to browse through all the diff
 
 The dataset page is where users can inspect more information about a dataset, go to the source page for the dataset, select another dataset, and give feedback about the recommendation.
 
-![Screenshot of the dataset page for Data Gandalf.](images/dataset_page.png)
+![Screenshot of the dataset page for Data Gandalf.](../images/dataset_page.png)
 
 1. Information about the dataset that the user has just selected from the home page or another dataset page. In addition to the title, topic, licenses, and tags, a description of the dataset is provided as well.
 
