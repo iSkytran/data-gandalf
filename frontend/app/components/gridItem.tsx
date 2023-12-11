@@ -1,3 +1,4 @@
+// Component for an item in the Grid.
 import Link from "next/link";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 

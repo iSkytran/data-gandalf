@@ -1,3 +1,4 @@
+// A wrapper component for the Grid of items.
 import ReactPaginate from "react-paginate";
 
 export default function Grid({
@@ -11,6 +12,7 @@ export default function Grid({
   pageChange?: any;
   children?: Array<React.ReactNode>;
 }) {
+  // Only render the pagination bar if there is a page count and page change function.
   const paginateStyle =
     "flex items-center justify-center leading-tight text-white p-2 hover:bg-medium_blue";
   const paginateItem = pageCount && pageChange && (

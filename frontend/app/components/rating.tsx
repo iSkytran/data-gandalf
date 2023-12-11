@@ -1,3 +1,4 @@
+// A user rating component.
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faThumbsUp as solidThumbsUp,
@@ -20,6 +21,7 @@ export default function Rating({
   // For rating.recommend, 0 represents no selection, 1 is positive, -1 is negative.
   const rating = ratings[ratingIdx];
 
+  // Used to remove a rating if deselecting.
   const deleteRequest = () => {
     fetch(`/api/ratings/${encodeURIComponent(rating.id)}`, {
       method: "DELETE",
@@ -34,6 +36,7 @@ export default function Rating({
     setRatings(newRatings);
   };
 
+  // Used to add a rating or update (switch rating).
   const postRequest = (recommend: boolean) => {
     rating.recommend = recommend;
     fetch("/api/ratings", {
@@ -57,6 +60,7 @@ export default function Rating({
   };
 
   const changeRating = (event: any, recommend: boolean | null) => {
+    // Logic for changing the rating.
     event.stopPropagation();
     if (recommend == null) {
       deleteRequest();

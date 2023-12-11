@@ -17,15 +17,19 @@ export default function Dataset({ params }: { params: { dataset: string } }) {
   const [cookies, setCookie] = useCookies<any>(["user_session"]);
 
   if (!("user_session" in cookies)) {
+    // Create a new user session ID using UUIDv4.
     setCookie("user_session", uuidv4());
   }
 
   useEffect(() => {
+    // Backend URL queries.
     const datasetUrl = `/api/datasets/${encodeURIComponent(params.dataset)}`;
     const ratingUrl = `/api/ratings/?user_session=${encodeURIComponent(
       cookies["user_session"]
     )}&source_dataset=${encodeURIComponent(params.dataset)}`;
 
+    // Fetch data from both the metadata for datasets and the user rating endpoints
+    // first before doing any computation.
     Promise.all([fetch(datasetUrl), fetch(ratingUrl)])
       .then(async (res) => {
         const datasetRes = await res[0].json();
@@ -62,6 +66,7 @@ export default function Dataset({ params }: { params: { dataset: string } }) {
   }, [params.dataset, cookies]);
 
   const items = datasets.map((dataset: any) => {
+    // Get GridItems for each dataset entry.
     const ratingIdx: number = ratings.findIndex(
       (e: any) => e.destination_dataset === dataset.id
     );

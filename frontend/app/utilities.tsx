@@ -1,5 +1,6 @@
 import { titleCase } from "title-case";
 
+// Utility function to beautify text.
 export const processMetadata = (similarity: number, dataset: any) => {
   dataset.title = dataset.title.replace(/,/g, ", ");
   dataset.topic = dataset.topic.replace(/,/g, ", ");
@@ -31,16 +32,18 @@ export const similarityToStyle = (similarity: number) => {
 }
 
 export const hashCode = (str: string) => {
-    let hash = 0;
-    for (let i = 0, len = str.length; i < len; i++) {
-        let chr = str.charCodeAt(i);
-        hash = (hash << 5) - hash + chr;
-        hash |= 0;
-    }
-    return Math.abs(hash);
+  // Naive hashcode computation.
+  let hash = 0;
+  for (let i = 0, len = str.length; i < len; i++) {
+    let chr = str.charCodeAt(i);
+    hash = (hash << 5) - hash + chr;
+    hash |= 0;
+  }
+  return Math.abs(hash);
 };
 
 export const hashToStyle = (hash: number) => {
+  // Use hash to dynamically compute a color.
   const hue = hash % 360;
   const background = `hsl(${hue}, 50%, 90%)`;
   const text = `hsl(${hue}, 50%, 20%)`;
